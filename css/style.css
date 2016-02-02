@@ -1,0 +1,200 @@
+@CHARSET "ISO-8859-1";
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+
+body
+{
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 
+{
+	font-family: 'Hind Vadodara', sans-serif;
+}
+
+p, label, td, th
+{
+	font-family: 'Arimo', sans-serif;
+}
+
+#content-wrapper
+{
+	padding-top: 40px;
+	position: relative;
+}
+
+#button-collapse 
+{
+	display: none;
+	background-color: white;
+	border: none;
+	height: 40px;
+	width: 40px;
+	margin: auto;
+	color: white;
+	cursor: pointer;
+	float: left;
+	padding: 5px;
+}
+
+#header {
+	height: 40px;
+	background-color: white;
+	padding: 5px 25px;
+	color: #E61B04;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	box-shadow: 0 0 10px #3c3c3c;
+}
+
+#header h2 {
+	margin: auto 0 !important;
+	line-height: 40px;
+	font-weight: 500;
+}
+
+.page
+{
+	width: 100%;
+}
+
+.image-page
+{
+	padding-top: 15%;
+	padding-bottom: 30%;	
+}
+
+.content-page
+{
+	padding-top: 5%;
+	padding-bottom: 5%;	
+}
+
+.page-content
+{
+	vertical-align: middle;
+	padding: 0 5%;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.image-page .page-content
+{
+	height: 0;
+}
+
+.title
+{
+	color: white;
+	width: 100%;
+	display: block;
+	white-space: pre;
+	margin: 0 auto;
+	text-shadow: 2px 2px 3px #2F2F3B;
+}
+
+.title-center
+{	
+	text-align: center;
+}
+
+.title-left
+{	
+	text-align: left;
+}
+
+.title-right
+{	
+	text-align: right;
+}
+
+.title-1
+{
+	font-family: "Hind Vadodara", sans-serif;
+	font-weight: 600;
+	font-size: 5vw;
+}
+
+.title-2
+{
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 4vw;
+	font-weight: 300;
+	line-height: 0.7em;
+}
+
+.box-border
+{
+	border: 1px solid;
+	border-radius: 3px;
+}
+
+.box-border-left
+{
+	border-left: 1px solid;
+}
+
+.box-border-right
+{
+	border-right: 1px solid;
+}
+
+.box-2
+{
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+	padding: 3% 2%;
+}
+
+.fa
+{
+	text-align: center;
+	width: 100%;
+}
+
+.content-title, .price
+{
+	font-size: 2.25vw;
+	font-weight: 600;
+}
+
+.desc
+{
+	padding-top: 20px;
+	height: 2em;
+	text-align: center;
+	font-weight: 600;
+}
+
+.feature-list
+{
+	padding-top: 10px;
+	height: 7em;	
+}
+
+.desc, .feature-list
+{
+	font-family: "Lato", sans-serif;
+	font-size: 1.35vw;
+	font-weight: 400;
+	color: #2F2F3B;
+}
+
+.price
+{
+	width: 100%;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 768px)
+{
+	#button-collapse 
+	{
+		display: block;
+	}
+}
