@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6
 
 p, label, td, th
 {
-	font-family: 'Arimo', sans-serif;
+	font-family: "Lato", sans-serif;
 }
 
 #content-wrapper
@@ -42,8 +42,8 @@ p, label, td, th
 #header {
 	height: 40px;
 	background-color: white;
-	padding: 5px 25px;
-	color: #E61B04;
+	padding: 5px 0;
+	color: #FF003C;
 	position: fixed;
 	width: 100%;
 	z-index: 2;
@@ -64,7 +64,7 @@ p, label, td, th
 .image-page
 {
 	padding-top: 15%;
-	padding-bottom: 30%;	
+	padding-bottom: 25%;	
 }
 
 .content-page
@@ -73,12 +73,23 @@ p, label, td, th
 	padding-bottom: 5%;	
 }
 
+#footer
+{
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;	
+}
+
 .page-content
 {
 	vertical-align: middle;
 	padding: 0 5%;
 	margin: 0 auto;
 	max-width: 1000px;
+}
+
+#footer .page-content, #header .page-content
+{
+	padding: 0 5px;
 }
 
 .image-page .page-content
@@ -115,13 +126,13 @@ p, label, td, th
 {
 	font-family: "Hind Vadodara", sans-serif;
 	font-weight: 600;
-	font-size: 5vw;
+	font-size: 425%;
 }
 
 .title-2
 {
 	font-family: "Josefin Sans", sans-serif;
-	font-size: 4vw;
+	font-size: 325%;
 	font-weight: 300;
 	line-height: 0.7em;
 }
@@ -129,6 +140,12 @@ p, label, td, th
 .box-border
 {
 	border: 1px solid;
+	border-radius: 3px;
+}
+
+.box-border-transparent
+{
+	border: 1px solid transparent;
 	border-radius: 3px;
 }
 
@@ -150,15 +167,45 @@ p, label, td, th
 	padding: 3% 2%;
 }
 
+.box-4
+{
+	display: inline-block;
+	width: 22%;
+	vertical-align: top;
+	padding: 2% 1%;
+}
+
 .fa
 {
 	text-align: center;
 	width: 100%;
 }
 
+.icon-big
+{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	display: block;
+}
+
 .content-title, .price
 {
-	font-size: 2.25vw;
+	font-size: 200%;
+	width: 100%;
+	text-align: center;
+}
+
+.content-title, .content-subtitle
+{
+	margin-top: 0;
+	font-weight: 300;
+	font-family: "Josefin Sans", sans-serif;
+	text-align: center;
+}
+
+.price
+{
 	font-weight: 600;
 }
 
@@ -170,6 +217,11 @@ p, label, td, th
 	font-weight: 600;
 }
 
+.desc-left
+{
+	text-align: left;
+}
+
 .feature-list
 {
 	padding-top: 10px;
@@ -179,15 +231,82 @@ p, label, td, th
 .desc, .feature-list
 {
 	font-family: "Lato", sans-serif;
-	font-size: 1.35vw;
+	font-size: 105%;
 	font-weight: 400;
-	color: #2F2F3B;
 }
 
-.price
+
+.item-with-icon div
+{
+	display: inline-block;
+}
+
+.icon-wrapper
+{
+	width: 19.5%;
+}
+
+.caption-wrapper
+{
+	width: 79.5%;
+	height: 4em;
+}
+
+.foot-note
+{
+	font-size: 90%;
+	text-align: center;
+}
+
+input.contact-input, textarea.contact-input
+{
+	width: 96%;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 120%;
+	line-height: 1.2em;
+	padding: 2%;
+	margin: 0;
+	margin-bottom: 5px;
+	vertical-align: middle;
+	border: none;
+}
+
+button.contact-button
 {
 	width: 100%;
-	text-align: center;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 120%;
+	line-height: 1.2em;
+	background-color: #FF7066;
+	border: none;
+	color: white;
+	padding: 0;
+	height: 2em;
+}
+
+.item-label
+{
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 300;
+	line-height: 0.6em;
+}
+
+.contact
+{
+	font-family: "Lato", sans-serif;
+	font-size: 150%;
+	margin-top: 0;
+}
+
+.contact a
+{
+	color: white;
+	text-decoration: none;
+}
+
+.contact a:hover
+{
+	text-decoration: underline;
 }
 
 
