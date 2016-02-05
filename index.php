@@ -19,25 +19,68 @@
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="//v2.zopim.com/?3fSCxc6Yo3L6MoByP0cw2rsxjC0lZBhA";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zopim Live Chat Script-->
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.team-socmed').hide();
+	$('.nav-item').click(function(){
+		$('html, body').animate({
+			scrollTop: $($(this).attr('href')).offset().top
+		}, {
+			duration: 500
+		});
+		return false;
+	});
+	$('.team-icon').hover(function() {
+		$(this).find('.icon-overlay').hide();
+		$(this).find('.team-socmed').each(function() {
+			$(this).slideToggle();
+		});
+	}, function() {
+		$(this).find('.team-socmed').slideToggle(100, function() {
+				$(this).closest('.team-icon').find('.icon-overlay').show();
+			});
+	});
+	$('.sample-product').hover(function() {
+		$(this).find('.product-overlay').hide();
+	}, function() {
+		$(this).find('.product-overlay').show();
+	});
+});
 
+</script>
 </head>
 <body>
 
 <div id="wrapper">
 	<header id="header">
 		<div class="page-content">
-			<button type="button" id="button-collapse" class="navbar-toggle" data-toggle="collapse" data-target="#left-navbar">
+			<button type="button" id="button-collapse" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu">
        			<i class="fa fa-2x fa-bars"></i>
       		</button>
-			<h2 id="brand-title">
-			<a><img src="images/tampilin_black_red.png" height="40px" /></a>
-			</h2>		
+			<div id="brand-title">
+			<a class="nav-item" href="#cover-1"><img src="images/tampilin_black_red.png" height="40px" /></a>
+			<ul class="nav-menu">
+				<li><a class="nav-item" href="#overview">PRODUCT</a></li>
+				<li><a class="nav-item" href="#feature">PRICE</a></li>
+				<li><a class="nav-item" href="#how-to">HOW TO</a></li>
+				<li><a class="nav-item" href="#about-us">ABOUT US</a></li>
+			</ul>
+			</div>		
 		</div>
 	</header>
 	
 	<div id="content-wrapper">
-		<div id="cover-1" class="page image-page" style="background: linear-gradient(rgba(47,47,59,0.4), rgba(47,47,59,0.4)), url('images/DSC_0074 copy.jpg') no-repeat center fixed; background-size: cover;">
+		<div id="cover-1" class="page image-page" style="background: linear-gradient(rgba(47,47,59,0.4), rgba(47,47,59,0.4)), url('images/DSC_0074 copy 2.jpg') no-repeat center fixed; background-size: cover;">
 			<div class="page-content">
 				<span class="title title-center title-1">ONE PAGE WEBSITE</span>
 				<span class="title title-center title-2">for all your needs</span>
@@ -47,14 +90,15 @@
 		<div id="overview" class="page content-page" style="background-color: #FF7066; color: #FFFFFF;" >
 			<div class="page-content">
 				<h1 class="content-title">APA YANG KAMI TAWARKAN?</h1>
-				<div class="item-with-icon box-2">
+				<div class="box-container">
+					<div class="item-with-icon box-2">
 						<div class="icon-wrapper">
 							<i class="fa fa-file fa-3x"></i>
 						</div>
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>Sederhana</strong>
 							<br/>
-							<label>Mengembangkan <i>One page website</i> yang modern dan minimalis untukmu</label></p>
+							<label>Mengembangkan <i>one page website</i> yang modern dan minimalis untukmu</label></p>
 						</div>
 					</div>
 					<div class="item-with-icon box-2">
@@ -64,7 +108,7 @@
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>Cepat dan Handal</strong>
 							<br/>
-							<label>Kami menjamin websitemu akan siap sebelum matahari terbit esok hari</label></p>
+							<label>Kami menjamin <i>website</i>-mu akan siap sebelum matahari terbit esok hari</label></p>
 						</div>
 					</div>
 					<div class="item-with-icon box-2">
@@ -84,7 +128,7 @@
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>On Demand</strong>
 							<br/>
-							<label>Tentukan isi websitemu sendiri, portofolio atau profil usaha</label></p>
+							<label>Komunikasikan ide dan isi <i>website</i>-mu langsung dengan tim kami secara <i>real time</i></label></p>
 						</div>
 					</div>
 					<div class="item-with-icon box-2">
@@ -94,7 +138,7 @@
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>Fotografi</strong>
 							<br/>
-							<label>Ambil foto baru untuk website, atau tambahkan fotomu sendiri</label></p>
+							<label>Ambil foto baru untuk <i>website</i>-mu, dan/atau tambahkan fotomu sendiri</label></p>
 						</div>
 					</div>
 					<div class="item-with-icon box-2">
@@ -104,9 +148,10 @@
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>Dukungan Penuh</strong>
 							<br/>
-							<label>Gratis <i>maintenance</i> dan perbaikan selama setahun</label></p>
+							<label>Gratis <i>maintenance</i> dan perbaikan selama dua tahun</label></p>
 						</div>
 					</div>
+				</div>
 			</div>
 		</div>
 	
@@ -121,32 +166,60 @@
 		<div id="feature" class="page content-page" style="background-color: #ECECEC; color: #2F2F3B;">
 			<div class="page-content">
 				<h1 class="content-title">SESUAIKAN KEBUTUHANMU</h1>
-				<div id="personal" class="box-2 box-border-transparent" style="background-color: #008DC7; color: #ECECEC;">
+				<div class="box-container">
+					<div id="personal" class="box-2 box-border-transparent" style="background-color: #008DC7; color: #ECECEC;">
 					<div class="icon-big" style="background: url('images/image1.png') no-repeat center; background-size: cover;">
 					</div>
-					<p class="desc">Buat website portofolio untuk dirimu sendiri! </p>
-					<h1 class="content-subtitle">Fitur:</h1>
+					<p class="desc">Website portofolio untuk dirimu sendiri</p>
 					<ul class="feature-list">
-						<li>Nama domain bebas (sesuai ketersediaan)</li>
-						<li>Gratis foto (maksimal 5 foto)</li>
-						<li>Dapat menggunakan koleksi foto sendiri (maksimal 10 foto)</li>
-						<li>Gratis konsultasi konten CV/portofolio</li>
+						<li><strong>Gratis</strong> nama domain</li>
+						<li><strong>5</strong> foto dari fotografer kami</li>
+						<li><strong>10</strong> foto dari koleksi sendiri</li>
 					</ul>
 					<h1 class="price">Rp 300.000,00</h1>
 				</div>
 				<div id="business" class="box-2 box-border-transparent" style="background-color: #59A80F; color: #ECECEC;">
 					<div class="icon-big" style="background: url('images/image2.png') no-repeat center; background-size: cover;">
 					</div>
-					<p class="desc">Buat website profile sederhana untuk usahamu!</p>
-					<h1 class="content-subtitle">Fitur:</h1>
+					<p class="desc">Website profile sederhana untuk usahamu</p>
 					<ul class="feature-list">
-						<li>Nama domain bebas (sesuai ketersediaan)</li>
-						<li>Gratis foto (maksimal 20 foto)</li>
-						<li>Dapat menggunakan koleksi foto sendiri (maksimal 30 foto)</li>
-						<li>Gratis pembuatan deskripsi (jika belum ada)</li>
+						<li><strong>Gratis</strong> nama domain</li>
+						<li><strong>15</strong> foto dari fotografer kami</li>
+						<li><strong>30</strong> foto dari koleksi sendiri</li>
 					</ul>
 					<h1 class="price">Rp 500.000,00</h1>
 				</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="how-to" class="page content-page" style="background-color: #FF7066; color: #FFFFFF;">
+			<div class="page-content">
+				<h1 class="content-title">CIPTAKAN MILIKMU</h1>
+				<table>
+					<tr>
+						<td>
+							<i class="fa fa-lightbulb-o fa-5x"></i>
+							<span class="desc">Tentukan ide untuk websitemu</span>
+						</td>
+						<td>
+							<i class="fa fa-comment fa-5x"></i>
+							<span class="desc">Kirim dokumen atau kontak tim kami melalui chat box</span>							
+						</td>
+						<td>
+							<i class="fa fa-paint-brush fa-5x"></i>
+							<span class="desc">Diskusikan desain web dengan tim kami</span>
+						</td>
+						<td>
+							<i class="fa fa-camera fa-5x"></i>
+							<span class="desc">Jika perlu, tambahkan foto/gambar pendukung</span>
+						</td>
+						<td>
+							<i class="fa fa-globe fa-5x"></i>
+							<span class="desc">Tunggu dan websitemu akan siap kurang dari 24 jam</span>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	
@@ -157,7 +230,55 @@
 			</div>
 		</div>
 	
-		<div id="how-to" class="page content-page" style="background-color: #FF7066; color: #FFFFFF;">
+		<div id="project" class="page content-page" style="background-color: #ECECEC; color: #2F2F3B;">
+			<div class="page-content">
+				<h1 class="content-title">CONTOH BUATAN KAMI</h1>
+				<div class="box-container">
+					<div class="box-4">
+						<a class="sample-product" href="#" style="background: url('images/sample web 1.jpg') no-repeat center; background-size: cover;">
+						<div class="product-overlay"></div>
+						</a>	
+					</div>
+					<div class="box-4">
+						<a class="sample-product" href="#" style="background: url('images/sample web 2.jpg') no-repeat center; background-size: cover;">
+						<div class="product-overlay"></div>
+						</a>
+					</div>
+					<div class="box-4">
+						<a class="sample-product" href="#" style="background: url('images/sample web 3.jpg') no-repeat center; background-size: cover;">
+						<div class="product-overlay"></div>
+						</a>
+					</div>
+					<div class="box-4">
+						<a class="sample-product" href="#" style="background: url('images/sample web 4.jpg') no-repeat center; background-size: cover;">
+						<div class="product-overlay"></div>
+						</a>
+					</div>
+					<div class="box-4">
+						<a class="sample-product" href="#" style="background: url('images/sample web 5.jpg') no-repeat center; background-size: cover;">
+						<div class="product-overlay"></div>
+						</a>
+					</div>
+					<div class="box-4">
+						<a class="sample-product" href="#" style="background: url('images/sample web 6.jpg') no-repeat center; background-size: cover;">
+						<div class="product-overlay"></div>
+						</a>
+					</div>
+					<div class="box-4">
+						<a class="sample-product" href="#" style="background: url('images/sample web 7.jpg') no-repeat center; background-size: cover;">
+						<div class="product-overlay"></div>
+						</a>
+					</div>
+					<div class="box-4">
+						<a class="sample-product" href="#" style="background: url('images/sample web 8.jpg') no-repeat center; background-size: cover;">
+						<div class="product-overlay"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="testimonial" class="page content-page" style="background-color: #FF7066; color: #FFFFFF;">
 			<div class="page-content">
 				<h1 class="content-title">CIPTAKAN MILIKMU</h1>
 				<table>
@@ -190,17 +311,63 @@
 		<div id="about-us" class="page content-page" style="background-color: #2F2F3B; color: #FF7066;">
 			<div class="page-content">
 				<h1 class="content-title">TEAM MEMBER</h1>
-				<div class="box-4">
-					<i class="fa fa-user fa-5x"></i>
-				</div>
-				<div class="box-4">
-					<i class="fa fa-user fa-5x"></i>
-				</div>
-				<div class="box-4">
-					<i class="fa fa-user fa-5x"></i>
-				</div>
-				<div class="box-4">
-					<i class="fa fa-user fa-5x"></i>
+				<div class="box-container">
+					<div class="box-4">
+						<div class="team-icon" style="background: url('images/theo.jpg') no-repeat center; background-size: cover;">
+							<div class="icon-overlay">
+								<h1 class="team-name">THEO</h1>
+							</div>
+							<div class="team-socmed">
+								<div class="socmed-wrapper">
+									<a class="socmed-item" href="#" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: cover;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/google_circle_color-128.png') no-repeat center; background-size: cover;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/instagram_circle_color-128.png') no-repeat center; background-size: cover;"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box-4">
+						<div class="team-icon" style="background: url('images/sonny.jpg') no-repeat center; background-size: cover;">
+							<div class="icon-overlay">
+								<h1 class="team-name">SONNY</h1>
+							</div>
+							<div class="team-socmed">
+								<div class="socmed-wrapper">
+									<a class="socmed-item" href="#" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: cover;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/google_circle_color-128.png') no-repeat center; background-size: cover;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/instagram_circle_color-128.png') no-repeat center; background-size: cover;"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box-4">
+						<div class="team-icon" style="background: url('images/inge.jpg') no-repeat center; background-size: cover;">
+							<div class="icon-overlay">
+								<h1 class="team-name">INGE</h1>
+							</div>
+							<div class="team-socmed">
+								<div class="socmed-wrapper">
+									<a class="socmed-item" href="#" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: cover;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/google_circle_color-128.png') no-repeat center; background-size: cover;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/instagram_circle_color-128.png') no-repeat center; background-size: cover;"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box-4">
+						<div class="team-icon" style="background: url('images/esty.jpg') no-repeat center; background-size: cover;">
+							<div class="icon-overlay">
+								<h1 class="team-name">ESTY</h1>
+							</div>
+							<div class="team-socmed">
+								<div class="socmed-wrapper">
+									<a class="socmed-item" href="#" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: cover;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/google_circle_color-128.png') no-repeat center; background-size: cover;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/instagram_circle_color-128.png') no-repeat center; background-size: cover;"></a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -208,7 +375,8 @@
 		<div id="contact-us" class="page content-page" style="background-color: #2F2F3B; color: #FFFFFF;">
 			<div class="page-content">
 				<h1 class="content-title">HUBUNGI KAMI</h1>
-				<div class="box-2">
+				<div class="box-container">
+					<div class="box-2">
 					<div class="item-with-icon">
 						<small class="item-label">TELEPON:</small>
 						<br/>
@@ -235,6 +403,7 @@
 					<input class="contact-input" type="text" placeholder="Email" />
 					<textarea rows="5" class="contact-input" placeholder="Isi Pesan"></textarea>
 					<button class="contact-button">Kirim Pesan</button>
+				</div>
 				</div>
 			</div>
 		</div>
