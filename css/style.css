@@ -75,6 +75,13 @@ p, label, td, th
 .nav-menu li a {
 	text-decoration: none;
 	color: #FF003C;
+	height: 100%;
+	display: block;
+	border-bottom: 3px solid transparent;
+}
+
+.nav-menu li a:hover {
+	border-bottom: 3px solid #FF003C;
 }
 
 .page
@@ -84,8 +91,8 @@ p, label, td, th
 
 .image-page
 {
-	padding-top: 15%;
-	padding-bottom: 25%;	
+	padding-top: 225px;
+	padding-bottom: 375px;	
 }
 
 .content-page
@@ -211,6 +218,16 @@ p, label, td, th
 	width: 100%;
 }
 
+.fa-quote-left
+{
+	text-align: left;
+}
+
+.fa-quote-right
+{
+	text-align: right;
+}
+
 .icon-big
 {
 	width: 200px;
@@ -243,7 +260,13 @@ p, label, td, th
 {
 	padding-top: 20px;
 	text-align: center;
-	font-weight: 600;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+#feature .desc
+{
+	margin-top: 20px;
 }
 
 .desc-left
@@ -265,13 +288,14 @@ p, label, td, th
 .desc, .feature-list
 {
 	font-family: "Raleway", sans-serif;
-	font-size: 105%;
+	font-size: 110%;
 	font-weight: 300;
 }
 
 .item-with-icon div
 {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .icon-wrapper
@@ -282,7 +306,30 @@ p, label, td, th
 .caption-wrapper
 {
 	width: 79.5%;
-	height: 4em;
+	height: 6em;
+}
+
+.testimonial-wrapper
+{
+	width: 79.5%;
+	height: 10em;
+}
+
+.sicon-wrapper
+{
+	width: 8.7%;
+}
+
+.testimonial
+{
+	font-size: 120%;
+	margin: 0;
+	font-weight: 300;
+}
+
+.testimonial strong
+{
+	font-weight: 600;
 }
 
 .sample-product
@@ -291,6 +338,12 @@ p, label, td, th
 	width: 100%;
 	height: 0;
 	padding-top: 100%;
+	box-shadow: 2px 2px 10px #3c3c3c;
+}
+
+.sample-product:hover
+{
+	box-shadow: 2px 2px 10px #FF7066;
 }
 
 .product-overlay
@@ -299,19 +352,37 @@ p, label, td, th
 	height: 0;
 	padding-top: 100%;
 	margin-top: -100%;
-	background-color: rgba(255,255,255,0.4);
+	background-color: rgba(255,255,255,0.55);
 }
 
 .foot-note
 {
 	font-size: 90%;
 	text-align: center;
+	font-weight: 300;
+}
+
+.foot-note a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.foot-note a:hover 
+{
+	text-decoration: underline;
 }
 
 .team-icon
 {
 	width: 100%;
 	padding-top: 100%;
+	box-shadow: 0 0 13px #757286;
+}
+
+.team-icon:hover
+{
+	box-shadow: 0 0 13px rgba(251, 207, 97, 1);
 }
 
 .icon-overlay

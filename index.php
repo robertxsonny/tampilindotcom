@@ -18,8 +18,8 @@
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <!--Start of Zopim Live Chat Script-->
 <script type="text/javascript">
 window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -70,10 +70,10 @@ $(document).ready(function() {
 			<div id="brand-title">
 			<a class="nav-item" href="#cover-1"><img src="images/tampilin_black_red.png" height="40px" /></a>
 			<ul class="nav-menu">
-				<li><a class="nav-item" href="#overview">PRODUCT</a></li>
-				<li><a class="nav-item" href="#feature">PRICE</a></li>
-				<li><a class="nav-item" href="#how-to">HOW TO</a></li>
-				<li><a class="nav-item" href="#about-us">ABOUT US</a></li>
+				<li><a class="nav-item" href="#overview">PRODUK</a></li>
+				<li><a class="nav-item" href="#feature">HARGA</a></li>
+				<li><a class="nav-item" href="#project">CONTOH</a></li>
+				<li><a class="nav-item" href="#about-us">TENTANG</a></li>
 			</ul>
 			</div>		
 		</div>
@@ -103,7 +103,7 @@ $(document).ready(function() {
 					</div>
 					<div class="item-with-icon box-2">
 						<div class="icon-wrapper">
-							<i class="fa fa-clock-o fa-3x"></i>
+							<i class="fa fa-calendar-o fa-3x"></i>
 						</div>
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>Cepat dan Handal</strong>
@@ -128,9 +128,29 @@ $(document).ready(function() {
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>On Demand</strong>
 							<br/>
-							<label>Komunikasikan ide dan isi <i>website</i>-mu langsung dengan tim kami secara <i>real time</i></label></p>
+							<label>Komunikasikan kebutuhan <i>website</i>-mu langsung dengan tim kami</label></p>
 						</div>
 					</div>
+					<div class="item-with-icon box-2">
+						<div class="icon-wrapper">
+							<i class="fa fa-clock-o fa-3x"></i>
+						</div>
+						<div class="caption-wrapper">
+							<p class="desc desc-left"><strong>Real Time</strong>
+							<br/>
+							<label><i>Chat</i> langsung dengan tim kami untuk mengkomunikasikan ide <i>website</i>-mu saat ini juga</label></p>
+						</div>
+					</div>
+					<div class="item-with-icon box-2">
+						<div class="icon-wrapper">
+							<i class="fa fa-users fa-3x"></i>
+						</div>
+						<div class="caption-wrapper">
+							<p class="desc desc-left"><strong>Stand Out</strong>
+							<br/>
+							<label>Tampil beda dan menarik di antara rekan-rekanmu dengan <i>website</i> sendiri</label></p>
+						</div>
+					</div>					
 					<div class="item-with-icon box-2">
 						<div class="icon-wrapper">
 							<i class="fa fa-camera fa-3x"></i>
@@ -172,9 +192,10 @@ $(document).ready(function() {
 					</div>
 					<p class="desc">Website portofolio untuk dirimu sendiri</p>
 					<ul class="feature-list">
-						<li><strong>Gratis</strong> nama domain</li>
+						<li><strong>Gratis</strong> nama domain (.com, .net, .my.id, .web.id)</li>
 						<li><strong>5</strong> foto dari fotografer kami</li>
 						<li><strong>10</strong> foto dari koleksi sendiri</li>
+						<li><strong>Gratis</strong> promosi di media sosial selama 1 bulan</li>
 					</ul>
 					<h1 class="price">Rp 300.000,00</h1>
 				</div>
@@ -183,9 +204,10 @@ $(document).ready(function() {
 					</div>
 					<p class="desc">Website profile sederhana untuk usahamu</p>
 					<ul class="feature-list">
-						<li><strong>Gratis</strong> nama domain</li>
+						<li><strong>Gratis</strong> nama domain (semua domain)</li>
 						<li><strong>15</strong> foto dari fotografer kami</li>
 						<li><strong>30</strong> foto dari koleksi sendiri</li>
+						<li><strong>Gratis</strong> promosi di media sosial selama 2 bulan</li>
 					</ul>
 					<h1 class="price">Rp 500.000,00</h1>
 				</div>
@@ -232,7 +254,7 @@ $(document).ready(function() {
 	
 		<div id="project" class="page content-page" style="background-color: #ECECEC; color: #2F2F3B;">
 			<div class="page-content">
-				<h1 class="content-title">CONTOH BUATAN KAMI</h1>
+				<h1 class="content-title">PORTOFOLIO KAMI</h1>
 				<div class="box-container">
 					<div class="box-4">
 						<a class="sample-product" href="#" style="background: url('images/sample web 1.jpg') no-repeat center; background-size: cover;">
@@ -280,42 +302,72 @@ $(document).ready(function() {
 		
 		<div id="testimonial" class="page content-page" style="background-color: #FF7066; color: #FFFFFF;">
 			<div class="page-content">
-				<h1 class="content-title">CIPTAKAN MILIKMU</h1>
-				<table>
-					<tr>
-						<td>
-							<i class="fa fa-lightbulb-o fa-5x"></i>
-							<span class="desc">Tentukan ide untuk websitemu</span>
-						</td>
-						<td>
-							<i class="fa fa-comment fa-5x"></i>
-							<span class="desc">Kirim dokumen atau kontak tim kami melalui chat box</span>							
-						</td>
-						<td>
-							<i class="fa fa-paint-brush fa-5x"></i>
-							<span class="desc">Diskusikan desain web dengan tim kami</span>
-						</td>
-						<td>
-							<i class="fa fa-camera fa-5x"></i>
-							<span class="desc">Jika perlu, tambahkan foto/gambar pendukung</span>
-						</td>
-						<td>
-							<i class="fa fa-globe fa-5x"></i>
-							<span class="desc">Tunggu dan websitemu akan siap kurang dari 24 jam</span>
-						</td>
-					</tr>
-				</table>
+				<h1 class="content-title">TESTIMONI</h1>
+				<div class="box-container">
+					<div class="item-with-icon box-2">
+						<div class="sicon-wrapper">
+							<i class="fa fa-quote-left fa-lg"></i>
+						</div>
+						<div class="testimonial-wrapper">
+							<p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend sem at arcu vestibulum elementum. Pellentesque magna dolor, tempus sed commodo et, sagittis vitae enim.
+							<br/>
+							<strong>Nama testimoni 1</strong></p>
+						</div>
+						<div class="sicon-wrapper">
+							<i class="fa fa-quote-right fa-lg"></i>
+						</div>
+					</div>
+					<div class="item-with-icon box-2">
+						<div class="sicon-wrapper">
+							<i class="fa fa-quote-left fa-lg"></i>
+						</div>
+						<div class="testimonial-wrapper">
+							<p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend sem at arcu vestibulum elementum. Pellentesque magna dolor, tempus sed commodo et, sagittis vitae enim.
+							<br/>
+							<strong>Nama testimoni 1</strong></p>
+						</div>
+						<div class="sicon-wrapper">
+							<i class="fa fa-quote-right fa-lg"></i>
+						</div>
+					</div>
+					<div class="item-with-icon box-2">
+						<div class="sicon-wrapper">
+							<i class="fa fa-quote-left fa-lg"></i>
+						</div>
+						<div class="testimonial-wrapper">
+							<p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend sem at arcu vestibulum elementum. Pellentesque magna dolor, tempus sed commodo et, sagittis vitae enim.
+							<br/>
+							<strong>Nama testimoni 1</strong></p>
+						</div>
+						<div class="sicon-wrapper">
+							<i class="fa fa-quote-right fa-lg"></i>
+						</div>
+					</div>
+					<div class="item-with-icon box-2">
+						<div class="sicon-wrapper">
+							<i class="fa fa-quote-left fa-lg"></i>
+						</div>
+						<div class="testimonial-wrapper">
+							<p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend sem at arcu vestibulum elementum. Pellentesque magna dolor, tempus sed commodo et, sagittis vitae enim.
+							<br/>
+							<strong>Nama testimoni 1</strong></p>
+						</div>
+						<div class="sicon-wrapper">
+							<i class="fa fa-quote-right fa-lg"></i>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	
-		<div id="about-us" class="page content-page" style="background-color: #2F2F3B; color: #FF7066;">
+		<div id="about-us" class="page content-page" style="background-color: #49494E; color: #FF7066;">
 			<div class="page-content">
 				<h1 class="content-title">TEAM MEMBER</h1>
 				<div class="box-container">
 					<div class="box-4">
 						<div class="team-icon" style="background: url('images/theo.jpg') no-repeat center; background-size: cover;">
 							<div class="icon-overlay">
-								<h1 class="team-name">THEO</h1>
+								<h1 class="team-name">BROWN</h1>
 							</div>
 							<div class="team-socmed">
 								<div class="socmed-wrapper">
@@ -329,7 +381,7 @@ $(document).ready(function() {
 					<div class="box-4">
 						<div class="team-icon" style="background: url('images/sonny.jpg') no-repeat center; background-size: cover;">
 							<div class="icon-overlay">
-								<h1 class="team-name">SONNY</h1>
+								<h1 class="team-name">GREY</h1>
 							</div>
 							<div class="team-socmed">
 								<div class="socmed-wrapper">
@@ -343,7 +395,7 @@ $(document).ready(function() {
 					<div class="box-4">
 						<div class="team-icon" style="background: url('images/inge.jpg') no-repeat center; background-size: cover;">
 							<div class="icon-overlay">
-								<h1 class="team-name">INGE</h1>
+								<h1 class="team-name">WHITE</h1>
 							</div>
 							<div class="team-socmed">
 								<div class="socmed-wrapper">
@@ -357,7 +409,7 @@ $(document).ready(function() {
 					<div class="box-4">
 						<div class="team-icon" style="background: url('images/esty.jpg') no-repeat center; background-size: cover;">
 							<div class="icon-overlay">
-								<h1 class="team-name">ESTY</h1>
+								<h1 class="team-name">BLACK</h1>
 							</div>
 							<div class="team-socmed">
 								<div class="socmed-wrapper">
@@ -408,7 +460,7 @@ $(document).ready(function() {
 			</div>
 		</div>
 		
-		<div id="footer" class="page content-page" style="background-color: #ECECEC; color: #2F2F3B;">
+		<div id="footer" class="page content-page" style="background-color: #2F2F3B; color: #FFFFFF;">
 			<div class="page-content">
 				<p class="foot-note">
 				Copyright &copy; 2016 <a
