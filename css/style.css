@@ -290,6 +290,8 @@ p, label, td, th
 {
 	padding-top: 10px;
 	list-style-type: none;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 .feature-list li
@@ -520,13 +522,12 @@ button.contact-button
 	
 	.image-page
 	{
-		padding-top: 180px;
-		padding-bottom: 240px;
+		padding-top: 125px;
+		padding-bottom: 225px;
 		background-attachment: scroll !important;
 		background-size: cover;
 	}
-	
-	
+		
 	.title-1
 	{
 		font-size: 300%;
@@ -535,5 +536,180 @@ button.contact-button
 	.title-2
 	{
 		font-size: 250%;
+	}
+	
+	.content-title, .price, .team-name
+	{
+		font-size: 175%;
+	}
+	
+	.desc, .feature-list
+	{
+		font-size: 100%;
+	}
+	
+	.feature-list
+	{
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	
+	.icon-big
+	{
+		width: 150px;
+		height: 150px;
+	}
+	
+	.testimonial
+	{
+		font-size: 100%;
+	}
+	
+	input.contact-input, textarea.contact-input, button.contact-button
+	{
+		font-size: 105%;
+	}
+	
+	.item-label
+	{
+		font-size: 95%;
+	}
+	
+	.contact
+	{
+		font-size: 105%;
+	}
+	
+	.foot-note
+	{
+		font-size: 80%;
+	}
+	
+	.box-2
+	{
+		width: 46%;
+	}
+	
+	.caption-wrapper, .testimonial-wrapper
+	{
+		width: 79%;
+	}
+	
+	.testimonial-wrapper
+	{
+		height: 12em;
+	}
+}
+
+@media screen and (max-width: 540px)
+{
+	.image-page
+	{
+		padding-top: 100px;
+		padding-bottom: 200px;
+	}
+	
+	.title-1
+	{
+		font-size: 250%;
+	}
+	
+	.title-2
+	{
+		font-size: 200%;
+	}
+	
+	.content-title, .price, .team-name
+	{
+		font-size: 150%;
+	}
+	
+	.box-2
+	{
+		width: 96%;
+	}
+
+	.box-4
+	{
+		width: 46.2%;
+	}
+	
+	.caption-wrapper, .testimonial-wrapper
+	{
+		width: 79.5%;
+	}
+	
+	.caption-wrapper
+	{
+		height: 5em;
+	}
+	
+	.testimonial-wrapper
+	{
+		height: 8em;
+	}
+}
+
+@media screen and (max-width: 480px)
+{
+	.image-page
+	{
+		padding-top: 80px;
+		padding-bottom: 160px;
+	}
+	
+	.title-1
+	{
+		font-size: 200%;
+	}
+	
+	.title-2
+	{
+		font-size: 175%;
+	}
+	
+	.content-title, .price, .team-name
+	{
+		font-size: 125%;
+	}
+	
+	.desc, .feature-list
+	{
+		font-size: 90%;
+	}
+	
+	.caption-wrapper, .testimonial-wrapper
+	{
+		width: 79%;
+	}
+	
+	
+	.testimonial-wrapper
+	{
+		height: 10em;
+	}
+}
+
+@media screen and (max-width: 360px)
+{
+	.image-page
+	{
+		padding-top: 60px;
+		padding-bottom: 140px;
+	}
+	
+	.title-1
+	{
+		font-size: 175%;
+	}
+	
+	.title-2
+	{
+		font-size: 150%;
+	}
+	
+	.box-4
+	{
+		width: 46%;
 	}
 }
