@@ -33,10 +33,10 @@ p, label, td, th
 	height: 40px;
 	width: 40px;
 	margin: auto;
-	color: white;
+	color: #FF003C;
 	cursor: pointer;
 	float: left;
-	padding: 5px;
+	padding: 5px 0;
 }
 
 #header {
@@ -63,12 +63,14 @@ p, label, td, th
 	font-family: "Josefin Sans", sans-serif;
 	font-weight: 300;
 	height: 40px;
+	background-color: white;
 	margin: auto 0 !important;
 }
 
 .nav-menu li {
 	display: inline-block;
 	line-height: 40px;
+	background-color: white;
 	padding: 0 10px;
 }
 
@@ -115,7 +117,7 @@ p, label, td, th
 	max-width: 1000px;
 }
 
-#footer .page-content, #header .page-content
+#footer .page-content
 {
 	padding: 0 5px;
 }
@@ -210,6 +212,16 @@ p, label, td, th
 {
 	margin: 0 -1.6%;
 	display: block;
+}
+
+.feature-box 
+{
+	
+}
+
+.feature-box.static
+{
+	
 }
 
 .fa
@@ -487,5 +499,41 @@ button.contact-button
 	#button-collapse 
 	{
 		display: block;
+	}
+	
+	.nav-menu
+	{
+		display: none;
+		clear: both;
+		width: 100%;
+		padding: 0 !important;
+	}
+	
+	.nav-menu li
+	{
+		display: block;
+		margin-left: -6%;
+		margin-right: -6%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	
+	.image-page
+	{
+		padding-top: 180px;
+		padding-bottom: 240px;
+		background-attachment: scroll !important;
+		background-size: cover;
+	}
+	
+	
+	.title-1
+	{
+		font-size: 300%;
+	}
+	
+	.title-2
+	{
+		font-size: 250%;
 	}
 }

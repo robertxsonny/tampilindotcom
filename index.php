@@ -13,7 +13,7 @@
 <link
 	href='https://fonts.googleapis.com/css?family=Hind+Vadodara:600,400'
 	rel='stylesheet' type='text/css'>
-<title>tampilin.com</title>
+<title>tampilin.id</title>
 <!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -40,6 +40,9 @@ $(document).ready(function() {
 		});
 		return false;
 	});
+	$('#button-collapse').click(function(){
+		$('.nav-menu').slideToggle(100);
+	});
 	$('.team-icon').hover(function() {
 		$(this).find('.icon-overlay').hide();
 		$(this).find('.team-socmed').each(function() {
@@ -55,6 +58,12 @@ $(document).ready(function() {
 	}, function() {
 		$(this).find('.product-overlay').show();
 	});
+	$( window ).resize(function() {
+		if ($(window).width() > 768 )
+			$(".nav-menu").show();
+		else
+			$(".nav-menu").hide();				
+	});
 });
 
 </script>
@@ -64,7 +73,7 @@ $(document).ready(function() {
 <div id="wrapper">
 	<header id="header">
 		<div class="page-content">
-			<button type="button" id="button-collapse" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu">
+			<button type="button" id="button-collapse" class="navbar-toggle">
        			<i class="fa fa-2x fa-bars"></i>
       		</button>
 			<div id="brand-title">
@@ -80,7 +89,7 @@ $(document).ready(function() {
 	</header>
 	
 	<div id="content-wrapper">
-		<div id="cover-1" class="page image-page" style="background: linear-gradient(rgba(47,47,59,0.4), rgba(47,47,59,0.4)), url('images/DSC_0074 copy 2.jpg') no-repeat center fixed; background-size: cover;">
+		<div id="cover-1" class="page image-page" style="background: linear-gradient(rgba(47,47,59,0.4), rgba(47,47,59,0.4)), url('images/DSC_0074 copy 2.jpg') no-repeat center center fixed; background-size: cover;">
 			<div class="page-content">
 				<span class="title title-center title-1">ONE PAGE WEBSITE</span>
 				<span class="title title-center title-2">for all your needs</span>
@@ -91,7 +100,7 @@ $(document).ready(function() {
 			<div class="page-content">
 				<h1 class="content-title">APA YANG KAMI TAWARKAN?</h1>
 				<div class="box-container">
-					<div class="item-with-icon box-2">
+					<div class="feature-box item-with-icon box-2">
 						<div class="icon-wrapper">
 							<i class="fa fa-file fa-3x"></i>
 						</div>
@@ -101,7 +110,7 @@ $(document).ready(function() {
 							<label>Mengembangkan <i>one page website</i> yang modern dan minimalis untukmu</label></p>
 						</div>
 					</div>
-					<div class="item-with-icon box-2">
+					<div class="feature-box item-with-icon box-2">
 						<div class="icon-wrapper">
 							<i class="fa fa-calendar-o fa-3x"></i>
 						</div>
@@ -111,7 +120,7 @@ $(document).ready(function() {
 							<label>Kami menjamin <i>website</i>-mu akan siap sebelum matahari terbit esok hari</label></p>
 						</div>
 					</div>
-					<div class="item-with-icon box-2">
+					<div class="feature-box item-with-icon box-2">
 						<div class="icon-wrapper">
 							<i class="fa fa-user fa-3x"></i>
 						</div>
@@ -121,7 +130,7 @@ $(document).ready(function() {
 							<label>Didesain sesuai dengan kebutuhan dan karakteristikmu</label></p>
 						</div>
 					</div>
-					<div class="item-with-icon box-2">
+					<div class="feature-box item-with-icon box-2">
 						<div class="icon-wrapper">
 							<i class="fa fa-book fa-3x"></i>
 						</div>
@@ -131,7 +140,7 @@ $(document).ready(function() {
 							<label>Komunikasikan kebutuhan <i>website</i>-mu langsung dengan tim kami</label></p>
 						</div>
 					</div>
-					<div class="item-with-icon box-2">
+					<div class="feature-box item-with-icon box-2">
 						<div class="icon-wrapper">
 							<i class="fa fa-clock-o fa-3x"></i>
 						</div>
@@ -141,7 +150,7 @@ $(document).ready(function() {
 							<label><i>Chat</i> langsung dengan tim kami untuk mengkomunikasikan ide <i>website</i>-mu saat ini juga</label></p>
 						</div>
 					</div>
-					<div class="item-with-icon box-2">
+					<div class="feature-box item-with-icon box-2">
 						<div class="icon-wrapper">
 							<i class="fa fa-users fa-3x"></i>
 						</div>
@@ -151,7 +160,7 @@ $(document).ready(function() {
 							<label>Tampil beda dan menarik di antara rekan-rekanmu dengan <i>website</i> sendiri</label></p>
 						</div>
 					</div>					
-					<div class="item-with-icon box-2">
+					<div class="feature-box item-with-icon box-2">
 						<div class="icon-wrapper">
 							<i class="fa fa-camera fa-3x"></i>
 						</div>
@@ -161,21 +170,21 @@ $(document).ready(function() {
 							<label>Ambil foto baru untuk <i>website</i>-mu, dan/atau tambahkan fotomu sendiri</label></p>
 						</div>
 					</div>
-					<div class="item-with-icon box-2">
+					<div class="feature-box item-with-icon box-2">
 						<div class="icon-wrapper">
 							<i class="fa fa-cogs fa-3x"></i>
 						</div>
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>Dukungan Penuh</strong>
 							<br/>
-							<label>Gratis <i>maintenance</i> dan perbaikan selama dua tahun</label></p>
+							<label>Gratis <i>maintenance</i> dan perbaikan selama satu tahun</label></p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	
-		<div id="cover-2" class="page image-page" style="background: linear-gradient(rgba(47,47,59,0.4), rgba(47,47,59,0.4)),  url('images/DSC_0060 copy.jpg') no-repeat center fixed; background-size: cover;">
+		<div id="cover-2" class="page image-page" style="background: linear-gradient(rgba(47,47,59,0.4), rgba(47,47,59,0.4)),  url('images/DSC_0060 copy.jpg') no-repeat center center fixed; background-size: 100%">
 			<div class="page-content">
 				<span class="title title-left title-1">PERSONAL</span>
 				<span class="title title-left title-2">or</span>
@@ -432,12 +441,12 @@ $(document).ready(function() {
 					<div class="item-with-icon">
 						<small class="item-label">TELEPON:</small>
 						<br/>
-						<h1 class="contact">08888888888888</h1>
+						<h1 class="contact">081578900098/082225226368</h1>
 					</div>
 					<div class="item-with-icon">
 						<small class="item-label">EMAIL:</small>
 						<br/>
-						<h1 class="contact"><a href="mailto:info@tampilin.com">info@tampilin.com</a></h1>
+						<h1 class="contact"><a href="mailto:info@tampilin.com">info@tampilin.id</a></h1>
 					</div>
 					<div class="item-with-icon">
 						<small class="item-label">FB:</small>
