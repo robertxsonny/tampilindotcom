@@ -8,7 +8,7 @@
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,400' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Raleway:300,400' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Arimo:700,400' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo:700,400,300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 <link
 	href='https://fonts.googleapis.com/css?family=Hind+Vadodara:600,400'
@@ -58,13 +58,49 @@ $(document).ready(function() {
 	}, function() {
 		$(this).find('.product-overlay').show();
 	});
+	$('#open-chat').click(function(e) {
+		e.preventDefault();
+		$zopim.livechat.window.show();
+	});
 	$( window ).resize(function() {
 		if ($(window).width() > 768 )
 			$(".nav-menu").show();
 		else
 			$(".nav-menu").hide();				
 	});
+	$( window ).scroll(function() {
+				
+		$('.feature-box').each(function() {
+			animationHandler($(this), 50, -170);
+		});
+		$('.pricing-box').each(function() {
+			animationHandler($(this), 250, -250);
+		});
+		$('.sample-product').each(function() {
+			animationHandler($(this), -200, -400);
+		});
+		$('.testimonial-box').each(function() {
+			animationHandler($(this), 125, -125);
+		});
+		$('.team-icon').each(function() {
+			animationHandler($(this), -200, -400);
+		});
+	});
 });
+
+function animationHandler(object, fromTop, fromBottom)
+{
+	var w_height = $(window).height();
+	var w_top = $(window).scrollTop();
+	var w_bottom = (w_height + w_top);
+	var e_height = object.height();
+	var e_top = object.offset().top;
+	var e_bottom = (e_height + e_top);
+	if (e_bottom > w_top + fromTop && e_top < w_bottom + fromBottom)
+		object.addClass('static');
+	else if (e_bottom < w_top || e_top > w_bottom)
+		object.removeClass('static');
+}
 
 </script>
 </head>
@@ -100,7 +136,8 @@ $(document).ready(function() {
 			<div class="page-content">
 				<h1 class="content-title">APA YANG KAMI TAWARKAN?</h1>
 				<div class="box-container">
-					<div class="feature-box item-with-icon box-2">
+					<div class="box-2 animation-wrapper">
+					<div class="feature-box item-with-icon">
 						<div class="icon-wrapper">
 							<i class="fa fa-file fa-3x"></i>
 						</div>
@@ -110,7 +147,9 @@ $(document).ready(function() {
 							<label>Mengembangkan <i>one page website</i> yang modern dan minimalis untukmu</label></p>
 						</div>
 					</div>
-					<div class="feature-box item-with-icon box-2">
+					</div>
+					<div class="box-2 animation-wrapper">
+					<div class="feature-box item-with-icon">
 						<div class="icon-wrapper">
 							<i class="fa fa-calendar-o fa-3x"></i>
 						</div>
@@ -120,7 +159,9 @@ $(document).ready(function() {
 							<label>Kami menjamin <i>website</i>-mu akan siap sebelum matahari terbit esok hari</label></p>
 						</div>
 					</div>
-					<div class="feature-box item-with-icon box-2">
+					</div>
+					<div class="box-2 animation-wrapper">
+					<div class="feature-box item-with-icon">
 						<div class="icon-wrapper">
 							<i class="fa fa-user fa-3x"></i>
 						</div>
@@ -130,7 +171,9 @@ $(document).ready(function() {
 							<label>Didesain sesuai dengan kebutuhan dan karakteristikmu</label></p>
 						</div>
 					</div>
-					<div class="feature-box item-with-icon box-2">
+					</div>
+					<div class="box-2 animation-wrapper">
+					<div class="feature-box item-with-icon">
 						<div class="icon-wrapper">
 							<i class="fa fa-book fa-3x"></i>
 						</div>
@@ -140,7 +183,9 @@ $(document).ready(function() {
 							<label>Komunikasikan kebutuhan <i>website</i>-mu langsung dengan tim kami</label></p>
 						</div>
 					</div>
-					<div class="feature-box item-with-icon box-2">
+					</div>
+					<div class="box-2 animation-wrapper">
+					<div class="feature-box item-with-icon">
 						<div class="icon-wrapper">
 							<i class="fa fa-clock-o fa-3x"></i>
 						</div>
@@ -150,7 +195,9 @@ $(document).ready(function() {
 							<label><i>Chat</i> langsung dengan tim kami untuk mengkomunikasikan ide <i>website</i>-mu saat ini juga</label></p>
 						</div>
 					</div>
-					<div class="feature-box item-with-icon box-2">
+					</div>
+					<div class="box-2 animation-wrapper">
+					<div class="feature-box item-with-icon">
 						<div class="icon-wrapper">
 							<i class="fa fa-users fa-3x"></i>
 						</div>
@@ -159,8 +206,10 @@ $(document).ready(function() {
 							<br/>
 							<label>Tampil beda dan menarik di antara rekan-rekanmu dengan <i>website</i> sendiri</label></p>
 						</div>
-					</div>					
-					<div class="feature-box item-with-icon box-2">
+					</div>
+					</div>
+					<div class="box-2 animation-wrapper">
+					<div class="feature-box item-with-icon">
 						<div class="icon-wrapper">
 							<i class="fa fa-camera fa-3x"></i>
 						</div>
@@ -170,7 +219,9 @@ $(document).ready(function() {
 							<label>Ambil foto baru untuk <i>website</i>-mu, dan/atau tambahkan fotomu sendiri</label></p>
 						</div>
 					</div>
-					<div class="feature-box item-with-icon box-2">
+					</div>
+					<div class="box-2 animation-wrapper">
+					<div class="feature-box item-with-icon">
 						<div class="icon-wrapper">
 							<i class="fa fa-cogs fa-3x"></i>
 						</div>
@@ -180,53 +231,14 @@ $(document).ready(function() {
 							<label>Gratis <i>maintenance</i> dan perbaikan selama satu tahun</label></p>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	
-		<div id="cover-2" class="page image-page" style="background: linear-gradient(rgba(47,47,59,0.4), rgba(47,47,59,0.4)),  url('images/DSC_0060 copy.jpg') no-repeat center center fixed; background-size: 100%">
-			<div class="page-content">
-				<span class="title title-left title-1">PERSONAL</span>
-				<span class="title title-left title-2">or</span>
-				<span class="title title-left title-1">BUSINESS</span>
-			</div>
-		</div>
-	
-		<div id="feature" class="page content-page" style="background-color: #ECECEC; color: #2F2F3B;">
-			<div class="page-content">
-				<h1 class="content-title">SESUAIKAN KEBUTUHANMU</h1>
-				<div class="box-container">
-					<div id="personal" class="box-2 box-border-transparent" style="background-color: #008DC7; color: #ECECEC;">
-					<div class="icon-big" style="background: url('images/image1.png') no-repeat center; background-size: cover;">
 					</div>
-					<p class="desc">Website portofolio untuk dirimu sendiri</p>
-					<ul class="feature-list">
-						<li><strong>Gratis</strong> nama domain (.com, .net, .my.id, .web.id)</li>
-						<li><strong>5</strong> foto dari fotografer kami</li>
-						<li><strong>10</strong> foto dari koleksi sendiri</li>
-						<li><strong>Gratis</strong> promosi di media sosial selama 1 bulan</li>
-					</ul>
-					<h1 class="price">Rp 300.000,00</h1>
-				</div>
-				<div id="business" class="box-2 box-border-transparent" style="background-color: #59A80F; color: #ECECEC;">
-					<div class="icon-big" style="background: url('images/image2.png') no-repeat center; background-size: cover;">
-					</div>
-					<p class="desc">Website profile sederhana untuk usahamu</p>
-					<ul class="feature-list">
-						<li><strong>Gratis</strong> nama domain (semua domain)</li>
-						<li><strong>15</strong> foto dari fotografer kami</li>
-						<li><strong>30</strong> foto dari koleksi sendiri</li>
-						<li><strong>Gratis</strong> promosi di media sosial selama 2 bulan</li>
-					</ul>
-					<h1 class="price">Rp 500.000,00</h1>
-				</div>
 				</div>
 			</div>
 		</div>
 		
-		<div id="how-to" class="page content-page" style="background-color: #FF7066; color: #FFFFFF;">
+		<div id="how-to" class="page content-page" style="background-color: #ECECEC; color: #2F2F3B;">
 			<div class="page-content">
-				<h1 class="content-title">CIPTAKAN MILIKMU</h1>
+				<h1 class="content-title">BAGAIMANA MEMESANNYA?</h1>
 				<table>
 					<tr>
 						<td>
@@ -254,53 +266,130 @@ $(document).ready(function() {
 			</div>
 		</div>
 	
-		<div id="cover-3" class="page image-page" style="background: linear-gradient(rgba(47,47,59,0.4), rgba(47,47,59,0.4)),  url('images/DSC_0097 copy.jpg') no-repeat center center fixed; background-size: cover;">
+		<div id="cover-2" class="page image-page" style="background: linear-gradient(rgba(47,47,59,0.4), rgba(47,47,59,0.4)),  url('images/DSC_0097 copy.jpg') no-repeat center center fixed; background-size: cover;">
 			<div class="page-content">
 				<span class="title title-right title-1">CREATE</span>
 				<span class="title title-right title-2">your own</span>
 			</div>
 		</div>
+		
+		<div id="feature" class="page content-page" style="background-color: #ECECEC; color: #2F2F3B;">
+			<div class="page-content">
+				<h1 class="content-title">PILIH PAKET YANG SESUAI</h1>
+				<div class="box-container">
+					<div id="personal" class="box-2 box-border-transparent pricing-box left" style="background-color: #008DC7; color: #ECECEC;">
+					<div class="icon-big" style="background: url('images/image1.png') no-repeat center; background-size: cover;">
+					</div>
+					<h3 class="package-title">Personal</h3>
+					<p class="desc">Website portofolio untuk dirimu sendiri</p>
+					<ul class="feature-list">
+						<li><strong>Gratis</strong> nama domain (.com, .net, .my.id, .web.id)</li>
+						<li><strong>5</strong> foto dari fotografer kami</li>
+						<li><strong>10</strong> foto dari koleksi sendiri</li>
+						<li><strong>Gratis</strong> promosi di media sosial selama 1 bulan</li>
+					</ul>
+					<h1 class="price">Rp 300.000,00</h1>
+				</div>
+				<div id="business" class="box-2 box-border-transparent pricing-box right" style="background-color: #59A80F; color: #ECECEC;">
+					<div class="icon-big" style="background: url('images/image2.png') no-repeat center; background-size: cover;">
+					</div>
+					<h3 class="package-title">Business</h3>
+					<p class="desc">Website profile sederhana untuk usahamu</p>
+					<ul class="feature-list">
+						<li><strong>Gratis</strong> nama domain (bisa semua domain)</li>
+						<li><strong>15</strong> foto dari fotografer kami</li>
+						<li><strong>30</strong> foto dari koleksi sendiri</li>
+						<li><strong>Gratis</strong> promosi di media sosial selama 2 bulan</li>
+					</ul>
+					<h1 class="price">Rp 500.000,00</h1>
+				</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="order" class="page content-page" style="background-color: #FF7066; color: #FFFFFF;">
+			<div class="page-content">
+				<h1 class="content-title">PESAN SEKARANG JUGA</h1>
+				<div class="box-container">
+					<div class="box-2">
+						<h3 class="desc desc-pc">Isi formulir di samping</h3>
+						<h3 class="desc desc-mobile">Isi formulir di bawah ini</h3>
+						<p class="desc">atau</p>
+						<h3 class="desc desc-pc">Hubungi kami melalui <a id="open-chat" href="">chat box</a> di bawah ini</h3>
+						<h3 class="desc desc-mobile">Kontak kami melalui WhatsApp atau LINE</h3>
+				</div>
+				<div class="box-2">
+					<input class="contact-input" type="text" placeholder="Nama pemesan" />
+					<input class="contact-input" type="text" placeholder="Email" />
+					<input class="contact-input" type="text" placeholder="Nomor Telepon" />
+					<div class="input-group">
+						<input id="package-personal" class="contact-input" type="radio" name="package" value="1"/>
+						<label for="package-personal" class="contact-input"><i class="fa fa-check"></i>Personal</label>
+					</div>
+					<div class="input-group">
+						<input id="package-business" class="contact-input" type="radio" name="package" value="2"/>
+						<label for="package-business" class="contact-input"><i class="fa fa-check"></i>Business</label>
+					</div>
+					<input class="contact-input" type="text" placeholder="Nama domain yang diinginkan" />
+					<input id="upload-document" class="contact-input" type="file" />
+					<label for="upload-document" class="contact-input file-input"><i class="fa fa-cloud-upload"></i> Upload dokumen pendukung*</label>
+					<small class="contact-input">*CV untuk personal, profil perusahaan untuk business, atau dokumen lainnya</small>
+					<br/>
+					<br/>
+					<button class="contact-button" >Pesan</button>
+				</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="cover-3" class="page image-page" style="background: linear-gradient(rgba(47,47,59,0.4), rgba(47,47,59,0.4)),  url('images/DSC_0060 copy.jpg') no-repeat center center fixed; background-size: cover">
+			<div class="page-content">
+				<span class="title title-left title-1">SEE WHAT</span>
+				<span class="title title-left title-2">we've done</span>
+			</div>
+		</div>
+	
 	
 		<div id="project" class="page content-page" style="background-color: #ECECEC; color: #2F2F3B;">
 			<div class="page-content">
 				<h1 class="content-title">PORTOFOLIO KAMI</h1>
 				<div class="box-container">
-					<div class="box-4">
+					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 1.jpg') no-repeat center; background-size: cover;">
 						<div class="product-overlay"></div>
 						</a>	
 					</div>
-					<div class="box-4">
+					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 2.jpg') no-repeat center; background-size: cover;">
 						<div class="product-overlay"></div>
 						</a>
 					</div>
-					<div class="box-4">
+					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 3.jpg') no-repeat center; background-size: cover;">
 						<div class="product-overlay"></div>
 						</a>
 					</div>
-					<div class="box-4">
+					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 4.jpg') no-repeat center; background-size: cover;">
 						<div class="product-overlay"></div>
 						</a>
 					</div>
-					<div class="box-4">
+					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 5.jpg') no-repeat center; background-size: cover;">
 						<div class="product-overlay"></div>
 						</a>
 					</div>
-					<div class="box-4">
+					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 6.jpg') no-repeat center; background-size: cover;">
 						<div class="product-overlay"></div>
 						</a>
 					</div>
-					<div class="box-4">
+					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 7.jpg') no-repeat center; background-size: cover;">
 						<div class="product-overlay"></div>
 						</a>
 					</div>
-					<div class="box-4">
+					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 8.jpg') no-repeat center; background-size: cover;">
 						<div class="product-overlay"></div>
 						</a>
@@ -313,7 +402,8 @@ $(document).ready(function() {
 			<div class="page-content">
 				<h1 class="content-title">TESTIMONI</h1>
 				<div class="box-container">
-					<div class="item-with-icon box-2">
+					<div class="box-2 animation-wrapper">
+					<div class="testimonial-box left item-with-icon">
 						<div class="sicon-wrapper">
 							<i class="fa fa-quote-left fa-lg"></i>
 						</div>
@@ -326,7 +416,9 @@ $(document).ready(function() {
 							<i class="fa fa-quote-right fa-lg"></i>
 						</div>
 					</div>
-					<div class="item-with-icon box-2">
+					</div>
+					<div class="box-2 animation-wrapper">
+					<div class="testimonial-box right item-with-icon">
 						<div class="sicon-wrapper">
 							<i class="fa fa-quote-left fa-lg"></i>
 						</div>
@@ -339,7 +431,9 @@ $(document).ready(function() {
 							<i class="fa fa-quote-right fa-lg"></i>
 						</div>
 					</div>
-					<div class="item-with-icon box-2">
+					</div>
+					<div class="box-2 animation-wrapper">
+					<div class="testimonial-box left item-with-icon">
 						<div class="sicon-wrapper">
 							<i class="fa fa-quote-left fa-lg"></i>
 						</div>
@@ -352,7 +446,9 @@ $(document).ready(function() {
 							<i class="fa fa-quote-right fa-lg"></i>
 						</div>
 					</div>
-					<div class="item-with-icon box-2">
+					</div>
+					<div class="box-2 animation-wrapper">
+					<div class="testimonial-box right item-with-icon">
 						<div class="sicon-wrapper">
 							<i class="fa fa-quote-left fa-lg"></i>
 						</div>
@@ -364,6 +460,7 @@ $(document).ready(function() {
 						<div class="sicon-wrapper">
 							<i class="fa fa-quote-right fa-lg"></i>
 						</div>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -373,49 +470,49 @@ $(document).ready(function() {
 			<div class="page-content">
 				<h1 class="content-title">TEAM MEMBER</h1>
 				<div class="box-container">
-					<div class="box-4">
+					<div class="box-4 animation-wrapper">
 						<div class="team-icon" style="background: url('images/theo.jpg') no-repeat center; background-size: cover;">
 							<div class="icon-overlay">
 								<h1 class="team-name">BROWN</h1>
 							</div>
 							<div class="team-socmed">
 								<div class="socmed-wrapper">
-									<a class="socmed-item" href="#" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: cover;"></a>
-									<a class="socmed-item" href="#" style="background: url('images/google_circle_color-128.png') no-repeat center; background-size: cover;"></a>
-									<a class="socmed-item" href="#" style="background: url('images/instagram_circle_color-128.png') no-repeat center; background-size: cover;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/google_circle_color-128.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/instagram_circle_color-128.png') no-repeat center; background-size: contain;"></a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="box-4">
+					<div class="box-4 animation-wrapper">
 						<div class="team-icon" style="background: url('images/sonny.jpg') no-repeat center; background-size: cover;">
 							<div class="icon-overlay">
 								<h1 class="team-name">GREY</h1>
 							</div>
 							<div class="team-socmed">
 								<div class="socmed-wrapper">
-									<a class="socmed-item" href="#" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: cover;"></a>
-									<a class="socmed-item" href="#" style="background: url('images/google_circle_color-128.png') no-repeat center; background-size: cover;"></a>
-									<a class="socmed-item" href="#" style="background: url('images/instagram_circle_color-128.png') no-repeat center; background-size: cover;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/google_circle_color-128.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/instagram_circle_color-128.png') no-repeat center; background-size: contain;"></a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="box-4">
+					<div class="box-4 animation-wrapper">
 						<div class="team-icon" style="background: url('images/inge.jpg') no-repeat center; background-size: cover;">
 							<div class="icon-overlay">
 								<h1 class="team-name">WHITE</h1>
 							</div>
 							<div class="team-socmed">
 								<div class="socmed-wrapper">
-									<a class="socmed-item" href="#" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: cover;"></a>
-									<a class="socmed-item" href="#" style="background: url('images/google_circle_color-128.png') no-repeat center; background-size: cover;"></a>
-									<a class="socmed-item" href="#" style="background: url('images/instagram_circle_color-128.png') no-repeat center; background-size: cover;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/google_circle_color-128.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/instagram_circle_color-128.png') no-repeat center; background-size: contain;"></a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="box-4">
+					<div class="box-4 animation-wrapper">
 						<div class="team-icon" style="background: url('images/esty.jpg') no-repeat center; background-size: cover;">
 							<div class="icon-overlay">
 								<h1 class="team-name">BLACK</h1>
@@ -437,33 +534,56 @@ $(document).ready(function() {
 			<div class="page-content">
 				<h1 class="content-title">HUBUNGI KAMI</h1>
 				<div class="box-container">
-					<div class="box-2">
+					<div class="box-4">
 					<div class="item-with-icon">
 						<small class="item-label">TELEPON:</small>
 						<br/>
-						<h1 class="contact">081578900098/082225226368</h1>
+						<h1 class="contact">081578900098</h1>
+						<h1 class="contact">082225226368</h1>
 					</div>
+					</div>
+					<div class="box-4">
 					<div class="item-with-icon">
 						<small class="item-label">EMAIL:</small>
 						<br/>
-						<h1 class="contact"><a href="mailto:info@tampilin.com">info@tampilin.id</a></h1>
-					</div>
-					<div class="item-with-icon">
-						<small class="item-label">FB:</small>
-						<br/>
-						<h1 class="contact"><a href="http://www.facebook.com/tampilin">Tampilin</a></h1>
-					</div>
-					<div class="item-with-icon">
-						<small class="item-label">IG:</small>
-						<br/>
-						<h1 class="contact"><a href="http://www.instagram.com/tampilin">@tampilin</a></h1>
+						<h1 class="contact"><a href="mailto:info@tampilin.id">info@tampilin.id</a></h1>
 					</div>
 				</div>
-				<div class="box-2">
-					<input class="contact-input" type="text" placeholder="Nama" />
-					<input class="contact-input" type="text" placeholder="Email" />
-					<textarea rows="5" class="contact-input" placeholder="Isi Pesan"></textarea>
-					<button class="contact-button">Kirim Pesan</button>
+				<div class="box-4">
+					<div class="item-with-icon">
+						<div class="icon-wrapper">
+							<div class="socmed-item" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: contain;"></div>
+						</div>
+						<div class="scaption-wrapper">
+							<p class="desc desc-left"><a href="http://facebook.com/tampilin">Tampilin.id</a></p>
+						</div>
+					</div>
+					<div class="item-with-icon">
+						<div class="icon-wrapper">
+							<div class="socmed-item" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: contain;"></div>
+						</div>
+						<div class="scaption-wrapper">
+							<p class="desc desc-left"><a href="http://twitter.com/tampilin">@tampilin</a></p>
+						</div>
+					</div>
+					</div>
+					<div class="box-4">
+					<div class="item-with-icon">
+						<div class="icon-wrapper">
+							<div class="socmed-item" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: contain;"></div>
+						</div>
+						<div class="scaption-wrapper">
+							<p class="desc desc-left"><a href="http://instagram.com/tampilin">@tampilin</a></p>
+						</div>
+					</div>
+					<div class="item-with-icon">
+						<div class="icon-wrapper">
+							<div class="socmed-item" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: contain;"></div>
+						</div>
+						<div class="scaption-wrapper">
+							<p class="desc desc-left"><a href="http://line.me/ti/p/%40zeg8363e">Tampilin.id</a></p>
+						</div>
+					</div>
 				</div>
 				</div>
 			</div>

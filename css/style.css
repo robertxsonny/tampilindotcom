@@ -212,16 +212,80 @@ p, label, td, th
 {
 	margin: 0 -1.6%;
 	display: block;
+	overflow: hidden;
+}
+
+.animation-wrapper
+{
+	overflow: hidden;
 }
 
 .feature-box 
 {
-	
+	-moz-transition: all 600ms ease-out;
+	-webkit-transition: all 600ms ease-out;
+	-ms-transition: all 600ms ease-out;
+	-0-transition: all 600ms ease-out;
+	transition: all 600ms ease;
+	-moz-transform: translate3d(0px, -100px, 0px);
+	-webkit-transform: translate3d(0px, -100px, 0px);
+	-ms-transform: translate(0px, -100px);
+	-o-transform: translate(0px, -100px);
+	transform: translate3d(0px, -100px, 0px);
+	backface-visibility: hidden;
 }
 
-.feature-box.static
+.pricing-box, .testimonial-box
 {
-	
+	-moz-transition: all 600ms ease-out;
+	-webkit-transition: all 600ms ease-out;
+	-ms-transition: all 600ms ease-out;
+	-0-transition: all 600ms ease-out;
+	transition: all 600ms ease;
+	backface-visibility: hidden;
+}
+
+.pricing-box.right, .testimonial-box.right
+{
+	-moz-transform: translate3d(600px, 0px, 0px);
+	-webkit-transform: translate3d(600px, 0px, 0px);
+	-ms-transform: translate(600px, 0px);
+	-o-transform: translate(600px, 0px);
+	transform: translate3d(600px, 0px, 0px);
+}
+
+.pricing-box.left, .testimonial-box.left
+{
+	-moz-transform: translate3d(-600px, 0px, 0px);
+	-webkit-transform: translate3d(-600px, 0px, 0px);
+	-ms-transform: translate(-600px, 0px);
+	-o-transform: translate(-600px, 0px);
+	transform: translate3d(-600px, 0px, 0px);
+}
+
+.sample-product, .team-icon
+{
+	-moz-transition: all 600ms ease-out;
+	-webkit-transition: all 600ms ease-out;
+	-ms-transition: all 600ms ease-out;
+	-0-transition: all 600ms ease-out;
+	transition: all 600ms ease;
+	-moz-transform: translate3d(0px, -300px, 0px);
+	-webkit-transform: translate3d(0px, -300px, 0px);
+	-ms-transform: translate(0px, -300px);
+	-o-transform: translate(0px, -300px);
+	transform: translate3d(0px, -300px, 0px);
+	backface-visibility: hidden;
+}
+
+.feature-box.static, .sample-product.static, .pricing-box.static, .testimonial-box.static, .team-icon.static
+{
+	-moz-transform: translate3d(0px, 0px, 0px);
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	-o-transform: translate(0px, 0px);
+	transform: translate3d(0px, 0px, 0px);
+	backface-visibility: hidden;
 }
 
 .fa
@@ -248,7 +312,7 @@ p, label, td, th
 	display: block;
 }
 
-.content-title, .price
+.content-title, .package-title, .price
 {
 	font-size: 200%;
 	width: 100%;
@@ -259,6 +323,14 @@ p, label, td, th
 {
 	margin-top: 0;
 	font-weight: 300;
+	font-family: "Josefin Sans", sans-serif;
+	text-align: center;
+}
+
+.package-title
+{
+	margin-bottom: 0;
+	font-weight: 400;
 	font-family: "Josefin Sans", sans-serif;
 	text-align: center;
 }
@@ -276,6 +348,17 @@ p, label, td, th
 	margin-top: 0;
 }
 
+.desc a
+{
+	color: white;
+	text-decoration: none;
+}
+
+.desc a:hover
+{
+	text-decoration: underline;
+}
+
 #feature .desc
 {
 	margin-top: 20px;
@@ -284,6 +367,16 @@ p, label, td, th
 .desc-left
 {
 	text-align: left;
+}
+
+.desc-mobile
+{
+	display: block;
+}
+
+.desc-mobile
+{
+	display: none;
 }
 
 .feature-list
@@ -306,6 +399,12 @@ p, label, td, th
 	font-weight: 300;
 }
 
+h3.desc
+{
+	font-size: 130%;
+	font-weight: 400;
+}
+
 .item-with-icon div
 {
 	display: inline-block;
@@ -321,6 +420,11 @@ p, label, td, th
 {
 	width: 79.5%;
 	height: 6em;
+}
+
+.scaption-wrapper
+{
+	height: 2.5em;
 }
 
 .testimonial-wrapper
@@ -444,6 +548,18 @@ p, label, td, th
 	margin-top: -10%;
 }
 
+div.socmed-item
+{
+	width: 75%;
+	padding-top: 75%;
+}
+
+.input-group
+{
+	width: 49.5%;
+	display: inline-block;
+}
+
 input.contact-input, textarea.contact-input
 {
 	width: 96%;
@@ -457,13 +573,67 @@ input.contact-input, textarea.contact-input
 	border: none;
 }
 
+input[type=radio].contact-input, input[type=file].contact-input
+{
+	display: none;
+}
+
+label.contact-input
+{
+	display: block;
+	border: 2px solid;
+	border-radius: 2px;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 120%;
+	line-height: 1.2em;
+	padding: 2%;
+	margin-bottom: 5px;
+}
+
+label.contact-input i.fa
+{
+	color: #FF7066;
+	display: inline-block;
+	width: 37%;
+}
+
+label.file-input
+{
+	background: white;
+	color: #FF7066;
+	border: 2px solid white;
+	border-radius: 2px;
+	text-align: center;
+	cursor: pointer;
+}
+
+small.contact-input
+{
+	font-family: "Josefin Sans", sans-serif;
+	margin-bottom: 30px;
+}
+
+label.file-input i.fa
+{
+	display: inline;
+}
+
+input[type=radio].contact-input:checked + label
+{
+	background: white;
+	color: #FF7066;
+	border: 2px solid white;
+	border-radius: 2px;
+}
+
+
 button.contact-button
 {
 	width: 100%;
 	font-family: "Josefin Sans", sans-serif;
 	font-size: 120%;
 	line-height: 1.2em;
-	background-color: #FF7066;
+	background-color: #2F2F3B;
 	border: none;
 	color: white;
 	padding: 0;
@@ -480,8 +650,10 @@ button.contact-button
 .contact
 {
 	font-family: "Lato", sans-serif;
-	font-size: 150%;
+	font-size: 125%;
 	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1.5em;
 }
 
 .contact a
@@ -493,6 +665,26 @@ button.contact-button
 .contact a:hover
 {
 	text-decoration: underline;
+}
+
+
+@media screen and (max-width: 960px)
+{
+	.image-page
+	{
+		padding-top: 175px;
+		padding-bottom: 275px;
+	}	
+	
+	.caption-wrapper, .testimonial-wrapper
+	{
+		width: 79%;
+	}
+	
+	.testimonial-wrapper
+	{
+		height: 12em;
+	}
 }
 
 
@@ -524,8 +716,6 @@ button.contact-button
 	{
 		padding-top: 125px;
 		padding-bottom: 225px;
-		background-attachment: scroll !important;
-		background-size: cover;
 	}
 		
 	.title-1
@@ -538,7 +728,7 @@ button.contact-button
 		font-size: 250%;
 	}
 	
-	.content-title, .price, .team-name
+	.content-title, .package-title, .price, .team-name
 	{
 		font-size: 175%;
 	}
@@ -548,6 +738,11 @@ button.contact-button
 		font-size: 100%;
 	}
 	
+	h3.desc
+	{
+		font-size: 110%;
+	}
+		
 	.feature-list
 	{
 		padding-left: 3%;
@@ -588,25 +783,17 @@ button.contact-button
 	.box-2
 	{
 		width: 46%;
-	}
-	
-	.caption-wrapper, .testimonial-wrapper
-	{
-		width: 79%;
-	}
-	
-	.testimonial-wrapper
-	{
-		height: 12em;
-	}
+	}	
 }
 
-@media screen and (max-width: 540px)
+@media screen and (max-width: 640px)
 {
 	.image-page
 	{
 		padding-top: 100px;
 		padding-bottom: 200px;
+		background-attachment: scroll !important;
+		background-size: cover;
 	}
 	
 	.title-1
@@ -619,9 +806,19 @@ button.contact-button
 		font-size: 200%;
 	}
 	
-	.content-title, .price, .team-name
+	.content-title, .package-title, .price, .team-name
 	{
 		font-size: 150%;
+	}
+		
+	.desc-pc
+	{
+		display: none;
+	}
+
+	.desc-mobile
+	{
+		display: block;
 	}
 	
 	.box-2
@@ -668,7 +865,7 @@ button.contact-button
 		font-size: 175%;
 	}
 	
-	.content-title, .price, .team-name
+	.content-title, .package-title, .price, .team-name
 	{
 		font-size: 125%;
 	}
@@ -678,11 +875,15 @@ button.contact-button
 		font-size: 90%;
 	}
 	
+	h3.desc
+	{
+		font-size: 100%;
+	}
+	
 	.caption-wrapper, .testimonial-wrapper
 	{
 		width: 79%;
-	}
-	
+	}	
 	
 	.testimonial-wrapper
 	{
