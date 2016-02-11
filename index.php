@@ -62,6 +62,12 @@ $(document).ready(function() {
 		e.preventDefault();
 		$zopim.livechat.window.show();
 	});
+	$('#upload-document').change(function(e) {
+		if ($(this).val())
+			$('#upload-label').html($(this).val().split('\\').pop());
+		else
+			$('#upload-label').html('<i class="fa fa-cloud-upload"></i> Upload dokumen pendukung*');
+	});
 	$( window ).resize(function() {
 		if ($(window).width() > 768 )
 			$(".nav-menu").show();
@@ -139,7 +145,7 @@ function animationHandler(object, fromTop, fromBottom)
 					<div class="box-2 animation-wrapper">
 					<div class="feature-box item-with-icon">
 						<div class="icon-wrapper">
-							<i class="fa fa-file fa-3x"></i>
+							<img src="images/icon-8.gif" alt="Sederhana" class="gif-icon"></img>
 						</div>
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>Sederhana</strong>
@@ -151,7 +157,7 @@ function animationHandler(object, fromTop, fromBottom)
 					<div class="box-2 animation-wrapper">
 					<div class="feature-box item-with-icon">
 						<div class="icon-wrapper">
-							<i class="fa fa-calendar-o fa-3x"></i>
+							<img src="images/icon-8d.gif" alt="Cepat dan Handal" class="gif-icon"></img>
 						</div>
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>Cepat dan Handal</strong>
@@ -163,7 +169,7 @@ function animationHandler(object, fromTop, fromBottom)
 					<div class="box-2 animation-wrapper">
 					<div class="feature-box item-with-icon">
 						<div class="icon-wrapper">
-							<i class="fa fa-user fa-3x"></i>
+							<img src="images/icon-8a.gif" alt="Personal" class="gif-icon"></img>
 						</div>
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>Personal</strong>
@@ -175,7 +181,7 @@ function animationHandler(object, fromTop, fromBottom)
 					<div class="box-2 animation-wrapper">
 					<div class="feature-box item-with-icon">
 						<div class="icon-wrapper">
-							<i class="fa fa-book fa-3x"></i>
+							<img src="images/icon-8e.gif" alt="On Demand" class="gif-icon"></img>
 						</div>
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>On Demand</strong>
@@ -187,7 +193,7 @@ function animationHandler(object, fromTop, fromBottom)
 					<div class="box-2 animation-wrapper">
 					<div class="feature-box item-with-icon">
 						<div class="icon-wrapper">
-							<i class="fa fa-clock-o fa-3x"></i>
+							<img src="images/icon-8b.gif" alt="Real Time" class="gif-icon"></img>
 						</div>
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>Real Time</strong>
@@ -199,7 +205,7 @@ function animationHandler(object, fromTop, fromBottom)
 					<div class="box-2 animation-wrapper">
 					<div class="feature-box item-with-icon">
 						<div class="icon-wrapper">
-							<i class="fa fa-users fa-3x"></i>
+							<img src="images/icon-8f.gif" alt="Stand Out" class="gif-icon"></img>
 						</div>
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>Stand Out</strong>
@@ -211,7 +217,7 @@ function animationHandler(object, fromTop, fromBottom)
 					<div class="box-2 animation-wrapper">
 					<div class="feature-box item-with-icon">
 						<div class="icon-wrapper">
-							<i class="fa fa-camera fa-3x"></i>
+							<img src="images/icon-8c.gif" alt="Fotografi" class="gif-icon"></img>
 						</div>
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>Fotografi</strong>
@@ -223,7 +229,7 @@ function animationHandler(object, fromTop, fromBottom)
 					<div class="box-2 animation-wrapper">
 					<div class="feature-box item-with-icon">
 						<div class="icon-wrapper">
-							<i class="fa fa-cogs fa-3x"></i>
+							<img src="images/icon-8g.gif" alt="Dukungan Penuh" class="gif-icon"></img>
 						</div>
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>Dukungan Penuh</strong>
@@ -323,7 +329,7 @@ function animationHandler(object, fromTop, fromBottom)
 					<input class="contact-input" type="text" placeholder="Email" />
 					<input class="contact-input" type="text" placeholder="Nomor Telepon" />
 					<div class="input-group">
-						<input id="package-personal" class="contact-input" type="radio" name="package" value="1"/>
+						<input id="package-personal" class="contact-input" type="radio" name="package" value="1" checked/>
 						<label for="package-personal" class="contact-input"><i class="fa fa-check"></i>Personal</label>
 					</div>
 					<div class="input-group">
@@ -332,7 +338,7 @@ function animationHandler(object, fromTop, fromBottom)
 					</div>
 					<input class="contact-input" type="text" placeholder="Nama domain yang diinginkan" />
 					<input id="upload-document" class="contact-input" type="file" />
-					<label for="upload-document" class="contact-input file-input"><i class="fa fa-cloud-upload"></i> Upload dokumen pendukung*</label>
+					<label id="upload-label" for="upload-document" class="contact-input file-input"><i class="fa fa-cloud-upload"></i> Upload dokumen pendukung*</label>
 					<small class="contact-input">*CV untuk personal, profil perusahaan untuk business, atau dokumen lainnya</small>
 					<br/>
 					<br/>
@@ -477,9 +483,9 @@ function animationHandler(object, fromTop, fromBottom)
 							</div>
 							<div class="team-socmed">
 								<div class="socmed-wrapper">
-									<a class="socmed-item" href="#" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: contain;"></a>
-									<a class="socmed-item" href="#" style="background: url('images/google_circle_color-128.png') no-repeat center; background-size: contain;"></a>
-									<a class="socmed-item" href="#" style="background: url('images/instagram_circle_color-128.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/1455227518_Facebook.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/1455227364_instagram.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></a>
 								</div>
 							</div>
 						</div>
@@ -491,9 +497,9 @@ function animationHandler(object, fromTop, fromBottom)
 							</div>
 							<div class="team-socmed">
 								<div class="socmed-wrapper">
-									<a class="socmed-item" href="#" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: contain;"></a>
-									<a class="socmed-item" href="#" style="background: url('images/google_circle_color-128.png') no-repeat center; background-size: contain;"></a>
-									<a class="socmed-item" href="#" style="background: url('images/instagram_circle_color-128.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/1455227518_Facebook.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/1455227364_instagram.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></a>
 								</div>
 							</div>
 						</div>
@@ -505,9 +511,9 @@ function animationHandler(object, fromTop, fromBottom)
 							</div>
 							<div class="team-socmed">
 								<div class="socmed-wrapper">
-									<a class="socmed-item" href="#" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: contain;"></a>
-									<a class="socmed-item" href="#" style="background: url('images/google_circle_color-128.png') no-repeat center; background-size: contain;"></a>
-									<a class="socmed-item" href="#" style="background: url('images/instagram_circle_color-128.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/1455227518_Facebook.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/1455227364_instagram.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></a>
 								</div>
 							</div>
 						</div>
@@ -519,9 +525,9 @@ function animationHandler(object, fromTop, fromBottom)
 							</div>
 							<div class="team-socmed">
 								<div class="socmed-wrapper">
-									<a class="socmed-item" href="#" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: cover;"></a>
-									<a class="socmed-item" href="#" style="background: url('images/google_circle_color-128.png') no-repeat center; background-size: cover;"></a>
-									<a class="socmed-item" href="#" style="background: url('images/instagram_circle_color-128.png') no-repeat center; background-size: cover;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/1455227518_Facebook.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/1455227364_instagram.png') no-repeat center; background-size: contain;"></a>
+									<a class="socmed-item" href="#" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></a>
 								</div>
 							</div>
 						</div>
@@ -552,7 +558,7 @@ function animationHandler(object, fromTop, fromBottom)
 				<div class="box-4">
 					<div class="item-with-icon">
 						<div class="icon-wrapper">
-							<div class="socmed-item" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: contain;"></div>
+							<div class="socmed-item" style="background: url('images/1455227518_Facebook.png') no-repeat center; background-size: contain;"></div>
 						</div>
 						<div class="scaption-wrapper">
 							<p class="desc desc-left"><a href="http://facebook.com/tampilin">Tampilin.id</a></p>
@@ -560,7 +566,7 @@ function animationHandler(object, fromTop, fromBottom)
 					</div>
 					<div class="item-with-icon">
 						<div class="icon-wrapper">
-							<div class="socmed-item" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: contain;"></div>
+							<div class="socmed-item" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></div>
 						</div>
 						<div class="scaption-wrapper">
 							<p class="desc desc-left"><a href="http://twitter.com/tampilin">@tampilin</a></p>
@@ -570,7 +576,7 @@ function animationHandler(object, fromTop, fromBottom)
 					<div class="box-4">
 					<div class="item-with-icon">
 						<div class="icon-wrapper">
-							<div class="socmed-item" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: contain;"></div>
+							<div class="socmed-item" style="background: url('images/1455227364_instagram.png') no-repeat center; background-size: contain;"></div>
 						</div>
 						<div class="scaption-wrapper">
 							<p class="desc desc-left"><a href="http://instagram.com/tampilin">@tampilin</a></p>
@@ -578,7 +584,7 @@ function animationHandler(object, fromTop, fromBottom)
 					</div>
 					<div class="item-with-icon">
 						<div class="icon-wrapper">
-							<div class="socmed-item" style="background: url('images/facebook_circle_color-128.png') no-repeat center; background-size: contain;"></div>
+							<div class="socmed-item" style="background: url('images/1455227609_LINE.png') no-repeat center; background-size: contain;"></div>
 						</div>
 						<div class="scaption-wrapper">
 							<p class="desc desc-left"><a href="http://line.me/ti/p/%40zeg8363e">Tampilin.id</a></p>
@@ -593,7 +599,7 @@ function animationHandler(object, fromTop, fromBottom)
 			<div class="page-content">
 				<p class="foot-note">
 				Copyright &copy; 2016 <a
-					href="https://www.facebook.com/tampilin" target="_blank">tampilin.com</a>
+					href="https://www.facebook.com/tampilin" target="_blank">tampilin.id</a>
 				</p>
 			</div>
 		</div>
