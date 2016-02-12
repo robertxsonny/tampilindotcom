@@ -31,7 +31,18 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!--End of Zopim Live Chat Script-->
 <script type="text/javascript">
 $(document).ready(function() {
+	$( window ).resize(function() {
+		if ($(window).width() > 768 )
+			$(".nav-menu").show();
+		else
+			$(".nav-menu").hide();	
+		if ($(window).width() > 640 )
+			$zopim.livechat.window.hide();
+		else
+			$zopim.livechat.hideAll();					
+	});
 	$('.team-socmed').hide();
+	$('.required-alert').hide();
 	$('.nav-item').click(function(){
 		$('html, body').animate({
 			scrollTop: $($(this).attr('href')).offset().top
@@ -68,11 +79,34 @@ $(document).ready(function() {
 		else
 			$('#upload-label').html('<i class="fa fa-cloud-upload"></i> Upload dokumen pendukung*');
 	});
-	$( window ).resize(function() {
-		if ($(window).width() > 768 )
-			$(".nav-menu").show();
-		else
-			$(".nav-menu").hide();				
+	$('#order-submit').click(function() {
+		//e.preventDefault();
+		var allFilled = true;
+		$('.required').each(function() {
+			if (!$(this).val())
+			{
+				$(this).closest('.input-group').find('.required-alert').show();
+				$(this).addClass('empty');
+				allFilled = false;
+			}
+			else
+			{
+				$(this).closest('.input-group').find('.required-alert').hide();
+				$(this).removeClass('empty');
+			}
+		});
+		if (allFilled)
+		{
+			if (!$('#upload-document').val())
+			{
+				var c = confirm("Anda belum meng-upload dokumen. Yakin ingin memproses sekarang? Anda dapat mengirim dokumen tersebut kemudian.");
+				if (c)
+					processOrder();
+			}
+			else
+				processOrder();
+		}
+		return false;	
 	});
 	$( window ).scroll(function() {
 				
@@ -106,6 +140,11 @@ function animationHandler(object, fromTop, fromBottom)
 		object.addClass('static');
 	else if (e_bottom < w_top || e_top > w_bottom)
 		object.removeClass('static');
+}
+
+function processOrder()
+{
+	$('.input-overlay').addClass('static');
 }
 
 </script>
@@ -289,9 +328,10 @@ function animationHandler(object, fromTop, fromBottom)
 					<h3 class="package-title">Personal</h3>
 					<p class="desc">Website portofolio untuk dirimu sendiri</p>
 					<ul class="feature-list">
-						<li><strong>Gratis</strong> nama domain (.com, .net, .my.id, .web.id)</li>
+						<li><strong>Gratis</strong> domain (.com, .net, .my.id, .web.id)</li>
 						<li><strong>5</strong> foto dari fotografer kami</li>
 						<li><strong>10</strong> foto dari koleksi sendiri</li>
+						<li><strong>Gratis</strong> 1 alamat email</li>
 						<li><strong>Gratis</strong> promosi di media sosial selama 1 bulan</li>
 					</ul>
 					<h1 class="price">Rp 300.000,00</h1>
@@ -302,9 +342,10 @@ function animationHandler(object, fromTop, fromBottom)
 					<h3 class="package-title">Business</h3>
 					<p class="desc">Website profile sederhana untuk usahamu</p>
 					<ul class="feature-list">
-						<li><strong>Gratis</strong> nama domain (bisa semua domain)</li>
-						<li><strong>15</strong> foto dari fotografer kami</li>
+						<li><strong>Gratis</strong> domain (bisa semua nama domain)</li>
+						<li><strong>10</strong> foto dari fotografer kami</li>
 						<li><strong>30</strong> foto dari koleksi sendiri</li>
+						<li><strong>Gratis</strong> 5 alamat email</li>
 						<li><strong>Gratis</strong> promosi di media sosial selama 2 bulan</li>
 					</ul>
 					<h1 class="price">Rp 500.000,00</h1>
@@ -317,32 +358,52 @@ function animationHandler(object, fromTop, fromBottom)
 			<div class="page-content">
 				<h1 class="content-title">PESAN SEKARANG JUGA</h1>
 				<div class="box-container">
-					<div class="box-2">
+				<div class="box-2">
 						<h3 class="desc desc-pc">Isi formulir di samping</h3>
 						<h3 class="desc desc-mobile">Isi formulir di bawah ini</h3>
 						<p class="desc">atau</p>
 						<h3 class="desc desc-pc">Hubungi kami melalui <a id="open-chat" href="">chat box</a> di bawah ini</h3>
-						<h3 class="desc desc-mobile">Kontak kami melalui WhatsApp atau LINE</h3>
+						<h3 class="desc desc-mobile">Hubungi kami melalui <a href="whatsapp://send?text=Halo, saya berminat memesan website dari tampilin.id. (Kirim pesan ini ke 081578900098)">Whatsapp</a> atau <a href="http://line.me/ti/p/%40zeg8363e">LINE</a></h3>
 				</div>
-				<div class="box-2">
-					<input class="contact-input" type="text" placeholder="Nama pemesan" />
-					<input class="contact-input" type="text" placeholder="Email" />
-					<input class="contact-input" type="text" placeholder="Nomor Telepon" />
+				<div class="box-2 input-box">
+					<div class="input-container">
 					<div class="input-group">
-						<input id="package-personal" class="contact-input" type="radio" name="package" value="1" checked/>
-						<label for="package-personal" class="contact-input"><i class="fa fa-check"></i>Personal</label>
+						<input id="order-name" class="contact-input required" type="text" placeholder="Nama pemesan" />
+						<small class="contact-input required-alert">Nama wajib diisi!</small>
 					</div>
 					<div class="input-group">
-						<input id="package-business" class="contact-input" type="radio" name="package" value="2"/>
-						<label for="package-business" class="contact-input"><i class="fa fa-check"></i>Business</label>
+						<input id="order-email" class="contact-input required" type="text" placeholder="Email" />
+						<small class="contact-input required-alert">Email wajib diisi!</small>
 					</div>
-					<input class="contact-input" type="text" placeholder="Nama domain yang diinginkan" />
-					<input id="upload-document" class="contact-input" type="file" />
-					<label id="upload-label" for="upload-document" class="contact-input file-input"><i class="fa fa-cloud-upload"></i> Upload dokumen pendukung*</label>
-					<small class="contact-input">*CV untuk personal, profil perusahaan untuk business, atau dokumen lainnya</small>
-					<br/>
-					<br/>
-					<button class="contact-button" >Pesan</button>
+					<div class="input-group">
+						<input id="order-phone" class="contact-input" type="text" placeholder="Nomor Telepon" />
+						<small class="contact-input required-alert">Nomor telepon wajib diisi!</small>
+					</div>
+					<div class="input-group box-container">
+						<div class="box-2">
+							<input id="package-personal" class="contact-input" type="radio" name="package" value="1" checked/>
+							<label for="package-personal" class="contact-input"><i class="fa fa-check"></i>Personal</label>
+						</div>
+						<div class="box-2">
+							<input id="package-business" class="contact-input" type="radio" name="package" value="2"/>
+							<label for="package-business" class="contact-input"><i class="fa fa-check"></i>Business</label>
+						</div>
+					</div>
+					<div class="input-group">
+						<input id="order-domain" class="contact-input required" type="text" placeholder="Nama domain yang diinginkan" />
+						<small class="contact-input required-alert">Nama domain wajib diisi!</small>
+					</div>
+					<div class="input-group">
+						<input id="upload-document" class="contact-input" type="file" />
+						<label id="upload-label" for="upload-document" class="contact-input file-input"><i class="fa fa-cloud-upload"></i> Upload dokumen pendukung*</label>
+						<small class="contact-input">*CV untuk personal, profil perusahaan untuk business, atau dokumen lainnya</small>
+					</div>
+					<button id="order-submit" class="contact-button" >Pesan</button>
+					</div>
+					
+					<div class="input-overlay">
+						<img src="images/loading.gif" class="loading"></img>
+					</div>
 				</div>
 				</div>
 			</div>
