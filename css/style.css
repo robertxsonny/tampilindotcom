@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6
 	font-family: 'Hind Vadodara', sans-serif;
 }
 
-p, label, td, th
+span, p, label, td, th
 {
 	font-family: "Lato", sans-serif;
 }
@@ -585,11 +585,61 @@ div.socmed-item
 	opacity: 1;
 }
 
-.loading
+.input-2
 {
-	width: 50px;
-	height: 50px;
-	margin: auto;
+	width: 49%;
+	display: block;
+}
+
+.input-2.left
+{
+	float:left;
+}
+
+.input-2.right
+{
+	float: right;
+}
+
+.input-message
+{
+	display: block;
+	padding: 7px;
+	margin: 0;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	color: white;
+}
+
+.input-message span
+{
+	line-height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.input-message.loading
+{
+	background-color: #F6FFB5;
+	color: #FF8F57;
+}
+
+.input-message.success
+{
+	background-color: #00B96D;
+}
+
+.input-message.failed
+{
+	background-color: #FF9666;
+}
+
+.message-icon
+{
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 input.contact-input, textarea.contact-input
@@ -642,7 +692,6 @@ label.file-input
 small.contact-input
 {
 	font-family: "Josefin Sans", sans-serif;
-	margin-bottom: 30px;
 	display: block;
 	height: 1.5em;
 }

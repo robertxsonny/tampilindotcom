@@ -43,6 +43,8 @@ $(document).ready(function() {
 	});
 	$('.team-socmed').hide();
 	$('.required-alert').hide();
+	$('.invalid-alert').hide();
+	$('.input-message').hide();
 	$('.nav-item').click(function(){
 		$('html, body').animate({
 			scrollTop: $($(this).attr('href')).offset().top
@@ -74,7 +76,7 @@ $(document).ready(function() {
 		$zopim.livechat.window.show();
 	});
 	$('#upload-document').change(function(e) {
-		if ($(this).val())
+		if ($(this).val() || $(this).val() == '')
 			$('#upload-label').html($(this).val().split('\\').pop());
 		else
 			$('#upload-label').html('<i class="fa fa-cloud-upload"></i> Upload dokumen pendukung*');
@@ -95,6 +97,62 @@ $(document).ready(function() {
 				$(this).removeClass('empty');
 			}
 		});
+		var email = $('#order-email').val();
+		var at = email.indexOf('@');
+		var dot = email.lastIndexOf('.');
+		if (at < 1 || dot < at + 2 || dot >= email.length - 2)
+		{
+			$('#order-email').closest('.input-group').find('.invalid-alert').show();
+			$(this).addClass('empty');
+			allFilled = false;
+		}
+		else
+		{
+			$('#order-email').closest('.input-group').find('.invalid-alert').hide();
+			$(this).removeClass('empty');
+		}
+		var phone = $('#order-phone').val();
+		if (phone[0] == '+')
+		{
+			if (!(phone.substring(1).match(/\d/g).length < 15))
+			{
+				$('#order-phone').closest('.input-group').find('.invalid-alert').show();
+				$(this).addClass('empty');
+				allFilled = false;
+			}
+			else
+			{
+				$('#order-phone').closest('.input-group').find('.invalid-alert').hide();
+				$(this).removeClass('empty');
+			}
+		}
+		else
+		{
+			if (phone[0] != '0' || !(phone.substring(1).match(/\d/g).length < 15))
+			{
+				$('#order-phone').closest('.input-group').find('.invalid-alert').show();
+				$(this).addClass('empty');
+				allFilled = false;
+			}
+			else
+			{
+				$('#order-phone').closest('.input-group').find('.invalid-alert').hide();
+				$(this).removeClass('empty');
+			}
+		}
+		var domain = $('#order-domain').val();
+		var dot2 = domain.lastIndexOf('.');
+		if (dot2 < 1 || dot2 >= domain.length - 2)
+		{
+			$('#order-domain').closest('.input-group').find('.invalid-alert').show();
+			$(this).addClass('empty');
+			allFilled = false;
+		}
+		else
+		{
+			$('#order-domain').closest('.input-group').find('.invalid-alert').hide();
+			$(this).removeClass('empty');
+		}
 		if (allFilled)
 		{
 			if (!$('#upload-document').val())
@@ -114,7 +172,7 @@ $(document).ready(function() {
 			animationHandler($(this), 50, -170);
 		});
 		$('.pricing-box').each(function() {
-			animationHandler($(this), 250, -250);
+			animationHandler($(this), 200, -200);
 		});
 		$('.sample-product').each(function() {
 			animationHandler($(this), -200, -400);
@@ -144,7 +202,35 @@ function animationHandler(object, fromTop, fromBottom)
 
 function processOrder()
 {
-	$('.input-overlay').addClass('static');
+	$('.input-message.loading').show();
+	var order = {
+			name: $('#order-name').val(),
+			email: $('#order-email').val(),
+			phone: $('#order-phone').val(),
+			domain: $('#order-domain').val(),
+			web_package: $('input[name=package]:checked').val()
+	}
+	var xmlhr = new XMLHttpRequest();
+	xmlhr.open('POST', '/tampilindotcom/functions/insertOrder.php', true);
+	xmlhr.onload = function(e) {
+		if (xmlhr.readyState == 4) {
+			if (xmlhr.status == 200) {
+				/*$('#warningcontainer').hide();*/
+				$('.input-message.loading').hide();
+				$('.required').val('');
+				$('#upload-document').val('');
+				$('#package-personal').prop('checked', true);
+				$('.input-message.success').show();
+				
+			} else {
+				$('.input-message.loading').hide();
+				$('.input-message.failed').show();
+			}
+		}
+	};
+	var data = new FormData();
+	data.append('jsondata', JSON.stringify(order));
+	xmlhr.send(data);
 }
 
 </script>
@@ -213,7 +299,7 @@ function processOrder()
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>Personal</strong>
 							<br/>
-							<label>Didesain sesuai dengan kebutuhan dan karakteristikmu</label></p>
+							<label>Didesain khusus untukmu, bukan mengambil dari CMS atau <i>template</i></label></p>
 						</div>
 					</div>
 					</div>
@@ -225,7 +311,7 @@ function processOrder()
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>On Demand</strong>
 							<br/>
-							<label>Komunikasikan kebutuhan <i>website</i>-mu langsung dengan tim kami</label></p>
+							<label>Tentukan menu, isi, dan tampilan <i>website</i>-mu sendiri sesuai kebutuhan</label></p>
 						</div>
 					</div>
 					</div>
@@ -366,6 +452,18 @@ function processOrder()
 						<h3 class="desc desc-mobile">Hubungi kami melalui <a href="whatsapp://send?text=Halo, saya berminat memesan website dari tampilin.id. (Kirim pesan ini ke 081578900098)">Whatsapp</a> atau <a href="http://line.me/ti/p/%40zeg8363e">LINE</a></h3>
 				</div>
 				<div class="box-2 input-box">
+					<div class="input-message loading">
+						<img src="images/ajax-loader.gif" class="message-icon"></img>
+						<span>Memproses pemesanan, harap tunggu...</span>
+					</div>
+					<div class="input-message success">
+						<i class="fa fa-check fa-lg message-icon"></i>
+						<span>Pemesanan berhasil! Silakan buka email anda.</span>
+					</div>
+					<div class="input-message failed">
+						<i class="fa fa-times fa-lg message-icon"></i>
+						<span>Pemesanan gagal! Silakan ulangi lagi.</span>
+					</div>
 					<div class="input-container">
 					<div class="input-group">
 						<input id="order-name" class="contact-input required" type="text" placeholder="Nama pemesan" />
@@ -374,17 +472,19 @@ function processOrder()
 					<div class="input-group">
 						<input id="order-email" class="contact-input required" type="text" placeholder="Email" />
 						<small class="contact-input required-alert">Email wajib diisi!</small>
+						<small class="contact-input invalid-alert">Format email tidak valid!</small>
 					</div>
 					<div class="input-group">
-						<input id="order-phone" class="contact-input" type="text" placeholder="Nomor Telepon" />
+						<input id="order-phone" class="contact-input required" type="text" placeholder="Nomor Telepon" />
 						<small class="contact-input required-alert">Nomor telepon wajib diisi!</small>
+						<small class="contact-input invalid-alert">Format telepon tidak valid!</small>
 					</div>
-					<div class="input-group box-container">
-						<div class="box-2">
+					<div class="input-group">
+						<div class="input-2 left">
 							<input id="package-personal" class="contact-input" type="radio" name="package" value="1" checked/>
 							<label for="package-personal" class="contact-input"><i class="fa fa-check"></i>Personal</label>
 						</div>
-						<div class="box-2">
+						<div class="input-2 right">
 							<input id="package-business" class="contact-input" type="radio" name="package" value="2"/>
 							<label for="package-business" class="contact-input"><i class="fa fa-check"></i>Business</label>
 						</div>
@@ -392,18 +492,15 @@ function processOrder()
 					<div class="input-group">
 						<input id="order-domain" class="contact-input required" type="text" placeholder="Nama domain yang diinginkan" />
 						<small class="contact-input required-alert">Nama domain wajib diisi!</small>
+						<small class="contact-input invalid-alert">Nama domain tidak valid!</small>
 					</div>
 					<div class="input-group">
-						<input id="upload-document" class="contact-input" type="file" />
+						<input id="upload-document" class="contact-input" type="file" accept=".doc,.docx,.pdf,.zip" />
 						<label id="upload-label" for="upload-document" class="contact-input file-input"><i class="fa fa-cloud-upload"></i> Upload dokumen pendukung*</label>
 						<small class="contact-input">*CV untuk personal, profil perusahaan untuk business, atau dokumen lainnya</small>
 					</div>
 					<button id="order-submit" class="contact-button" >Pesan</button>
-					</div>
-					
-					<div class="input-overlay">
-						<img src="images/loading.gif" class="loading"></img>
-					</div>
+					</div>					
 				</div>
 				</div>
 			</div>
