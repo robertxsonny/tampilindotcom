@@ -76,7 +76,7 @@ $(document).ready(function() {
 		$zopim.livechat.window.show();
 	});
 	$('#upload-document').change(function(e) {
-		if ($(this).val() || $(this).val() == '')
+		if ($(this).val())
 			$('#upload-label').html($(this).val().split('\\').pop());
 		else
 			$('#upload-label').html('<i class="fa fa-cloud-upload"></i> Upload dokumen pendukung*');
@@ -211,15 +211,14 @@ function processOrder()
 			web_package: $('input[name=package]:checked').val()
 	}
 	var xmlhr = new XMLHttpRequest();
-	xmlhr.open('POST', '/tampilindotcom/functions/insertOrder.php', true);
+	xmlhr.open('POST', '/functions/insertOrder.php', true);
 	xmlhr.onload = function(e) {
 		if (xmlhr.readyState == 4) {
 			if (xmlhr.status == 200) {
 				/*$('#warningcontainer').hide();*/
 				$('.input-message.loading').hide();
-				$('.required').val('');
-				$('#upload-document').val('');
-				$('#package-personal').prop('checked', true);
+				$('#order-form')[0].reset();
+				$('#upload-label').html('<i class="fa fa-cloud-upload"></i> Upload dokumen pendukung*');
 				$('.input-message.success').show();
 				
 			} else {
@@ -228,7 +227,8 @@ function processOrder()
 			}
 		}
 	};
-	var data = new FormData();
+	var inputForm = document.querySelector('form');
+	var data = new FormData(inputForm);
 	data.append('jsondata', JSON.stringify(order));
 	xmlhr.send(data);
 }
@@ -464,7 +464,7 @@ function processOrder()
 						<i class="fa fa-times fa-lg message-icon"></i>
 						<span>Pemesanan gagal! Silakan ulangi lagi.</span>
 					</div>
-					<div class="input-container">
+					<form id="order-form" class="input-container">
 					<div class="input-group">
 						<input id="order-name" class="contact-input required" type="text" placeholder="Nama pemesan" />
 						<small class="contact-input required-alert">Nama wajib diisi!</small>
@@ -495,13 +495,13 @@ function processOrder()
 						<small class="contact-input invalid-alert">Nama domain tidak valid!</small>
 					</div>
 					<div class="input-group">
-						<input id="upload-document" class="contact-input" type="file" accept=".doc,.docx,.pdf,.zip" />
+						<input id="upload-document" name="document" class="contact-input" type="file" accept=".doc,.docx,.pdf,.zip" />
 						<label id="upload-label" for="upload-document" class="contact-input file-input"><i class="fa fa-cloud-upload"></i> Upload dokumen pendukung*</label>
 						<small class="contact-input">*CV untuk personal, profil perusahaan untuk business, atau dokumen lainnya</small>
 					</div>
 					<button id="order-submit" class="contact-button" >Pesan</button>
 					</div>					
-				</div>
+				</form>
 				</div>
 			</div>
 		</div>
