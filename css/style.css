@@ -263,7 +263,7 @@ span, p, label, td, th
 	transform: translate3d(-600px, 0px, 0px);
 }
 
-.sample-product, .team-icon
+.sample-product, .team-icon, .how-to-box
 {
 	-moz-transition: all 600ms ease-out;
 	-webkit-transition: all 600ms ease-out;
@@ -278,7 +278,7 @@ span, p, label, td, th
 	backface-visibility: hidden;
 }
 
-.feature-box.static, .sample-product.static, .pricing-box.static, .testimonial-box.static, .team-icon.static
+.feature-box.static, .sample-product.static, .pricing-box.static, .testimonial-box.static, .team-icon.static, .how-to-box.static
 {
 	-moz-transform: translate3d(0px, 0px, 0px);
 	-webkit-transform: translate3d(0px, 0px, 0px);
@@ -410,6 +410,41 @@ h3.desc
 	font-size: 130%;
 	font-weight: 400;
 }
+
+.how-to-icon
+{
+	display: block;
+	margin: auto;
+}
+
+.how-to-box
+{
+	display: table-cell;
+	height: 0 !important;
+	width: 25%;
+	padding-top: 12.5% !important;
+	padding-bottom: 12.5% !important;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	margin-top: -12.5% !important;
+	margin-bottom: -12.5% !important;
+	margin: 0;
+}
+
+.how-to-inner
+{
+	
+	margin-top: -30% !important;
+	margin-bottom: -30% !important;
+	vertical-align: middle;
+}
+
+, .how-to-inner .desc, .how-to-inner .title
+{
+	margin: auto;
+	display: block;
+}
+
 
 .item-with-icon div
 {
@@ -901,6 +936,11 @@ button.contact-button
 	.desc-mobile
 	{
 		display: block;
+	}
+	
+	.how-to-box
+	{
+		width: 50%;
 	}
 	
 	.box-2

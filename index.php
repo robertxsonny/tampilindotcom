@@ -181,7 +181,10 @@ $(document).ready(function() {
 			animationHandler($(this), 125, -125);
 		});
 		$('.team-icon').each(function() {
-			animationHandler($(this), -200, -400);
+			animationHandler($(this), -400, -400);
+		});
+		$('.how-to-box').each(function() {
+			animationHandler($(this), -400, -400);
 		});
 	});
 });
@@ -215,13 +218,23 @@ function processOrder()
 	xmlhr.onload = function(e) {
 		if (xmlhr.readyState == 4) {
 			if (xmlhr.status == 200) {
-				/*$('#warningcontainer').hide();*/
-				$('.input-message.loading').hide();
-				$('#order-form')[0].reset();
-				$('#upload-label').html('<i class="fa fa-cloud-upload"></i> Upload dokumen pendukung*');
-				$('.input-message.success').show();
+				if (xmlhr.responseText == '1')
+				{
+					/*$('#warningcontainer').hide();*/
+					$('.input-message.loading').hide();
+					$('#order-form')[0].reset();
+					$('#upload-label').html('<i class="fa fa-cloud-upload"></i> Upload dokumen pendukung*');
+					$('.input-message.success').show();
+				}
+				else
+				{
+					//alert(xmlhr.responseText);
+					$('.input-message.loading').hide();
+					$('.input-message.failed').show();
+				}
 				
 			} else {
+				//alert(xmlhr.status);
 				$('.input-message.loading').hide();
 				$('.input-message.failed').show();
 			}
@@ -370,30 +383,116 @@ function processOrder()
 		<div id="how-to" class="page content-page" style="background-color: #ECECEC; color: #2F2F3B;">
 			<div class="page-content">
 				<h1 class="content-title">BAGAIMANA MEMESANNYA?</h1>
-				<table>
-					<tr>
-						<td>
-							<i class="fa fa-lightbulb-o fa-5x"></i>
-							<span class="desc">Tentukan ide untuk websitemu</span>
-						</td>
-						<td>
-							<i class="fa fa-comment fa-5x"></i>
-							<span class="desc">Kirim dokumen atau kontak tim kami melalui chat box</span>							
-						</td>
-						<td>
-							<i class="fa fa-paint-brush fa-5x"></i>
-							<span class="desc">Diskusikan desain web dengan tim kami</span>
-						</td>
-						<td>
-							<i class="fa fa-camera fa-5x"></i>
-							<span class="desc">Jika perlu, tambahkan foto/gambar pendukung</span>
-						</td>
-						<td>
-							<i class="fa fa-globe fa-5x"></i>
-							<span class="desc">Tunggu dan websitemu akan siap kurang dari 24 jam</span>
-						</td>
-					</tr>
-				</table>
+				<div class="animation-wrapper">
+					<div class="box-4 how-to-box" style="background-color: #F9690E; color: white;">
+						<div class="how-to-inner">
+							<h1 class="title title-center title-2">1</h1>
+						</div>
+					</div>
+					<div class="box-4 how-to-box">
+						<div class="how-to-inner">
+							<img src="images/set-5-1.gif" width="100" height="100" class="how-to-icon"></img>
+						</div>
+					</div>
+					<div class="box-4 how-to-box" style="background-color: #F27935; color: white;">
+						<div class="how-to-inner">
+							<p class="desc">Tentukan ide dan konsep dasar <i>website</i>-mu.</p>
+						</div>
+					</div>
+					<div class="box-4 how-to-box" style="background-color: #E57E22; color: white;">
+						<div class="how-to-inner">
+							<p class="desc">Lalu pilih paket yang sesuai kebutuhanmu.</p>
+						</div>
+					</div>
+				</div>
+				<div class="animation-wrapper">
+					<div class="box-4 how-to-box" style="background-color: #2ECC71; color: white;">
+						<div class="how-to-inner">
+							<h1 class="title title-center title-2">2</h1>
+						</div>
+					</div>
+					<div class="box-4 how-to-box" style="background-color: #1EB24C; color: white;">
+						<div class="how-to-inner">
+							<p class="desc">Hubungi kami melalui chat box atau kontak yang tersedia.</p>
+						</div>
+					</div>
+					<div class="box-4 how-to-box">
+						<div class="how-to-inner">
+							<img src="images/set-5-2.gif" width="100" height="100"  class="how-to-icon"></img>
+						</div>
+					</div>
+					<div class="box-4 how-to-box" style="background-color: #26A65B; color: white;">
+						<div class="how-to-inner">
+							<p class="desc">Kirimkan dokumen pendukung bila perlu.</p>
+						</div>
+					</div>
+				</div>
+				<div class="animation-wrapper">
+					<div class="box-4 how-to-box" style="background-color: #9B59B6; color: white;">
+						<div class="how-to-inner">
+							<h1 class="title title-center title-2">3</h1>
+						</div>
+					</div>
+					<div class="box-4 how-to-box" style="background-color: #9A1283; color: white;">
+						<div class="how-to-inner">
+							<p class="desc">Diskusikan isi <i>website</i>-mu dengan kami secara langsung.</p>
+						</div>
+					</div>
+					<div class="box-4 how-to-box" style="background-color: #8F55EC; color: white;">
+						<div class="how-to-inner">
+							<p class="desc">Kami akan mulai mengerjakannya <strong>saat itu juga</strong></p>
+						</div>
+					</div>
+					<div class="box-4 how-to-box">
+						<div class="how-to-inner">
+							<img src="images/set-5-3.gif" width="100" height="100" class="how-to-icon"></img>
+						</div>
+					</div>
+				</div>
+				<div class="animation-wrapper">
+					<div class="box-4 how-to-box" style="background-color: #3498DB; color: white;">
+						<div class="how-to-inner">
+							<h1 class="title title-center title-2">4</h1>
+						</div>
+					</div>
+					<div class="box-4 how-to-box" style="background-color: #22A7F0; color: white;">
+						<div class="how-to-inner">
+							<p class="desc">Tambahkan foto terbaikmu di <i>website</i>-mu</p>
+						</div>
+					</div>
+					<div class="box-4 how-to-box">
+						<div class="how-to-inner">
+							<img src="images/set-5-4.gif" width="100" height="100" class="how-to-icon"></img>
+						</div>
+					</div>
+					<div class="box-4 how-to-box" style="background-color: #2574A9; color: white;">
+						<div class="how-to-inner">
+							<p class="desc">Kami menyediakan jasa fotografi jika kamu membutuhkannya.</p>
+						</div>
+					</div>
+				</div>
+				<div class="animation-wrapper">
+					<div class="box-4 how-to-box" style="background-color: #F7CA18; color: white;">
+						<div class="how-to-inner">
+							<h1 class="title title-center title-2">5</h1>
+						</div>
+					</div>
+					<div class="box-4 how-to-box">
+						<div class="how-to-inner">
+							<img src="images/set-5-5.gif" width="100" height="100" class="how-to-icon"></img>
+						</div>
+					</div>
+					<div class="box-4 how-to-box" style="background-color: #E87E04; color: white;">
+						<div class="how-to-inner">
+							<p class="desc">Selanjutnya, serahkan pada tim kami.</p>
+						</div>
+					</div>
+					<div class="box-4 how-to-box" style="background-color: #F5AB35; color: white;">
+						<div class="how-to-inner">
+							<p class="desc"><i>Website</i>-mu sudah siap diakses dalam 1x24 jam.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	
@@ -517,7 +616,10 @@ function processOrder()
 		<div id="project" class="page content-page" style="background-color: #ECECEC; color: #2F2F3B;">
 			<div class="page-content">
 				<h1 class="content-title">PORTOFOLIO KAMI</h1>
-				<div class="box-container">
+				<br/>
+				<h1 class="title title-center title-2" style="line-height: 60px; vertical-align: middle;"><i>..akan di-</i><img src="images/tampilin_black_red.png" height="60px" /><i>kemudian</i></h1>
+				<br/>
+				<!-- <div class="box-container">
 					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 1.jpg') no-repeat center; background-size: cover;">
 						<div class="product-overlay"></div>
@@ -558,14 +660,17 @@ function processOrder()
 						<div class="product-overlay"></div>
 						</a>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		
 		<div id="testimonial" class="page content-page" style="background-color: #FF7066; color: #FFFFFF;">
 			<div class="page-content">
 				<h1 class="content-title">TESTIMONI</h1>
-				<div class="box-container">
+				<br/>
+				<h1 class="title title-center title-2" style="line-height: 60px; vertical-align: middle;"><i>...akan di-</i><img src="images/tampilin_white_red.png" height="60px" /><i>kemudian</i></h1>
+				<br/>
+				<!-- <div class="box-container">
 					<div class="box-2 animation-wrapper">
 					<div class="testimonial-box left item-with-icon">
 						<div class="sicon-wrapper">
@@ -626,7 +731,7 @@ function processOrder()
 						</div>
 					</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	
