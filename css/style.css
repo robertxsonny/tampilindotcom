@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6
 	font-family: 'Hind Vadodara', sans-serif;
 }
 
-span, p, label, td, th
+span, p, label, td, th, small
 {
 	font-family: "Lato", sans-serif;
 }
@@ -71,7 +71,9 @@ span, p, label, td, th
 	display: inline-block;
 	line-height: 40px;
 	background-color: white;
-	padding: 0 10px;
+	padding: 0;
+	padding-left: 20px;
+	text-align: left;
 }
 
 .nav-menu li a {
@@ -350,19 +352,18 @@ span, p, label, td, th
 {
 	padding-top: 20px;
 	text-align: center;
-	padding-top: 0;
 	margin-top: 0;
 }
 
 .desc a
 {
 	color: white;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .desc a:hover
 {
-	text-decoration: underline;
+	font-weight: 700;
 }
 
 #feature .desc
@@ -385,6 +386,14 @@ span, p, label, td, th
 	display: none;
 }
 
+
+.old-price, .promo-desc
+{
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
 .feature-list
 {
 	padding-top: 10px;
@@ -398,7 +407,7 @@ span, p, label, td, th
 	line-height: 1.5em;
 }
 
-.desc, .feature-list
+.desc, .feature-list, .old-price
 {
 	font-family: "Raleway", sans-serif;
 	font-size: 110%;
@@ -414,35 +423,35 @@ h3.desc
 .how-to-icon
 {
 	display: block;
-	margin: auto;
+	margin: -32% auto;
+	width: 100%;
+	height: auto;
+	max-width: 75%;
 }
 
 .how-to-box
 {
-	display: table-cell;
+	display: inline-block;
+	float: left;
 	height: 0 !important;
-	width: 25%;
-	padding-top: 12.5% !important;
-	padding-bottom: 12.5% !important;
-	padding-left: 2.5%;
-	padding-right: 2.5%;
-	margin-top: -12.5% !important;
-	margin-bottom: -12.5% !important;
+	width: 20%;
+	padding: 12.5% 2.5% !important;
 	margin: 0;
 }
 
 .how-to-inner
 {
-	
-	margin-top: -30% !important;
-	margin-bottom: -30% !important;
+	width: 100%;
+	display: block;
+	height: 0 !important;
 	vertical-align: middle;
 }
 
-, .how-to-inner .desc, .how-to-inner .title
+.how-to-inner .desc, .how-to-inner .title
 {
-	margin: auto;
+	margin: -23% 0;
 	display: block;
+	height: 0 !important;
 }
 
 
@@ -829,6 +838,12 @@ button.contact-button
 		padding-right: 5%;
 	}
 	
+	.how-to-icon
+	{
+		width: 75%;
+		max-width: 50%;
+	}
+	
 	.image-page
 	{
 		padding-top: 125px;
@@ -850,9 +865,22 @@ button.contact-button
 		font-size: 175%;
 	}
 	
-	.desc, .feature-list
+	.desc, .feature-list, .old-price
 	{
 		font-size: 100%;
+	}
+	
+	
+	.how-to-box
+	{
+		width: 23%;
+		padding: 12.5% 1% !important;
+	}
+	
+	.how-to-inner .desc
+	{
+		font-size: 85%;
+		margin: -34% 0;
 	}
 	
 	h3.desc
@@ -913,6 +941,16 @@ button.contact-button
 		background-size: cover;
 	}
 	
+	.feature-box, .sample-product, .pricing-box.left, .pricing-box.right, .testimonial-box, .team-icon, .how-to-box
+	{
+		-moz-transform: translate3d(0px, 0px, 0px);
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		-o-transform: translate(0px, 0px);
+		transform: translate3d(0px, 0px, 0px);
+		backface-visibility: hidden;
+	}
+	
 	.title-1
 	{
 		font-size: 250%;
@@ -937,12 +975,7 @@ button.contact-button
 	{
 		display: block;
 	}
-	
-	.how-to-box
-	{
-		width: 50%;
-	}
-	
+		
 	.box-2
 	{
 		width: 96%;
@@ -993,9 +1026,21 @@ button.contact-button
 		font-size: 125%;
 	}
 	
-	.desc, .feature-list
+	.desc, .feature-list, .old-price
 	{
 		font-size: 90%;
+	}
+	
+	.how-to-box
+	{
+		width: 24%;
+		padding: 12.5% 0.5% !important;
+	}
+	
+	.how-to-inner .desc
+	{
+		font-size: 75%;
+		margin: -37% 0;
 	}
 	
 	h3.desc

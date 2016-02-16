@@ -3,6 +3,23 @@
 <head>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="id">
+<meta name="description"
+	content="Tampilin.id, pengembang one page website sederhana di Indonesia. Menawarkan layanan yang cepat dan desain yang dibuat khusus, bukan berupa template. Buat Buat portofolio atau CV online, kartu nama online, profil usaha, atau website sederhana lainnya di sini.">
+<meta property="og:title" content="Tampilin.id: One Page Website For All Your Needs">
+<meta property="og:description"
+	content="Tampilin.id, pengembang one page website sederhana di Indonesia. Menawarkan layanan yang cepat dan desain yang dibuat khusus, bukan berupa template. Buat Buat portofolio atau CV online, kartu nama online, profil usaha, atau website sederhana lainnya di sini.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://tampilin.id">
+<meta property="og:site_name" content="tampilin.id">
+<meta name="revisit-after" content="7 days">
+<meta name="distribution" content="web">
+<meta name="robots" content="index, follow">
+<link rel="shortcut icon" type="image/x-icon"
+	href="http://tampilin-local.com/images/icon.ico" />
+	<link rel="shortcut icon" type="image/png"
+	href="images/icon.png" />
 <link href="css/style.css" rel='stylesheet' type='text/css'>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -21,6 +38,7 @@
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <!--Start of Zopim Live Chat Script-->
+<!--Start of Zopim Live Chat Script-->
 <script type="text/javascript">
 window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
 d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
@@ -31,15 +49,15 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!--End of Zopim Live Chat Script-->
 <script type="text/javascript">
 $(document).ready(function() {
-	$( window ).resize(function() {
+	$(window).resize(function() {
 		if ($(window).width() > 768 )
-			$(".nav-menu").show();
+			$('.nav-menu').show();
 		else
-			$(".nav-menu").hide();	
+			$('.nav-menu').hide();
 		if ($(window).width() > 640 )
 			$zopim.livechat.window.hide();
 		else
-			$zopim.livechat.hideAll();					
+			$zopim.livechat.hideAll();			
 	});
 	$('.team-socmed').hide();
 	$('.required-alert').hide();
@@ -97,62 +115,71 @@ $(document).ready(function() {
 				$(this).removeClass('empty');
 			}
 		});
-		var email = $('#order-email').val();
-		var at = email.indexOf('@');
-		var dot = email.lastIndexOf('.');
-		if (at < 1 || dot < at + 2 || dot >= email.length - 2)
+		if (!$('#order-email').hasClass('empty'))
 		{
-			$('#order-email').closest('.input-group').find('.invalid-alert').show();
-			$(this).addClass('empty');
-			allFilled = false;
-		}
-		else
-		{
-			$('#order-email').closest('.input-group').find('.invalid-alert').hide();
-			$(this).removeClass('empty');
-		}
-		var phone = $('#order-phone').val();
-		if (phone[0] == '+')
-		{
-			if (!(phone.substring(1).match(/\d/g).length < 15))
+			var email = $('#order-email').val();
+			var at = email.indexOf('@');
+			var dot = email.lastIndexOf('.');
+			if (at < 1 || dot < at + 2 || dot >= email.length - 2)
 			{
-				$('#order-phone').closest('.input-group').find('.invalid-alert').show();
-				$(this).addClass('empty');
+				$('#order-email').closest('.input-group').find('.invalid-alert').show();
+				$('#order-email').addClass('empty');
 				allFilled = false;
 			}
 			else
 			{
-				$('#order-phone').closest('.input-group').find('.invalid-alert').hide();
-				$(this).removeClass('empty');
+				$('#order-email').closest('.input-group').find('.invalid-alert').hide();
+				$('#order-email').removeClass('empty');
 			}
 		}
-		else
+		if (!$('#order-phone').hasClass('empty'))
 		{
-			if (phone[0] != '0' || !(phone.substring(1).match(/\d/g).length < 15))
+			var phone = $('#order-phone').val();
+			if (phone[0] == '+')
 			{
-				$('#order-phone').closest('.input-group').find('.invalid-alert').show();
-				$(this).addClass('empty');
+				if (!(phone.substring(1).match(/\d/g).length < 15))
+				{
+					$('#order-phone').closest('.input-group').find('.invalid-alert').show();
+					$('#order-phone').addClass('empty');
+					allFilled = false;
+				}
+				else
+				{
+					$('#order-phone').closest('.input-group').find('.invalid-alert').hide();
+					$('#order-phone').removeClass('empty');
+				}
+			}
+			else
+			{
+				if (phone[0] != '0' || !(phone.substring(1).match(/\d/g).length < 15))
+				{
+					$('#order-phone').closest('.input-group').find('.invalid-alert').show();
+					$('#order-phone').addClass('empty');
+					allFilled = false;
+				}
+				else
+				{
+					$('#order-phone').closest('.input-group').find('.invalid-alert').hide();
+					$('#order-phone').removeClass('empty');
+				}
+			}
+		}
+		if (!$('#order-domain').hasClass('empty'))
+		{
+			var domain = $('#order-domain').val();
+			var dot2 = domain.lastIndexOf('.');
+			if (dot2 < 1 || dot2 >= domain.length - 2)
+			{
+				$('#order-domain').closest('.input-group').find('.invalid-alert').show();
+				$('#order-domain').addClass('empty');
 				allFilled = false;
 			}
 			else
 			{
-				$('#order-phone').closest('.input-group').find('.invalid-alert').hide();
-				$(this).removeClass('empty');
+				$('#order-domain').closest('.input-group').find('.invalid-alert').hide();
+				$('#order-domain').removeClass('empty');
 			}
-		}
-		var domain = $('#order-domain').val();
-		var dot2 = domain.lastIndexOf('.');
-		if (dot2 < 1 || dot2 >= domain.length - 2)
-		{
-			$('#order-domain').closest('.input-group').find('.invalid-alert').show();
-			$(this).addClass('empty');
-			allFilled = false;
-		}
-		else
-		{
-			$('#order-domain').closest('.input-group').find('.invalid-alert').hide();
-			$(this).removeClass('empty');
-		}
+		}		
 		if (allFilled)
 		{
 			if (!$('#upload-document').val())
@@ -324,7 +351,7 @@ function processOrder()
 						<div class="caption-wrapper">
 							<p class="desc desc-left"><strong>On Demand</strong>
 							<br/>
-							<label>Tentukan menu, isi, dan tampilan <i>website</i>-mu sendiri sesuai kebutuhan</label></p>
+							<label>Buat portofolio atau kartu nama <i>online</i>, profil usaha, atau lainnya</label></p>
 						</div>
 					</div>
 					</div>
@@ -384,110 +411,110 @@ function processOrder()
 			<div class="page-content">
 				<h1 class="content-title">BAGAIMANA MEMESANNYA?</h1>
 				<div class="animation-wrapper">
-					<div class="box-4 how-to-box" style="background-color: #F9690E; color: white;">
+					<div class="how-to-box" style="background-color: #F9690E; color: white;">
 						<div class="how-to-inner">
 							<h1 class="title title-center title-2">1</h1>
 						</div>
 					</div>
-					<div class="box-4 how-to-box">
+					<div class="how-to-box">
 						<div class="how-to-inner">
 							<img src="images/set-5-1.gif" width="100" height="100" class="how-to-icon"></img>
 						</div>
 					</div>
-					<div class="box-4 how-to-box" style="background-color: #F27935; color: white;">
+					<div class="how-to-box" style="background-color: #F27935; color: white;">
 						<div class="how-to-inner">
 							<p class="desc">Tentukan ide dan konsep dasar <i>website</i>-mu.</p>
 						</div>
 					</div>
-					<div class="box-4 how-to-box" style="background-color: #E57E22; color: white;">
+					<div class="how-to-box" style="background-color: #E57E22; color: white;">
 						<div class="how-to-inner">
 							<p class="desc">Lalu pilih paket yang sesuai kebutuhanmu.</p>
 						</div>
 					</div>
 				</div>
 				<div class="animation-wrapper">
-					<div class="box-4 how-to-box" style="background-color: #2ECC71; color: white;">
+					<div class="how-to-box" style="background-color: #2ECC71; color: white;">
 						<div class="how-to-inner">
 							<h1 class="title title-center title-2">2</h1>
 						</div>
 					</div>
-					<div class="box-4 how-to-box" style="background-color: #1EB24C; color: white;">
+					<div class="how-to-box" style="background-color: #1EB24C; color: white;">
 						<div class="how-to-inner">
 							<p class="desc">Hubungi kami melalui chat box atau kontak yang tersedia.</p>
 						</div>
 					</div>
-					<div class="box-4 how-to-box">
+					<div class="how-to-box">
 						<div class="how-to-inner">
 							<img src="images/set-5-2.gif" width="100" height="100"  class="how-to-icon"></img>
 						</div>
 					</div>
-					<div class="box-4 how-to-box" style="background-color: #26A65B; color: white;">
+					<div class="how-to-box" style="background-color: #26A65B; color: white;">
 						<div class="how-to-inner">
 							<p class="desc">Kirimkan dokumen pendukung bila perlu.</p>
 						</div>
 					</div>
 				</div>
 				<div class="animation-wrapper">
-					<div class="box-4 how-to-box" style="background-color: #9B59B6; color: white;">
+					<div class="how-to-box" style="background-color: #9B59B6; color: white;">
 						<div class="how-to-inner">
 							<h1 class="title title-center title-2">3</h1>
 						</div>
 					</div>
-					<div class="box-4 how-to-box" style="background-color: #9A1283; color: white;">
+					<div class="how-to-box" style="background-color: #9A1283; color: white;">
 						<div class="how-to-inner">
 							<p class="desc">Diskusikan isi <i>website</i>-mu dengan kami secara langsung.</p>
 						</div>
 					</div>
-					<div class="box-4 how-to-box" style="background-color: #8F55EC; color: white;">
+					<div class="how-to-box" style="background-color: #8F55EC; color: white;">
 						<div class="how-to-inner">
-							<p class="desc">Kami akan mulai mengerjakannya <strong>saat itu juga</strong></p>
+							<p class="desc">Kami akan mulai mendesain pada <strong>saat itu juga</strong></p>
 						</div>
 					</div>
-					<div class="box-4 how-to-box">
+					<div class="how-to-box">
 						<div class="how-to-inner">
 							<img src="images/set-5-3.gif" width="100" height="100" class="how-to-icon"></img>
 						</div>
 					</div>
 				</div>
 				<div class="animation-wrapper">
-					<div class="box-4 how-to-box" style="background-color: #3498DB; color: white;">
+					<div class="how-to-box" style="background-color: #3498DB; color: white;">
 						<div class="how-to-inner">
 							<h1 class="title title-center title-2">4</h1>
 						</div>
 					</div>
-					<div class="box-4 how-to-box" style="background-color: #22A7F0; color: white;">
+					<div class="how-to-box" style="background-color: #22A7F0; color: white;">
 						<div class="how-to-inner">
 							<p class="desc">Tambahkan foto terbaikmu di <i>website</i>-mu</p>
 						</div>
 					</div>
-					<div class="box-4 how-to-box">
+					<div class="how-to-box">
 						<div class="how-to-inner">
 							<img src="images/set-5-4.gif" width="100" height="100" class="how-to-icon"></img>
 						</div>
 					</div>
-					<div class="box-4 how-to-box" style="background-color: #2574A9; color: white;">
+					<div class="how-to-box" style="background-color: #2574A9; color: white;">
 						<div class="how-to-inner">
-							<p class="desc">Kami menyediakan jasa fotografi jika kamu membutuhkannya.</p>
+							<p class="desc">Hubungi fotografer kami untuk mengambil foto baru</p>
 						</div>
 					</div>
 				</div>
 				<div class="animation-wrapper">
-					<div class="box-4 how-to-box" style="background-color: #F7CA18; color: white;">
+					<div class="how-to-box" style="background-color: #F7CA18; color: white;">
 						<div class="how-to-inner">
 							<h1 class="title title-center title-2">5</h1>
 						</div>
 					</div>
-					<div class="box-4 how-to-box">
+					<div class="how-to-box">
 						<div class="how-to-inner">
 							<img src="images/set-5-5.gif" width="100" height="100" class="how-to-icon"></img>
 						</div>
 					</div>
-					<div class="box-4 how-to-box" style="background-color: #E87E04; color: white;">
+					<div class="how-to-box" style="background-color: #E87E04; color: white;">
 						<div class="how-to-inner">
 							<p class="desc">Selanjutnya, serahkan pada tim kami.</p>
 						</div>
 					</div>
-					<div class="box-4 how-to-box" style="background-color: #F5AB35; color: white;">
+					<div class="how-to-box" style="background-color: #F5AB35; color: white;">
 						<div class="how-to-inner">
 							<p class="desc"><i>Website</i>-mu sudah siap diakses dalam 1x24 jam.</p>
 						</div>
@@ -519,7 +546,8 @@ function processOrder()
 						<li><strong>Gratis</strong> 1 alamat email</li>
 						<li><strong>Gratis</strong> promosi di media sosial selama 1 bulan</li>
 					</ul>
-					<h1 class="price">Rp 300.000,00</h1>
+					<p class="old-price"><small>promo opening s/d 26 feb 2016</small><br/><s>Rp 300.000,00</s></p>
+					<h1 class="price">Rp 200.000,00</h1>
 				</div>
 				<div id="business" class="box-2 box-border-transparent pricing-box right" style="background-color: #59A80F; color: #ECECEC;">
 					<div class="icon-big" style="background: url('images/image2.png') no-repeat center; background-size: cover;">
@@ -533,7 +561,8 @@ function processOrder()
 						<li><strong>Gratis</strong> 5 alamat email</li>
 						<li><strong>Gratis</strong> promosi di media sosial selama 2 bulan</li>
 					</ul>
-					<h1 class="price">Rp 500.000,00</h1>
+					<p class="old-price"><small>promo opening s/d 26 feb 2016</small><br/><s>Rp 500.000,00</s></p>
+					<h1 class="price">Rp 350.000,00</h1>
 				</div>
 				</div>
 			</div>

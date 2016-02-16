@@ -10,7 +10,7 @@ function generateOrderMailForUser($orderObject)
 	$html .= "<table style=\"width: 100%; font-family: 'Lato', Arial, sans-serif\">";
 	$html .= "<tr>";
 	$html .= "<td style=\"background-color: #2F2F3B; color: white; padding: 10px 20px;\">";
-	$html .= "<img src=\"images/tampilin_white_red.png\" height=\"40px\" />";
+	$html .= "<img src=\"cid:logo_top\" height=\"40px\" />";
 	$html .= "</td>";
 	$html .= "</tr>";
 	$html .= "<td style=\"color: #2F2F3B; padding: 20px 30px;\">";
@@ -74,10 +74,10 @@ function generateOrderMailForUser($orderObject)
 	$html .= "Copyright &copy; 2016 <a href=\"http://tampilin.id\" target=\"_blank\" style=\"color: white;\" >tampilin.id</a>";
 	$html .= "</div>";
 	$html .= "<div style=\"display: inline-block; float: right\">";
-	$html .= "<a href=\"http://facebook.com/tampilin\" style=\"display: inline-block; vertical-align: middle; width: 30px; height: 30px; background: url('images/1455227518_Facebook.png') no-repeat center; background-size: contain;\"></a>";
-	$html .= "<a href=\"http://twitter.com/tampilin\" style=\"display: inline-block; vertical-align: middle; width: 30px; height: 30px; background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;\"></a>";
-	$html .= "<a href=\"http://instagram.com/tampilin\" style=\"display: inline-block; vertical-align: middle; width: 30px; height: 30px; background: url('images/1455227364_instagram.png') no-repeat center; background-size: contain;\"></a>";
-	$html .= "<a href=\"http://line.me/ti/p/%40zeg8363e\" style=\"display: inline-block; vertical-align: middle; width: 30px; height: 30px; background: url('images/1455227609_LINE.png') no-repeat center; background-size: contain;\"></a>";
+	$html .= "<a href=\"http://facebook.com/tampilin\" style=\"display: inline-block; vertical-align: middle; width: 30px; height: 30px; background: url(cid:fb_icon) no-repeat center; background-size: contain;\"></a>";
+	$html .= "<a href=\"http://twitter.com/tampilin\" style=\"display: inline-block; vertical-align: middle; width: 30px; height: 30px; background: url(cid:twitter_icon) no-repeat center; background-size: contain;\"></a>";
+	$html .= "<a href=\"http://instagram.com/tampilin\" style=\"display: inline-block; vertical-align: middle; width: 30px; height: 30px; background: url(cid:ig_icon) no-repeat center; background-size: contain;\"></a>";
+	$html .= "<a href=\"http://line.me/ti/p/%40zeg8363e\" style=\"display: inline-block; vertical-align: middle; width: 30px; height: 30px; background: url(cid:line_icon) no-repeat center; background-size: contain;\"></a>";
 	$html .= "</div>";
 	$html .= "</td>";
 	$html .= "</tr>";
@@ -97,7 +97,7 @@ function generateOrderMailForAdmin($orderObject)
 	$html .= "<table style=\"width: 100%; font-family: 'Lato', Arial, sans-serif\">";
 	$html .= "<tr>";
 	$html .= "<td style=\"background-color: #2F2F3B; color: white; padding: 10px 20px;\">";
-	$html .= "<img src=\"images/tampilin_white_red.png\" height=\"40px\" />";
+	$html .= "<img src=\"cid:logo_top\" height=\"40px\" />";
 	$html .= "</td>";
 	$html .= "</tr>";
 	$html .= "<td style=\"color: #2F2F3B; padding: 20px 30px;\">";
@@ -125,7 +125,7 @@ function generateOrderMailForAdmin($orderObject)
 	$html .= "</tr>";
 	$html .= "<tr>";
 	$html .= "<td>Tanggal Pemesanan</td>";
-	$html .= "<td>: <strong>#".$orderObject->date."</strong></td>";
+	$html .= "<td>: <strong>".$orderObject->date."</strong></td>";
 	$html .= "</tr>";
 	$html .= "<tr>";
 	$html .= "<td>Paket</td>";
@@ -161,10 +161,10 @@ function generateOrderMailForAdmin($orderObject)
 	$html .= "Copyright &copy; 2016 <a href=\"http://tampilin.id\" target=\"_blank\" style=\"color: white;\" >tampilin.id</a>";
 	$html .= "</div>";
 	$html .= "<div style=\"display: inline-block; float: right\">";
-	$html .= "<a href=\"http://facebook.com/tampilin\" style=\"display: inline-block; vertical-align: middle; width: 30px; height: 30px; background: url('images/1455227518_Facebook.png') no-repeat center; background-size: contain;\"></a>";
-	$html .= "<a href=\"http://twitter.com/tampilin\" style=\"display: inline-block; vertical-align: middle; width: 30px; height: 30px; background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;\"></a>";
-	$html .= "<a href=\"http://instagram.com/tampilin\" style=\"display: inline-block; vertical-align: middle; width: 30px; height: 30px; background: url('images/1455227364_instagram.png') no-repeat center; background-size: contain;\"></a>";
-	$html .= "<a href=\"http://line.me/ti/p/%40zeg8363e\" style=\"display: inline-block; vertical-align: middle; width: 30px; height: 30px; background: url('images/1455227609_LINE.png') no-repeat center; background-size: contain;\"></a>";
+	$html .= "<a href=\"http://facebook.com/tampilin\" style=\"display: inline-block; vertical-align: middle; width: 30px; height: 30px; background: url(cid:fb_icon) no-repeat center; background-size: contain;\"></a>";
+	$html .= "<a href=\"http://twitter.com/tampilin\" style=\"display: inline-block; vertical-align: middle; width: 30px; height: 30px; background: url(cid:twitter_icon) no-repeat center; background-size: contain;\"></a>";
+	$html .= "<a href=\"http://instagram.com/tampilin\" style=\"display: inline-block; vertical-align: middle; width: 30px; height: 30px; background: url(cid:ig_icon) no-repeat center; background-size: contain;\"></a>";
+	$html .= "<a href=\"http://line.me/ti/p/%40zeg8363e\" style=\"display: inline-block; vertical-align: middle; width: 30px; height: 30px; background: url(cid:line_icon) no-repeat center; background-size: contain;\"></a>";
 	$html .= "</div>";
 	$html .= "</td>";
 	$html .= "</tr>";
@@ -176,7 +176,7 @@ function generateOrderMailForAdmin($orderObject)
 
 function generatePackageText($package_number)
 {
-	$package = new stdObj();
+	$package = new stdClass();
 	if ($package_number == 1)
 	{
 		$package->name = "Personal";

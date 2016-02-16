@@ -9,8 +9,8 @@ include($email);
 include($mailpath);
 include($smtp);
 date_default_timezone_set("Asia/Jakarta");
-setlocale (LC_TIME, 'INDONESIA');
-//setlocale(LC_TIME, 'id-ID');
+//setlocale (LC_TIME, 'INDONESIA');
+setlocale(LC_TIME, 'id-ID');
 if(isset($_POST['jsondata'])){
 	$obj = $_POST['jsondata'];
 	$conn = new mysqli($GLOBALS ['servername'], $GLOBALS ['dbuser'], $GLOBALS ['dbpass'], $GLOBALS ['dbname']);
@@ -82,6 +82,11 @@ if(isset($_POST['jsondata'])){
 			$mail->FromName = "<no-reply> Tampilin Automated Email";
 			$mail->Subject = "Order #".$order_code.": Pemesanan Website Baru";
 			$mail->AddAddress($email, $name);
+			$mail->AddEmbeddedImage($path.'/images/tampilin_white_red.png', 'logo_top');
+			$mail->AddEmbeddedImage($path.'/images/1455227518_Facebook.png', 'fb_icon');
+			$mail->AddEmbeddedImage($path.'/images/1455227348_twitter.png', 'twitter_icon');
+			$mail->AddEmbeddedImage($path.'/images/1455227364_instagram.png', 'ig_icon');
+			$mail->AddEmbeddedImage($path.'/images/1455227609_LINE.png', 'line_icon');
 			$mail->IsHTML(true);
 			$mail->Body = generateOrderMailForUser($data);
 			if ($mail->Send())
@@ -99,6 +104,11 @@ if(isset($_POST['jsondata'])){
 				$mail2->FromName = "<no-reply> Tampilin Automated Email";
 				$mail2->Subject = "Order #".$order_code.": Pemesanan Website Baru";
 				$mail2->AddAddress("info@tampilin.id", "Info Tampilin");
+				$mail2->AddEmbeddedImage($path.'/images/tampilin_white_red.png', 'logo_top');
+				$mail2->AddEmbeddedImage($path.'/images/1455227518_Facebook.png', 'fb_icon');
+				$mail2->AddEmbeddedImage($path.'/images/1455227348_twitter.png', 'twitter_icon');
+				$mail2->AddEmbeddedImage($path.'/images/1455227364_instagram.png', 'ig_icon');
+				$mail2->AddEmbeddedImage($path.'/images/1455227609_LINE.png', 'line_icon');
 				$mail2->IsHTML(true);
 				$mail2->Body = generateOrderMailForAdmin($data);
 				if ($mail2->Send())
