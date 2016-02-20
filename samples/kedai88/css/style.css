@@ -1,0 +1,208 @@
+body {
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	height: 36px;
+	margin-top: 0px;
+	box-shadow: grey 0px 0px 30px;
+	background: rgba(255, 255, 255, 0.9);
+	z-index: 2;
+}
+
+.header ul {
+	float: right;
+	margin-right: 25px;
+	margin-top: 0px;
+	min-height: 100%;
+	text-align: center;
+	margin-right: 25px;
+}
+
+.header li:HOVER {
+	background-color: #FE7C60;
+	border-bottom: #2C3E50 solid 2px;
+	padding-bottom: 10px;
+	color: #FFFFFF;
+}
+
+.header li {
+	list-style: none;
+	display: inline-block;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 18px;
+	margin-top: 0px;
+	height: 100%;
+	text-align: center;
+	transition: 0.5s;
+	padding-top: 4px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-bottom: transparent solid 2px;
+}
+
+.header a {
+	text-decoration: none;
+	color: #000000;
+	transition: 0.2s;
+	display: block;
+}
+
+.header a:HOVER {
+	color: #FFFFFF;
+}
+
+.main {
+	position: absolute;
+	min-width: 100%;
+	z-index: 1;
+	min-height: 100%;
+}
+
+.home {
+	min-height: 595px;
+	height: 595px;
+	min-width: 100%;
+	position: fixed;
+	background-image: url("/images/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-image: url("/images/bg.jpg");
+}
+
+.about {
+	position: absolute;
+	top: 595px;
+	min-width: 100%;
+	height: 500px;
+	background: #FFFFFF;
+}
+
+.about .abouttext {
+	height: 500px;
+	width: 50%;
+	position: absolute;
+	display: inline-block;
+	background-color: #D1404A;
+	color: #FFFFFF;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.about .abouttext .headertitle {
+	margin-left: 8%;
+	margin-top: 10%;
+	font-size: 30px;
+	border-bottom: orange solid 2px;
+	margin-right: 6%;
+	text-align: right;
+}
+
+.about .abouttext .title {
+	margin-left: 6%;
+	font-size: 51px;
+	margin-bottom: 0px;
+	margin-right: 6%;
+	text-align: right;
+}
+
+.about .abouttext .subtitle {
+	margin-left: 6%;
+	margin-top: 0%;
+	text-align: right;
+	margin-right: 6%;
+	font-size: 34px;
+}
+
+.about .abouttext .content {
+	margin-left: 6%;
+	margin-right: 6%;
+	text-align: right;
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.about .aboutimg {
+	height: 500px;
+	width: 50%;
+	display: inline-block;
+	background-image: url("/images/aboutbg.jpg");
+	background-size: auto 100%;
+	position: absolute;
+	left: 50%;
+	background-repeat: no-repeat;
+}
+
+.menu {
+	position: absolute;
+	top: 1095px;
+	width: 100%;
+	height: 595px;
+	overflow-x: hidden;
+}
+
+.menu .menuheader {
+	position: absolute;
+	min-width: 100%;
+	height: 100px;
+	background-color: #FBCF61;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 30px;
+	color: #C0392B;
+	text-align: center;
+}
+
+.menu .menuheader .title {
+	margin-top: 0px;
+}
+
+.menu .menucontent {
+	position: absolute;
+	top: 100px;
+	height: 495px;
+	width: 100000px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.menu img {
+	position: relative;
+	min-width: 100%;
+}
+
+.menu .product1 {
+	background-image: url("/images/product1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	max-width: 1280px;
+	height: 100%;
+	width: 1280px;
+	display: inline-block;
+}
+
+.menu .product2 {
+	background-image: url("/images/product2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	max-width: 1280px;
+	height: 100%;
+	width: 1280px;
+	display: inline-block;
+}
+
+.menu .product {
+	position: relative;
+	height: 495px;
+}
+
+.toggle {
+	position: absolute;
+	top: 200px;
+	width: 100%;
+	height: 300px;
+	background-color: black;
+	opacity: 0.5;
+}
