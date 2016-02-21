@@ -7,6 +7,8 @@
 <link
 	href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,300'
 	rel='stylesheet' type='text/css'>
+<script src="../javascript/jquery-1.12.0.min.js" type="text/javascript"></script>
+<script src="../javascript/index.js" type="text/javascript"></script>
 <title>Kedai 88: Chinese Cuisine from Yogyakarta</title>
 </head>
 <body>
@@ -44,7 +46,20 @@
 					<div class="product2"></div>
 				</div>
 			</div>
-			<div class="toggle"></div>
+			<div class="toggle">
+				<div class="prev">
+					<span></span>
+				</div>
+				<div class="next">
+					<span></span>
+				</div>
+				<div class="title">
+					PAKET HEMAT
+				</div>
+				<div class="subtitle">
+					NASI + LAUK + SAYUR + MINUM
+				</div>
+			</div>
 		</div>
 	</div>
 </body>

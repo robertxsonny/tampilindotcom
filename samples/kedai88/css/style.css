@@ -203,6 +203,89 @@ body {
 	top: 200px;
 	width: 100%;
 	height: 300px;
-	background-color: black;
-	opacity: 0.5;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	font-weight: 100;
+	color: #FFFFFF;
+}
+
+.toggle .prev {
+	background-color: #FFFFFF;
+	position: absolute;
+	width: 75px;
+	height: 150px;
+	border-radius: 0px 150px 150px 0px;
+	top: 25%;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.toggle .prev:HOVER {
+	background-color: #D1404A;
+	box-shadow: #D1404A 10px 0px 50px;
+}
+
+.toggle .next {
+	background-color: #FFFFFF;
+	position: absolute;
+	width: 75px;
+	height: 150px;
+	border-radius: 150px 0px 0px 150px;
+	top: 25%;
+	cursor: pointer;
+	right: 0;
+	transition: 0.5s;
+}
+
+.toggle .next:HOVER {
+	background-color: #D1404A;
+	box-shadow: #D1404A 10px 0px -50px;
+}
+
+.toggle .prev span {
+	top: 34%;
+	position: absolute;
+	left: 10%;
+	background-image: url("/images/arrow_left_black.png");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	width: 50px;
+	height: 50px;
+	transition: 0.5s;
+}
+
+.toggle .prev .hover {
+	background-image: url("/images/arrow_left_white.png");
+}
+
+.toggle .next .hover {
+	background-image: url("/images/arrow_right_white.png");
+}
+
+.toggle .next span {
+	top: 34%;
+	position: absolute;
+	right: 10%;
+	background-image: url("/images/arrow_right_black.png");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	width: 50px;
+	height: 50px;
+	transition: 0.5s;
+}
+
+.toggle .next span:HOVER {
+	background-image: url("/images/arrow_right_white.png");
+}
+
+.toggle .title {
+	font-size: 72px;
+	font-weight: bold;
+	padding-top: 30px;
+}
+
+.toggle .subtitle {
+	font-size: 55px;
 }
