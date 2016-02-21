@@ -11,12 +11,12 @@ body
 
 h1, h2, h3, h4, h5, h6 
 {
-	font-family: 'News Cycle', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 span, p, label, td, th, small
 {
-	font-family: "News Cycle", sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 #content-wrapper
@@ -28,7 +28,7 @@ span, p, label, td, th, small
 #button-collapse 
 {
 	display: none;
-	background-color: #1c1c1c;
+	background-color: #005F6B;
 	border: none;
 	height: 40px;
 	width: 40px;
@@ -41,7 +41,7 @@ span, p, label, td, th, small
 
 #header {
 	height: 40px;
-	background-color: #1c1c1c;
+	background-color: #005F6B;
 	padding: 5px 0;
 	color: white;
 	position: fixed;
@@ -60,7 +60,7 @@ span, p, label, td, th, small
 	list-style-type: none;
 	float: right;
 	display: block;
-	font-family: "News Cycle", sans-serif;
+	font-family: "Quicksand", sans-serif;
 	font-weight: 300;
 	height: 40px;
 	margin: auto 0 !important;
@@ -72,7 +72,6 @@ span, p, label, td, th, small
 	padding: 0;
 	padding-left: 25px;
 	text-align: left;
-	letter-spacing: 5px;
 }
 
 .nav-menu li a {
@@ -83,7 +82,17 @@ span, p, label, td, th, small
 	text-shadow: none;
 }
 
-.nav-menu li a:hover {
+a.nav-item
+{
+	font-family: "Quicksand", sans-serif;	
+	text-decoration: none;
+	color: white;
+	font-size: 120%;
+	height: 100%;
+	line-height: 40px;
+}
+
+a.nav-item:hover, .nav-menu li a:hover {
 	text-shadow: 0 0 10px white;
 }
 
@@ -94,8 +103,8 @@ span, p, label, td, th, small
 
 .image-page
 {
-	padding-top: 225px;
-	padding-bottom: 375px;	
+	padding-top: 150px;
+	padding-bottom: 400px;	
 }
 
 .content-page
@@ -145,9 +154,7 @@ span, p, label, td, th, small
 	display: block;
 	white-space: pre;
 	margin: 0 auto;
-	font-family: "News Cycle", sans-serif;
-	font-weight: 400;
-	text-shadow: 0 0 10px #ffab18;
+	font-family: "Quicksand", sans-serif;
 }
 
 .title-center
@@ -168,13 +175,13 @@ span, p, label, td, th, small
 .title-1
 {
 	font-size: 250%;
-	letter-spacing: 15px;
+	font-weight: 400;
 }
 
 .title-2
 {
 	font-size: 150%;
-	letter-spacing: 10px;
+	font-weight: 300;
 }
 
 .box-border
@@ -351,7 +358,6 @@ span, p, label, td, th, small
 	margin-top: 0;
 	font-weight: 300;
 	text-align: center;
-	letter-spacing: 15px;
 }
 
 .package-title
@@ -366,11 +372,29 @@ span, p, label, td, th, small
 	font-weight: 600;
 }
 
+
 .desc
 {
+	font-size: 110%;
+	font-weight: 400;
 	padding-top: 0;
 	text-align: center;
 	margin-top: 0;
+}
+
+.desc strong
+{
+	color: #00B4CC;
+}
+
+.desc-short
+{
+	height: 4em;
+}
+
+.desc-medium
+{
+	height: 7em;
 }
 
 .desc a
@@ -394,6 +418,12 @@ span, p, label, td, th, small
 	text-align: left;
 }
 
+
+.desc-right
+{
+	text-align: right;
+}
+
 .desc-mobile
 {
 	display: block;
@@ -404,74 +434,17 @@ span, p, label, td, th, small
 	display: none;
 }
 
-
-.old-price, .promo-desc
-{
-	text-align: center;
-	padding: 0;
-	margin: 0;
-}
-
-.feature-list
-{
-	padding-top: 10px;
-	list-style-type: none;
-	padding-left: 5%;
-	padding-right: 5%;
-}
-
-.feature-list li
-{
-	line-height: 1.5em;
-}
-
-.desc, .feature-list, .old-price
-{
-	font-size: 110%;
-	letter-spacing: 3px;
-	font-weight: 300;
-}
-
 h3.desc
 {
 	font-size: 130%;
 	font-weight: 400;
 }
 
-.how-to-icon
+.center-image
 {
-	display: block;
-	margin: -32% auto;
-	width: 100%;
-	height: auto;
-	max-width: 75%;
+	padding-top: 45%; 
+	height: 0;
 }
-
-.how-to-box
-{
-	display: inline-block;
-	float: left;
-	height: 0 !important;
-	width: 20%;
-	padding: 12.5% 2.5% !important;
-	margin: 0;
-}
-
-.how-to-inner
-{
-	width: 100%;
-	display: block;
-	height: 0 !important;
-	vertical-align: middle;
-}
-
-.how-to-inner .desc, .how-to-inner .title
-{
-	margin: -23% 0;
-	display: block;
-	height: 0 !important;
-}
-
 
 .item-with-icon div
 {
@@ -481,12 +454,12 @@ h3.desc
 
 .icon-wrapper
 {
-	width: 19.5%;
+	width: 10%;
 }
 
 .caption-wrapper
 {
-	width: 79.5%;
+	width: 90%;
 	height: 6em;
 }
 
@@ -626,7 +599,6 @@ progress.skill-set::-moz-progress-bar
 {
 	width: 100%;
 	height: 0;
-	padding-top: 10%;
 	padding-bottom: 10%;
 }
 
@@ -733,30 +705,28 @@ div.socmed-item
 
 input.contact-input, textarea.contact-input
 {
-	width: 97%;
-	font-family: "News Cycle", sans-serif;
+	width: 98%;
+	font-family: "Quicksand", sans-serif;
 	font-size: 120%;
-	letter-spacing: 3px;
-	color: white;
+	color: #343838;
 	line-height: 1.2em;
-	background: transparent;
+	background: rgba(255,255,255,0.7);
 	padding: 1%;
 	margin: 0;
 	margin-bottom: 5px;
 	vertical-align: middle;
-	border: 3px solid;
+	border: none;
 }
 
 button.contact-button
 {
 	font-size: 120%;
-	font-family: "News Cycle", sans-serif;
+	font-family: "Quicksand", sans-serif;
 	line-height: 1.2em;
-	letter-spacing: 3px;
-	background-color: white;
+	background-color: #00B4CC;
 	float: right;
 	border: none;
-	color: #494949;
+	color: white;
 	padding: 2% 5%;
 }
 
@@ -769,7 +739,7 @@ button.contact-button
 
 .contact
 {
-	font-family: "Lato", sans-serif;
+	font-family: "Quicksand", sans-serif;
 	font-size: 125%;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -874,6 +844,11 @@ button.contact-button
 	.title-2
 	{
 		font-size: 250%;
+	}
+	
+	.title-3
+	{
+		font-size: 200%;
 	}
 	
 	.content-title, .package-title, .price, .team-name
@@ -1059,6 +1034,11 @@ button.contact-button
 	{
 		width: 99%;
 	}	
+		
+	.center-image
+	{
+		padding-top: 0;
+	}
 	
 	h3.desc
 	{

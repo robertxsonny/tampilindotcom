@@ -23,13 +23,7 @@
 <link href="css/style.css" rel='stylesheet' type='text/css'>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=News+Cycle:300,400' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Raleway:300,400' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Arimo:700,400,300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
-<link
-	href='https://fonts.googleapis.com/css?family=Hind+Vadodara:600,400'
-	rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Quicksand:400,300' rel='stylesheet' type='text/css'>
 <title>tampilin.id</title>
 <!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -37,6 +31,7 @@
 <![endif]-->
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 	$(window).resize(function() {
@@ -45,6 +40,7 @@ $(document).ready(function() {
 		else
 			$('.nav-menu').hide();		
 	});
+	/* $('.sample-product').addClass('static'); */
 	$('.required-alert').hide();
 	$('.invalid-alert').hide();
 	$('.input-message').hide();
@@ -55,6 +51,143 @@ $(document).ready(function() {
 			duration: 500
 		});
 		return false;
+	});
+	var chart1 = $("#frontend-chart").get(0).getContext("2d");
+	var chart2 = $("#backend-chart").get(0).getContext("2d");
+	var chart3 = $("#database-chart").get(0).getContext("2d");
+	var chart4 = $("#desktop-chart").get(0).getContext("2d");
+	var chart5 = $("#mobile-chart").get(0).getContext("2d");
+	var chart6 = $("#semantic-chart").get(0).getContext("2d");
+	var chart7 = $("#sharepoint-chart").get(0).getContext("2d");
+	var chart8 = $("#server-chart").get(0).getContext("2d");
+	
+	var data1 = [
+	 	        {
+	 		        value: 85,
+	 		        color:"#00B4CC"
+	 		    },
+	 		    {
+	 		        value: 15,
+	 		        color: "#444848"
+	 		    }];
+	var data2 = [
+	 	        {
+	 		        value: 79,
+	 		        color:"#00B4CC"
+	 		    },
+	 		    {
+	 		        value: 21,
+	 		        color: "#444848"
+	 		    }];
+	var data3 = [
+	 	        {
+	 		        value: 71,
+	 		        color:"#00B4CC"
+	 		    },
+	 		    {
+	 		        value: 29,
+	 		        color: "#444848"
+	 		    }];
+	var data4 = [
+	 	        {
+	 		        value: 76,
+	 		        color:"#00B4CC"
+	 		    },
+	 		    {
+	 		        value: 24,
+	 		        color: "#444848"
+	 		    }];
+	var data5 = [
+	 	        {
+	 		        value: 65,
+	 		        color:"#00B4CC"
+	 		    },
+	 		    {
+	 		        value: 35,
+	 		        color: "#444848"
+	 		    }];
+	var data6 = [
+	 	        {
+	 		        value: 69,
+	 		        color:"#00B4CC"
+	 		    },
+	 		    {
+	 		        value: 31,
+	 		        color: "#444848"
+	 		    }];
+	var data7 = [
+	 	        {
+	 		        value: 72,
+	 		        color:"#00B4CC"
+	 		    },
+	 		    {
+	 		        value: 28,
+	 		        color: "#444848"
+	 		    }];
+	var data8 = [
+		 	    {
+		 		    value: 55,
+		 		    color:"#00B4CC"
+		 		},
+		 		{
+		 		    value: 45,
+		 		    color: "#444848"
+		 		}];
+	var ch1 = new Chart(chart1).Doughnut(data1, {
+		responsive: true,
+		maintainAspectRatio: true,
+		animationEasing : "easeOutBounce",
+		showTooltips : false,
+		segmentShowStroke : false
+	});
+	var ch2 = new Chart(chart2).Doughnut(data2, {
+		responsive: true,
+		maintainAspectRatio: true,
+		animationEasing : "easeOutBounce",
+		showTooltips : false,
+		segmentShowStroke : false
+	});
+	var ch3 = new Chart(chart3).Doughnut(data3, {
+		responsive: true,
+		maintainAspectRatio: true,
+		animationEasing : "easeOutBounce",
+		showTooltips : false,
+		segmentShowStroke : false
+	});
+	var ch4 = new Chart(chart4).Doughnut(data4, {
+		responsive: true,
+		maintainAspectRatio: true,
+		animationEasing : "easeOutBounce",
+		showTooltips : false,
+		segmentShowStroke : false
+	});
+	var ch5 = new Chart(chart5).Doughnut(data5, {
+		responsive: true,
+		maintainAspectRatio: true,
+		animationEasing : "easeOutBounce",
+		showTooltips : false,
+		segmentShowStroke : false
+	});
+	var ch6 = new Chart(chart6).Doughnut(data6, {
+		responsive: true,
+		maintainAspectRatio: true,
+		animationEasing : "easeOutBounce",
+		showTooltips : false,
+		segmentShowStroke : false
+	});
+	var ch7 = new Chart(chart7).Doughnut(data7, {
+		responsive: true,
+		maintainAspectRatio: true,
+		animationEasing : "easeOutBounce",
+		showTooltips : false,
+		segmentShowStroke : false
+	});
+	var ch8 = new Chart(chart8).Doughnut(data8, {
+		responsive: true,
+		maintainAspectRatio: true,
+		animationEasing : "easeOutBounce",
+		showTooltips : false,
+		segmentShowStroke : false
 	});
 	$('#button-collapse').click(function(){
 		$('.nav-menu').slideToggle(100);
@@ -228,11 +361,11 @@ function processOrder()
        			<i class="fa fa-2x fa-bars"></i>
       		</button>
 			<div id="brand-title">
-			<a class="nav-item" href="#cover-1"><img src="images/tampilin_black_red.png" height="40px" /></a>
+			<a class="nav-item" href="#cover-1">@rsonnyprakoso</a>
 			<ul class="nav-menu">
-				<li><a class="nav-item" href="#works">WORKS</a></li>
 				<li><a class="nav-item" href="#about">ABOUT</a></li>
-				<li><a class="nav-item" href="#skills">SKILLS</a></li>
+				<li><a class="nav-item" href="#works">SKILLS</a></li>
+				<li><a class="nav-item" href="#skills">PORTFOLIO</a></li>
 				<li><a class="nav-item" href="#contact">CONTACT</a></li>
 			</ul>
 			</div>		
@@ -240,80 +373,178 @@ function processOrder()
 	</header>
 	
 	<div id="content-wrapper">
-		<div id="cover-1" class="page image-page" style="background: linear-gradient(rgba(47,47,59,0.4), rgba(47,47,59,0.4)), url('images/cover1.jpg') no-repeat center center fixed; background-size: cover;">
+		<div id="cover-1" class="page image-page" style="background: linear-gradient(rgba(47,47,59,0.7), rgba(47,47,59,0.7)), url('images/cover1.jpg') no-repeat center center; background-size: cover;">
 			<div class="page-content">
-				<span class="title title-left title-1">THEKUCING</span>
-				<span class="title title-left title-2">ILLUSTRATOR & DESIGNER</span>
+				<div class="person-photo circle" style="background: url('images/rsp.jpg') no-repeat center; background-size: cover;"></div>
+				<span class="title title-center title-1">Robertus Sonny Prakoso</span>
+				<span class="title title-center title-3">Yogyakarta, ID</span>
+				<br/>
+				<span class="title title-center title-2">Programmer | Designer | Writer</span>
+			</div>
+		</div>
+		
+		<div id="about" class="page content-page" style="background-color: #FFFFFF; color: #343838;">
+			<div class="page-content">
+				<h1 class="content-title">ABOUT ME</h1>
+				<div class="box-container">
+					<div class="box-3">
+						<p class="desc desc-short desc-right"><strong>Education</strong>
+						<br/>
+						Bachelor of Information Technology, Universitas Gadjah Mada</p>
+						<br/>
+						<p class="desc desc-short desc-right"><strong>Language</strong>
+						<br/>
+						English, Bahasa Indonesia, Javanese</p>
+						<br/>
+						<p class="desc desc-short desc-right"><strong>Interested In</strong>
+						<br/>
+						Human Computer Interaction, Web 3.0, Cloud Computing</p>
+						<br/>
+						<p class="desc desc-medium desc-right"><strong>Experiences</strong>
+						<br/>
+						Involved in some professional projects, joined and got achievement in some software design competition</p>
+						<br/>
+					</div>
+					<div class="box-3 center-image" style="background: url('images/worker.png') no-repeat center; background-size: contain;">
+						&nbsp;
+					</div>
+					<div class="box-3">
+						<p class="desc desc-short desc-left"><strong>Main Occupation</strong>
+						<br/>
+						Co-founder and web developer at tampilin.id</p>
+						<br/>
+						<p class="desc desc-short desc-left"><strong>Freelance Job</strong>
+						<br/>
+						Web designer, layouter, online media contributor</p>
+						<br/>
+						<p class="desc desc-short desc-left"><strong>Past Occupation</strong>
+						<br/>
+						MIC Yogyakarta, NextIn Indonesia</p>
+						<br/>
+						<p class="desc desc-long desc-left"><strong>Work Attitude</strong>
+						<br/>
+						Able to work with team, always has lots of creativities and fresh ideas, never deliver works with low quality</p>
+						<br/>
+					</div>						
+				</div>
 			</div>
 		</div>
 	
-		<div id="works" class="page content-page" style="background-color: #1c1c1c; color: #FFFFFF;" >
+		<div id="skills" class="page content-page" style="background-color: #343838; color: #FFFFFF" >
 			<div class="page-content">
-				<h1 class="content-title">WORKS</h1>
+				<h1 class="content-title">PROGRAMMING AND DESIGN SKILLS</h1>
+				<p class="desc">&nbsp;</p>
 				<div class="box-container">
-					<div class="box-3 animation-wrapper">
+					<div class="box-4">
+						<canvas id="frontend-chart" class="skill-chart"></canvas>
+						<p class="desc desc-short">Front-end Web Programming (HTML, CSS, JavaScript)</p>
+					</div>
+					<div class="box-4">
+						<canvas id="backend-chart" class="skill-chart"></canvas>
+						<p class="desc desc-short">Back-end Web Programming (PHP, ASP.NET)</p>
+					</div>
+					<div class="box-4">
+						<canvas id="database-chart" class="skill-chart"></canvas>
+						<p class="desc desc-short">Database Programming (MySQL, SQL Server)</p>
+					</div>
+					<div class="box-4">
+						<canvas id="desktop-chart" class="skill-chart"></canvas>
+						<p class="desc desc-short">Desktop Application (C#)</p>
+					</div>
+					<div class="box-4">
+						<canvas id="mobile-chart" class="skill-chart"></canvas>
+						<p class="desc desc-short">Mobile Application (Android, Windows Phone)</p>
+					</div>
+					<div class="box-4">
+						<canvas id="semantic-chart" class="skill-chart"></canvas>
+						<p class="desc desc-short">Semantic Web Programming (Ontology, RDF)</p>
+					</div>
+					<div class="box-4">
+						<canvas id="sharepoint-chart" class="skill-chart"></canvas>
+						<p class="desc desc-short">Vector Design (Inkscape, CorelDraw, AI)</p>
+					</div>
+					<div class="box-4">
+						<canvas id="server-chart" class="skill-chart"></canvas>
+						<p class="desc desc-short">Server Programming (Windows Server, Linux-based Server)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		
+		<div id="works" class="page content-page" style="background-color: #444848; color: #FFFFFF;" >
+			<div class="page-content">
+				<h1 class="content-title">PORTFOLIO</h1>
+				<h2 class="content-subtitle">websites | apps | posters | writings</h1>
+				<div class="box-container">
+					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 1.jpg') no-repeat center; background-size: cover;">
 						</a>	
 					</div>
-					<div class="box-3 animation-wrapper">
+					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 2.jpg') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-3 animation-wrapper">
+					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 3.jpg') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-3 animation-wrapper">
+					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 4.jpg') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-3 animation-wrapper">
+					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 5.jpg') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-3 animation-wrapper">
+					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 6.jpg') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-3 animation-wrapper">
+					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 7.jpg') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-3 animation-wrapper">
+					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 8.jpg') no-repeat center; background-size: cover;">
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		<div id="about" class="page content-page" style="background: linear-gradient(rgba(47,47,59,0.8), rgba(47,47,59,0.8)),  url('images/cover2.jpg') no-repeat center center fixed; background-size: cover; color: #FFFFFF">
-			<div class="page-content">
-				<h1 class="content-title">ABOUT ME</h1>
-				<div class="person-photo circle" style="background: url('images/esty.jpg') no-repeat center; background-size: cover;">
-				</div>
-				<p class="desc">I am a designer and digital ilustrator with a passion and tendency to create art pieces which can give the audience a unique experience as well as long lasting impression.</p>
-				<p class="desc">Thus far, I have been learning new things and gaining a lot of experience through my freelance works. The fruit of these works is that I am able to work under pressure, to colaborate within a team, and also am able to keep pushing forward to reach the desirable results.</p>
-			</div>
-		</div>
-		
-		<div id="skills" class="page content-page" style="background-color: #1c1c1c; color: #FFFFFF">
-			<div class="page-content">
-				<h1 class="content-title">SKILLS</h1>
-				<p class="desc desc-left">Photoshop</p>
-				<progress id="skill-photoshop" class="skill-set" value="85" max="100"></progress>
-				<p class="desc desc-left">Paint Tool SAI</p>
-				<progress id="skill-sai"  class="skill-set" value="100" max="100"></progress>
-				<p class="desc desc-left">Corel Draw</p>
-				<progress id="skill-corel"  class="skill-set" value="78" max="100"></progress>
-			</div>
-		</div>
+					
 				
-		<div id="contact" class="page content-page div-between-top" style="background: linear-gradient(rgba(47,47,59,0.8), rgba(47,47,59,0.8)),  url('images/cover3.jpg') no-repeat center center fixed; background-size: cover; color: #FFFFFF">
+		<div id="contact" class="page content-page" style="background: linear-gradient(rgba(47,47,59,0.8), rgba(47,47,59,0.8)),  url('images/cover2.jpg') no-repeat center center; background-size: cover; color: #FFFFFF">
 			<div class="page-content">
 				<h1 class="content-title">CONTACT</h1>
 				<div class="box-container">
 				<div class="box-2 input-box">
+				<p class="desc desc-left">If you want to work with me, just contact me using phone, email, or social media below...</p>
+				<div class="item-with-icon">
+					<div class="icon-wrapper">
+						<div class="socmed-item" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></div>
+					</div>
+					<div class="scaption-wrapper">
+						<p class="contact">+6281804246404/+6282225226368</p>
+					</div>
+				</div>
+				<div class="item-with-icon">
+					<div class="icon-wrapper">
+						<div class="socmed-item" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></div>
+					</div>
+					<div class="scaption-wrapper">
+						<p class="contact">sonny@tampilin.id</p>
+					</div>
+				</div>
+				<div class="team-socmed">
+					<div class="socmed-wrapper">
+						<a class="socmed-item" href="#" style="background: url('images/1455227518_Facebook.png') no-repeat center; background-size: contain;"></a>
+						<a class="socmed-item" href="#" style="background: url('images/1455227364_instagram.png') no-repeat center; background-size: contain;"></a>
+						<a class="socmed-item" href="#" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></a>
+					</div>
+				</div>
+				<br/>
+				<p class="desc desc-left">.. or directly send me email using this form.</p>
 				<form>
 					<div class="input-message loading">
 						<img src="images/ajax-loader.gif" class="message-icon"></img>
@@ -343,50 +574,18 @@ function processOrder()
 					<button id="order-submit" class="contact-button" >Send</button>
 				</form>
 				</div>
-				<div class="box-2 indent-box">
-					<p class="desc">If you want to drop by and say hello or want to work on a project with me, please don't hesitate to contact me.</p>
-					<div class="item-with-icon">
-						<div class="icon-wrapper">
-							<div class="socmed-item" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></div>
-						</div>
-						<div class="scaption-wrapper">
-							<p class="desc desc-left">Sagan GK V No 999 Yogyakarta</p>
-						</div>
-					</div>
-					<div class="item-with-icon">
-						<div class="icon-wrapper">
-							<div class="socmed-item" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></div>
-						</div>
-						<div class="scaption-wrapper">
-							<p class="desc desc-left">(0284) 584138</p>
-						</div>
-					</div>
+				<div class="box-2">
+					&nbsp;
 				</div>
 			</div>
 		</div>
 		</div>					
-					
 		
-		<div id="socmed" class="page content-page div-between-bottom" style="background-color: #1c1c1c; color: #FFFFFF;">
-			<div class="page-content">
-				<a id="up-button" href="#cover-1" class="circle between-div nav-item"><i class="fa fa-chevron-up fa-2x"></i></a>
-				<div class="team-socmed">
-					<div class="socmed-wrapper">
-						<a class="socmed-item" href="#" style="background: url('images/1455227518_Facebook.png') no-repeat center; background-size: contain;"></a>
-						<a class="socmed-item" href="#" style="background: url('images/1455227364_instagram.png') no-repeat center; background-size: contain;"></a>
-						<a class="socmed-item" href="#" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<hr class="foot-line"/>
-		
-		<div id="footer" class="page content-page" style="background-color: #1c1c1c; color: #FFFFFF;">
+		<div id="footer" class="page content-page" style="background-color: #005F6B; color: #FFFFFF;">
 			<div class="page-content">
 				<p class="foot-note">
 				Copyright &copy; 2016 <a
-					href="https://www.facebook.com/thekucing" target="_blank">TheKucing</a>, created by <a
+					href="https://www.facebook.com/rsonnyprakoso" target="_blank">Robertus Sonny Prakoso</a>, created by <a
 					href="http://tampilin.id" target="_blank">tampilin.id</a>
 				</p>
 			</div>
