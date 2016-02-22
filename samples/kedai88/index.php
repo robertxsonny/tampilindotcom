@@ -14,29 +14,30 @@
 <body>
 	<div class="header">
 		<ul>
-			<li><a href="#home">HOME</a></li>
-			<li><a href="#menu">MENU</a></li>
-			<li><a href="#contact">CONTACT US</a></li>
-			<li><a href="#about">ABOUT US</a></li>
+			<li><a class="link" href="#landingpage">HOME</a></li>
+			<li><a class="link" href="#menu">MENU</a></li>
+			<li><a class="link" href="#contact">CONTACT US</a></li>
+			<li><a class="link" href="#about">ABOUT US</a></li>
 		</ul>
 	</div>
 	<div class="main">
-		<div class="home"></div>
-		<div class="about">
+		<div id="landingpage" class="home"></div>
+		<div id="about" class="about">
 			<div class="abouttext">
 				<h3 class="headertitle">ABOUT US</h3>
 				<h1 class="title">KEDAI 88</h1>
 				<h2 class="subtitle">
 					CHINESE CUISINE
 					</h1>
-					<p class="content">Kedai 88 Chinese Cuisine merupakan gerai
-						makan yang menggunakan resep asli turunan Tionghoa dengan
-						dipadukan dengan cita rasa masa kini. Kami hanya menggunakan bahan
-						yang segar dan bermutu tinggi.</p>
+					<p class="content">Kedai 88 Chinese Cuisine merupakan gerai makan
+						yang menggunakan resep asli turunan Tionghoa dengan dipadukan
+						dengan cita rasa masa kini. Kami hanya menggunakan bahan yang
+						segar dan bermutu tinggi.</p>
+			
 			</div>
 			<div class="aboutimg"></div>
 		</div>
-		<div class="menu">
+		<div id="menu" class="menu">
 			<div class="menuheader">
 				<h1 class="title">MENU</h1>
 			</div>
@@ -53,13 +54,56 @@
 				<div class="next">
 					<span></span>
 				</div>
-				<div class="title">
-					PAKET HEMAT
+				<div class="title">PAKET HEMAT</div>
+				<div class="subtitle">NASI + LAUK + SAYUR + MINUM</div>
+			</div>
+		</div>
+		<div id="menulist" class="menulist">
+			<div class="list">
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM TULANG</p>
 				</div>
-				<div class="subtitle">
-					NASI + LAUK + SAYUR + MINUM
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>PAKET HEMAT</p>
+				</div>
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM TULANG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>NASI GORENG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM TULANG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>PAKET HEMAT</p>
+				</div>
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM TULANG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>NASI GORENG</p>
 				</div>
 			</div>
+		</div>
+		<div class="footer">
+			<div class="col">
+				<div class="logo"></div>
+				<p>Subha Food Fest</p>
+				<p>Galeria Mall Lt. 3</p>
+				<p>Jalan Jenderal Sudirman No. 99-101</p>
+				<p>Yogyakarta</p>
+				<p class="phoneno"><span class="phone"></span>081328887771</p>
+			</div>
+			<div class="col"></div>
 		</div>
 	</div>
 </body>
