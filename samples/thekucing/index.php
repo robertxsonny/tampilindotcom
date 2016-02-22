@@ -12,7 +12,7 @@
 	content="Tampilin.id, pengembang one page website sederhana di Indonesia. Menawarkan layanan yang cepat dan desain yang dibuat khusus, bukan berupa template. Buat Buat portofolio atau CV online, kartu nama online, profil usaha, atau website sederhana lainnya di sini.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://tampilin.id">
-<meta property="og:site_name" content="tampilin.id">
+<meta property="og:site_name" content="TheKucing">
 <meta name="revisit-after" content="7 days">
 <meta name="distribution" content="web">
 <meta name="robots" content="index, follow">
@@ -30,12 +30,13 @@
 <link
 	href='https://fonts.googleapis.com/css?family=Hind+Vadodara:600,400'
 	rel='stylesheet' type='text/css'>
-<title>tampilin.id</title>
+<title>TheKucing</title>
 <!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+<script src="/js/jquery-2.2.0.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -48,6 +49,10 @@ $(document).ready(function() {
 	$('.required-alert').hide();
 	$('.invalid-alert').hide();
 	$('.input-message').hide();
+	$('.popup').hide();
+	$('#group-2').hide();
+	$('#group-3').hide();
+	$('.sample-product').addClass("static");
 	$('.nav-item').click(function(){
 		$('html, body').animate({
 			scrollTop: $($(this).attr('href')).offset().top
@@ -55,6 +60,53 @@ $(document).ready(function() {
 			duration: 500
 		});
 		return false;
+	});
+	$('.slide-item').bind('mousedown', function() {
+		var newId = Number($(this).attr('id').replace('slide-', ''));
+		var selectedId = Number($('.slide-item.selected').first().attr('id').replace('slide-', ''));
+		if (newId != selectedId) {
+			$('#slide-' + selectedId).removeClass('selected');
+			$('#slide-' + newId).addClass('selected');
+			$('#group-' + selectedId).hide("slide", { direction : (newId > selectedId ? "left" : "right")},	300,
+					function() {
+						$('#group-'+ newId).show("slide", {direction : (newId > selectedId ? "right": "left")},	300);
+					});
+		}
+	});
+	$('.slide-left').bind('mousedown', function() {
+		var selectedId = Number($('.slide-item.selected').first().attr('id').replace('slide-', ''));
+		var firstId = Number($('.slide-item').first().attr('id').replace('slide-', ''));
+		var lastId = Number($('.slide-item').last().attr('id').replace('slide-', ''));
+		var newId = (selectedId > firstId ? selectedId - 1 : lastId);
+		$('#slide-' + selectedId).removeClass('selected');
+		$('#slide-' + newId).addClass('selected');
+		$('#group-' + selectedId).hide("slide", { direction : "right"},	300,
+				function() {
+					$('#group-'+ newId).show("slide", {direction : "left"},	300);
+				});
+	});
+	$('.slide-right').bind('mousedown', function() {
+		var selectedId = Number($('.slide-item.selected').first().attr('id').replace('slide-', ''));
+		var firstId = Number($('.slide-item').first().attr('id').replace('slide-', ''));
+		var lastId = Number($('.slide-item').last().attr('id').replace('slide-', ''));
+		var newId = (selectedId < lastId ? selectedId + 1 : firstId);
+		$('#slide-' + selectedId).removeClass('selected');
+		$('#slide-' + newId).addClass('selected');
+		$('#group-' + selectedId).hide("slide", { direction : "left"}, 300,
+				function() {
+					$('#group-'+ newId).show("slide", {direction : "right"}, 300);
+				});
+	});
+	$('.sample-product').bind('mousedown', function(){
+		var background = $(this).css('background-image');
+		$('#image-big').css('background-image',	background.replace('Thumbs','Fullpics'));
+		$('#image-big').css('background-size', 'contain');
+		$('#image-big').css('background-position', 'center center');
+		$('#image-big').css('background-repeat', 'no-repeat');
+		$('#product-popup').fadeIn(300);
+	});
+	$('#product-close').click(function(){
+		$('#product-popup').fadeOut(300);
 	});
 	$('#button-collapse').click(function(){
 		$('.nav-menu').slideToggle(100);
@@ -91,73 +143,53 @@ $(document).ready(function() {
 				$('#order-email').closest('.input-group').find('.invalid-alert').hide();
 				$('#order-email').removeClass('empty');
 			}
-		}
-		if (!$('#order-phone').hasClass('empty'))
-		{
-			var phone = $('#order-phone').val();
-			if (phone[0] == '+')
-			{
-				if (!(phone.substring(1).match(/\d/g).length < 15))
-				{
-					$('#order-phone').closest('.input-group').find('.invalid-alert').show();
-					$('#order-phone').addClass('empty');
-					allFilled = false;
-				}
-				else
-				{
-					$('#order-phone').closest('.input-group').find('.invalid-alert').hide();
-					$('#order-phone').removeClass('empty');
-				}
-			}
-			else
-			{
-				if (phone[0] != '0' || !(phone.substring(1).match(/\d/g).length < 15))
-				{
-					$('#order-phone').closest('.input-group').find('.invalid-alert').show();
-					$('#order-phone').addClass('empty');
-					allFilled = false;
-				}
-				else
-				{
-					$('#order-phone').closest('.input-group').find('.invalid-alert').hide();
-					$('#order-phone').removeClass('empty');
-				}
-			}
-		}
-		if (!$('#order-domain').hasClass('empty'))
-		{
-			var domain = $('#order-domain').val();
-			var dot2 = domain.lastIndexOf('.');
-			if (dot2 < 1 || dot2 >= domain.length - 2)
-			{
-				$('#order-domain').closest('.input-group').find('.invalid-alert').show();
-				$('#order-domain').addClass('empty');
-				allFilled = false;
-			}
-			else
-			{
-				$('#order-domain').closest('.input-group').find('.invalid-alert').hide();
-				$('#order-domain').removeClass('empty');
-			}
 		}		
 		if (allFilled)
 		{
-			if (!$('#upload-document').val())
-			{
-				var c = confirm("Anda belum meng-upload dokumen. Yakin ingin memproses sekarang? Anda dapat mengirim dokumen tersebut kemudian.");
-				if (c)
-					processOrder();
+			$('.input-message.loading').show();
+			var order = {
+					name: $('#order-name').val(),
+					email: $('#order-email').val(),
+					content: $('#order-content').val(),
 			}
-			else
-				processOrder();
+			var xmlhr = new XMLHttpRequest();
+			xmlhr.open('POST', '/functions/sendEmail.php', true);
+			xmlhr.onload = function(e) {
+				if (xmlhr.readyState == 4) {
+					if (xmlhr.status == 200) {
+						if (xmlhr.responseText == '1')
+						{
+							/*$('#warningcontainer').hide();*/
+							$('.input-message.loading').hide();
+							$('#order-form')[0].reset();
+							$('.input-message.success').show();
+						}
+						else
+						{
+							//alert(xmlhr.responseText);
+							$('.input-message.loading').hide();
+							$('.input-message.failed').show();
+						}
+						
+					} else {
+						//alert(xmlhr.status);
+						$('.input-message.loading').hide();
+						$('.input-message.failed').show();
+					}
+				}
+			};
+			var inputForm = document.querySelector('form');
+			var data = new FormData(inputForm);
+			data.append('jsondata', JSON.stringify(order));
+			xmlhr.send(data);
 		}
 		return false;	
 	});
-	$( window ).scroll(function() {
+	/* $( window ).scroll(function() {
 		$('.sample-product').each(function() {
 			animationHandler($(this), -300, -450);
 		});
-	});
+	}); */
 });
 
 function animationHandler(object, fromTop, fromBottom)
@@ -174,49 +206,6 @@ function animationHandler(object, fromTop, fromBottom)
 		object.removeClass('static');
 }
 
-function processOrder()
-{
-	$('.input-message.loading').show();
-	var order = {
-			name: $('#order-name').val(),
-			email: $('#order-email').val(),
-			phone: $('#order-phone').val(),
-			domain: $('#order-domain').val(),
-			web_package: $('input[name=package]:checked').val()
-	}
-	var xmlhr = new XMLHttpRequest();
-	xmlhr.open('POST', '/functions/insertOrder.php', true);
-	xmlhr.onload = function(e) {
-		if (xmlhr.readyState == 4) {
-			if (xmlhr.status == 200) {
-				if (xmlhr.responseText == '1')
-				{
-					/*$('#warningcontainer').hide();*/
-					$('.input-message.loading').hide();
-					$('#order-form')[0].reset();
-					$('#upload-label').html('<i class="fa fa-cloud-upload"></i> Upload dokumen pendukung*');
-					$('.input-message.success').show();
-				}
-				else
-				{
-					//alert(xmlhr.responseText);
-					$('.input-message.loading').hide();
-					$('.input-message.failed').show();
-				}
-				
-			} else {
-				//alert(xmlhr.status);
-				$('.input-message.loading').hide();
-				$('.input-message.failed').show();
-			}
-		}
-	};
-	var inputForm = document.querySelector('form');
-	var data = new FormData(inputForm);
-	data.append('jsondata', JSON.stringify(order));
-	xmlhr.send(data);
-}
-
 </script>
 </head>
 <body>
@@ -228,7 +217,7 @@ function processOrder()
        			<i class="fa fa-2x fa-bars"></i>
       		</button>
 			<div id="brand-title">
-			<a class="nav-item" href="#cover-1"><img src="images/tampilin_black_red.png" height="40px" /></a>
+			<a class="nav-item" href="#cover-1"><img src="images/Homebutton v1.png" height="55px" style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; box-shadow: 0 0 10px #3c3c3c;" /></a>
 			<ul class="nav-menu">
 				<li><a class="nav-item" href="#works">WORKS</a></li>
 				<li><a class="nav-item" href="#about">ABOUT</a></li>
@@ -240,54 +229,73 @@ function processOrder()
 	</header>
 	
 	<div id="content-wrapper">
-		<div id="cover-1" class="page image-page" style="background: linear-gradient(rgba(47,47,59,0.4), rgba(47,47,59,0.4)), url('images/cover1.jpg') no-repeat center center fixed; background-size: cover;">
+		<div id="cover-1" class="page content-page" style="background: linear-gradient(rgba(47,47,59,0.4), rgba(47,47,59,0.4)), url('images/Home.small.jpg') no-repeat center center; background-size: cover;">
 			<div class="page-content">
-				<span class="title title-left title-1">THEKUCING</span>
-				<span class="title title-left title-2">ILLUSTRATOR & DESIGNER</span>
+				<div class="image-page">
+						<p class="title title-left title-1">THEKUCING</p>
+						<p class="title title-left title-2">ILLUSTRATOR & DESIGNER</p>
+				</div>
+				<p class="title title-left title-3">Indonesian-based artist with a passion for creating digital beauty</p>
 			</div>
 		</div>
 	
 		<div id="works" class="page content-page" style="background-color: #1c1c1c; color: #FFFFFF;" >
 			<div class="page-content">
 				<h1 class="content-title">WORKS</h1>
-				<div class="box-container">
+				<a class="slide-button slide-left"><i class="fa fa-chevron-left fa-2x"></i></a>
+				<a class="slide-button slide-right"><i class="fa fa-chevron-right fa-2x"></i></a>
+				<ul class="slide-nav">
+					<li><span id="slide-1" class="slide-item selected"><small><i class="fa fa-circle"></i></small></a></li>
+					<li><span id="slide-2" class="slide-item"><small><i class="fa fa-circle"></i></small></a></li>
+					<li><span id="slide-3" class="slide-item"><small><i class="fa fa-circle"></i></small></a></li>
+				</ul>
+				<div id="group-1" class="product-group box-container">
 					<div class="box-3 animation-wrapper">
-						<a class="sample-product" href="#" style="background: url('images/sample web 1.jpg') no-repeat center; background-size: cover;">
-						</a>	
+						<div class="sample-product" style="background: url('images/Works Thumbs/works_1.jpg') no-repeat center; background-size: cover;">
+						</div>	
 					</div>
 					<div class="box-3 animation-wrapper">
-						<a class="sample-product" href="#" style="background: url('images/sample web 2.jpg') no-repeat center; background-size: cover;">
-						</a>
+						<div class="sample-product" style="background: url('images/Works Thumbs/works_2.jpg') no-repeat center; background-size: cover;">
+						</div>
 					</div>
 					<div class="box-3 animation-wrapper">
-						<a class="sample-product" href="#" style="background: url('images/sample web 3.jpg') no-repeat center; background-size: cover;">
-						</a>
-					</div>
-					<div class="box-3 animation-wrapper">
-						<a class="sample-product" href="#" style="background: url('images/sample web 4.jpg') no-repeat center; background-size: cover;">
-						</a>
-					</div>
-					<div class="box-3 animation-wrapper">
-						<a class="sample-product" href="#" style="background: url('images/sample web 5.jpg') no-repeat center; background-size: cover;">
-						</a>
-					</div>
-					<div class="box-3 animation-wrapper">
-						<a class="sample-product" href="#" style="background: url('images/sample web 6.jpg') no-repeat center; background-size: cover;">
-						</a>
-					</div>
-					<div class="box-3 animation-wrapper">
-						<a class="sample-product" href="#" style="background: url('images/sample web 7.jpg') no-repeat center; background-size: cover;">
-						</a>
-					</div>
-					<div class="box-3 animation-wrapper">
-						<a class="sample-product" href="#" style="background: url('images/sample web 8.jpg') no-repeat center; background-size: cover;">
-						</a>
+						<div class="sample-product" style="background: url('images/Works Thumbs/works_3.jpg') no-repeat center; background-size: cover;">
+						</div>
 					</div>
 				</div>
+				<div id="group-2" class="product-group box-container">
+					<div class="box-3 animation-wrapper">
+						<div class="sample-product" style="background: url('images/Works Thumbs/works_4.jpg') no-repeat center; background-size: cover;">
+						</div>	
+					</div>
+					<div class="box-3 animation-wrapper">
+						<div class="sample-product" style="background: url('images/Works Thumbs/works_5.jpg') no-repeat center; background-size: cover;">
+						</div>
+					</div>
+					<div class="box-3 animation-wrapper">
+						<div class="sample-product" style="background: url('images/Works Thumbs/works_6.jpg') no-repeat center; background-size: cover;">
+						</div>
+					</div>
+				</div>
+				<div id="group-3" class="product-group box-container">
+					<div class="box-3 animation-wrapper">
+						<div class="sample-product" style="background: url('images/Works Thumbs/works_7.jpg') no-repeat center; background-size: cover;">
+						</div>	
+					</div>
+					<div class="box-3 animation-wrapper">
+						<div class="sample-product" style="background: url('images/Works Thumbs/works_8.jpg') no-repeat center; background-size: cover;">
+						</div>
+					</div>
+					<div class="box-3 animation-wrapper">
+						<div class="sample-product" style="background: url('images/Works Thumbs/works_9.jpg') no-repeat center; background-size: cover;">
+						</div>
+					</div>
+				</div>
+				<br/>
 			</div>
 		</div>
 		
-		<div id="about" class="page content-page" style="background: linear-gradient(rgba(47,47,59,0.8), rgba(47,47,59,0.8)),  url('images/cover2.jpg') no-repeat center center fixed; background-size: cover; color: #FFFFFF">
+		<div id="about" class="page content-page" style="background: linear-gradient(rgba(47,47,59,0.8), rgba(47,47,59,0.8)),  url('images/Aboutme.small.jpg') no-repeat center center; background-size: cover; color: #FFFFFF">
 			<div class="page-content">
 				<h1 class="content-title">ABOUT ME</h1>
 				<div class="person-photo circle" style="background: url('images/esty.jpg') no-repeat center; background-size: cover;">
@@ -309,7 +317,7 @@ function processOrder()
 			</div>
 		</div>
 				
-		<div id="contact" class="page content-page div-between-top" style="background: linear-gradient(rgba(47,47,59,0.8), rgba(47,47,59,0.8)),  url('images/cover3.jpg') no-repeat center center fixed; background-size: cover; color: #FFFFFF">
+		<div id="contact" class="page content-page div-between-top" style="background: linear-gradient(rgba(47,47,59,0.8), rgba(47,47,59,0.8)),  url('images/Contact.small.jpg') no-repeat center center; background-size: cover; color: #FFFFFF">
 			<div class="page-content">
 				<h1 class="content-title">CONTACT</h1>
 				<div class="box-container">
@@ -330,15 +338,16 @@ function processOrder()
 					<form id="order-form" class="input-container">
 					<div class="input-group">
 						<input id="order-name" class="contact-input required" type="text" placeholder="Name" />
-						<small class="contact-input required-alert">Nama wajib diisi!</small>
+						<small class="contact-input required-alert">Name is required!</small>
 					</div>
 					<div class="input-group">
 						<input id="order-email" class="contact-input required" type="text" placeholder="Email" />
-						<small class="contact-input required-alert">Email wajib diisi!</small>
-						<small class="contact-input invalid-alert">Format email tidak valid!</small>
+						<small class="contact-input required-alert">Email is required!</small>
+						<small class="contact-input invalid-alert">Email is invalid!</small>
 					</div>
 					<div class="input-group">
-						<textarea id="order-content" rows="6" class="contact-input" placeholder="Message"></textarea>
+						<textarea id="order-content" rows="6" class="contact-input required" placeholder="Message"></textarea>
+						<small class="contact-input required-alert">Content is required!</small>
 					</div>
 					<button id="order-submit" class="contact-button" >Send</button>
 				</form>
@@ -372,9 +381,11 @@ function processOrder()
 				<a id="up-button" href="#cover-1" class="circle between-div nav-item"><i class="fa fa-chevron-up fa-2x"></i></a>
 				<div class="team-socmed">
 					<div class="socmed-wrapper">
-						<a class="socmed-item" href="#" style="background: url('images/1455227518_Facebook.png') no-repeat center; background-size: contain;"></a>
-						<a class="socmed-item" href="#" style="background: url('images/1455227364_instagram.png') no-repeat center; background-size: contain;"></a>
-						<a class="socmed-item" href="#" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></a>
+						<a class="socmed-item" href="#" style="background: url('images/facebook500.png') no-repeat center; background-size: contain;"></a>
+						<a class="socmed-item" href="#" style="background: url('images/linkedin.png') no-repeat center; background-size: contain;"></a>
+						<a class="socmed-item" href="#" style="background: url('images/deviantart.png') no-repeat center; background-size: contain;"></a>
+						<a class="socmed-item" href="#" style="background: url('images/pinterest.png') no-repeat center; background-size: contain;"></a>
+						<a class="socmed-item" href="#" style="background: url('images/youtube-variation.png') no-repeat center; background-size: contain;"></a>
 					</div>
 				</div>
 			</div>
@@ -393,6 +404,12 @@ function processOrder()
 		</div>
 	</div>
 		
+</div>
+
+<div id="product-popup" class="popup">
+	<div id="image-big" class="page-content">
+		<a id="product-close" class="close-button"><i class="fa fa-times fa-2x"></i></a>
+	</div>
 </div>
 
 </body>
