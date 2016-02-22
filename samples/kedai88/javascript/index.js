@@ -5,26 +5,26 @@ $.fn.exists = function() {
 }
 
 $(document).ready(function() {
+	$('.popup').hide();
+	$('.link').click(function() {
 
-	$('.link').click(function(){
-		
-		if($(this).attr('href') == '#landingpage'){
-			  $('html,body').animate({
-			      scrollTop: 0
-			    }, {
-			      duration: 500
-			    });
-			  return false;
+		if ($(this).attr('href') == '#landingpage') {
+			$('html,body').animate({
+				scrollTop : 0
+			}, {
+				duration : 500
+			});
+			return false;
 		}
-		
-	    $('html,body').animate({
-	      scrollTop: $($(this).attr('href')).offset().top
-	    }, {
-	      duration: 500
-	    });
-	    return false;
-	  });
-	
+
+		$('html,body').animate({
+			scrollTop : $($(this).attr('href')).offset().top
+		}, {
+			duration : 500
+		});
+		return false;
+	});
+
 	window.setInterval(function() {
 		productindex++;
 		if ($('.product' + productindex).exists()) {
@@ -77,7 +77,7 @@ $(document).ready(function() {
 				'marginLeft' : '+=1280'
 			}, 500);
 		} else {
-			productindex++;	
+			productindex++;
 			for (var i = 2; i <= 30; i++) { // max photo 30
 				if ($('.product' + i).exists()) {
 					productindex = i;
@@ -85,10 +85,10 @@ $(document).ready(function() {
 					$('.product1').animate({
 						'marginLeft' : '-=1280'
 					}, 500);
-				} else{
+				} else {
 					break;
 				}
-					
+
 			}
 		}
 	});
@@ -122,6 +122,16 @@ $(document).ready(function() {
 			}
 		}
 		lastscroll = $(window).scrollTop();
+	});
+
+	$('.menulist .list .product img').click(function() {
+		$href = $(this).attr('src');
+		$('.popup').fadeIn('slow');
+		$('.popup .fullscreen').css('background-image', 'url("' + $href +'")')
+	});
+	
+	$('.popup .close').click(function(){
+		$('.popup').fadeOut('slow');
 	});
 });
 
