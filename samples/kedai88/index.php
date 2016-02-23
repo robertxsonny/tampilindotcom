@@ -3,6 +3,22 @@
 <head>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="id">
+<meta name="description"
+	content="Tampilin.id, pengembang one page website sederhana di Indonesia. Menawarkan layanan yang cepat dan desain yang dibuat khusus, bukan berupa template. Buat Buat portofolio atau CV online, kartu nama online, profil usaha, atau website sederhana lainnya di sini.">
+<meta property="og:title"
+	content="Sample 1 for Tampilin.id: Chinese Cuisine">
+<meta property="og:description"
+	content="Tampilin.id, pengembang one page website sederhana di Indonesia. Menawarkan layanan yang cepat dan desain yang dibuat khusus, bukan berupa template. Buat Buat portofolio atau CV online, kartu nama online, profil usaha, atau website sederhana lainnya di sini.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://tampilin.id">
+<meta property="og:site_name" content="tampilin.id">
+<meta name="revisit-after" content="7 days">
+<meta name="distribution" content="web">
+<meta name="robots" content="index, follow">
+<link rel="shortcut icon" type="image/x-icon"
+	href="http://tampilin.id/images/icon.ico" />
 <link href="/css/style.css" rel="stylesheet" type="text/css">
 <link
 	href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,300'
