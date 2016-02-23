@@ -6,6 +6,8 @@ $.fn.exists = function() {
 
 $(document).ready(function() {
 	$('.popup').hide();
+	if ($(window).width() <= 768)
+		$('.header ul').hide();
 	$('.link').click(function() {
 
 		if ($(this).attr('href') == '#landingpage') {
@@ -27,19 +29,29 @@ $(document).ready(function() {
 
 	window.setInterval(function() {
 		productindex++;
+		$('.toggle').slideToggle(500);
 		if ($('.product' + productindex).exists()) {
-			setDescription();
+			window.setTimeout(function() {
+				setDescription();
+			}, 1000);
+
 			$('.product1').animate({
 				'marginLeft' : '-=1280'
 			}, 500)
 		} else {
 			productindex = 1;
-			setDescription();
+			window.setTimeout(function() {
+				setDescription();
+			}, 1000);
 			$('.product1').animate({
 				'marginLeft' : '0'
 			}, 500)
 		}
-	}, 4000);
+
+		window.setTimeout(function() {
+			$('.toggle').slideToggle(500);
+		}, 1000);
+	}, 7000);
 
 	$('.toggle .prev').hover(function() {
 		$('.toggle .prev').find('span').addClass('hover');
@@ -55,24 +67,38 @@ $(document).ready(function() {
 
 	$('.toggle .next').click(function() {
 		productindex++;
+		$('.toggle').slideToggle(500);
 		if ($('.product' + productindex).exists()) {
-			setDescription();
+			window.setTimeout(function() {
+				setDescription();
+			}, 1000);
+
 			$('.product1').animate({
 				'marginLeft' : '-=1280'
 			}, 500)
 		} else {
 			productindex = 1;
-			setDescription();
+			window.setTimeout(function() {
+				setDescription();
+			}, 1000);
 			$('.product1').animate({
 				'marginLeft' : '0'
 			}, 500)
 		}
+
+		window.setTimeout(function() {
+			$('.toggle').slideToggle(500);
+		}, 1000);
 	});
 
 	$('.toggle .prev').click(function() {
+		$('.toggle').slideToggle(500);
 		productindex--;
 		if ($('.product' + productindex).exists()) {
-			setDescription();
+			window.setTimeout(function() {
+				setDescription();
+			}, 1000);
+
 			$('.product1').animate({
 				'marginLeft' : '+=1280'
 			}, 500);
@@ -81,7 +107,9 @@ $(document).ready(function() {
 			for (var i = 2; i <= 30; i++) { // max photo 30
 				if ($('.product' + i).exists()) {
 					productindex = i;
-					setDescription();
+					window.setTimeout(function() {
+						setDescription();
+					}, 1000);
 					$('.product1').animate({
 						'marginLeft' : '-=1280'
 					}, 500);
@@ -91,6 +119,11 @@ $(document).ready(function() {
 
 			}
 		}
+
+		window.setTimeout(function() {
+			$('.toggle').slideToggle(500);
+
+		}, 1000);
 	});
 
 	var lastscroll = 0;
@@ -127,11 +160,14 @@ $(document).ready(function() {
 	$('.menulist .list .product img').click(function() {
 		$href = $(this).attr('src');
 		$('.popup').fadeIn('slow');
-		$('.popup .fullscreen').css('background-image', 'url("' + $href +'")')
+		$('.popup .fullscreen').css('background-image', 'url("' + $href + '")')
 	});
-	
-	$('.popup .close').click(function(){
+
+	$('.popup .close').click(function() {
 		$('.popup').fadeOut('slow');
+	});
+	$('.header .burger').click(function() {
+		$('.header ul').slideToggle(500);
 	});
 });
 
@@ -144,6 +180,10 @@ function setDescription() {
 	case 2:
 		$('.toggle .title').html('PAKET LENGKAP');
 		$('.toggle .subtitle').html('NASI + DAGING + LAUK + SAYUR + MINUM');
+		break;
+	case 3:
+		$('.toggle .title').html('PAKET IRIT');
+		$('.toggle .subtitle').html('NASI + MINUM');
 		break;
 	}
 }

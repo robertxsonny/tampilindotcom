@@ -39,6 +39,7 @@ body {
 	min-height: 100%;
 	text-align: center;
 	margin-right: 25px;
+	display: block;
 }
 
 .header li:HOVER {
@@ -218,6 +219,17 @@ body {
 	display: inline-block;
 }
 
+.menu .product3 {
+	background-image: url("/images/product1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	max-width: 1280px;
+	height: 100%;
+	width: 1280px;
+	display: inline-block;
+}
+
 .menu .product {
 	position: relative;
 	height: 495px;
@@ -383,7 +395,7 @@ body {
 	width: 550px;
 	height: 251px;
 	background-size: 40% auto;
-	background-position-x: center;
+	background-position: center center;
 	background-repeat: no-repeat;
 }
 
@@ -494,4 +506,140 @@ body {
 	background-size: 100% auto;
 	z-index: 50;
 	cursor: pointer;
+}
+
+.header .burger {
+	visibility: hidden;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+	.home {
+		background-size: auto 100%;
+		background-position: -76px center;
+	}
+	.header {
+		height: 44px;
+		width: 100%;
+		position: absolute;
+	}
+	.header .phoneno {
+		margin: 2px 0 0 9px;
+		font-size: 24px;
+	}
+	.header ul {
+		margin-top: -6px;
+		background-color: rgba(255, 255, 255, 0.9);
+		width: 100%;
+		margin-right: 0px;
+	}
+	.header li {
+		display: block;
+	}
+	.header .burger {
+		visibility: visible;
+		cursor: pointer;
+		float: right;
+		width: 35px;
+		height: 100%;
+		background-image: url("/images/menu.png");
+		background-size: 100% auto;
+		margin-top: 2%;
+		margin-right: 5%;
+	}
+	.about {
+		top: 385px;
+	}
+	.about .abouttext {
+		height: 250px;
+		width: 100%;
+		position: relative;
+		padding-top: 18px;
+	}
+	.about .abouttext .headertitle {
+		margin-top: 0px;
+		font-size: 20px;
+		margin-bottom: 0px;
+	}
+	.about .abouttext .title {
+		font-size: 28px;
+		margin-top: 0px;
+	}
+	.about .abouttext .subtitle {
+		margin-top: -8px;
+		font-size: 26px;
+		margin-bottom: 0px;
+	}
+	.about .abouttext .content {
+		font-size: 13px;
+		margin-top: 0px;
+	}
+	.about .aboutimg {
+		position: relative;
+		left: 0%;
+		height: 250px;
+		width: 100%;
+		background-size: 100% auto;
+	}
+	.menu {
+		top: 890px;
+	}
+	.menu .menuheader {
+		height: 50px;
+		font-size: 16px;
+	}
+	.menu .product {
+		height: 300px;
+	}
+	.menu .menucontent {
+		top: 49px;
+	}
+	.menu .product1 {
+		background-size: auto 100%;
+	}
+	.menu .product2 {
+		background-size: auto 100%;
+	}
+	.menu .product3 {
+		background-size: auto 100%;
+	}
+	.toggle {
+		height: 150px;
+		top: 133px;
+	}
+	.toggle .prev {
+		width: 40px;
+		height: 80px;
+	}
+	.toggle .prev span {
+		width: 30px;
+		height: 30px;
+	}
+	.toggle .next {
+		width: 40px;
+		height: 80px;
+	}
+	.toggle .next span {
+		width: 30px;
+		height: 30px;
+	}
+	.toggle .title {
+		font-size: 30px;
+	}
+	.toggle .subtitle {
+		font-size: 14px;
+	}
+	.menulist {
+		top: 1238px;
+	}
+	.menulist .list{
+		margin-left: 0px;
+	}
+	.menulist .list .product {
+		width: 100%;
+		padding-bottom: 9%;
+	}
+	.menulist .list .product p {
+		margin: 0;
+		margin-left: 20%;
+	}
 }

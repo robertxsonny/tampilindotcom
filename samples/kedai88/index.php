@@ -13,6 +13,7 @@
 </head>
 <body>
 	<div class="header">
+		<div class="burger"></div>
 		<p class="phoneno">
 			<span class="phone"></span>0813-2888-7771
 		</p>
@@ -48,6 +49,7 @@
 				<div class="product">
 					<div class="product1"></div>
 					<div class="product2"></div>
+					<div class="product3"></div>
 				</div>
 			</div>
 			<div class="toggle">
