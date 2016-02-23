@@ -355,18 +355,18 @@ function animationHandler(object, fromTop, fromBottom)
 				<div class="box-2 indent-box">
 					<p class="desc">If you want to drop by and say hello or want to work on a project with me, please don't hesitate to contact me.</p>
 					<div class="item-with-icon">
-						<div class="icon-wrapper">
-							<div class="socmed-item" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></div>
+						<div class="sicon-wrapper">
+							<div class="icon" style="background: url('images/1456217554_map-location-pin-map-marker-glyph.png') no-repeat center center; background-size: contain;"></div>
 						</div>
-						<div class="scaption-wrapper">
+						<div class="caption-wrapper">
 							<p class="desc desc-left">Sagan GK V No 999 Yogyakarta</p>
 						</div>
 					</div>
 					<div class="item-with-icon">
-						<div class="icon-wrapper">
-							<div class="socmed-item" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></div>
+						<div class="sicon-wrapper">
+							<div class="icon" style="background: url('images/1452608091_phone.png') no-repeat center center; background-size: contain;"></div>
 						</div>
-						<div class="scaption-wrapper">
+						<div class="caption-wrapper">
 							<p class="desc desc-left">(0284) 584138</p>
 						</div>
 					</div>
@@ -378,7 +378,8 @@ function animationHandler(object, fromTop, fromBottom)
 		
 		<div id="socmed" class="page content-page div-between-bottom" style="background-color: #1c1c1c; color: #FFFFFF;">
 			<div class="page-content">
-				<a id="up-button" href="#cover-1" class="circle between-div nav-item"><i class="fa fa-chevron-up fa-2x"></i></a>
+				<a id="up-button" href="#cover-1" class="circle between-div nav-item" style="background: url('images/1456216871_arrow-up-01.png'), linear-gradient(rgba(47,47,59,1), rgba(47,47,59,1)) no-repeat center center; background-size: cover;">
+				</a>
 				<div class="team-socmed">
 					<div class="socmed-wrapper">
 						<a class="socmed-item" href="#" style="background: url('images/facebook500.png') no-repeat center; background-size: contain;"></a>
