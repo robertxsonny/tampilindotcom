@@ -754,7 +754,9 @@ body {
 		font-size: 14px;
 	}
 	.menulist {
-		top: 1238px;
+		height: 1093px;
+		width: 100%;
+		top: 1237px;
 	}
 	.menulist .list {
 		margin-left: 10px;
@@ -762,7 +764,7 @@ body {
 	.menulist .list .product {
 		width: 43%;
 		padding-bottom: 9%;
-		height: 20%;
+		height: 15%;
 	}
 	.menulist .list .product p {
 		margin: 0;
@@ -770,14 +772,14 @@ body {
 		font-size: 14px;
 	}
 	.footer {
-		top: 1955px;
-		height: 750px;
+		top: 2301px;
+		height: 570px;
 	}
 	.footer .col {
 		display: block;
 		width: 100%;
 		margin-left: 0px;
-		height: 34%;
+		height: 260px;
 	}
 	.footer .col .logo {
 		width: 100%;
@@ -808,8 +810,7 @@ body {
 		padding-top: 0px;
 	}
 	.copyright {
-		/* top: 2518px; */
-		top: 2526px;
+		top: 2866px;
 	}
 	.copyright p {
 		font-size: 11px;
@@ -821,6 +822,40 @@ body {
 		height: 392px;
 		width: 90%;
 		margin-top: 16%;
+		background-size: 100% auto;
+	}
+	.categories {
+		height: 100px;
+	}
+	.categories .category {
+		width: 32.1%;
+		font-size: 16px;
+	}
+	.categories-2-cols {
+		height: 100px;
+	}
+	.categories-2-cols .category {
+		width: 48.8%;
+		height: 100px;
+	}
+	.categories .bgimg1 {
+		background-position: 0px 0px;
+		background-size: auto 100%;
+	}
+	.categories .bgimg2 {
+		background-position: 0px 0px;
+		background-size: auto 100%;
+	}
+	.categories .bgimg3 {
+		background-position: 0px 0px;
+		background-size: auto 100%;
+	}
+	.categories-2-cols .bgimg4 {
+		background-position: 0px 0px;
+		background-size: auto 100%;
+	}
+	.categories-2-cols .bgimg5 {
+		background-position: 0px 0px;
 		background-size: 100% auto;
 	}
 }

@@ -19,6 +19,7 @@
 <meta name="robots" content="index, follow">
 <link rel="shortcut icon" type="image/x-icon"
 	href="http://tampilin.id/images/icon.ico" />
+<link rel="shortcut icon" type="image/png" href="images/icon.png" />
 <link href="/css/style.css" rel="stylesheet" type="text/css">
 <link
 	href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,300'
