@@ -24,6 +24,7 @@
 	href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,300'
 	rel='stylesheet' type='text/css'>
 <script src="../javascript/jquery-1.12.0.min.js" type="text/javascript"></script>
+<script src="../javascript/jquery-ui.js" type="text/javascript"></script>
 <script src="../javascript/index.js" type="text/javascript"></script>
 <title>Kedai 88: Chinese Cuisine from Yogyakarta</title>
 </head>
@@ -80,7 +81,182 @@
 			</div>
 		</div>
 		<div id="menulist" class="menulist">
-			<div class="list">
+			<div class="categories">
+				<div id="ayamtulangcat" class="category">
+					<div class="bgimg1"></div>
+					<div class="background selected"></div>
+					<div class="text">
+						<p>AYAM TULANG</p>
+					</div>
+				</div>
+				<div id="ayamfilletcat" class="category">
+					<div class="bgimg2"></div>
+					<div class="background"></div>
+					<div class="text">
+						<p>AYAM FILLET</p>
+					</div>
+				</div>
+				<div id="sapipotongcat" class="category">
+					<div class="bgimg3"></div>
+					<div class="background"></div>
+					<div class="text">
+						<p>SAPI POTONG</p>
+					</div>
+				</div>
+			</div>
+			<div class="categories-2-cols">
+				<div id="sapifilletcat" class="category">
+					<div class="bgimg4"></div>
+					<div class="background"></div>
+					<div class="text">
+						<p>SAPI FILLET</p>
+					</div>
+				</div>
+				<div id="bebekpotongcat" class="category">
+					<div class="bgimg5"></div>
+					<div class="background"></div>
+					<div class="text">
+						<p>BEBEK POTONG</p>
+					</div>
+				</div>
+			</div>
+			<div id="ayamtulang" class="list">
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM TULANG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>AYAM GORENG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM BAKAR</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>AYAM POTONG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM MADU</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>AYAM GULA</p>
+				</div>
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM GURIH</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>AYAM PENYET</p>
+				</div>
+			</div>
+			<div id="ayamfillet" class="list">
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM NUGGET</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>AYAM GARAM</p>
+				</div>
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM BLACKPAPPER PANGGANG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>AYAM ABC</p>
+				</div>
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM TULANG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>PAKET HEMAT</p>
+				</div>
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM TULANG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>NASI GORENG</p>
+				</div>
+			</div>
+			<div id="sapipotong" class="list">
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM TULANG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>PAKET HEMAT</p>
+				</div>
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM TULANG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>NASI GORENG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM TULANG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>PAKET HEMAT</p>
+				</div>
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM TULANG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>NASI GORENG</p>
+				</div>
+			</div>
+			<div id="sapifillet" class="list">
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM TULANG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>PAKET HEMAT</p>
+				</div>
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM TULANG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>NASI GORENG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM TULANG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>PAKET HEMAT</p>
+				</div>
+				<div class="product">
+					<img src="/images/product1.jpg" />
+					<p>AYAM TULANG</p>
+				</div>
+				<div class="product">
+					<img src="/images/product2.jpg" />
+					<p>NASI GORENG</p>
+				</div>
+			</div>
+			<div id="bebekpotong" class="list">
 				<div class="product">
 					<img src="/images/product1.jpg" />
 					<p>AYAM TULANG</p>

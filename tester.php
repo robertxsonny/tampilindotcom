@@ -117,11 +117,7 @@ function generateHtml(){
 		style="font-size: 16px; font-family: 'Lato', Arial, sans-serif; color: black; font-weight: lighter;">We
 		are proud to announce that Tampilin.id is now available for you, who
 		like to stand out from the crowd.</p>
-	<p
-		style="font-size: 14px; font-family: 'Lato', Arial, sans-serif; color: black; font-weight: lighter;">In
-		our first month, we are glad to offer you a promo, which is valid
-		until February 26, 2016: Create your own website under 24 hours only
-		for IDR 200K!</p>
+	
 </div>
 <div style="padding-left: 3%; padding-right: 3%;">
 	<div

@@ -6,6 +6,8 @@ $.fn.exists = function() {
 
 $(document).ready(function() {
 	$('.popup').hide();
+	$('.list').hide();
+	$('#ayamtulang').slideToggle(500);
 	if ($(window).width() <= 768)
 		$('.header ul').hide();
 	$('.link').click(function() {
@@ -168,6 +170,45 @@ $(document).ready(function() {
 	});
 	$('.header .burger').click(function() {
 		$('.header ul').slideToggle(500);
+	});
+	$('.categories .category').hover(function() {
+		$(this).find('div.background').addClass('hover');
+	}, function() {
+		$(this).find('div.background').removeClass('hover');
+	});
+	$('.categories-2-cols .category').hover(function() {
+		$(this).find('div.background').addClass('hover');
+	}, function() {
+		$(this).find('div.background').removeClass('hover');
+	});
+	$('.categories .category').click(function() {
+		var id = "#" + $(this).attr('id').replace("cat", "");
+		$('.categories .category').find('div.background').removeClass('selected');
+		$('.categories-2-cols .category').find('div.background').removeClass('selected');
+		$(this).find('div.background').addClass('selected');
+		$('.list').hide('slide', {
+			direction : 'left'
+		}, 500);
+		window.setTimeout(function() {
+			$(id).show('slide', {
+				direction : 'right'
+			}, 500);
+		}, 500);
+	});
+	
+	$('.categories-2-cols .category').click(function() {
+		var id = "#" + $(this).attr('id').replace("cat", "");
+		$('.categories .category').find('div.background').removeClass('selected');
+		$('.categories-2-cols .category').find('div.background').removeClass('selected');
+		$(this).find('div.background').addClass('selected');
+		$('.list').hide('slide', {
+			direction : 'left'
+		}, 500);
+		window.setTimeout(function() {
+			$(id).show('slide', {
+				direction : 'right'
+			}, 500);
+		}, 500);
 	});
 });
 
