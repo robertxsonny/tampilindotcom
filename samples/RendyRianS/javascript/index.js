@@ -7,6 +7,10 @@ $.fn.exists = function() {
 $(document).ready(function() {
 	$('.popup').hide();
 	$('.list').hide();
+	if($(document).scrollTop() > 0 ){
+		$('.header').addClass('top-zero');
+		$('.home').addClass('pullup');
+	}
 	$('#ayamtulang').slideToggle(500);
 	if ($(window).width() <= 768)
 		$('.header ul').hide();
@@ -145,6 +149,7 @@ $(document).ready(function() {
 			
 			if($(document).scrollTop() > 0 ){
 				$('.header').addClass('top-zero');
+				$('.home').addClass('pullup');
 			}
 			
 		} else { // if scroll up
@@ -165,6 +170,7 @@ $(document).ready(function() {
 			}*/
 			if($(document).scrollTop() < 100){
 				$('.header').removeClass('top-zero');
+				$('.home').removeClass('pullup');
 			}
 			
 		}

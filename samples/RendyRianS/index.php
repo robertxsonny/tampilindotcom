@@ -24,6 +24,7 @@
 <link
 	href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,300'
 	rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
 <script src="../javascript/jquery-1.12.0.min.js" type="text/javascript"></script>
 <script src="../javascript/jquery-ui.js" type="text/javascript"></script>
 <script src="../javascript/index.js" type="text/javascript"></script>
@@ -36,7 +37,7 @@
 		</p>
 		<ul>
 			<li><a class="link" href="#about">ABOUT</a></li>
-			<li><a class="link" href="#menu">BLOG</a></li>
+			<li><a class="link" target="_blank" href="http://blog.rendyrians.com">BLOG</a></li>
 			<li><a class="link" href="#gallery">GALLERY</a></li>
 			<li><a class="link" href="#works">WORK EXPERIENCES</a></li>
 			<li><a class="link" href="#education">EDUCATION</a></li>

@@ -8,25 +8,28 @@ body {
 	width: 100%;
 	height: 36px;
 	margin-top: 0px;
-	box-shadow: grey 0px 0px 30px;
+	box-shadow: white 0px 0px 8px;
 	background: rgba(53, 152, 219, 0.7);
 	z-index: 2;
-	top: 400px;
+	top: 499px;
 	transition: 0.4s;
+	z-index: 2;
+	top: 499px;
 }
 
-.top-zero{
+.top-zero {
 	top: 0px;
 	background: rgba(53, 152, 219, 1);
 }
 
 .header .phoneno {
 	display: inline-block;
-	font-family: 'Titillium Web', sans-serif;
-	margin: 0px 0 0 38px;
+	font-family: 'Oxygen', sans-serif;
+	margin: 3px 0 0 37px;
 	font-size: 22px;
 	opacity: 1;
 	color: #FFFFFF;
+	height: 100%;
 }
 
 .header .phoneno span {
@@ -51,26 +54,27 @@ body {
 }
 
 .header li:HOVER {
-	background-color: #FE7C60;
-	border-bottom: #2C3E50 solid 2px;
-	padding-bottom: 10px;
+	background-color: #2a80b9;
+	/* 	border-bottom: #9bd8ff solid 2px;
+	border-top: #9bd8ff solid 2px; */
 	color: #FFFFFF;
 }
 
 .header li {
 	list-style: none;
 	display: inline-block;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Oxygen', sans-serif;
 	font-size: 18px;
 	margin-top: 0px;
 	height: 100%;
 	text-align: center;
 	transition: 0.5s;
-	padding-top: 4px;
-	padding-bottom: 0px;
+	padding-top: 7px;
+	padding-bottom: 6px;
 	padding-left: 20px;
 	padding-right: 20px;
 	border-bottom: transparent solid 2px;
+	padding-bottom: 6px;
 }
 
 .header a {
@@ -88,7 +92,7 @@ body {
 	position: absolute;
 	min-width: 100%;
 	z-index: 1;
-	height: 436px;
+	height: 570px;
 }
 
 .home {
@@ -100,12 +104,18 @@ body {
 	background-size: 100% auto;
 	background-image: url("/images/mainbg.jpg");
 	background-attachment: fixed;
-	background-position: center center;
+	background-position: 0px -45px;
+	transition: 0.5s;
+}
+
+.pullup {
+	top: -35px;
+	background-size: 105% auto;
 }
 
 .about {
 	position: absolute;
-	top: 595px;
+	top: 535px;
 	min-width: 100%;
 	height: 500px;
 	background: #FFFFFF;
@@ -113,13 +123,16 @@ body {
 
 .about .abouttext {
 	height: 500px;
-	width: 50%;
+	width: 100%;
 	position: absolute;
-	display: inline-block;
-	background-color: rgba(147, 41, 41, 1);
+	display: block;
+	background-color: #2a80b9;
 	color: #FFFFFF;
 	font-family: 'Titillium Web', sans-serif;
-	color: #FFFFFF
+	color: #FFFFFF;
+	position: absolute;
+	display: block;
+	background-color: #2a80b9;
 }
 
 .about .abouttext .headertitle {
@@ -159,13 +172,14 @@ body {
 
 .about .aboutimg {
 	height: 500px;
-	width: 50%;
-	display: inline-block;
+	width: 100%;
+	display: block;
 	background-image: url("/images/aboutbg.jpg");
 	background-size: auto 100%;
-	position: absolute;
-	left: 50%;
+	position: relative;
+	left: 0%;
 	background-repeat: no-repeat;
+	top: 500px;
 }
 
 .menu {
