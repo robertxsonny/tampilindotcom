@@ -24,7 +24,8 @@
 <link
 	href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,300'
 	rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300'
+	rel='stylesheet' type='text/css'>
 <script src="../javascript/jquery-1.12.0.min.js" type="text/javascript"></script>
 <script src="../javascript/jquery-ui.js" type="text/javascript"></script>
 <script src="../javascript/index.js" type="text/javascript"></script>
@@ -33,8 +34,7 @@
 <body>
 	<div class="header">
 		<div class="burger"></div>
-		<p class="phoneno">Rendy Rian Sandhika
-		</p>
+		<p class="phoneno">Rendy Rian Sandhika</p>
 		<ul>
 			<li><a class="link" href="#about">ABOUT</a></li>
 			<li><a class="link" target="_blank" href="http://blog.rendyrians.com">BLOG</a></li>
@@ -48,22 +48,36 @@
 		<div id="landingpage" class="home"></div>
 		<div id="about" class="about">
 			<div class="abouttext">
-				<h3 class="headertitle">ABOUT US</h3>
-				<h1 class="title">KEDAI 88</h1>
+				<h3 class="headertitle">ABOUT ME</h3>
+				<!-- 	<h1 class="title">KEDAI 88</h1>
 				<h2 class="subtitle">
 					CHINESE CUISINE
 					</h1>
 					<p class="content">Kedai 88 Chinese Cuisine merupakan gerai makan
 						yang menggunakan resep asli turunan Tionghoa dengan dipadukan
 						dengan cita rasa masa kini. Kami hanya menggunakan bahan yang
-						segar dan bermutu tinggi.</p>
-			
+						segar dan bermutu tinggi.</p> -->
+
 			</div>
-			<div class="aboutimg"></div>
+			<div class="aboutimg">
+				<div class="imgleft"></div>
+				<div class="contentright">
+					<p>Perkenalkan nama saya Rendy Rian Sandhika, saya bertempat
+						tinggal di Tanjung Selor, Kalimantan Utara, Indonesia. Saya juga
+						lahir di Tanjung Selor, pada tanggal 07 Desember 1998, pada saat
+						ini saya sedang menduduki bangku SMA di SMA Negeri 1 Tanjung
+						Selor. Hobi saya yaitu Photography, Producing lagu, dan Design
+						grafis. Soal cita - cita, saya ingin berwirausaha saja menjadi
+						Business man, mengapa saya memilih untuk memasuki Dunia Wirausaha
+						? karena di dalam dunia Wirausaha kita dapat memilliki luang waktu
+						yang banyak dan memiliki pendapatan yang cukup atau mungkin lebih
+						dari itu jika kita lebih berusaha lagi.</p>
+				</div>
+			</div>
 		</div>
 		<div id="menu" class="menu">
 			<div class="menuheader">
-				<h1 class="title">MENU</h1>
+				<h1 class="title">WORK EXPERIENCE</h1>
 			</div>
 			<div class="menucontent">
 				<div class="product">

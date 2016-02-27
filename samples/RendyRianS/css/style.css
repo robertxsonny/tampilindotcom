@@ -12,14 +12,18 @@ body {
 	background: rgba(53, 152, 219, 0.7);
 	z-index: 2;
 	top: 499px;
-	transition: 0.4s;
+	transition: 0.5s;
 	z-index: 2;
 	top: 499px;
 }
 
+.fixed {
+	position: fixed;
+}
+
 .top-zero {
 	top: 0px;
-	background: rgba(53, 152, 219, 1);
+	background: rgba(150, 150, 150, 0.9);
 }
 
 .header .phoneno {
@@ -122,7 +126,7 @@ body {
 }
 
 .about .abouttext {
-	height: 500px;
+	height: 100px;
 	width: 100%;
 	position: absolute;
 	display: block;
@@ -137,11 +141,11 @@ body {
 
 .about .abouttext .headertitle {
 	margin-left: 8%;
-	margin-top: 10%;
-	font-size: 30px;
-	border-bottom: rgba(212, 176, 18, 1) solid 2px;
+	margin-top: 14px;
+	font-size: 50px;
+	/* border-bottom: rgba(212, 176, 18, 1) solid 2px; */
 	margin-right: 6%;
-	text-align: right;
+	text-align: center;
 }
 
 .about .abouttext .title {
@@ -174,12 +178,55 @@ body {
 	height: 500px;
 	width: 100%;
 	display: block;
-	background-image: url("/images/aboutbg.jpg");
+	background-color: #3598db;
+	/* background-image: url("/images/aboutbg.jpg"); */
 	background-size: auto 100%;
 	position: relative;
 	left: 0%;
 	background-repeat: no-repeat;
-	top: 500px;
+	top: 100px;
+}
+
+.about .aboutimg .imgleft {
+	display: inline-block;
+	position: absolute;
+	width: 0px;
+	height: 100%;
+	background-image: url("/images/Profile.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	transition: 0.5s;
+	height: 100%;
+}
+
+.about .aboutimg .imgleftanim {
+	width: 30%;
+}
+
+.about .aboutimg .contentright {
+	display: inline-block;
+	position: absolute;
+	left: 30%;
+	width: 780px;
+	height: 100%;
+	padding-top: 24px;
+	padding-left: 50px;
+	margin-right: 20px;
+	right: 0px;
+	font-family: 'Titillium Web', sans-serif;
+	text-align: justify;
+	color: white;
+	font-size: 24px;
+}
+
+.about .aboutimg .contentright p:BEFORE {
+	color: WHITE;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.1em;
+	vertical-align: -0.4em;
+	font-family: 'Times New Roman';
 }
 
 .menu {
@@ -194,10 +241,10 @@ body {
 	position: absolute;
 	min-width: 100%;
 	height: 100px;
-	background-color: #e9e9e9;
+	background-color: #2a80b9;
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 30px;
-	color: #C0392B;
+	color: #FFFFFF;
 	text-align: center;
 }
 
