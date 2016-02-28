@@ -35,7 +35,7 @@ $(document)
 						return false;
 					});
 
-					window.setInterval(function() {
+					/*window.setInterval(function() {
 						productindex++;
 						$('.toggle').slideToggle(500);
 						if ($('.product' + productindex).exists()) {
@@ -59,7 +59,7 @@ $(document)
 						window.setTimeout(function() {
 							$('.toggle').slideToggle(500);
 						}, 1000);
-					}, 7000);
+					}, 7000);*/
 
 					$('.toggle .prev').hover(function() {
 						$('.toggle .prev').find('span').addClass('hover');

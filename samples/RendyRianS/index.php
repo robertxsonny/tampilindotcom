@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Language" content="id">
 <meta name="description"
@@ -81,12 +81,67 @@
 			</div>
 			<div class="menucontent">
 				<div class="product">
-					<div class="product1"></div>
-					<div class="product2"></div>
-					<div class="product3"></div>
+					<div class="productleft">
+						<div class="yearbefore">
+							<small>FEBRUARY</small><br>2017
+						</div>
+						<div class="dash">-</div>
+						<div class="yearafter">
+							<small>FEBRUARY</small><br>2017
+						</div>
+						<div class="company">COMPANY NAME</div>
+					</div>
+					<div class="productright">
+						NO DESCRIPTION <br /> <small>Belum ada deskripsi.</small>
+					</div>
+				</div>
+				<div class="product">
+					<div class="productleft">
+						<div class="yearbefore">
+							<small>FEBRUARY</small><br>2017
+						</div>
+						<div class="dash">-</div>
+						<div class="yearafter">
+							<small>FEBRUARY</small><br>2017
+						</div>
+						<div class="company">COMPANY NAME</div>
+					</div>
+					<div class="productright">
+						NO DESCRIPTION <br /> <small>Belum ada deskripsi.</small>
+					</div>
+				</div>
+				<div class="product">
+					<div class="productleft">
+						<div class="yearbefore">
+							<small>FEBRUARY</small><br>2017
+						</div>
+						<div class="dash">-</div>
+						<div class="yearafter">
+							<small>FEBRUARY</small><br>2017
+						</div>
+						<div class="company">COMPANY NAME</div>
+					</div>
+					<div class="productright">
+						NO DESCRIPTION <br /> <small>Belum ada deskripsi.</small>
+					</div>
+				</div>
+				<div class="product">
+					<div class="productleft">
+						<div class="yearbefore">
+							<small>FEBRUARY</small><br>2017
+						</div>
+						<div class="dash">-</div>
+						<div class="yearafter">
+							<small>FEBRUARY</small><br>2017
+						</div>
+						<div class="company">COMPANY NAME</div>
+					</div>
+					<div class="productright">
+						NO DESCRIPTION <br /> <small>Belum ada deskripsi.</small>
+					</div>
 				</div>
 			</div>
-			<div class="toggle">
+			<!-- <div class="toggle">
 				<div class="prev">
 					<span></span>
 				</div>
@@ -95,216 +150,46 @@
 				</div>
 				<div class="title">PAKET HEMAT</div>
 				<div class="subtitle">NASI + LAUK + SAYUR + MINUM</div>
-			</div>
+			</div> -->
 		</div>
 		<div id="menulist" class="menulist">
+			<div class="menuheader">
+				<h1 class="title">GALLERY</h1>
+			</div>
 			<div class="categories">
 				<div id="ayamtulangcat" class="category">
 					<div class="bgimg1"></div>
-					<div class="background selected"></div>
-					<div class="text">
-						<p>AYAM TULANG</p>
-					</div>
+
 				</div>
 				<div id="ayamfilletcat" class="category">
 					<div class="bgimg2"></div>
-					<div class="background"></div>
-					<div class="text">
-						<p>AYAM FILLET</p>
-					</div>
+
 				</div>
 				<div id="sapipotongcat" class="category">
 					<div class="bgimg3"></div>
-					<div class="background"></div>
-					<div class="text">
-						<p>SAPI POTONG</p>
-					</div>
+
 				</div>
 			</div>
 			<div class="categories-2-cols">
 				<div id="sapifilletcat" class="category">
 					<div class="bgimg4"></div>
-					<div class="background"></div>
-					<div class="text">
-						<p>SAPI FILLET</p>
-					</div>
 				</div>
 				<div id="bebekpotongcat" class="category">
 					<div class="bgimg5"></div>
-					<div class="background"></div>
-					<div class="text">
-						<p>BEBEK POTONG</p>
-					</div>
 				</div>
 			</div>
-			<div id="ayamtulang" class="list">
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
+			<div class="categories" id="sub">
+				<div id="ayamtulangcat" class="category">
+					<div class="bgimg1"></div>
+
 				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>AYAM GORENG</p>
+				<div id="ayamfilletcat" class="category">
+					<div class="bgimg2"></div>
+
 				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM BAKAR</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>AYAM POTONG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM MADU</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>AYAM GULA</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM GURIH</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>AYAM PENYET</p>
-				</div>
-			</div>
-			<div id="ayamfillet" class="list">
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM NUGGET</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>AYAM GARAM</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM BLACKPAPPER PANGGANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>AYAM ABC</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>PAKET HEMAT</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>NASI GORENG</p>
-				</div>
-			</div>
-			<div id="sapipotong" class="list">
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>PAKET HEMAT</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>NASI GORENG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>PAKET HEMAT</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>NASI GORENG</p>
-				</div>
-			</div>
-			<div id="sapifillet" class="list">
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>PAKET HEMAT</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>NASI GORENG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>PAKET HEMAT</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>NASI GORENG</p>
-				</div>
-			</div>
-			<div id="bebekpotong" class="list">
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>PAKET HEMAT</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>NASI GORENG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>PAKET HEMAT</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>NASI GORENG</p>
+				<div id="sapipotongcat" class="category">
+					<div class="bgimg3"></div>
+
 				</div>
 			</div>
 		</div>
