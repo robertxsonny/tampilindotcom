@@ -38,9 +38,9 @@
 		<ul>
 			<li><a class="link" href="#about">ABOUT</a></li>
 			<li><a class="link" target="_blank" href="http://blog.rendyrians.com">BLOG</a></li>
-			<li><a class="link" href="#gallery">GALLERY</a></li>
-			<li><a class="link" href="#works">WORK EXPERIENCES</a></li>
-			<li><a class="link" href="#education">EDUCATION</a></li>
+			<li><a class="link" href="#menulist">GALLERY</a></li>
+			<li><a class="link" href="#menu">WORK EXPERIENCES</a></li>
+			<li><a class="link" href="#menu">EDUCATION</a></li>
 			<li><a class="link" href="#contact">CONTACT</a></li>
 		</ul>
 	</div>
@@ -195,28 +195,53 @@
 		</div>
 		<div id="contact" class="footer">
 			<div class="col">
-				<div class="logo"></div>
-				<p>Subha Food Fest</p>
-				<p>Galeria Mall Lt. 3</p>
-				<p>Jalan Jenderal Sudirman No. 99-101</p>
-				<p>Yogyakarta</p>
-				<p class="phoneno">
-					<span class="phone"></span>0813-2888-7771
-				</p>
+				<div class="subcol">
+					<div class="circle">
+						<div class="addressicon"></div>
+					</div>
+					<div class="circle">
+						<div class="phoneicon"></div>
+					</div>
+					<div class="circle">
+						<div class="emailicon"></div>
+					</div>
+				</div>
+				<div class="subcol2">
+					<div class="contdetails">
+						Marmora Road <br />PO BOX XXXXXX YYYY CITY ZZZZ COUNTRY
+					</div>
+					<div class="contdetails">
+						+1 800 22222222 <br />+1 922 11111111
+					</div>
+					<div class="contdetails">
+						<br />mail@rendyrians.com
+					</div>
+				</div>
 			</div>
-			<div class="col">
-				<h1>
-					<span class="location"></span>CONTACT US
-				</h1>
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0676275992882!2d110.37678031397499!3d-7.7826546793771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58318198e939%3A0xb6283ff15225c290!2sGaleria+Mall!5e0!3m2!1sid!2sid!4v1456149885871"
-					width="550" height="350" frameborder="0" style="border: 0"
-					allowfullscreen></iframe>
+			<div class="col2">
+				<table class="userdetails">
+					<tr>
+						<td><input placeholder="Name" id="name" type="text" class="input" /></td>
+					</tr>
+					<tr>
+						<td><input placeholder="Email" id="email" type="text"
+							class="input" /></td>
+					</tr>
+					<tr>
+						<td><textarea placeholder="Message" id="email" type="text"
+							class="input"></textarea></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button class="submit">Send Message</button>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 		<div class="copyright">
 			<p>
-				Copyright &#169; 2016 Kedai 88 by <a href="http://tampilin.id">Tampilin.id</a>:
+				Copyright &#169; 2016 Rendy Rian S. by <a href="http://tampilin.id">Tampilin.id</a>:
 				One Stop Online Services
 			</p>
 			<small>Icons made by <a href="http://www.flaticon.com/authors/zurb">Zurb</a>
