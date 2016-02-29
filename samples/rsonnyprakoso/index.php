@@ -476,7 +476,7 @@ function processOrder()
 			<div class="page-content">
 				<h1 class="content-title">PORTFOLIO</h1>
 				<h2 class="content-subtitle">websites | apps | posters | writings</h1>
-				<div class="box-container">
+				<div class="box-container portfolio-box">
 					<div class="box-4 animation-wrapper">
 						<a class="sample-product" href="#" style="background: url('images/sample web 1.jpg') no-repeat center; background-size: cover;">
 						</a>	
@@ -519,12 +519,11 @@ function processOrder()
 				<h1 class="content-title">CONTACT</h1>
 				<div class="box-container">
 				<div class="box-2 input-box">
-				<p class="desc desc-left">If you want to work with me, just contact me using phone, email, or social media below...</p>
 				<div class="item-with-icon">
 					<div class="icon-wrapper">
-						<div class="socmed-item" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></div>
+						<div class="icon" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></div>
 					</div>
-					<div class="scaption-wrapper">
+					<div class="caption-wrapper">
 						<p class="contact">+6281804246404/+6282225226368</p>
 					</div>
 				</div>
@@ -532,7 +531,7 @@ function processOrder()
 					<div class="icon-wrapper">
 						<div class="socmed-item" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></div>
 					</div>
-					<div class="scaption-wrapper">
+					<div class="caption-wrapper">
 						<p class="contact">sonny@tampilin.id</p>
 					</div>
 				</div>

@@ -541,13 +541,15 @@ function processOrder()
 					<p class="desc">Website portofolio untuk dirimu sendiri</p>
 					<ul class="feature-list">
 						<li><strong>Gratis</strong> domain (.com, .net, .my.id, .web.id)</li>
+						<li>Perpanjangan <strong>Rp 200.000,00</strong> per tahun berikutnya</li>
 						<li><strong>5</strong> foto dari fotografer kami</li>
 						<li><strong>10</strong> foto dari koleksi sendiri</li>
 						<li><strong>Gratis</strong> 1 alamat email</li>
+						<li>Sudah termasuk <strong>Search Engine Optimization (SEO)</strong></li>
 						<li><strong>Gratis</strong> promosi di media sosial selama 1 bulan</li>
 					</ul>
-					<p class="old-price"><small>promo opening s/d 26 feb 2016</small><br/><s>Rp 300.000,00</s></p>
-					<h1 class="price">Rp 200.000,00</h1>
+					<!-- <p class="old-price"><small>promo opening s/d 26 feb 2016</small><br/><s>Rp 300.000,00</s></p> -->
+					<h1 class="price">Rp 400.000,00</h1>
 				</div>
 				<div id="business" class="box-2 box-border-transparent pricing-box right" style="background-color: #59A80F; color: #ECECEC;">
 					<div class="icon-big" style="background: url('images/image2.png') no-repeat center; background-size: cover;">
@@ -556,13 +558,15 @@ function processOrder()
 					<p class="desc">Website profile sederhana untuk usahamu</p>
 					<ul class="feature-list">
 						<li><strong>Gratis</strong> domain (bisa semua nama domain)</li>
+						<li>Perpanjangan <strong>Rp 350.000,00</strong> per tahun berikutnya</li>
 						<li><strong>10</strong> foto dari fotografer kami</li>
 						<li><strong>30</strong> foto dari koleksi sendiri</li>
 						<li><strong>Gratis</strong> 5 alamat email</li>
+						<li>Sudah termasuk <strong>Search Engine Optimization (SEO)</strong></li>
 						<li><strong>Gratis</strong> promosi di media sosial selama 2 bulan</li>
 					</ul>
-					<p class="old-price"><small>promo opening s/d 26 feb 2016</small><br/><s>Rp 500.000,00</s></p>
-					<h1 class="price">Rp 350.000,00</h1>
+					<!-- <p class="old-price"><small>promo opening s/d 26 feb 2016</small><br/><s>Rp 500.000,00</s></p> -->
+					<h1 class="price">Rp 700.000,00</h1>
 				</div>
 				</div>
 			</div>
@@ -853,7 +857,7 @@ function processOrder()
 							<div class="socmed-item" style="background: url('images/1455227518_Facebook.png') no-repeat center; background-size: contain;"></div>
 						</div>
 						<div class="scaption-wrapper">
-							<p class="desc desc-left"><a href="http://facebook.com/tampilin">Tampilin.id</a></p>
+							<p class="desc desc-left"><a href="http://facebook.com/tampilin" target="_blank">Tampilin.id</a></p>
 						</div>
 					</div>
 					<div class="item-with-icon">
@@ -861,7 +865,7 @@ function processOrder()
 							<div class="socmed-item" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></div>
 						</div>
 						<div class="scaption-wrapper">
-							<p class="desc desc-left"><a href="http://twitter.com/tampilin">@tampilin</a></p>
+							<p class="desc desc-left"><a href="http://twitter.com/tampilin" target="_blank">@tampilin</a></p>
 						</div>
 					</div>
 					</div>
@@ -871,7 +875,7 @@ function processOrder()
 							<div class="socmed-item" style="background: url('images/1455227364_instagram.png') no-repeat center; background-size: contain;"></div>
 						</div>
 						<div class="scaption-wrapper">
-							<p class="desc desc-left"><a href="http://instagram.com/tampilin">@tampilin</a></p>
+							<p class="desc desc-left"><a href="http://instagram.com/tampilin" target="_blank">@tampilin</a></p>
 						</div>
 					</div>
 					<div class="item-with-icon">
@@ -879,7 +883,7 @@ function processOrder()
 							<div class="socmed-item" style="background: url('images/1455227609_LINE.png') no-repeat center; background-size: contain;"></div>
 						</div>
 						<div class="scaption-wrapper">
-							<p class="desc desc-left"><a href="http://line.me/ti/p/%40zeg8363e">Tampilin.id</a></p>
+							<p class="desc desc-left"><a href="http://line.me/ti/p/%40zeg8363e" target="_blank">Tampilin.id</a></p>
 						</div>
 					</div>
 				</div>

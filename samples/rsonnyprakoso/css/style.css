@@ -322,6 +322,12 @@ a.nav-item:hover, .nav-menu li a:hover {
 	height: 50px;
 }
 
+.icon
+{
+	width: 25px;
+	height: 25px;
+}
+
 .fa
 {
 	text-align: center;
