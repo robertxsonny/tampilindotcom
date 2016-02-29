@@ -59,6 +59,7 @@ if (isset ( $_POST ['jsondata'] )) {
 		$mail->Password = "pass@word12";
 		$mail->From = $email;
 		$mail->FromName = $name;
+		$mail->IsHTML(true);
 		$mail->Subject = "Automatic Email From Your Personal Website";
 		/* $mail->AddAddress ( "rendyrian_s@yahoo.com", "Rendy Rian Sandhika" ); */
 		$mail->AddAddress ( "theo@tampilin.id", "Theodorus Y." );
