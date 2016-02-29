@@ -7,8 +7,12 @@ $.fn.exists = function() {
 $(document)
 		.ready(
 				function() {
+					$('#success').hide();	
 					$('.popup').hide();
 					$('.list').hide();
+					$('.submit').click(function(){
+						sendEmail();
+					});
 					if ($(document).scrollTop() > 0) {
 						$('.header').addClass('top-zero');
 						$('.home').addClass('pullup');
@@ -267,4 +271,21 @@ function setDescription() {
 		$('.toggle .subtitle').html('NASI + MINUM');
 		break;
 	}
+}
+var url = 'http://rendyrians.com';
+function sendEmail(){
+	var xmlhr = new XMLHttpRequest();
+	xmlhr.open('POST', url + '/functions/sendEmail.php', true);
+	xmlhr.onload = function(e){
+		if(xmlhr.readyState == 4){
+			if(xmlhr.status == 200){
+				if(xmlhr.responseText == '1'){
+					$('#success').show();
+				}
+			}
+		}
+	};
+	var data = new FormData();
+	data.append('jsondata', '{ "name" : "' + $('#name').val() +'", "email": "' + $('#email').val() +'", "content": "' + $('#message').val() +'"}');
+	xmlhr.send(data);
 }

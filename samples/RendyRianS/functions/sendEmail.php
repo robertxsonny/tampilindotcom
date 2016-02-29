@@ -1,10 +1,7 @@
 <?php
 $path = $_SERVER ['DOCUMENT_ROOT'];
-$email = $path . '/functions/mailGenerator.php';
 $mailpath = $path . '/functions/class.phpmailer.php';
 $smtp = $path . '/functions/class.smtp.php';
-include ($connection);
-include ($email);
 include ($mailpath);
 include ($smtp);
 date_default_timezone_set ( "Asia/Jakarta" );
@@ -45,7 +42,6 @@ function generateHtml($name, $email, $content) {
 
 if (isset ( $_POST ['jsondata'] )) {
 	$obj = $_POST ['jsondata'];
-	
 	$data = json_decode ( $obj );
 	if (count ( $data ) > 0) {
 		$name = $data->name;

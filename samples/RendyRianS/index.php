@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Language" content="id">
 <meta name="description"
@@ -228,15 +228,28 @@
 							class="input" /></td>
 					</tr>
 					<tr>
-						<td><textarea placeholder="Message" id="email" type="text"
-							class="input"></textarea></td>
+						<td><textarea placeholder="Message" id="message" type="text"
+								class="input"></textarea></td>
 					</tr>
 					<tr>
 						<td colspan="2">
 							<button class="submit">Send Message</button>
 						</td>
 					</tr>
+					<tr id="success">
+						<td colspan="2">
+							<p>Pesanmu sudah dikirim ke Rendy Rian S.!</p>
+						</td>
+					</tr>
 				</table>
+			</div>
+			<div class="row1">
+				<div class="center">
+					<a href="www.facebook.com" class="fb socmed"></a> <a
+						href="www.twitter.com" class="twitter socmed"></a> <a
+						href="www.instagram.com" class="instagram socmed"></a> <a
+						href="www.ask.fm" class="askfm socmed"></a>
+				</div>
 			</div>
 		</div>
 		<div class="copyright">
