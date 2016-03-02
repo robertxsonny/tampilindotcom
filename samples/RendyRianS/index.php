@@ -79,65 +79,134 @@
 			<div class="menuheader">
 				<h1 class="title">WORK EXPERIENCE</h1>
 			</div>
+			<div class="menuheader2">
+				<h1 class="title">EDUCATION</h1>
+			</div>
 			<div class="menucontent">
 				<div class="product">
 					<div class="productleft">
 						<div class="yearbefore">
-							<small>FEBRUARY</small><br>2017
+							<small>JANUARY</small><br>2013
 						</div>
 						<div class="dash">-</div>
 						<div class="yearafter">
-							<small>FEBRUARY</small><br>2017
+							<small>DECEMBER</small><br>2013
 						</div>
-						<div class="company">COMPANY NAME</div>
+						<div class="company">Talk Fusion</div>
 					</div>
 					<div class="productright">
-						NO DESCRIPTION <br /> <small>Belum ada deskripsi.</small>
+						<strong>MARKETER</strong> <br /> <small>Belum ada deskripsi.</small>
 					</div>
 				</div>
 				<div class="product">
 					<div class="productleft">
 						<div class="yearbefore">
-							<small>FEBRUARY</small><br>2017
+							<small>JANUARY</small><br>2014
 						</div>
 						<div class="dash">-</div>
 						<div class="yearafter">
-							<small>FEBRUARY</small><br>2017
+							<small>DECEMBER</small><br>2015
 						</div>
-						<div class="company">COMPANY NAME</div>
+						<div class="company">Crever Production</div>
 					</div>
 					<div class="productright">
-						NO DESCRIPTION <br /> <small>Belum ada deskripsi.</small>
+						<strong>FOUNDER</strong> <br /> <small>Belum ada deskripsi.</small>
 					</div>
 				</div>
 				<div class="product">
 					<div class="productleft">
 						<div class="yearbefore">
-							<small>FEBRUARY</small><br>2017
+							<small>JANUARY</small><br>2014
 						</div>
 						<div class="dash">-</div>
 						<div class="yearafter">
-							<small>FEBRUARY</small><br>2017
+							<small>JANUARY</small><br>2016
 						</div>
-						<div class="company">COMPANY NAME</div>
+						<div class="company">Medatesia</div>
 					</div>
 					<div class="productright">
-						NO DESCRIPTION <br /> <small>Belum ada deskripsi.</small>
+						<strong>CHIEF FINANCIAL OFFICER (CFO)</strong> <br /> <small>Belum
+							ada deskripsi.</small>
 					</div>
 				</div>
 				<div class="product">
 					<div class="productleft">
 						<div class="yearbefore">
-							<small>FEBRUARY</small><br>2017
+							<small>JANUARY</small><br>2015
 						</div>
 						<div class="dash">-</div>
 						<div class="yearafter">
-							<small>FEBRUARY</small><br>2017
+							<small>CURRENT</small><br>
 						</div>
-						<div class="company">COMPANY NAME</div>
+						<div class="company">EGO Networks.co</div>
 					</div>
 					<div class="productright">
-						NO DESCRIPTION <br /> <small>Belum ada deskripsi.</small>
+						<strong>FOUNDER ASSOCIATE</strong> <br /> <small>Belum ada
+							deskripsi.</small>
+					</div>
+				</div>
+			</div>
+			<div class="content2">
+				<div class="product">
+					<div class="productleft">
+						<div class="yearbefore">
+							<small>JANUARY</small><br>2013
+						</div>
+						<div class="dash">-</div>
+						<div class="yearafter">
+							<small>DECEMBER</small><br>2013
+						</div>
+						<div class="company">Talk Fusion</div>
+					</div>
+					<div class="productright">
+						<strong>MARKETER</strong> <br /> <small>Belum ada deskripsi.</small>
+					</div>
+				</div>
+				<div class="product">
+					<div class="productleft">
+						<div class="yearbefore">
+							<small>JANUARY</small><br>2014
+						</div>
+						<div class="dash">-</div>
+						<div class="yearafter">
+							<small>DECEMBER</small><br>2015
+						</div>
+						<div class="company">Crever Production</div>
+					</div>
+					<div class="productright">
+						<strong>FOUNDER</strong> <br /> <small>Belum ada deskripsi.</small>
+					</div>
+				</div>
+				<div class="product">
+					<div class="productleft">
+						<div class="yearbefore">
+							<small>JANUARY</small><br>2014
+						</div>
+						<div class="dash">-</div>
+						<div class="yearafter">
+							<small>JANUARY</small><br>2016
+						</div>
+						<div class="company">Medatesia</div>
+					</div>
+					<div class="productright">
+						<strong>CHIEF FINANCIAL OFFICER (CFO)</strong> <br /> <small>Belum
+							ada deskripsi.</small>
+					</div>
+				</div>
+				<div class="product">
+					<div class="productleft">
+						<div class="yearbefore">
+							<small>JANUARY</small><br>2015
+						</div>
+						<div class="dash">-</div>
+						<div class="yearafter">
+							<small>CURRENT</small><br>
+						</div>
+						<div class="company">EGO Networks.co</div>
+					</div>
+					<div class="productright">
+						<strong>FOUNDER ASSOCIATE</strong> <br /> <small>Belum ada
+							deskripsi.</small>
 					</div>
 				</div>
 			</div>
@@ -208,13 +277,12 @@
 				</div>
 				<div class="subcol2">
 					<div class="contdetails">
-						Marmora Road <br />PO BOX XXXXXX YYYY CITY ZZZZ COUNTRY
+						Jl. Jeruk Tanjung Selor<br />Kab. Bulungan <br />Prov. Kalimantan
+						Utara, Indonesia
 					</div>
+					<div class="contdetails">+62-852-5100-0078</div>
 					<div class="contdetails">
-						+1 800 22222222 <br />+1 922 11111111
-					</div>
-					<div class="contdetails">
-						<br />mail@rendyrians.com
+						<br />rendy@rendyrians.com
 					</div>
 				</div>
 			</div>
@@ -245,10 +313,13 @@
 			</div>
 			<div class="row1">
 				<div class="center">
-					<a href="www.facebook.com" class="fb socmed"></a> <a
-						href="www.twitter.com" class="twitter socmed"></a> <a
-						href="www.instagram.com" class="instagram socmed"></a> <a
-						href="www.ask.fm" class="askfm socmed"></a>
+					<a href="http://www.facebook.com/rendy.tools" class="fb socmed"
+						target="_blank"></a> <a href="http://www.twitter.com/rendy_rians"
+						class="twitter socmed" target="_blank"></a> <a
+						href="http://www.instagram.com/rendyrians"
+						class="instagram socmed" target="_blank"></a> <a
+						href="http://www.ask.fm/rendyrians" class="askfm socmed"
+						target="_blank"></a>
 				</div>
 			</div>
 		</div>

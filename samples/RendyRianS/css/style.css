@@ -233,7 +233,7 @@ body {
 	position: absolute;
 	top: 1095px;
 	width: 100%;
-	height: 1100px;
+	height: 2175px;
 	overflow-x: hidden;
 }
 
@@ -246,6 +246,18 @@ body {
 	font-size: 30px;
 	color: #FFFFFF;
 	text-align: center;
+}
+
+.menu .menuheader2 {
+	position: absolute;
+	min-width: 100%;
+	height: 100px;
+	background-color: #2a80b9;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 30px;
+	color: #FFFFFF;
+	text-align: center;
+	top: 1087px;
 }
 
 .menulist .menuheader {
@@ -270,9 +282,23 @@ body {
 	margin-top: 0px;
 }
 
+.menu .menuheader2 .title {
+	margin-top: 0px;
+}
+
 .menu .menucontent {
 	position: absolute;
 	top: 100px;
+	height: 1000px;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	background-color: #efefef;
+}
+
+.menu .content2 {
+	position: absolute;
+	top: 1175px;
 	height: 1000px;
 	width: 100%;
 	overflow: hidden;
@@ -356,7 +382,7 @@ body {
 	font-size: 26px;
 	margin-top: 0px;
 	width: 10%;
-	right: 54%;
+	right: 52%;
 	color: rgb(27, 188, 154);
 	position: absolute;
 	border-bottom: 1px solid lightgrey;
@@ -374,6 +400,7 @@ body {
 	font-size: 30px;
 	color: rgb(27, 188, 154);
 	width: 20%;
+	text-align: right;
 }
 
 .product
@@ -386,6 +413,7 @@ body {
 	right: 63%;
 	top: 47px;
 	border-bottom: 1px solid rgb(239, 239, 239);
+	right: 62%;
 }
 
 .product
@@ -531,8 +559,7 @@ span
 
 .menulist {
 	position: absolute;
-	top: 2177px;
-	min-width: 100%;
+	top: 5269px min-width: 100%;
 	height: 850px;
 	background-color: #e9e9e9;
 	min-width: 100%;
@@ -888,7 +915,7 @@ a {
 .product .productleft .dash {
 	position: absolute;
 	font-size: 40px;
-	right: 63%;
+	right: 62%;
 	top: 47px;
 	border-bottom: 1px solid rgb(239, 239, 239);
 }
@@ -897,6 +924,7 @@ a {
 	display: inline-block;
 	width: 49.7%;
 	height: 100%;
+	font-size: 25px;
 }
 
 .toggle {
@@ -995,7 +1023,7 @@ a {
 
 .menulist {
 	position: absolute;
-	top: 2177px;
+	top: 3258px;
 	min-width: 100%;
 	height: 850px;
 	background-color: #e9e9e9;
@@ -1164,7 +1192,7 @@ a {
 
 .footer {
 	position: absolute;
-	top: 3453px;
+	top: 4523px;
 	width: 100%;
 	height: 750px;
 	background-image: url("/images/contactbg.jpg");
@@ -1338,6 +1366,7 @@ a {
 	background-size: auto 75%;
 	left: 10px;
 	top: 5px;
+	background-position: center top;
 }
 
 .row1 .center .socmed {
@@ -1348,7 +1377,7 @@ a {
 	position: relative;
 	padding: 0;
 	margin-left: 5px;
-	left: 10px;
+	left: 2px;
 	top: 5px;
 }
 
@@ -1356,22 +1385,25 @@ a {
 	background-image: url("/images/twitter-logo.png");
 	background-repeat: no-repeat;
 	background-size: auto 75%;
+	background-position: center top;
 }
 
 .row1 .center .instagram {
 	background-image: url("/images/instagram-logo.png");
 	background-repeat: no-repeat;
 	background-size: auto 75%;
+	background-position: center top;
 }
 
 .row1 .center .askfm {
 	background-image: url("/images/askfm-logo.png");
 	background-repeat: no-repeat;
 	background-size: auto 75%;
+	background-position: center top;
 }
 
 .copyright {
-	top: 4200px;
+	top: 5269px;
 	position: absolute;
 	width: 100%;
 	height: 55px;
@@ -1520,7 +1552,7 @@ a {
 	color: white;
 }
 
-@media only screen and (min-width: 320px) and (max-width:400px) {
+@media only screen and (min-width: 320px) and (max-width:640px) {
 	.header {
 		top: 326px;
 	}
@@ -1585,17 +1617,29 @@ a {
 	}
 	.menu {
 		top: 861px;
-		height: 1150px;
+		height: 2253px;
 	}
 	.menu .menuheader {
 		height: 75px;
+	}
+	.menu .menuheader2 {
+		top: 1122px;
+		height: 70px;
 	}
 	.menu .menuheader .title {
 		margin-top: 10px;
 		font-size: 32px;
 	}
+	.menu .menuheader2 .title {
+		font-size: 32px;
+		margin-top: 9px;
+	}
 	.menu .menucontent {
 		top: 75px;
+		height: 1050px;
+	}
+	.menu .content2 {
+		top: 1190px;
 		height: 1050px;
 	}
 	.menu .product {
@@ -1628,8 +1672,11 @@ a {
 		right: 63%;
 		font-size: 20px;
 	}
+	.product .productright {
+		font-size: 20px;
+	}
 	.menulist {
-		top: 1986px;
+		top: 3098px;
 	}
 	.menulist .menuheader {
 		font-size: 24px;
@@ -1675,7 +1722,7 @@ a {
 		margin-top: -140px;
 	}
 	.footer {
-		top: 3418px;
+		top: 4530px;
 		background-size: auto 100%;
 		background-position: 52% center;
 		text-align: left;
@@ -1756,18 +1803,21 @@ a {
 		text-align: left;
 		width: 100%;
 		height: 41px;
+		left: 50%;
 	}
 	.row1 .center {
 		height: 37.5px;
-		width: 292px;
-		margin-left: 12%;
+		width: 300px;
+		margin-left: -46%;
 		margin-bottom: 0px;
+		margin-right: 12%;
+		margin-left: -46%;
 	}
 	.row1 .center .socmed {
 		display: inline-block;
 	}
 	.copyright {
-		top: 4167px;
-		height: 213px;
+		top: 5277px;
+		height: 150px;
 	}
 }
