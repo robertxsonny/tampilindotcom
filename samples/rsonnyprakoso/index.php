@@ -44,11 +44,25 @@ $(document).ready(function() {
 	$('.required-alert').hide();
 	$('.invalid-alert').hide();
 	$('.input-message').hide();
+	$('.portfolio-group').hide();
+	$('.portfolio-group.selected').show();
 	$('.nav-item').click(function(){
 		$('html, body').animate({
 			scrollTop: $($(this).attr('href')).offset().top
 		}, {
 			duration: 500
+		});
+		return false;
+	});
+
+	$('.content-item').click(function(){
+		$(this).closest('.content-nav').find('.content-item.selected').removeClass('selected');
+		$(this).addClass('selected');
+		var id = $(this).attr('href');
+		$(id).closest('.page-content').find('.portfolio-group.selected').removeClass('selected').fadeOut(300, function() {
+			$(id).fadeIn(300, function() { 
+				$(this).addClass('selected');
+			});			
 		});
 		return false;
 	});
@@ -190,7 +204,7 @@ $(document).ready(function() {
 		segmentShowStroke : false
 	});
 	$('#button-collapse').click(function(){
-		$('.nav-menu').slideToggle(100);
+		$('.nav-menu').contentToggle(100);
 	});
 	$('#order-submit').click(function() {
 		//e.preventDefault();
@@ -286,11 +300,11 @@ $(document).ready(function() {
 		}
 		return false;	
 	});
-	$( window ).scroll(function() {
+	/* $( window ).scroll(function() {
 		$('.sample-product').each(function() {
 			animationHandler($(this), -300, -450);
 		});
-	});
+	}); */
 });
 
 function animationHandler(object, fromTop, fromBottom)
@@ -475,46 +489,131 @@ function processOrder()
 		<div id="works" class="page content-page" style="background-color: #444848; color: #FFFFFF;" >
 			<div class="page-content">
 				<h1 class="content-title">PORTFOLIO</h1>
-				<h2 class="content-subtitle">websites | apps | posters | writings</h1>
-				<div class="box-container portfolio-box">
-					<div class="box-4 animation-wrapper">
+				<ul class="content-nav">
+					<li class="content-subtitle"><a href="#web-pf" class="content-item selected">website</a></li>
+					<li class="content-subtitle">|</li>
+					<!-- <li class="content-subtitle"><a href="#apps-pf" class="content-item selected">app</a></li>
+					<li class="content-subtitle">|</li> -->
+					<li class="content-subtitle"><a href="#layout-pf" class="content-item">layout</a></li>
+					<li class="content-subtitle">|</li>
+					<li class="content-subtitle"><a href="#write-pf" class="content-item">writings</a></li>
+				</ul>
+				<div class="portfolio-box">
+					<div id="web-pf" class="portfolio-group selected">
+					<div class="box-container">
+					<div class="box-6">
 						<a class="sample-product" href="#" style="background: url('images/sample web 1.jpg') no-repeat center; background-size: cover;">
 						</a>	
 					</div>
-					<div class="box-4 animation-wrapper">
+					<div class="box-6">
 						<a class="sample-product" href="#" style="background: url('images/sample web 2.jpg') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-4 animation-wrapper">
+					<div class="box-6">
 						<a class="sample-product" href="#" style="background: url('images/sample web 3.jpg') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-4 animation-wrapper">
+					<div class="box-6">
 						<a class="sample-product" href="#" style="background: url('images/sample web 4.jpg') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-4 animation-wrapper">
+					<div class="box-6">
 						<a class="sample-product" href="#" style="background: url('images/sample web 5.jpg') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-4 animation-wrapper">
+					<div class="box-6">
 						<a class="sample-product" href="#" style="background: url('images/sample web 6.jpg') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-4 animation-wrapper">
-						<a class="sample-product" href="#" style="background: url('images/sample web 7.jpg') no-repeat center; background-size: cover;">
+					<div class="box-6">
+						<a class="sample-product" href="#" style="background: url('images/sample web 1.jpg') no-repeat center; background-size: cover;">
+						</a>	
+					</div>
+					<div class="box-6">
+						<a class="sample-product" href="#" style="background: url('images/sample web 2.jpg') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-4 animation-wrapper">
-						<a class="sample-product" href="#" style="background: url('images/sample web 8.jpg') no-repeat center; background-size: cover;">
+					<div class="box-6">
+						<a class="sample-product" href="#" style="background: url('images/sample web 3.jpg') no-repeat center; background-size: cover;">
 						</a>
+					</div>
+					<div class="box-6">
+						<a class="sample-product" href="#" style="background: url('images/sample web 4.jpg') no-repeat center; background-size: cover;">
+						</a>
+					</div>
+					<div class="box-6">
+						<a class="sample-product" href="#" style="background: url('images/sample web 5.jpg') no-repeat center; background-size: cover;">
+						</a>
+					</div>
+					<div class="box-6">
+						<a class="sample-product" href="#" style="background: url('images/sample web 6.jpg') no-repeat center; background-size: cover;">
+						</a>
+					</div>
+					</div>
+					<p class="desc top-space">
+						I design and develop websites, team up with my friends and co-workers, mostly single page website. My signature design is simplegant, simple but elegant. I also sometimes create icons and vectors by myself, but just the simple one.
+					</p>
+				</div>
+				<!-- <div id="apps-pf" class="box-container portfolio-group">
+					<div class="box-3">
+						<p class="desc">Desktop</p>
+					</div>
+					<div class="box-3">
+						<p class="desc">Android</p>
+					</div>
+					<div class="box-3">
+						<p class="desc">Desktop</p>
+					</div>
+				</div> -->
+				<div id="layout-pf" class="box-container portfolio-group">
+					<div class="box-3">
+						<p class="desc">Poster Design</p>
+						<div class="sample-product" style="background: url('images/sample web 6.jpg') no-repeat center; background-size: cover;"></div>
+						<p class="desc top-space">
+							I create poster design for some occasions and events, mostly for weekly discussion of EnglishDiscuss.
+						</p>
+					</div>
+					<div class="box-3">
+						<p class="desc">Vector Drawings</p>
+						<div class="sample-product" style="background: url('images/sample web 7.jpg') no-repeat center; background-size: cover;"></div>
+						<p class="desc top-space">
+							I currently learning and trying to make simple vector drawings, such as simple image, icon, or logo.
+						</p>
+					</div>
+					<div class="box-3">
+						<p class="desc">Magazine Layout</p>
+						<div class="sample-product" style="background: url('images/sample web 7.jpg') no-repeat center; background-size: cover;"></div>
+						<p class="desc top-space">
+							I previously have experience on designing magazine/bulletin layout for quarterly bulletin in my campus.
+						</p>
+					</div>
+				</div>
+				<div id="write-pf" class="box-container portfolio-group">
+					<div class="box-3">
+						<a class="sample-product" href="#" style="background: url('images/tampilin_white_red.png') no-repeat center center; background-size: contain;"></a>
+						<p class="desc top-space">
+							Scientific articles in simple and popular language (in Bahasa Indonesia)
+						</p>
+					</div>
+					<div class="box-3">
+						<a class="sample-product" href="#" style="background: url('images/tampilin_white_red.png') no-repeat center center; background-size: contain;"></a>
+						<p class="desc top-space">
+							Free-writings, mostly about opinion and criticism (in Bahasa Indonesia)
+						</p>
+					</div>
+					<div class="box-3">
+						<a class="sample-product" href="#" style="background: url('images/tampilin_white_red.png') no-repeat center center; background-size: contain;"></a>
+						<p class="desc top-space">
+							Free-writings, mostly about writing tips and technology (in English)
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
+		</div>
 					
 				
-		<div id="contact" class="page content-page" style="background: linear-gradient(rgba(47,47,59,0.8), rgba(47,47,59,0.8)),  url('images/cover2.jpg') no-repeat center center; background-size: cover; color: #FFFFFF">
+		<div id="contact" class="page content-page" style="background: linear-gradient(rgba(47,47,59,0.8), rgba(47,47,59,0.8)),  url('images/cover2.jpg') no-repeat bottom right; background-size: cover; color: #FFFFFF">
 			<div class="page-content">
 				<h1 class="content-title">CONTACT</h1>
 				<div class="box-container">
@@ -529,7 +628,7 @@ function processOrder()
 				</div>
 				<div class="item-with-icon">
 					<div class="icon-wrapper">
-						<div class="socmed-item" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></div>
+						<div class="icon" style="background: url('images/1455227348_twitter.png') no-repeat center; background-size: contain;"></div>
 					</div>
 					<div class="caption-wrapper">
 						<p class="contact">sonny@tampilin.id</p>
@@ -543,7 +642,7 @@ function processOrder()
 					</div>
 				</div>
 				<br/>
-				<p class="desc desc-left">.. or directly send me email using this form.</p>
+				<p class="desc desc-left">Or directly send me email using this form.</p>
 				<form>
 					<div class="input-message loading">
 						<img src="images/ajax-loader.gif" class="message-icon"></img>
@@ -583,9 +682,8 @@ function processOrder()
 		<div id="footer" class="page content-page" style="background-color: #005F6B; color: #FFFFFF;">
 			<div class="page-content">
 				<p class="foot-note">
-				Copyright &copy; 2016 <a
-					href="https://www.facebook.com/rsonnyprakoso" target="_blank">Robertus Sonny Prakoso</a>, created by <a
-					href="http://tampilin.id" target="_blank">tampilin.id</a>
+				Copyright &copy; 2016 Robertus Sonny Prakoso, created by <a
+					href="http://tampilin.id" target="_blank">tampilin.id: One Stop Online Services</a>
 				</p>
 			</div>
 		</div>
