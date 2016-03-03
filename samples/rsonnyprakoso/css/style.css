@@ -883,6 +883,12 @@ button.contact-button
 		width: 49%;
 	}
 	
+	
+	.box-6
+	{
+		width: 32.33%;
+	}
+	
 	.caption-wrapper, .testimonial-wrapper
 	{
 		width: 79.5%;
@@ -926,11 +932,6 @@ button.contact-button
 		width: 99%;
 	}	
 	
-	
-	.box-6
-	{
-		width: 32.33%;
-	}
 		
 	.center-image
 	{
