@@ -6,19 +6,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Language" content="id">
 <meta name="description"
-	content="Tampilin.id, pengembang one page website sederhana di Indonesia. Menawarkan layanan yang cepat dan desain yang dibuat khusus, bukan berupa template. Buat Buat portofolio atau CV online, kartu nama online, profil usaha, atau website sederhana lainnya di sini.">
-<meta property="og:title"
-	content="Sample 1 for Tampilin.id: Chinese Cuisine">
+	content="Kedai 88 Chinese Cuisine merupakan gerai makan yang menggunakan resep asli turunan Tionghoa dengan dipadukan dengan cita rasa masa kini. Kami hanya menggunakan bahan yang segar dan bermutu tinggi.">
+<meta property="og:title" content="Kedai 88: Chinese Cuisine">
 <meta property="og:description"
-	content="Tampilin.id, pengembang one page website sederhana di Indonesia. Menawarkan layanan yang cepat dan desain yang dibuat khusus, bukan berupa template. Buat Buat portofolio atau CV online, kartu nama online, profil usaha, atau website sederhana lainnya di sini.">
+	content="Kedai 88 Chinese Cuisine merupakan gerai makan yang menggunakan resep asli turunan Tionghoa dengan dipadukan dengan cita rasa masa kini. Kami hanya menggunakan bahan yang segar dan bermutu tinggi.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://tampilin.id">
-<meta property="og:site_name" content="tampilin.id">
+<meta property="og:url" content="http://kedai88jogja.com">
+<meta property="og:site_name" content="kedai88jogja.com">
 <meta name="revisit-after" content="7 days">
 <meta name="distribution" content="web">
 <meta name="robots" content="index, follow">
-<link rel="shortcut icon" type="image/x-icon"
-	href="http://tampilin.id/images/icon.ico" />
+<link rel="shortcut icon" type="image/png"
+	href="/images/logo_kedai88_noborder.png" />
+<link rel="alternate" href="http://tampilin.id/" hreflang="id-id" />
 <link rel="shortcut icon" type="image/png" href="images/icon.png" />
 <link href="/css/style.css" rel="stylesheet" type="text/css">
 <link
@@ -207,7 +207,7 @@
 				<p>Galeria Mall Lt. 3</p>
 				<p>Jalan Jenderal Sudirman No. 99-101</p>
 				<p>Yogyakarta</p>
-				
+
 			</div>
 			<div class="col">
 				<h1>
