@@ -7,7 +7,7 @@ $.fn.exists = function() {
 $(document).ready(function() {
 	$('.popup').hide();
 	$('.list').hide();
-	$('#ayamtulang').slideToggle(500);
+	$('#chicken').slideToggle(500);
 	if ($(window).width() <= 768)
 		$('.header ul').hide();
 	$('.link').click(function() {
@@ -215,16 +215,20 @@ $(document).ready(function() {
 function setDescription() {
 	switch (productindex) {
 	case 1:
-		$('.toggle .title').html('PAKET HEMAT');
-		$('.toggle .subtitle').html('NASI + LAUK + SAYUR + MINUM');
+		$('.toggle .title').html('PAKET HEMAT 1');
+		$('.toggle .subtitle').html('Nasi Ayam Fillet Saus Asam Manis');
 		break;
 	case 2:
-		$('.toggle .title').html('PAKET LENGKAP');
-		$('.toggle .subtitle').html('NASI + DAGING + LAUK + SAYUR + MINUM');
+		$('.toggle .title').html('PAKET HEMAT 2');
+		$('.toggle .subtitle').html('Nasi Ayam Fillet Saus Mentega');
 		break;
 	case 3:
-		$('.toggle .title').html('PAKET IRIT');
-		$('.toggle .subtitle').html('NASI + MINUM');
+		$('.toggle .title').html('PAKET HEMAT 3');
+		$('.toggle .subtitle').html('Nasi Ayam Fillet Saus Tiram');
+		break;
+	case 4:
+		$('.toggle .title').html('PAKET HEMAT 4');
+		$('.toggle .subtitle').html('Nasi Ayam Fillet');
 		break;
 	}
 }

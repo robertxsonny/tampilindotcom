@@ -3,7 +3,6 @@ body {
 	margin-left: 0px;
 }
 
-
 .header {
 	position: fixed;
 	width: 100%;
@@ -23,14 +22,15 @@ body {
 }
 
 .header .phoneno span {
-	background-image: url("/images/phoneicon_black.png");
+	background-image: url("/images/gojek-logo.png");
 	background-repeat: no-repeat;
 	background-size: 99% auto;
-	width: 25px;
-	height: 25px;
+	width: 128px;
+	height: 34px;
 	display: inline-block;
-	margin-right: 10px;
+	margin-right: 0px;
 	margin-bottom: -6px;
+	margin-left: -17px;
 }
 
 .header ul {
@@ -89,10 +89,9 @@ body {
 	height: 595px;
 	min-width: 100%;
 	position: fixed;
-	background-image: url("/images/bg.jpg");
+	background-image: url("/photos/ayam filet saus tiram.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	background-image: url("/images/bg.jpg");
 }
 
 .about {
@@ -153,7 +152,7 @@ body {
 	height: 500px;
 	width: 50%;
 	display: inline-block;
-	background-image: url("/images/aboutbg.jpg");
+	background-image: url("/photos/ifumie seafood.jpg");
 	background-size: auto 100%;
 	position: absolute;
 	left: 50%;
@@ -198,7 +197,8 @@ body {
 }
 
 .menu .product1 {
-	background-image: url("/images/product1.jpg");
+	background-image:
+		url("/photos/Paket hemat ayam filet saus asam manis.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-attachment: fixed;
@@ -210,7 +210,7 @@ body {
 }
 
 .menu .product2 {
-	background-image: url("/images/product2.jpg");
+	background-image: url("/photos/Paket hemat ayam filet saus mentega.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-attachment: fixed;
@@ -221,7 +221,18 @@ body {
 }
 
 .menu .product3 {
-	background-image: url("/images/product1.jpg");
+	background-image: url("/photos/paket hemat ayam filet saus tiram.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	max-width: 1280px;
+	height: 100%;
+	width: 1280px;
+	display: inline-block;
+}
+
+.menu .product4 {
+	background-image: url("/photos/paket hemat ayam filet.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-attachment: fixed;
@@ -410,7 +421,7 @@ body {
 
 .category .bgimg1 {
 	position: absolute;
-	background-image: url("/images/product1.jpg");
+	background-image: url("/photos/ayam fillet saus tiram.jpg");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: 0px -43px;
@@ -420,7 +431,7 @@ body {
 
 .category .bgimg2 {
 	position: absolute;
-	background-image: url("/images/product2.jpg");
+	background-image: url("/photos/bakmi bakar.jpg");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: 0px -43px;
@@ -430,7 +441,7 @@ body {
 
 .category .bgimg3 {
 	position: absolute;
-	background-image: url("/images/product1.jpg");
+	background-image: url("/photos/capcay goreng ayam.jpg");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: 0px -43px;
@@ -440,7 +451,7 @@ body {
 
 .category .bgimg4 {
 	position: absolute;
-	background-image: url("/images/product2.jpg");
+	background-image: url("/photos/kwetiaw sapi siram lada hitam.jpg");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: 0px -43px;
@@ -450,7 +461,7 @@ body {
 
 .category .bgimg5 {
 	position: absolute;
-	background-image: url("/images/product1.jpg");
+	background-image: url("/photos/nasi goreng hongkong.jpg");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: 0px -43px;
@@ -510,6 +521,7 @@ body {
 	height: 90%;
 	display: inline-block;
 	text-align: center;
+	margin-top: -66px;
 }
 
 .footer .col .logo {
@@ -630,11 +642,27 @@ body {
 	cursor: pointer;
 }
 
+#logokedai {
+	background-image: url("/images/logo_kedai88_noborder.png");
+	background-size: 100% auto;
+	width: 200px;
+	height: 200px;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 40px;
+	top: 60px;
+}
+
 .header .burger {
 	visibility: hidden;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 640px) {
+	#logokedai {
+		left: 125px;
+		width: 150px;
+		height: 150px;
+	}
 	.home {
 		background-size: auto 100%;
 		background-position: -76px center;
@@ -770,7 +798,7 @@ body {
 	.menulist .list .product p {
 		margin: 0;
 		margin-left: 20%;
-		font-size: 14px;
+		font-size: 11px;
 	}
 	.footer {
 		top: 2301px;
@@ -781,6 +809,7 @@ body {
 		width: 100%;
 		margin-left: 0px;
 		height: 260px;
+		margin-top: 10px; 
 	}
 	.footer .col .logo {
 		width: 100%;
@@ -853,7 +882,6 @@ body {
 	}
 	.categories-2-cols .bgimg4 {
 		background-position: 0px 0px;
-		background-size: auto 100%;
 	}
 	.categories-2-cols .bgimg5 {
 		background-position: 0px 0px;

@@ -33,7 +33,7 @@
 	<div class="header">
 		<div class="burger"></div>
 		<p class="phoneno">
-			<span class="phone"></span>0813-2888-7771
+			Order now by <span class="phone"></span>
 		</p>
 		<ul>
 			<li><a class="link" href="#landingpage">HOME</a></li>
@@ -43,7 +43,9 @@
 		</ul>
 	</div>
 	<div class="main">
-		<div id="landingpage" class="home"></div>
+		<div id="landingpage" class="home">
+			<div id="logokedai"></div>
+		</div>
 		<div id="about" class="about">
 			<div class="abouttext">
 				<h3 class="headertitle">ABOUT US</h3>
@@ -68,6 +70,7 @@
 					<div class="product1"></div>
 					<div class="product2"></div>
 					<div class="product3"></div>
+					<div class="product4"></div>
 				</div>
 			</div>
 			<div class="toggle">
@@ -83,25 +86,25 @@
 		</div>
 		<div id="menulist" class="menulist">
 			<div class="categories">
-				<div id="ayamtulangcat" class="category">
+				<div id="chickencat" class="category">
 					<div class="bgimg1"></div>
 					<div class="background selected"></div>
 					<div class="text">
-						<p>AYAM TULANG</p>
+						<p>CHICKEN</p>
 					</div>
 				</div>
-				<div id="ayamfilletcat" class="category">
+				<div id="noodlescat" class="category">
 					<div class="bgimg2"></div>
 					<div class="background"></div>
 					<div class="text">
-						<p>AYAM FILLET</p>
+						<p>NOODLES</p>
 					</div>
 				</div>
-				<div id="sapipotongcat" class="category">
+				<div id="vegetablecat" class="category">
 					<div class="bgimg3"></div>
 					<div class="background"></div>
 					<div class="text">
-						<p>SAPI POTONG</p>
+						<p>VEGETABLES</p>
 					</div>
 				</div>
 			</div>
@@ -110,185 +113,90 @@
 					<div class="bgimg4"></div>
 					<div class="background"></div>
 					<div class="text">
-						<p>SAPI FILLET</p>
+						<p>BEEF</p>
 					</div>
 				</div>
-				<div id="bebekpotongcat" class="category">
+				<div id="nasigorengcat" class="category">
 					<div class="bgimg5"></div>
 					<div class="background"></div>
 					<div class="text">
-						<p>BEBEK POTONG</p>
+						<p>NASI GORENG</p>
 					</div>
 				</div>
 			</div>
-			<div id="ayamtulang" class="list">
+			<div id="chicken" class="list">
 				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
+					<img src="/photos/ayam fillet saus tiram.jpg" />
+					<p>AYAM FILLET SAUS TIRAM</p>
 				</div>
 				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>AYAM GORENG</p>
+					<img src="/photos/ayam tulang saus inggris .jpg" />
+					<p>AYAM TULANG SAUS INGGRIS</p>
 				</div>
 				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM BAKAR</p>
+					<img src="/photos/ayam tulang saus rica2.jpg" />
+					<p>AYAM TULANG SAUS RICA-RICA</p>
+				</div>
+
+			</div>
+			<div id="noodles" class="list">
+				<div class="product">
+					<img src="/photos/bakmi bakar.jpg" />
+					<p>BAKMI BAKAR</p>
 				</div>
 				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>AYAM POTONG</p>
+					<img src="/photos/bakmi goreng ayam.jpg" />
+					<p>BAKMI GORENG AYAM</p>
 				</div>
 				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM MADU</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>AYAM GULA</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM GURIH</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>AYAM PENYET</p>
+					<img src="/photos/bihun goreng ayam.jpg" />
+					<p>BIHUN GORENG AYAM</p>
 				</div>
 			</div>
-			<div id="ayamfillet" class="list">
+			<div id="vegetable" class="list">
 				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM NUGGET</p>
+					<img src="/photos/ca taoge ikan asin.jpg" />
+					<p>CA TAOGE IKAN ASIN</p>
 				</div>
 				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>AYAM GARAM</p>
+					<img src="/photos/capcay goreng ayam.jpg" />
+					<p>CAPCAY GORENG AYAM</p>
 				</div>
 				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM BLACKPAPPER PANGGANG</p>
+					<img src="/photos/Capcay goreng seafood.jpg" />
+					<p>CAPCAY GORENG SEAFOOD</p>
 				</div>
 				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>AYAM ABC</p>
+					<img src="/photos/ifumie seafood.jpg" />
+					<p>IFUMIE SEAFOOD</p>
 				</div>
 				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
+					<img src="/photos/kwetiauw goreng ayam.jpg" />
+					<p>KWETIAUW GORENG AYAM</p>
 				</div>
 				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>PAKET HEMAT</p>
+					<img src="/photos/Puyunghai.jpg" />
+					<p>PUYUNGHAI</p>
 				</div>
 				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>NASI GORENG</p>
-				</div>
-			</div>
-			<div id="sapipotong" class="list">
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>PAKET HEMAT</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>NASI GORENG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>PAKET HEMAT</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>NASI GORENG</p>
+					<img src="/photos/sapo tahu seafood.jpg" />
+					<p>SAPO TAHU SEAFOOD</p>
 				</div>
 			</div>
 			<div id="sapifillet" class="list">
 				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>PAKET HEMAT</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>NASI GORENG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>PAKET HEMAT</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>NASI GORENG</p>
+					<img src="/photos/kwetiaw sapi siram lada hitam.jpg" />
+					<p>KWETIAUW SAPI SIRAM LADA HITAM</p>
 				</div>
 			</div>
-			<div id="bebekpotong" class="list">
+			<div id="nasigoreng" class="list">
 				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
+					<img src="/photos/nasi goreng gila .jpg" />
+					<p>NASI GORENG GILA</p>
 				</div>
 				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>PAKET HEMAT</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>NASI GORENG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>PAKET HEMAT</p>
-				</div>
-				<div class="product">
-					<img src="/images/product1.jpg" />
-					<p>AYAM TULANG</p>
-				</div>
-				<div class="product">
-					<img src="/images/product2.jpg" />
-					<p>NASI GORENG</p>
+					<img src="/photos/nasi goreng hongkong.jpg" />
+					<p>NASI GORENG HONGKONG</p>
 				</div>
 			</div>
 		</div>
@@ -299,9 +207,7 @@
 				<p>Galeria Mall Lt. 3</p>
 				<p>Jalan Jenderal Sudirman No. 99-101</p>
 				<p>Yogyakarta</p>
-				<p class="phoneno">
-					<span class="phone"></span>0813-2888-7771
-				</p>
+				
 			</div>
 			<div class="col">
 				<h1>
