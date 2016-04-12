@@ -1,0 +1,483 @@
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+.header {
+	height: 80px;
+	position: relative;
+}
+
+.header .leftribbon {
+	width: 0px;
+	height: 0px;
+	border: 23px solid rgba(81, 102, 51, 0.7);
+	position: relative;
+	display: inline-block;
+	border-left: 24px solid transparent;
+	left: 100px;
+	top: 30px;
+	z-index: 0;
+}
+
+.header .bar {
+	width: 80%;
+	height: 50px;
+	left: 83px;
+	bottom: 0px;
+	top: 25px;
+	position: relative;
+	/* border: 1px solid gray; */
+	box-shadow: gray 0px 0px 8px 0px;
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.8);
+	z-index: 20;
+}
+
+.header .rightribbon {
+	width: 0px;
+	height: 0px;
+	border: 23px solid rgba(81, 102, 51, 0.7);
+	position: relative;
+	display: inline-block;
+	border-right: 24px solid transparent;
+	left: 75px;
+	top: 30px;
+	z-index: 0;
+}
+
+.header .bar .dash {
+	position: relative;
+	width: 99%;
+	height: 85%;
+	top: 5%;
+	left: 0.5%;
+	border: 1px gray dashed;
+}
+
+.header .leftshadow {
+	display: inline-block;
+	height: 46px;
+	width: 10px;
+	background: rgba(81, 102, 51, 0.9);
+	position: relative;
+	top: 30px;
+	left: 87px;
+}
+
+.header .rightshadow {
+	display: inline-block;
+	width: 10px;
+	height: 46px;
+	background: rgba(81, 102, 51, 0.9);
+	left: 79px;
+	position: relative;
+	top: 30px;
+}
+
+.menu {
+	font-family: 'Playfair Display', Serif;
+	font-size: 24px;
+	position: relative;
+	margin: 0;
+	/* margin-top: 4px; */
+	padding-left: 75px;
+	width: 40%;
+	height: 100%;
+	display: inline-block;
+}
+
+.dash .menu .option {
+	display: inline-block;
+	width: 41%;
+	float: left;
+	transition: 0.3s;
+	height: 100%;
+	padding-top: 0px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.dash .menu .option:HOVER {
+	color: white;
+	height: 113%;
+	position: relative;
+	top: -5px;
+	padding-top: 5px;
+	text-shadow: 1px 1px gray;
+}
+
+.dash .menu #home:HOVER {
+	background-color: rgba(31, 193, 180, 0.7);
+}
+
+.dash .menu #about:HOVER {
+	background-color: rgba(221, 83, 73, 0.7);
+}
+
+.dash .menu #shopnow:HOVER {
+	background-color: rgba(250, 113, 0, 0.7);
+}
+
+.dash .menu #contact:HOVER {
+	background-color: rgba(105, 193, 239, 0.7);
+}
+
+.content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.bghome {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url('/images/home1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+
+.dash .menu .option h3 {
+	font-family: 'Playfair Display', Serif;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0;
+	margin-bottom: 14px;
+}
+
+#home .flag {
+	position: relative;
+	border: 20px solid transparent;
+	border-left: 83px solid rgba(31, 193, 180, 0.9);
+	border-right: 83px solid rgba(31, 193, 180, 0.9);
+	border-top: 10px solid rgba(31, 193, 180, 0.9);
+	width: 0px;
+}
+
+#about .flag {
+	position: relative;
+	border: 20px solid transparent;
+	border-left: 83px solid rgba(221, 83, 73, 0.9);
+	border-right: 83px solid rgba(221, 83, 73, 0.9);
+	border-top: 10px solid rgba(221, 83, 73, 0.9);
+	width: 0px;
+}
+
+#shopnow .flag {
+	position: relative;
+	border: 20px solid transparent;
+	border-left: 83px solid rgba(250, 113, 0, 0.9);
+	border-right: 83px solid rgba(250, 113, 0, 0.9);
+	border-top: 10px solid rgba(250, 113, 0, 0.9);
+	width: 0px;
+}
+
+#contact .flag {
+	position: relative;
+	border: 20px solid transparent;
+	border-left: 83px solid rgba(105, 193, 239, 0.9);
+	border-right: 83px solid rgba(105, 193, 239, 0.9);
+	border-top: 10px solid rgba(105, 193, 239, 0.9);
+	width: 0px;
+}
+
+.main {
+	position: relative;
+	width: 100%;
+	height: 450px;
+}
+
+.main .maintitle {
+	width: 100%;
+	margin-top: 80px;
+	position: relative;
+	font-family: 'Playfair Display', Serif;
+	color: white;
+	text-align: center;
+	font-style: italic;
+	text-shadow: 2px 2px black;
+}
+
+.main .maintitle h1 {
+	font-weight: lighter;
+	font-size: 5em;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.main .maintitle h2 {
+	font-weight: lighter;
+	margin: 0;
+	font-size: 4em;
+	margin-bottom: 10px;
+}
+
+.main .maintitle h3 {
+	font-weight: lighter;
+	font-size: 2.5em;
+	margin: 0;
+}
+
+.main .switcher {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.switcher .switch {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	border: 1px solid #8f8f8f;
+	border-radius: 20px;
+	box-shadow: grey 0px 0px 19px 2px;
+	margin-right: 20px;
+	cursor: pointer;
+	background: white;
+}
+
+.switcher .active {
+	background-color: #4f4f4f;
+}
+
+.abouttitle {
+	height: 150px;
+	background-color: rgba(160, 212, 104, 1);
+	width: 110%;
+	left: -7px;
+	z-index: 1;
+	position: relative;
+	text-align: center;
+}
+
+.aboutcontent {
+	background-color: lightgrey;
+	width: 100%;
+	height: 500px;
+	position: relative;
+	z-index: 0;
+	top: 0px;
+}
+
+.abouttitle .cupcakelogo {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 0;
+}
+
+.abouttitle .cupcakebg {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	background-color: rgba(160, 212, 104, 1);
+	border-radius: 150px;
+	top: -65px;
+	display: inline-block;
+	left: -10px;
+	border-top: 2px dashed rgba(88, 162, 8, 1);
+}
+
+.cupcakelogo .cupcakeimg {
+	display: inline-block;
+	top: -105px;
+	left: -139px;
+	background-image: url("/assets/cake1.png");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	position: relative;
+}
+
+.abouttitle h1 {
+	font-weight: lighter;
+	color: white;
+	font-family: 'Playfair Display', Serif;
+	font-size: 3em;
+	top: -139px;
+	position: relative;
+	left: -63px;
+	text-shadow: 2px 2px gray;
+}
+
+.aboutcontent .box {
+	position: relative;
+	top: 95px;
+	left: 75px;
+	width: 90%;
+	height: 67%;
+}
+
+.aboutcontent .box .photo {
+	height: 100%;
+	width: 49%;
+	position: relative;
+	display: inline-block;
+	background-image: url("/images/about1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	box-shadow: grey 0px 0px 30px 5px;
+}
+
+.box .abouttext {
+	background: white;
+	display: inline-block;
+	height: 100%;
+	width: 49%;
+	position: relative;
+	left: -5px;
+	box-shadow: grey 0px 0px 30px 5px;
+}
+
+.aboutcontent .box .abouttext p {
+	display: inline-block;
+	position: absolute;
+	left: 20px;
+	text-align: justify;
+	right: 23px;
+	font-family: 'Playfair Display', Serif;
+	font-size: 1.1em;
+	top: 8px;
+	quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+.aboutcontent .box .abouttext p:before {
+	content: open-quote;
+	font-size: 3em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+	font-family: 'Playfair Display', Serif;
+}
+
+.aboutcontent .bgimg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url("/images/about1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	-webkit-filter: blur(20px);
+	-moz-filter: blur(20px);
+	-o-filter: blur(20px);
+	-ms-filter: blur(20px);
+	filter: blur(20px);
+}
+
+#shopnowdiv .box {
+	height: 220px;
+	width: 100%;
+	background-color: #f4f0e8;
+}
+
+#shopnowdiv .box .shoptitle {
+	height: 100px;
+	position: relative;
+	background: rgba(31, 193, 180, 1);
+	text-align: center;
+	z-index: 3;
+}
+
+.box .shoptitle h1 {
+	margin: 0;
+	position: relative;
+	top: 20px;
+	font-family: 'Playfair Display', Serif;
+	font-weight: lighter;
+	color: white;
+	font-size: 3em;
+	text-shadow: 2px 2px grey;
+}
+
+#shopnowdiv .box .flag {
+	border: 100px solid transparent;
+	border-left: 631.5px solid transparent;
+	border-right: 631.5px solid transparent;
+	height: 0px;
+	position: relative;
+	width: 0px;
+	border-top: 100px solid rgba(31, 193, 180, 1);
+	text-align: center;
+	-webkit-filter: drop-shadow(5px 5px 5px gray);
+	-moz-filter: drop-shadow(5px 5px 5px gray);
+	-o-filter: drop-shadow(5px 5px 5px gray);
+	-ms-filter: drop-shadow(5px 5px 5px gray);
+	filter: drop-shadow(5px 5px 5px gray);
+	z-index: 2;
+}
+
+#shopnowdiv .box .flag .cakebox {
+	background-image: url("/assets/cake2.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	width: 90px;
+	height: 90px;
+	/* display: inline-block; */
+	position: relative;
+	top: -102px;
+	left: -41px;
+}
+
+#shopnowdiv .shopcontent {
+	width: 100%;
+	background: #f4f0e8;
+}
+
+.shopcontent .item {
+	width: 33.1%;
+	height: 500px;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+}
+
+.shopcontent .item h2 {
+	font-family: 'Playfair Display', Serif;
+	font-weight: lighter;
+	margin: 0;
+	font-size: 1.75em;
+	margin-bottom: 20px;
+	font-style: italic;
+	color: #d08b96;
+	margin-top: 15px;
+	text-shadow: 0.75px 0.75px #afafaf;
+}
+
+.shopcontent .item .cakeimg {
+	width: 200px;
+	height: 200px;
+	border-radius: 200px;
+	background-image: url("/images/shop1.jpg");
+	background-size: 160% auto;
+	background-repeat: no-repeat;
+	background-position: -120px -6px;
+	position: relative;
+	display: inline-block;
+	border: 3px solid #fcd0d3;
+	-webkit-filter: drop-shadow(0px 0px 7px grey);
+	-moz-filter: drop-shadow(0px 0px 7px grey);
+	-o-filter: drop-shadow(0px 0px 7px grey);
+	-ms-filter: drop-shadow(0px 0px 7px grey);
+	filter: drop-shadow(0px 0px 7px grey);
+	cursor: pointer;
+}
+
+.shopcontent .item h3 {
+	font-family: 'Playfair Display', Serif;
+	font-weight: 300;
+	margin: 0;
+	font-size: 1.25em;
+	margin-top: 15px;
+	color: #3f3f3f;
+}
+
+.shopcontent .item i {
+	font-size: 0.75em;
+}
