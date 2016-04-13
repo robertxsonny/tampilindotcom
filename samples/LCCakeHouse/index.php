@@ -9,6 +9,7 @@
 	rel='stylesheet' type='text/css'>
 <link href="/css/main.css" rel="stylesheet" type="text/css">
 <link href="/css/jquery-ui.css" rel="stylesheet" type="text/css">
+<link href="/css/font-awesome.css" rel="stylesheet" type="text/css">
 <script src="/js/jquery-2.2.3.min.js" type="text/javascript"></script>
 <script src="/js/jquery-ui.js" type="text/javascript"></script>
 <script src="/js/index.js" type="text/javascript"></script>
@@ -74,18 +75,15 @@
 			<div class="box">
 				<div class="photo"></div>
 				<div class="abouttext">
-					<p>Jelly-o candy caramels danish powder jelly-o. Tart biscuit
-						cupcake lemon drops cupcake wafer. Cake donut chupa chups pastry
-						cotton candy danish muffin. Muffin marshmallow cake caramels.
-						Jujubes dessert dessert cupcake. Cotton candy sesame snaps
-						tiramisu bear claw sugar plum dragee croissant sweet toffee.
-						Dessert croissant brownie tootsie roll topping. Bonbon tiramisu
-						cheesecake danish jelly marzipan ice cream toffee fruitcake. Cake
-						jelly cheesecake jelly. Apple pie cake gingerbread marzipan gummi
-						bears brownie biscuit gingerbread. Powder tootsie roll macaroon.
-						Lemon drops apple pie gingerbread caramels brownie cake. Gummi
-						bears wafer bear claw pudding muffin donut marshmallow donut
-						halvah.</p>
+					<p>We started LC Cake House on October 13rd, 2011 at Jl. AM
+						Sangaji No. 90A, Yogyakarta. We offer various products, such as
+						cupcakes, chiffon cake, Tokyo Banana, bloeder, cheese cake,
+						cookies, choco truffle, etc. In addition to that, we also design
+						and make occasion cakes, including children's and adult's birthday
+						cakes, anniversary cakes, wedding cakes and others. All of them
+						can be made to your specification. At LC Cake House, we only use
+						the finest quality ingredients without any preservatives. With a
+						great variety of flavours and fillings, we're sure you'll be spoilt for choice.</p>
 				</div>
 			</div>
 		</div>
@@ -150,7 +148,7 @@
 				<h3>&nbsp;</h3>
 				<h3>&nbsp;</h3>
 			</div>
-			<div class="item">
+			<!-- <div class="item">
 				<h2>Assorted Cakes</h2>
 				<div id="img1" class="cakeimg"></div>
 
@@ -159,8 +157,141 @@
 				<h3>Tokyo Banana</h3>
 				<h3>Tokyo Banana</h3>
 				<h3>Tokyo Banana</h3>
+			</div> -->
+		</div>
+		<div class="shopcontent2">
+			<div class="item">
+
+				<div class="icon"></div>
+				<div class="boxitem">
+					<div class="img"></div>
+					<div class="text">
+						<h3>Cupcakes!</h3>
+						<p>
+							Start from <strong>IDR 14K</strong>
+						</p>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+
+				<div class="icon"></div>
+				<div class="boxitem">
+					<div class="img"></div>
+					<div class="text">
+						<h3>Cupcakes!</h3>
+						<p>
+							Start from <strong>IDR 14K</strong>
+						</p>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+
+				<div class="icon"></div>
+				<div class="boxitem">
+					<div class="img"></div>
+					<div class="text">
+						<h3>Cupcakes!</h3>
+						<p>
+							Start from <strong>IDR 14K</strong>
+						</p>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+
+				<div class="icon"></div>
+				<div class="boxitem">
+					<div class="img"></div>
+					<div class="text">
+						<h3>Cupcakes!</h3>
+						<p>
+							Start from <strong>IDR 14K</strong>
+						</p>
+						<p></p>
+					</div>
+				</div>
 			</div>
 		</div>
+	</div>
+	<div id="contactdiv" class="content">
+		<div class="head">
+			<h2>Put your order or just leave us a message!</h2>
+		</div>
+		<div class="contactcontent">
+			<table class="contacttable">
+				<tbody>
+					<tr>
+						<td>Name</td>
+						<td><input id="name><span       class="></td>
+						<td>Phone No./Email</td>
+						<td><input id="email"></td>
+					</tr>
+					<tr>
+						<td>Message</td>
+						<td colspan="3"><textarea></textarea></td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<button class="submit">
+								<span class="sendicon"></span>Kirim
+							</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="addr">
+				<tbody>
+					<tr>
+						<td id="contacttitle" colspan="2">Contact Information</td>
+					</tr>
+					<tr>
+						<td><span class="fa fa-map-marker"></span></td>
+						<td>Jalan AM Sangaji No. 90A Yogyakarta</td>
+					</tr>
+					<tr>
+						<td><span class="fa fa-phone"></span></td>
+						<td>+62-85-6433-00549</td>
+					</tr>
+					<tr>
+						<td><span class="fa fa-comment"></span></td>
+						<td>(BBM) FAFAFAFA</td>
+					</tr>
+					<tr>
+						<td><span class="fa fa-envelope"></span></td>
+						<td>example@contoh.com</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="map">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.132362591131!2d110.36577131397499!3d-7.775786679294895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5837eb47d537%3A0xd6090f8834cd146!2sLC+Cake+House!5e0!3m2!1sid!2sid!4v1460518550241"
+				width="100%" height="200" frameborder="0" style="border: 0"
+				allowfullscreen=""></iframe>
+		</div>
+	</div>
+	<div class="socmed">
+		<div class="item">
+			<span class="fa fa-facebook"></span>
+		</div>
+		<div class="item">
+			<span class="fa fa-twitter"></span>
+		</div>
+		<div class="item">
+			<span class="fa fa-instagram"></span>
+		</div>
+	</div>
+	<div class="copyright">
+		<h3>
+			Copyright &copy; 2016 <a href="http://tampilin.id">Tampilin.id</a>:
+			One Stop Online Services. <small>Vector icons by Freepik on
+				Freepik.com</small>
+		</h3>
 	</div>
 </body>
 </html>

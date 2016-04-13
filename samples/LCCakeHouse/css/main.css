@@ -343,7 +343,7 @@ body {
 	text-align: justify;
 	right: 23px;
 	font-family: 'Playfair Display', Serif;
-	font-size: 1.1em;
+	font-size: 1.2em;
 	top: 8px;
 	quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -428,6 +428,7 @@ body {
 #shopnowdiv .shopcontent {
 	width: 100%;
 	background: #f4f0e8;
+	padding-bottom: 30px;
 }
 
 .shopcontent .item {
@@ -480,4 +481,245 @@ body {
 
 .shopcontent .item i {
 	font-size: 0.75em;
+}
+
+.shopcontent2 {
+	width: 100%;
+	background-color: #4c3c3c;
+	padding-top: 30px;
+	border-top: 3px dashed white;
+}
+
+.shopcontent2 .item {
+	width: 24.7%;
+	height: 500px;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	align-items: center;
+}
+
+.shopcontent2 .item .icon {
+	width: 40px;
+	height: 40px;
+	background: url("/assets/lovepink.png");
+	background-size: 73% auto;
+	background-repeat: no-repeat;
+	background-position: 5px 6px;
+	border-radius: 30px;
+	background-color: white;
+	display: block;
+	margin: 0 auto;
+	z-index: 21;
+	position: absolute;
+	left: 42%;
+	border: 4px solid #4c3c3c;
+}
+
+.shopcontent2 .item .boxitem {
+	display: block;
+	width: 85%;
+	height: 90%;
+	border: 2px solid black;
+	position: relative;
+	top: 21px;
+	margin: 0 auto;
+	z-index: 0;
+}
+
+.shopcontent2 .boxitem .img {
+	width: 100%;
+	height: 75%;
+	background-image: url("/images/shop2.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: -84px 1px;
+	border-bottom: 2px solid #fb6d7f;
+}
+
+.shopcontent2 .boxitem .text {
+	width: 100%;
+	height: 25%;
+	background-color: #f4f0e8;
+}
+
+.shopcontent2 .boxitem .text h3 {
+	margin: 0;
+	position: relative;
+	padding-top: 10px;
+	font-family: 'Playfair Display', Serif;
+	font-weight: lighter;
+	font-style: italic;
+	color: #fb6d7f;
+	font-size: 1.5em;
+	text-shadow: 0.5px 0.5px gray;
+}
+
+.shopcontent2 .boxitem .text p {
+	margin: 0;
+	position: relative;
+	padding-top: 10px;
+	font-family: 'Playfair Display', Serif;
+	font-weight: lighter;
+	font-size: 1em;
+}
+
+div#contactdiv {
+	background-color: #f4f0e8;
+}
+
+#contactdiv .head {
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+#contactdiv .head h2 {
+	font-family: 'Playfair Display', Serif;
+	font-weight: lighter;
+	font-size: 2em;
+	font-style: italic;
+	margin: 0;
+	position: relative;
+	top: 20px;
+	color: #fb6d7f;
+	text-shadow: 0.5px 0.5px grey;
+}
+
+.contactcontent .contacttable {
+	margin: 0 auto;
+	width: 52%;
+	padding-bottom: 50px;
+	display: inline-block;
+	position: relative;
+	left: 50px;
+}
+
+.contacttable tr {
+	height: 60px;
+	margin-bottom: 10px;
+}
+
+.contacttable td {
+	font-family: 'Playfair Display', Serif;
+	font-size: 18px;
+	text-align: right;
+}
+
+.contacttable input {
+	height: 25px;
+	width: 95%;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 5px;
+	border: 0;
+	border: 1px solid #fb6d7f;
+	font-family: 'Playfair Display', Serif;
+	font-size: 16px;
+	-webkit-filter: drop-shadow(1px 1px grey);
+	-moz-filter: drop-shadow(1px 1px grey);
+	-o-filter: drop-shadow(1px 1px grey);
+	-ms-filter: drop-shadow(1px 1px grey);
+	filter: drop-shadow(1px 1px grey);
+}
+
+.contacttable textarea {
+	height: 50px;
+	width: 98%;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 5px;
+	border: 0;
+	border: 1px solid #fb6d7f;
+	font-family: 'Playfair Display', Serif;
+	font-size: 16px;
+	box-shadow: 1px 1px lightgrey;
+}
+
+.contacttable button {
+	width: 94%;
+	border-radius: 5px;
+	background-color: #fb6d7f;
+	color: white;
+	font-family: 'Playfair Display', Serif;
+	font-weight: lighter;
+	font-size: 18px;
+	border: 0;
+	height: 35px;
+	font-size: 18px;
+}
+
+#contactdiv .addr {
+	width: 47%;
+	display: inline-block;
+	position: relative;
+	bottom: 60px;
+	left: 145px;
+}
+
+#contactdiv .addr tr {
+	height: 30px;
+}
+
+#contactdiv .addr #contacttitle {
+	font-size: 1.5em;
+	height: 48px;
+	color: #fb6d7f;
+}
+
+#contactdiv .addr td {
+	font-family: 'Playfair Display', Serif;
+	position: relative;
+}
+
+.socmed {
+    width: 100%;
+    height: 65px;
+    background-color: #4c3c3c;
+    padding-top: 15px;
+    position: relative;
+    text-align: center;
+}
+
+.socmed .item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #331f20;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.socmed .item span {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    top: 10px;
+}
+
+.copyright {
+    width: 100%;
+    position: relative;
+    height: 30px;
+    background-color: #f4f0e8;
+    text-align: center;
+}
+
+.copyright h3 {
+    margin: 0;
+    margin-top: 5px;
+    font-family: 'Playfair Display', Serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.copyright h3 a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #fb6d7f;
 }
