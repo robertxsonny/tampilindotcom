@@ -4,6 +4,21 @@
 <meta charset="ISO-8859-1">
 <title>LC Cake House - Your Delicious and Healthy Choice</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="id">
+<meta name="description"
+	content="LC Cake House: Your Delicious and Healthy Choice. Try our cupcakes, chiffon cakes, cookies, choco truffles, etc.">
+<meta property="og:title" content="LC Cake House: Your Delicious and Healthy Choice.">
+<meta property="og:description"
+	content="LC Cake House: Your Delicious and Healthy Choice. Try our cupcakes, chiffon cakes, cookies, choco truffles, etc.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://lccakehouse.com">
+<meta property="og:site_name" content="lccakehouse.com">
+<meta name="revisit-after" content="7 days">
+<meta name="distribution" content="web">
+<meta name="robots" content="index, follow">
+<link rel="alternate" href="http://tampilin.id/" hreflang="id-id" />
+<link rel="shortcut icon" type="image/png" href="images/icon.png" />
 <link
 	href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic'
 	rel='stylesheet' type='text/css'>
@@ -16,12 +31,20 @@
 </head>
 <body>
 	<div id="homediv" class="content">
-		<div class="bghome"></div>
+		<div id="home1" class="bghome"></div>
+		<div id="home2" class="bghome"></div>
+		<div id="home3" class="bghome"></div>
+		<div id="home4" class="bghome"></div>
 		<div class="header">
+
 			<div class="leftribbon"></div>
 			<div class="leftshadow"></div>
 			<div class="bar">
+
 				<div class="dash">
+					<div class="burger">
+						<span class="fa fa-bars"></span>
+					</div>
 					<div class="menu">
 						<div id="home" class="option">
 							<h3>Home</h3>
@@ -55,10 +78,10 @@
 				<h3>Your delicious and healthy choice</h3>
 			</div>
 			<div class="switcher">
-				<div class="switch active"></div>
-				<div class="switch"></div>
-				<div class="switch"></div>
-				<div class="switch"></div>
+				<div id="switch1" class="switch active"></div>
+				<div id="switch2" class="switch"></div>
+				<div id="switch3" class="switch"></div>
+				<div id="switch4" class="switch"></div>
 			</div>
 		</div>
 	</div>
@@ -83,7 +106,8 @@
 						cakes, anniversary cakes, wedding cakes and others. All of them
 						can be made to your specification. At LC Cake House, we only use
 						the finest quality ingredients without any preservatives. With a
-						great variety of flavours and fillings, we're sure you'll be spoilt for choice.</p>
+						great variety of flavours and fillings, we're sure you'll be
+						spoilt for choice.</p>
 				</div>
 			</div>
 		</div>
@@ -116,7 +140,7 @@
 				</h3>
 				<h3>&nbsp;</h3>
 			</div>
-			<div class="item">
+			<div id="itemlong" class="item">
 				<h2>Custom Design Cakes</h2>
 				<div id="img1" class="cakeimg"></div>
 
@@ -136,7 +160,7 @@
 					24cm <i>start from</i> <strong>IDR 600K</strong>
 				</h3>
 			</div>
-			<div class="item">
+			<div id="itemshort" class="item">
 				<h2>Regular Cupcakes</h2>
 				<div id="img1" class="cakeimg"></div>
 
@@ -227,7 +251,7 @@
 				<tbody>
 					<tr>
 						<td>Name</td>
-						<td><input id="name><span       class="></td>
+						<td><input id="name><span         class="></td>
 						<td>Phone No./Email</td>
 						<td><input id="email"></td>
 					</tr>
