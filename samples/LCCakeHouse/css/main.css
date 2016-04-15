@@ -171,7 +171,7 @@ body {
 }
 
 #home4 {
-	background-image: url('/images/home5.jpg');
+	background-image: url('/images/home4.jpg');
 }
 
 .dash .menu .option h3 {
@@ -318,14 +318,15 @@ body {
 
 .cupcakelogo .cupcakeimg {
 	display: inline-block;
+	background-image: url("/assets/cake1.png");
 	top: -105px;
 	left: -139px;
-	background-image: url("/assets/cake1.png");
 	background-size: auto 100%;
 	background-repeat: no-repeat;
 	width: 100px;
 	height: 100px;
 	position: relative;
+	top: -105px;
 }
 
 .abouttitle h1 {
@@ -487,7 +488,7 @@ body {
 	width: 200px;
 	height: 200px;
 	border-radius: 200px;
-	background-image: url("/images/shop1.jpg");
+	/* background-image: url("/images/shop1.jpg"); */
 	background-size: 160% auto;
 	background-repeat: no-repeat;
 	background-position: -120px -6px;
@@ -500,6 +501,21 @@ body {
 	-ms-filter: drop-shadow(0px 0px 7px grey);
 	filter: drop-shadow(0px 0px 7px grey);
 	cursor: pointer;
+}
+
+.shopcontent .item #img1 {
+	background-image: url("/images/customdesign1.jpg");
+	background-position: -70px -6px;
+}
+
+.shopcontent .item #img2 {
+	background-image: url("/images/customdesigncake1.jpg");
+	background-position: -55px -6px;
+}
+
+.shopcontent .item #img3 {
+	background-image: url("/images/regularcupcake.jpg");
+	background-position: -120px -10px;
 }
 
 .shopcontent .item h3 {
@@ -562,11 +578,67 @@ body {
 .shopcontent2 .boxitem .img {
 	width: 100%;
 	height: 75%;
-	background-image: url("/images/shop2.jpg");
+	/* background-image: url("/images/shop2.jpg"); */
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	background-position: -84px 1px;
 	border-bottom: 2px solid #fb6d7f;
+}
+
+.shopcontent2 .boxitem #img1 {
+	background-image: url("/images/puding.jpg");
+	background-position: center center;
+	background-size: 100% auto;
+}
+
+.shopcontent2 .boxitem #img2 {
+	background-image: url("/images/sifon keju.jpg");
+	background-position: center center;
+	background-size: 100% auto;
+}
+
+.shopcontent2 .boxitem #img3 {
+	background-image: url("/images/sifon pandan.jpg");
+	background-position: center center;
+	background-size: 100% auto;
+}
+
+.shopcontent2 .boxitem #img4 {
+	background-image: url("/images/almond crispy.jpg");
+	background-position: center center;
+	background-size: 100% auto;
+}
+
+.shopcontent2 .boxitem #img5 {
+	background-image: url("/images/puding 1.jpg");
+}
+
+.shopcontent2 .boxitem #img6 {
+	background-image: url("/images/chocoball.jpg");
+}
+
+.shopcontent2 .boxitem #img7 {
+	background-image: url("/images/ayam.jpg");
+}
+
+.shopcontent2 .boxitem #img8 {
+	background-image: url("/images/cheesecake.jpg");
+}
+
+.shopcontent2 .boxitem #img9 {
+	background-image: url("/images/sobek.jpg");
+}
+
+.shopcontent2 .boxitem #img10 {
+	background-image: url("/images/keju.jpg");
+}
+
+.shopcontent2 .boxitem #img11 {
+	background-image: url("/images/pop.jpg");
+}
+
+.shopcontent2 .boxitem #img12 {
+	background-image: url("/images/semir.jpg");
 }
 
 .shopcontent2 .boxitem .text {
@@ -784,10 +856,28 @@ div#contactdiv {
 	display: none;
 }
 
+.success {
+	font-family: 'Playfair Display', Serif;
+	background-color: #fb6d7f;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 1px;
+	border-radius: 10px;
+	text-align: center;
+	width: 94%;
+	font-size: 14px;
+	position: relative;
+	left: 37px;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 359px) {
 	.bghome {
 		background-position: center center;
 		background-size: auto 100%;
+	}
+	.shopcontent .item #img3 {
+		background-position: -36px -10px;
 	}
 	.header .leftribbon {
 		left: 148px;
@@ -1015,12 +1105,29 @@ div#contactdiv {
 	.copyright h3 {
 		font-size: 13px;
 	}
+	.success {
+		font-family: 'Playfair Display', Serif;
+		background-color: #fb6d7f;
+		color: white;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 1px;
+		border-radius: 10px;
+		text-align: center;
+		width: 87%;
+		font-size: 12px;
+		position: relative;
+		left: 42px;
+	}
 }
 
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media only screen and (min-width: 360px) and (max-width: 767px) {
 	.bghome {
 		background-position: center center;
 		background-size: auto 100%;
+	}
+	.shopcontent .item #img3 {
+		background-position: -36px -10px;
 	}
 	.header .leftribbon {
 		left: 148px;
@@ -1251,5 +1358,104 @@ div#contactdiv {
 	}
 	.copyright h3 {
 		font-size: 13px;
+	}
+	.success {
+		font-family: 'Playfair Display', Serif;
+		background-color: #fb6d7f;
+		color: white;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 1px;
+		border-radius: 10px;
+		text-align: center;
+		width: 87%;
+		font-size: 12px;
+		position: relative;
+		left: 42px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.bghome {
+		background-size: auto 100%;
+	}
+	.header {
+		left: -16px;
+	}
+	.menu {
+		font-size: 24px;
+		margin-top: 6px;
+		padding-left: 35px;
+		width: 37%;
+	}
+	.dash .menu .option {
+		width: 49%;
+	}
+	.dash .menu .option h3 {
+		font-size: 22px;
+	}
+	.header .leftribbon {
+		left: 17px;
+	}
+	.header .leftshadow {
+		left: 5px;
+	}
+	.header .bar {
+		left: 0px;
+	}
+	.header .rightshadow {
+		left: -3px;
+	}
+	.header .rightribbon {
+		left: -12px;
+	}
+	.abouttitle {
+		width: 100%;
+		left: 0px;
+	}
+	.abouttitle .cupcakebg {
+		left: 40px;
+	}
+	.cupcakelogo .cupcakeimg {
+		left: -88px;
+	}
+	.abouttitle h1 {
+		left: 0px;
+	}
+	.aboutcontent .box .photo {
+		background-size: auto 100%;
+		background-position: center center;
+	}
+	.aboutcontent .box .abouttext p {
+		font-size: 0.9em;
+	}
+	.aboutcontent .box {
+		left: 50px;
+	}
+	#shopnowdiv .box .flag {
+		border-left: 384px solid transparent;
+		border-right: 384px solid transparent;
+	}
+	#shopnowdiv .shopcontent {
+		text-align: center;
+	}
+	.shopcontent .item {
+		width: 50%;
+	}
+	.shopcontent .item .cakeimg {
+		width: 300px;
+		height: 300px;
+	}
+	.shopcontent .item h3 {
+		font-size: 1.75em;
+	}
+	div#itemlong {
+		margin-bottom: 40px;
+	}
+	.shopcontent2 .item {
+		width: 49%;
+	}
+	#contactdiv .addr {
+		left: 60px;
 	}
 }

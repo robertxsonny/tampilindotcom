@@ -8,7 +8,8 @@
 <meta http-equiv="Content-Language" content="id">
 <meta name="description"
 	content="LC Cake House: Your Delicious and Healthy Choice. Try our cupcakes, chiffon cakes, cookies, choco truffles, etc.">
-<meta property="og:title" content="LC Cake House: Your Delicious and Healthy Choice.">
+<meta property="og:title"
+	content="LC Cake House: Your Delicious and Healthy Choice.">
 <meta property="og:description"
 	content="LC Cake House: Your Delicious and Healthy Choice. Try our cupcakes, chiffon cakes, cookies, choco truffles, etc.">
 <meta property="og:type" content="website">
@@ -98,16 +99,16 @@
 			<div class="box">
 				<div class="photo"></div>
 				<div class="abouttext">
-					<p>We started LC Cake House on October 13rd, 2011 at Jl. AM
-						Sangaji No. 90A, Yogyakarta. We offer various products, such as
-						cupcakes, chiffon cake, Tokyo Banana, bloeder, cheese cake,
-						cookies, choco truffle, etc. In addition to that, we also design
-						and make occasion cakes, including children's and adult's birthday
-						cakes, anniversary cakes, wedding cakes and others. All of them
-						can be made to your specification. At LC Cake House, we only use
-						the finest quality ingredients without any preservatives. With a
-						great variety of flavours and fillings, we're sure you'll be
-						spoilt for choice.</p>
+					<p>We started LC Cake House on October 13rd, 2011 at Jl. AM Sangaji
+						No. 90A, Yogyakarta. We offer various products, such as cupcakes,
+						chiffon cake, Tokyo Banana, bloeder, cheese cake, cookies, choco
+						truffle, etc. In addition to that, we also design and make
+						occasion cakes, including children's and adult's birthday cakes,
+						anniversary cakes, wedding cakes and others. All of them can be
+						made to your specification. At LC Cake House, we only use the
+						finest quality ingredients without any preservatives. With a great
+						variety of flavours and fillings, we're sure you'll be spoilt for
+						choice.</p>
 				</div>
 			</div>
 		</div>
@@ -142,7 +143,7 @@
 			</div>
 			<div id="itemlong" class="item">
 				<h2>Custom Design Cakes</h2>
-				<div id="img1" class="cakeimg"></div>
+				<div id="img2" class="cakeimg"></div>
 
 				<h3>
 					16cm <i>start from</i> <strong>IDR 350K</strong>
@@ -162,7 +163,7 @@
 			</div>
 			<div id="itemshort" class="item">
 				<h2>Regular Cupcakes</h2>
-				<div id="img1" class="cakeimg"></div>
+				<div id="img3" class="cakeimg"></div>
 
 				<h3>
 					<i>Each</i> <strong>IDR 14-18K</strong>
@@ -188,9 +189,9 @@
 
 				<div class="icon"></div>
 				<div class="boxitem">
-					<div class="img"></div>
+					<div id="img1" class="img"></div>
 					<div class="text">
-						<h3>Cupcakes!</h3>
+						<h3>Pudding</h3>
 						<p>
 							Start from <strong>IDR 14K</strong>
 						</p>
@@ -199,12 +200,11 @@
 				</div>
 			</div>
 			<div class="item">
-
 				<div class="icon"></div>
 				<div class="boxitem">
-					<div class="img"></div>
+					<div id="img2" class="img"></div>
 					<div class="text">
-						<h3>Cupcakes!</h3>
+						<h3>Chiffon Keju</h3>
 						<p>
 							Start from <strong>IDR 14K</strong>
 						</p>
@@ -213,12 +213,11 @@
 				</div>
 			</div>
 			<div class="item">
-
 				<div class="icon"></div>
 				<div class="boxitem">
-					<div class="img"></div>
+					<div id="img3" class="img"></div>
 					<div class="text">
-						<h3>Cupcakes!</h3>
+						<h3>Chiffon Pandan</h3>
 						<p>
 							Start from <strong>IDR 14K</strong>
 						</p>
@@ -227,12 +226,115 @@
 				</div>
 			</div>
 			<div class="item">
-
 				<div class="icon"></div>
 				<div class="boxitem">
-					<div class="img"></div>
+					<div id="img4" class="img"></div>
 					<div class="text">
-						<h3>Cupcakes!</h3>
+						<h3>Almond Crispy</h3>
+						<p>
+							Start from <strong>IDR 14K</strong>
+						</p>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="icon"></div>
+				<div class="boxitem">
+					<div id="img5" class="img"></div>
+					<div class="text">
+						<h3>Pudding</h3>
+						<p>
+							Start from <strong>IDR 14K</strong>
+						</p>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="icon"></div>
+				<div class="boxitem">
+					<div id="img6" class="img"></div>
+					<div class="text">
+						<h3>Choco Ball</h3>
+						<p>
+							Start from <strong>IDR 14K</strong>
+						</p>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="icon"></div>
+				<div class="boxitem">
+					<div id="img7" class="img"></div>
+					<div class="text">
+						<h3>Roti Ayam</h3>
+						<p>
+							Start from <strong>IDR 14K</strong>
+						</p>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="icon"></div>
+				<div class="boxitem">
+					<div id="img8" class="img"></div>
+					<div class="text">
+						<h3>Cheesecake</h3>
+						<p>
+							Start from <strong>IDR 14K</strong>
+						</p>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="icon"></div>
+				<div class="boxitem">
+					<div id="img9" class="img"></div>
+					<div class="text">
+						<h3>Roti Sobek</h3>
+						<p>
+							Start from <strong>IDR 14K</strong>
+						</p>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="icon"></div>
+				<div class="boxitem">
+					<div id="img10" class="img"></div>
+					<div class="text">
+						<h3>Roti Keju</h3>
+						<p>
+							Start from <strong>IDR 14K</strong>
+						</p>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="icon"></div>
+				<div class="boxitem">
+					<div id="img11" class="img"></div>
+					<div class="text">
+						<h3>Pop Ball</h3>
+						<p>
+							Start from <strong>IDR 14K</strong>
+						</p>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="icon"></div>
+				<div class="boxitem">
+					<div id="img12" class="img"></div>
+					<div class="text">
+						<h3>Roti Semir</h3>
 						<p>
 							Start from <strong>IDR 14K</strong>
 						</p>
@@ -251,13 +353,14 @@
 				<tbody>
 					<tr>
 						<td>Name</td>
-						<td><input id="name><span         class="></td>
+						<td><input id="name"></td>
+						
 						<td>Phone No./Email</td>
 						<td><input id="email"></td>
 					</tr>
 					<tr>
 						<td>Message</td>
-						<td colspan="3"><textarea></textarea></td>
+						<td colspan="3"><textarea id="message"></textarea></td>
 					</tr>
 					<tr>
 						<td colspan="4">
@@ -266,8 +369,18 @@
 							</button>
 						</td>
 					</tr>
+					<tr>
+						<td colspan="4">
+							<div class="success">
+								<span class="fa fa-check"></span>&nbsp;Pesanmu berhasil dikirim!
+								Mohon tunggu, kami akan membalas pesanmu.
+							</div>
+						</td>
+					</tr>
 				</tbody>
+
 			</table>
+
 			<table class="addr">
 				<tbody>
 					<tr>
