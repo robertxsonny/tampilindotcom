@@ -201,9 +201,9 @@
 					<div id="img1" class="img"></div>
 					<div class="text">
 						<h3>Pudding</h3>
-						<p>
+						<!-- <p>
 							Start from <strong>IDR 14K</strong>
-						</p>
+						</p> -->
 						<p></p>
 					</div>
 				</div>
@@ -214,9 +214,9 @@
 					<div id="img2" class="img"></div>
 					<div class="text">
 						<h3>Chiffon Keju</h3>
-						<p>
+						<!-- <p>
 							Start from <strong>IDR 14K</strong>
-						</p>
+						</p> -->
 						<p></p>
 					</div>
 				</div>
@@ -227,9 +227,9 @@
 					<div id="img3" class="img"></div>
 					<div class="text">
 						<h3>Chiffon Pandan</h3>
-						<p>
+						<!-- <p>
 							Start from <strong>IDR 14K</strong>
-						</p>
+						</p> -->
 						<p></p>
 					</div>
 				</div>
@@ -240,9 +240,9 @@
 					<div id="img4" class="img"></div>
 					<div class="text">
 						<h3>Almond Crispy</h3>
-						<p>
+						<!-- <p>
 							Start from <strong>IDR 14K</strong>
-						</p>
+						</p> -->
 						<p></p>
 					</div>
 				</div>
@@ -253,9 +253,9 @@
 					<div id="img5" class="img"></div>
 					<div class="text">
 						<h3>Pudding</h3>
-						<p>
+						<!-- <p>
 							Start from <strong>IDR 14K</strong>
-						</p>
+						</p> -->
 						<p></p>
 					</div>
 				</div>
@@ -266,9 +266,9 @@
 					<div id="img6" class="img"></div>
 					<div class="text">
 						<h3>Choco Ball</h3>
-						<p>
+						<!-- <p>
 							Start from <strong>IDR 14K</strong>
-						</p>
+						</p> -->
 						<p></p>
 					</div>
 				</div>
@@ -279,9 +279,9 @@
 					<div id="img7" class="img"></div>
 					<div class="text">
 						<h3>Roti Ayam</h3>
-						<p>
+						<!-- <p>
 							Start from <strong>IDR 14K</strong>
-						</p>
+						</p> -->
 						<p></p>
 					</div>
 				</div>
@@ -292,9 +292,9 @@
 					<div id="img8" class="img"></div>
 					<div class="text">
 						<h3>Cheesecake</h3>
-						<p>
+						<!-- <p>
 							Start from <strong>IDR 14K</strong>
-						</p>
+						</p> -->
 						<p></p>
 					</div>
 				</div>
@@ -305,9 +305,9 @@
 					<div id="img9" class="img"></div>
 					<div class="text">
 						<h3>Roti Sobek</h3>
-						<p>
+						<!-- <p>
 							Start from <strong>IDR 14K</strong>
-						</p>
+						</p> -->
 						<p></p>
 					</div>
 				</div>
@@ -318,9 +318,9 @@
 					<div id="img10" class="img"></div>
 					<div class="text">
 						<h3>Roti Keju</h3>
-						<p>
+					<!-- 	<p>
 							Start from <strong>IDR 14K</strong>
-						</p>
+						</p> -->
 						<p></p>
 					</div>
 				</div>
@@ -331,9 +331,9 @@
 					<div id="img11" class="img"></div>
 					<div class="text">
 						<h3>Cakepops</h3>
-						<p>
+						<!-- <p>
 							Start from <strong>IDR 14K</strong>
-						</p>
+						</p> -->
 						<p></p>
 					</div>
 				</div>
@@ -344,9 +344,9 @@
 					<div id="img12" class="img"></div>
 					<div class="text">
 						<h3>Roti Semir</h3>
-						<p>
+						<!-- <p>
 							Start from <strong>IDR 14K</strong>
-						</p>
+						</p> -->
 						<p></p>
 					</div>
 				</div>
