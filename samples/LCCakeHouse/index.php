@@ -19,7 +19,7 @@
 <meta name="distribution" content="web">
 <meta name="robots" content="index, follow">
 <link rel="alternate" href="http://tampilin.id/" hreflang="id-id" />
-<link rel="shortcut icon" type="image/png" href="images/icon.png" />
+<link rel="shortcut icon" type="image/png" href="assets/icon.png" />
 <link
 	href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic'
 	rel='stylesheet' type='text/css'>
@@ -31,17 +31,23 @@
 <script src="/js/index.js" type="text/javascript"></script>
 </head>
 <body>
+	<div class="preview">
+		<div class="close">
+			<span class="fa fa-close"></span>
+		</div>
+		<div class="image">
+			<img>
+		</div>
+	</div>
 	<div id="homediv" class="content">
 		<div id="home1" class="bghome"></div>
 		<div id="home2" class="bghome"></div>
 		<div id="home3" class="bghome"></div>
 		<div id="home4" class="bghome"></div>
 		<div class="header">
-
 			<div class="leftribbon"></div>
 			<div class="leftshadow"></div>
 			<div class="bar">
-
 				<div class="dash">
 					<div class="burger">
 						<span class="fa fa-bars"></span>
@@ -56,7 +62,10 @@
 							<div id="aboutflag" class="flag"></div>
 						</div>
 					</div>
-					<div class="menu">
+					<div class="logo">
+						<div class="logoimg"></div>
+					</div>
+					<div class="menu" id="menucont">
 						<div id="shopnow" class="option">
 							<h3>Shop Now</h3>
 							<div id="shopnowflag" class="flag"></div>
@@ -321,7 +330,7 @@
 				<div class="boxitem">
 					<div id="img11" class="img"></div>
 					<div class="text">
-						<h3>Pop Ball</h3>
+						<h3>Cakepops</h3>
 						<p>
 							Start from <strong>IDR 14K</strong>
 						</p>
@@ -354,7 +363,7 @@
 					<tr>
 						<td>Name</td>
 						<td><input id="name"></td>
-						
+
 						<td>Phone No./Email</td>
 						<td><input id="email"></td>
 					</tr>

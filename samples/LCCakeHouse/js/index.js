@@ -7,20 +7,24 @@ $.fn.exists = function() {
 $(document).ready(function() {
 	$('.success').hide();
 	$('.bghome').hide();
+	$('.preview').hide();
 	$('#home1').show('slide', {
 		direction : 'right'
 	}, 500);
 	$('.dash .option .flag').hide();
 	// hide menu
 	if ($(window).width() <= 640) {
+		$('.dash .logo').hide();
 		$('.bar .dash .menu').hide();
 	}
 
 	$('.burger').click(function() {
 		if ($('.bar .dash .menu').is(':visible')) {
 			$('.bar .dash .menu').fadeOut('slow');
+			$('.dash .logo').fadeOut('slow');
 		} else {
 			$('.bar .dash .menu').fadeIn('slow');
+			$('.dash .logo').fadeIn('slow');
 		}
 	});
 
@@ -30,6 +34,7 @@ $(document).ready(function() {
 			$('#' + id + 'flag').show('slide', {
 				direction : 'up'
 			}, 200);
+
 		}
 
 	}, function() {
@@ -58,21 +63,13 @@ $(document).ready(function() {
 		}
 	});
 
-	window.setInterval(function() {
-		if (currentindex == 4) {
-			currentindex = 0;
-		}
-		currentindex++;
-		$('.switch').removeClass('active');
-		$('#switch' + currentindex).addClass('active');
-		$('.bghome').hide('slide', {
-			direction : 'left'
-		}, 500);
-		$('#home' + currentindex).show('slide', {
-			direction : 'right'
-		}, 500);
-
-	}, 4000);
+	/*
+	 * window.setInterval(function() { if (currentindex == 4) { currentindex =
+	 * 0; } currentindex++; $('.switch').removeClass('active'); $('#switch' +
+	 * currentindex).addClass('active'); $('.bghome').hide('slide', { direction :
+	 * 'left' }, 500); $('#home' + currentindex).show('slide', { direction :
+	 * 'right' }, 500); }, 4000);
+	 */
 
 	$('.dash .menu .option').click(function() {
 		var id = $(this).attr('id');
@@ -90,6 +87,10 @@ $(document).ready(function() {
 				duration : 500
 			});
 		}
+		if ($(window).width() < 768) {
+			$('.bar .dash .menu').fadeOut('fast');
+			$('.dash .logo').fadeOut('fast');
+		}
 
 	});
 
@@ -104,9 +105,25 @@ $(document).ready(function() {
 
 		/* $('.maintitle').addClass('maintitleactive'); */
 	});
-	
-	$('.submit').click(function(){
+
+	$('.submit').click(function() {
 		sendEmail();
+	});
+
+	$('.preview .close').click(function() {
+		$('.preview').hide('slide', {
+			direction : 'left'
+		}, 500);
+	});
+	
+	$('.shopcontent .cakeimg').click(function(){
+		var url = $(this).css('background-image');
+		url = url.replace('url("', '');
+		url = url.replace('")', '');
+		$('.preview img').attr('src', url);
+		$('.preview').show('slide', {
+			direction : 'left'
+		}, 500);
 	});
 
 });

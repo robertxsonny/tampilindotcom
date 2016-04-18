@@ -19,7 +19,7 @@ body {
 	display: inline-block;
 	border-left: 24px solid transparent;
 	left: 100px;
-	top: 30px;
+	top: 10px;
 	z-index: 0;
 	transition: 0.5s;
 }
@@ -47,9 +47,32 @@ body {
 	display: inline-block;
 	border-right: 24px solid transparent;
 	left: 75px;
-	top: 30px;
+	top: 10px;
 	z-index: 0;
 	transition: 0.5s;
+}
+
+.dash .logo {
+	display: inline-block;
+	width: 22%;
+	height: 100%;
+	border: 1px solid grey;
+	border-radius: 32px;
+	background: rgba(255, 255, 255, 1);
+	top: -11px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.dash .logo .logoimg {
+	background-image: url("/assets/logo.png");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	width: 180px;
+	height: 100px;
+	position: relative;
+	margin: 0 auto;
 }
 
 .header .bar .dash {
@@ -67,7 +90,7 @@ body {
 	width: 10px;
 	background: rgba(81, 102, 51, 0.9);
 	position: relative;
-	top: 30px;
+	top: 10px;
 	left: 87px;
 	transition: 0.5s;
 }
@@ -79,7 +102,7 @@ body {
 	background: rgba(81, 102, 51, 0.9);
 	left: 79px;
 	position: relative;
-	top: 30px;
+	top: 10px;
 	transition: 0.5s;
 }
 
@@ -89,15 +112,16 @@ body {
 	position: relative;
 	margin: 0;
 	/* margin-top: 4px; */
-	padding-left: 75px;
-	width: 40%;
+	padding-left: 50px;
+	width: 31%;
 	height: 100%;
 	display: inline-block;
+	top: -20px;
 }
 
 .dash .menu .option {
 	display: inline-block;
-	width: 41%;
+	width: 43%;
 	float: left;
 	transition: 0.3s;
 	height: 100%;
@@ -185,8 +209,8 @@ body {
 #home .flag {
 	position: relative;
 	border: 20px solid transparent;
-	border-left: 83px solid rgba(31, 193, 180, 0.9);
-	border-right: 83px solid rgba(31, 193, 180, 0.9);
+	border-left: 67px solid rgba(31, 193, 180, 0.9);
+	border-right: 67px solid rgba(31, 193, 180, 0.9);
 	border-top: 10px solid rgba(31, 193, 180, 0.9);
 	width: 0px;
 }
@@ -194,8 +218,8 @@ body {
 #about .flag {
 	position: relative;
 	border: 20px solid transparent;
-	border-left: 83px solid rgba(221, 83, 73, 0.9);
-	border-right: 83px solid rgba(221, 83, 73, 0.9);
+	border-left: 67px solid rgba(221, 83, 73, 0.9);
+	border-right: 67px solid rgba(221, 83, 73, 0.9);
 	border-top: 10px solid rgba(221, 83, 73, 0.9);
 	width: 0px;
 }
@@ -203,8 +227,8 @@ body {
 #shopnow .flag {
 	position: relative;
 	border: 20px solid transparent;
-	border-left: 83px solid rgba(250, 113, 0, 0.9);
-	border-right: 83px solid rgba(250, 113, 0, 0.9);
+	border-left: 67px solid rgba(250, 113, 0, 0.9);
+	border-right: 67px solid rgba(250, 113, 0, 0.9);
 	border-top: 10px solid rgba(250, 113, 0, 0.9);
 	width: 0px;
 }
@@ -212,8 +236,8 @@ body {
 #contact .flag {
 	position: relative;
 	border: 20px solid transparent;
-	border-left: 83px solid rgba(105, 193, 239, 0.9);
-	border-right: 83px solid rgba(105, 193, 239, 0.9);
+	border-left: 67px solid rgba(105, 193, 239, 0.9);
+	border-right: 67px solid rgba(105, 193, 239, 0.9);
 	border-top: 10px solid rgba(105, 193, 239, 0.9);
 	width: 0px;
 }
@@ -377,7 +401,7 @@ body {
 	right: 23px;
 	font-family: 'Playfair Display', Serif;
 	font-size: 1.2em;
-	top: 8px;
+	top: 3px;
 	quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
@@ -741,7 +765,7 @@ div#contactdiv {
 }
 
 .contacttable button {
-	width: 94%;
+	width: 87%;
 	border-radius: 5px;
 	background-color: #fb6d7f;
 	color: white;
@@ -757,7 +781,7 @@ div#contactdiv {
 	width: 47%;
 	display: inline-block;
 	position: relative;
-	bottom: 60px;
+	bottom: 120px;
 	left: 145px;
 }
 
@@ -833,23 +857,30 @@ div#contactdiv {
 }
 
 .headerfixed .leftribbon {
-	top: 0px;
+	top: -10px;
 }
 
 .headerfixed .leftshadow {
-	top: 0px;
+	top: -10px;
 }
 
 .headerfixed .bar {
-	top: -3px;
+	top: 0px;
 }
 
 .headerfixed .rightribbon {
-	top: 0px;
+	top: -10px;
 }
 
 .headerfixed .rightshadow {
-	top: 0px;
+	top: -10px;
+}
+
+.headerfixed .logo {
+	border: 0px;
+	background: none;
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
 }
 
 .burger {
@@ -871,6 +902,55 @@ div#contactdiv {
 	left: 37px;
 }
 
+.preview {
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: 999999999999;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.preview .close {
+	width: 25px;
+	margin: 0 auto;
+	position: relative;
+	margin-right: 5px;
+	background-color: maroon;
+	padding-left: 10px;
+	padding-right: 7px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid white;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.preview .close:HOVER {
+	background-color: #fb6d7f;
+}
+
+.preview .close span {
+	color: white;
+	font-size: 1.75em;
+}
+
+.preview .image {
+	width: 700px;
+	height: 700px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.preview .image img {
+	display: block;
+	position: relative;
+	max-width: 100%;
+	max-height: 100%;
+	border: 2px solid white;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 359px) {
 	.bghome {
 		background-position: center center;
@@ -881,27 +961,30 @@ div#contactdiv {
 	}
 	.header .leftribbon {
 		left: 148px;
-		top: 15px;
+		top: -96px;
 		border: 18px solid rgba(81, 102, 51, 0.7);
 		border-left: 24px solid transparent;
+		display: none;
 	}
 	.header .leftshadow {
-		top: 15px;
+		top: -96px;
 		left: 135px;
 		height: 36px;
+		display: none;
 	}
 	.header .bar {
 		width: 20%;
 		left: 130px;
-		top: 4px;
+		top: 10px;
 	}
 	.menu {
 		font-size: 14px;
 		width: 500%;
 		display: block;
-		top: 10px;
+		top: 59px;
 		left: -191px;
 		padding-left: 0px;
+		z-index: 99999;
 	}
 	.dash .menu .option {
 		display: block;
@@ -909,6 +992,15 @@ div#contactdiv {
 		position: relative;
 		height: 27px;
 		background-color: rgba(255, 255, 255, 0.7);
+		left: 60px;
+	}
+	.dash .menu .option:HOVER {
+		color: white;
+		height: 27px;
+		position: relative;
+		top: 0px;
+		padding-top: 0px;
+		text-shadow: 1px 1px gray;
 	}
 	.dash .menu .option h3 {
 		font-size: 14px;
@@ -932,13 +1024,15 @@ div#contactdiv {
 	.header .rightshadow {
 		height: 36px;
 		left: 125px;
-		top: 15px;
+		top: -96px;
+		display: none;
 	}
 	.header .rightribbon {
 		border: 18px solid rgba(81, 102, 51, 0.7);
 		left: 115px;
-		top: 15px;
+		top: -96px;
 		border-right: 24px solid transparent;
+		display: none;
 	}
 	.header .bar .dash {
 		text-align: center;
@@ -1119,6 +1213,69 @@ div#contactdiv {
 		position: relative;
 		left: 42px;
 	}
+	.dash .logo {
+		display: inline-block;
+		width: 500%;
+		height: 75%;
+		border: 0px;
+		border-radius: 0px;
+		background: rgba(255, 255, 255, 0.7);
+		top: -47px;
+		padding-top: 10px;
+		left: -132px;
+		padding-bottom: 11px;
+		position: relative;
+		border-radius: 0px;
+		padding-bottom: 11px;
+	}
+	.dash .logo .logoimg {
+		background-image: url("/assets/logo.png");
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		width: 150px;
+		height: 150px;
+		position: relative;
+		margin: 0 auto;
+		top: -1px;
+	}
+	#menucont {
+		top: 2px;
+		display: block;
+	}
+	.shopcontent .item #img1 {
+		background-position: -40px 0px;
+	}
+	.shopcontent .item #img2 {
+		background-position: -26px -6px;
+	}
+	.shopcontent .item #img3 {
+		background-position: -62px -10px;
+	}
+	.preview .close {
+		width: 25px;
+		margin: 0 auto;
+		position: relative;
+		margin-right: 30px;
+		background-color: maroon;
+		padding-left: 11px;
+		padding-right: 0px;
+		padding-top: 7px;
+		padding-bottom: 8px;
+		border-radius: 5px;
+		border: 1px solid white;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	.preview .close span {
+		color: white;
+		font-size: 1em;
+	}
+	.preview .image {
+		width: 300px;
+		height: 300px;
+		margin: 0 auto;
+		position: relative;
+	}
 }
 
 @media only screen and (min-width: 360px) and (max-width: 767px) {
@@ -1126,32 +1283,41 @@ div#contactdiv {
 		background-position: center center;
 		background-size: auto 100%;
 	}
+	.shopcontent .item #img1 {
+		background-position: -40px 0px;
+	}
+	.shopcontent .item #img2 {
+		background-position: -26px -6px;
+	}
 	.shopcontent .item #img3 {
-		background-position: -36px -10px;
+		background-position: -62px -10px;
 	}
 	.header .leftribbon {
 		left: 148px;
-		top: 15px;
+		top: 17px;
 		border: 18px solid rgba(81, 102, 51, 0.7);
 		border-left: 24px solid transparent;
+		display: none;
 	}
 	.header .leftshadow {
-		top: 15px;
+		top: 17px;
 		left: 135px;
 		height: 36px;
+		display: none;
 	}
 	.header .bar {
 		width: 20%;
-		left: 130px;
-		top: 4px;
+		left: 143px;
+		top: 10px;
 	}
 	.menu {
 		font-size: 14px;
 		width: 500%;
 		display: block;
-		top: 10px;
+		top: 58px;
 		left: -191px;
 		padding-left: 0px;
+		z-index: 99999;
 	}
 	.dash .menu .option {
 		display: block;
@@ -1159,6 +1325,15 @@ div#contactdiv {
 		position: relative;
 		height: 27px;
 		background-color: rgba(255, 255, 255, 0.7);
+		left: 45px;
+	}
+	.dash .menu .option:HOVER {
+		color: white;
+		height: 27px;
+		position: relative;
+		top: 0px;
+		padding-top: 0px;
+		text-shadow: 1px 1px gray;
 	}
 	.dash .menu .option h3 {
 		font-size: 16px;
@@ -1183,13 +1358,15 @@ div#contactdiv {
 	.header .rightshadow {
 		height: 36px;
 		left: 125px;
-		top: 15px;
+		top: 17px;
+		display: none;
 	}
 	.header .rightribbon {
 		border: 18px solid rgba(81, 102, 51, 0.7);
 		left: 115px;
-		top: 15px;
+		top: 17px;
 		border-right: 24px solid transparent;
+		display: none;
 	}
 	.header .bar .dash {
 		text-align: center;
@@ -1221,6 +1398,7 @@ div#contactdiv {
 		border-left: 180px solid transparent;
 		border-right: 180px solid transparent;
 		border-top: 60px solid rgba(31, 193, 180, 1);
+		top: -1px;
 	}
 	.abouttitle {
 		height: 105px;
@@ -1266,7 +1444,7 @@ div#contactdiv {
 		left: 0px;
 	}
 	.aboutcontent .box .abouttext p {
-		font-size: 0.9em;
+		font-size: 0.96em;
 	}
 	#shopnowdiv .box .shoptitle {
 		height: 60px;
@@ -1320,6 +1498,7 @@ div#contactdiv {
 		width: 96%;
 		left: 5px;
 		right: 5px;
+		padding-bottom: 15px;
 	}
 	.contacttable tr {
 		height: 50px;
@@ -1335,7 +1514,7 @@ div#contactdiv {
 		font-size: 12px;
 	}
 	.contacttable button {
-		width: 83%;
+		width: 85%;
 		height: 34px;
 		font-size: 14px;
 		left: 0px;
@@ -1373,6 +1552,59 @@ div#contactdiv {
 		position: relative;
 		left: 42px;
 	}
+	.dash .logo {
+		display: inline-block;
+		width: 500%;
+		height: 75%;
+		border: 0px;
+		border-radius: 0px;
+		background: rgba(255, 255, 255, 0.7);
+		top: -47px;
+		padding-top: 10px;
+		left: -146px;
+		padding-bottom: 10px;
+		position: relative;
+		border-radius: 0px;
+	}
+	.dash .logo .logoimg {
+		background-image: url("/assets/logo.png");
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		width: 150px;
+		height: 150px;
+		position: relative;
+		margin: 0 auto;
+		top: -1px;
+	}
+	#menucont {
+		top: 2px;
+		display: block;
+	}
+	.preview .close {
+		width: 25px;
+		margin: 0 auto;
+		position: relative;
+		margin-right: 30px;
+		background-color: maroon;
+		padding-left: 11px;
+		padding-right: 0px;
+		padding-top: 7px;
+		padding-bottom: 8px;
+		border-radius: 5px;
+		border: 1px solid white;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	.preview .close span {
+		color: white;
+		font-size: 1em;
+	}
+	.preview .image {
+		width: 300px;
+		height: 300px;
+		margin: 0 auto;
+		position: relative;
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1385,8 +1617,9 @@ div#contactdiv {
 	.menu {
 		font-size: 24px;
 		margin-top: 6px;
-		padding-left: 35px;
+		padding-left: 3px;
 		width: 37%;
+		top: -4px;
 	}
 	.dash .menu .option {
 		width: 49%;
@@ -1457,5 +1690,26 @@ div#contactdiv {
 	}
 	#contactdiv .addr {
 		left: 60px;
+	}
+	.dash .logo .logoimg {
+		background-image: url("/assets/logo.png");
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		width: 120px;
+		height: 28px;
+		position: relative;
+		margin: 0 auto;
+	}
+	.dash .logo {
+		display: inline-block;
+		width: 21%;
+		height: 74%;
+		border: 1px solid grey;
+		border-radius: 32px;
+		background: rgba(255, 255, 255, 1);
+		top: -5px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		position: relative;
 	}
 }
