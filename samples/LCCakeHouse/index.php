@@ -39,6 +39,11 @@
 			<img>
 		</div>
 	</div>
+	<div class="gojek">
+		<p class="phoneno">
+			Order now by <span class="phone"></span>
+		</p>
+	</div>
 	<div id="homediv" class="content">
 		<div id="home1" class="bghome"></div>
 		<div id="home2" class="bghome"></div>
@@ -265,7 +270,7 @@
 				<div class="boxitem">
 					<div id="img6" class="img"></div>
 					<div class="text">
-						<h3>Choco Ball</h3>
+						<h3>Choco Truffle</h3>
 						<!-- <p>
 							Start from <strong>IDR 14K</strong>
 						</p> -->
@@ -278,7 +283,7 @@
 				<div class="boxitem">
 					<div id="img7" class="img"></div>
 					<div class="text">
-						<h3>Roti Ayam</h3>
+						<h3>Bloeder Ayam</h3>
 						<!-- <p>
 							Start from <strong>IDR 14K</strong>
 						</p> -->
@@ -317,8 +322,8 @@
 				<div class="boxitem">
 					<div id="img10" class="img"></div>
 					<div class="text">
-						<h3>Roti Keju</h3>
-					<!-- 	<p>
+						<h3>Bloeder Pisang Keju</h3>
+						<!-- 	<p>
 							Start from <strong>IDR 14K</strong>
 						</p> -->
 						<p></p>
@@ -344,6 +349,19 @@
 					<div id="img12" class="img"></div>
 					<div class="text">
 						<h3>Roti Semir</h3>
+						<!-- <p>
+							Start from <strong>IDR 14K</strong>
+						</p> -->
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="icon"></div>
+				<div class="boxitem">
+					<div id="img13" class="img"></div>
+					<div class="text">
+						<h3>Tokyo Banana</h3>
 						<!-- <p>
 							Start from <strong>IDR 14K</strong>
 						</p> -->
@@ -401,15 +419,17 @@
 					</tr>
 					<tr>
 						<td><span class="fa fa-phone"></span></td>
-						<td>+62-85-6433-00549</td>
+						<td>+62-851-0064-4818 (SMS <span class="fa fa-comment-o"></span>/WA
+							<span class="fa fa-whatsapp"></span> only)
+						</td>
 					</tr>
 					<tr>
 						<td><span class="fa fa-comment"></span></td>
-						<td>(BBM) FAFAFAFA</td>
+						<td>(BBM) 7D0E8692</td>
 					</tr>
 					<tr>
 						<td><span class="fa fa-envelope"></span></td>
-						<td>example@contoh.com</td>
+						<td>cc_island@yahoo.com</td>
 					</tr>
 				</tbody>
 			</table>
@@ -422,15 +442,15 @@
 		</div>
 	</div>
 	<div class="socmed">
-		<div class="item">
+		<a href="http://facebook.com/CupcakesIsland" target="_blank" class="item">
 			<span class="fa fa-facebook"></span>
-		</div>
-		<div class="item">
+		</a>
+		<a href="http://twitter.com/CupcakesIsland" target="_blank" class="item">
 			<span class="fa fa-twitter"></span>
-		</div>
-		<div class="item">
+		</a>
+		<a href="http://instagram.com/lccake" target="_blank" class="item">
 			<span class="fa fa-instagram"></span>
-		</div>
+		</a>
 	</div>
 	<div class="copyright">
 		<h3>

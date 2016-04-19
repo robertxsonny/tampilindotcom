@@ -665,6 +665,10 @@ body {
 	background-image: url("/images/semir.jpg");
 }
 
+.shopcontent2 .boxitem #img13 {
+	background-image: url("/images/tokyobanana.jpg");
+}
+
 .shopcontent2 .boxitem .text {
 	width: 100%;
 	height: 25%;
@@ -832,9 +836,10 @@ div#contactdiv {
 .copyright {
 	width: 100%;
 	position: relative;
-	height: 30px;
+	height: 65px;
 	background-color: #f4f0e8;
 	text-align: center;
+	top: -5px;
 }
 
 .copyright h3 {
@@ -951,7 +956,60 @@ div#contactdiv {
 	border: 2px solid white;
 }
 
+.gojek {
+	text-align: center;
+	/* padding-bottom: 50px; */
+	position: fixed;
+	width: 100%;
+	height: 6%;
+	z-index: 9999999999;
+	bottom: 0;
+}
+
+.gojek .phoneno {
+	font-family: 'Playfair Display', sans-serif;
+	margin: 0px 0 0 0px;
+	font-size: 1.2em;
+	position: absolute;
+	background: rgba(255, 255, 255, 1);
+	padding-bottom: 10px;
+	padding-left: 50px;
+	border-radius: 14px;
+	padding-right: 50px;
+	bottom: -6px;
+	display: inline-block;
+	left: 36%;
+	border: 1px solid grey;
+}
+
+.gojek .phoneno span {
+	background-image: url("/assets/gojek-logo.png");
+	background-repeat: no-repeat;
+	background-size: 99% auto;
+	width: 139px;
+	height: 37px;
+	display: inline-block;
+	margin-right: 0px;
+	margin-bottom: -6px;
+	margin-left: -17px;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 359px) {
+	.gojek .phoneno {
+		font-family: 'Playfair Display', sans-serif;
+		margin: 0px 0 0 0px;
+		font-size: 1em;
+		position: absolute;
+		background: rgba(255, 255, 255, 1);
+		padding-bottom: 19px;
+		padding-left: 20px;
+		border-radius: 14px;
+		padding-right: 10px;
+		bottom: -10px;
+		display: inline-block;
+		left: 10%;
+		border: 1px solid grey;
+	}
 	.bghome {
 		background-position: center center;
 		background-size: auto 100%;
@@ -1194,7 +1252,7 @@ div#contactdiv {
 		text-align: center;
 	}
 	.copyright {
-		height: 40px;
+		height: 80px;
 	}
 	.copyright h3 {
 		font-size: 13px;
@@ -1279,6 +1337,21 @@ div#contactdiv {
 }
 
 @media only screen and (min-width: 360px) and (max-width: 767px) {
+	.gojek .phoneno {
+		font-family: 'Playfair Display', sans-serif;
+		margin: 0px 0 0 0px;
+		font-size: 1em;
+		position: absolute;
+		background: rgba(255, 255, 255, 1);
+		padding-bottom: 19px;
+		padding-left: 20px;
+		border-radius: 14px;
+		padding-right: 10px;
+		bottom: -10px;
+		display: inline-block;
+		left: 15%;
+		border: 1px solid grey;
+	}
 	.bghome {
 		background-position: center center;
 		background-size: auto 100%;
@@ -1533,7 +1606,7 @@ div#contactdiv {
 		text-align: center;
 	}
 	.copyright {
-		height: 40px;
+		height: 80px;
 	}
 	.copyright h3 {
 		font-size: 13px;
@@ -1608,6 +1681,9 @@ div#contactdiv {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.gojek .phoneno {
+		left: 26%;
+	}
 	.bghome {
 		background-size: auto 100%;
 	}

@@ -8,6 +8,7 @@ $(document).ready(function() {
 	$('.success').hide();
 	$('.bghome').hide();
 	$('.preview').hide();
+	$('.gojek').hide();
 	$('#home1').show('slide', {
 		direction : 'right'
 	}, 500);
@@ -99,8 +100,14 @@ $(document).ready(function() {
 		var scroll = $(document).scrollTop();
 		if (scroll > 0) {
 			$('.header').addClass('headerfixed');
+			$('.gojek').show('slide', {
+				direction : 'down'
+			}, 500);
 		} else {
 			$('.header').removeClass('headerfixed');
+			$('.gojek').hide('slide', {
+				direction : 'down'
+			}, 500);
 		}
 
 		/* $('.maintitle').addClass('maintitleactive'); */
@@ -115,8 +122,8 @@ $(document).ready(function() {
 			direction : 'left'
 		}, 500);
 	});
-	
-	$('.shopcontent .cakeimg').click(function(){
+
+	$('.shopcontent .cakeimg').click(function() {
 		var url = $(this).css('background-image');
 		url = url.replace('url("', '');
 		url = url.replace('")', '');
