@@ -418,9 +418,13 @@
 						<td>Jalan AM Sangaji No. 90A Yogyakarta</td>
 					</tr>
 					<tr>
+					<td><span class="fa fa-whatsapp"></span></td>
+						<td>+62-856-4330-0549 (SMS/WA only)
+						</td>
+					</tr>
+					<tr>
 						<td><span class="fa fa-phone"></span></td>
-						<td>+62-851-0064-4818 (SMS <span class="fa fa-comment-o"></span>/WA
-							<span class="fa fa-whatsapp"></span> only)
+						<td>+62-851-0064-4818 (Call)
 						</td>
 					</tr>
 					<tr>

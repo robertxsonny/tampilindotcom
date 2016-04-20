@@ -667,6 +667,7 @@ body {
 
 .shopcontent2 .boxitem #img13 {
 	background-image: url("/images/tokyobanana.jpg");
+	background-position: 0px 0px;
 }
 
 .shopcontent2 .boxitem .text {
