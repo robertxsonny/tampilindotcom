@@ -359,11 +359,19 @@ body {
 
 .product .productleft {
 	display: inline-block;
-	width: 49.7%;
-	border-right: 1px solid rgb(207, 207, 207);
+	width: 37.7%;
+	border-left: 1px solid rgb(207, 207, 207);
 	margin-top: 20px;
 	margin-bottom: 20px;
 	height: 82%;
+	position: relative;
+	left: 50%;
+}
+
+.product .productleft .upper {
+	width: 100%;
+	height: 86px;
+	border-bottom: 1px solid lightgrey;
 }
 
 .product .productleft .yearbefore {
@@ -372,8 +380,8 @@ body {
 	margin-top: 0px;
 	font-size: 26px;
 	text-align: center;
-	width: 20%;
-	right: 60%;
+	width: 46%;
+	left: 8%;
 	height: 50%;
 }
 
@@ -381,26 +389,24 @@ body {
 	display: inline-block;
 	font-size: 26px;
 	margin-top: 0px;
-	width: 10%;
-	right: 52%;
+	width: 50%;
+	right: 5%;
 	color: rgb(27, 188, 154);
 	position: absolute;
-	border-bottom: 1px solid lightgrey;
 	padding-bottom: 0px;
-	text-align: right;
+	text-align: center;
 	height: 50%;
 }
 
 .product .productleft .company {
 	display: block;
 	height: 40%;
-	position: absolute;
-	top: 120px;
-	right: 52%;
+	position: relative;
 	font-size: 30px;
 	color: rgb(27, 188, 154);
-	width: 20%;
-	text-align: right;
+	width: 100%;
+	text-align: center;
+	top: 10%;
 }
 
 .product
@@ -915,14 +921,14 @@ a {
 .product .productleft .dash {
 	position: absolute;
 	font-size: 40px;
-	right: 62%;
-	top: 47px;
+	right: 48%;
+	top: 12px;
 	border-bottom: 1px solid rgb(239, 239, 239);
 }
 
 .product .productright {
 	display: inline-block;
-	width: 49.7%;
+	width: 39.7%;
 	height: 100%;
 	font-size: 25px;
 }
@@ -1552,9 +1558,30 @@ a {
 	color: white;
 }
 
+.product .productright strong {
+	position: relative;
+	top: 40px;
+	font-size: 32px;
+	float: right;
+}
+
 @media only screen and (min-width: 320px) and (max-width:640px) {
+	.product .productleft .upper {
+		width: 100%;
+		height: 92px;
+		border-bottom: 1px solid lightgrey;
+		position: relative;
+		left: 7px;
+		top: 10px;
+	}
+	.product .productright strong {
+		position: relative;
+		top: 15px;
+		font-size: 24px;
+	}
 	.header {
 		top: 326px;
+		width: 67%;
 	}
 	.header ul {
 		margin-left: 0px;
@@ -1613,7 +1640,7 @@ a {
 		display: block;
 		left: -9%;
 		width: 85%;
-		font-size: 15px;
+		font-size: 14px;
 	}
 	.menu {
 		top: 861px;
@@ -1647,30 +1674,29 @@ a {
 	}
 	.product .productleft {
 		margin-top: 10px;
+		width: 50%;
 	}
 	.product .productleft .yearbefore {
-		width: 30%;
-		font-size: 18px;
+		width: 35%;
+		font-size: 16px;
+		left: 0%;
 	}
 	.product .productleft .dash {
-		right: 72%;
-		top: 42px;
+		top: 0px;
+		display: inline-block;
 	}
 	.product .productleft .yearafter {
 		display: inline-block;
-		font-size: 18px;
-		width: 30%;
-		right: 64%;
+		font-size: 16px;
+		width: 48%;
 		position: absolute;
 		height: 29%;
-		top: 83px;
 	}
 	.product .productleft .company {
-		width: 40%;
-		text-align: right;
-		top: 157px;
-		right: 63%;
-		font-size: 20px;
+		width: 100%;
+		text-align: center;
+		top: 25px;
+		font-size: 22px;
 	}
 	.product .productright {
 		font-size: 20px;

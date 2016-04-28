@@ -29,7 +29,7 @@
 <script src="../javascript/jquery-1.12.0.min.js" type="text/javascript"></script>
 <script src="../javascript/jquery-ui.js" type="text/javascript"></script>
 <script src="../javascript/index.js" type="text/javascript"></script>
-<title>About Me: Rendy Rian Sandhika</title>
+<title>Rendy Rian Sandhika Official Website</title>
 </head>
 <body>
 	<div class="header">
@@ -66,12 +66,13 @@
 						tinggal di Tanjung Selor, Kalimantan Utara, Indonesia. Saya juga
 						lahir di Tanjung Selor, pada tanggal 07 Desember 1998, pada saat
 						ini saya sedang menduduki bangku SMA di SMA Negeri 1 Tanjung
-						Selor. Hobi saya yaitu Photography, Producing lagu, dan Design
-						grafis. Soal cita - cita, saya ingin berwirausaha saja menjadi
-						Business man, mengapa saya memilih untuk memasuki Dunia Wirausaha
-						? karena di dalam dunia Wirausaha kita dapat memilliki luang waktu
-						yang banyak dan memiliki pendapatan yang cukup atau mungkin lebih
-						dari itu jika kita lebih berusaha lagi.</p>
+						Selor. Hobi saya yaitu Photography dan Design grafis. Soal cita -
+						cita, saya ingin berwirausaha agar terbebaskan dari ikatan waktu.
+						Saya mempunyai impian untuk membahagiakan orang lain karena kita
+						hidup tidak sendiri, dan kita tidak hanya sukses sendirian.
+						Sebagian orang melupakan salah satu misi dalam hidupnya, yakni
+						kita hidup sebagai pembawa besar pengharapan bagi mereka yang
+						putus asa.</p>
 				</div>
 			</div>
 		</div>
@@ -84,130 +85,152 @@
 			</div>
 			<div class="menucontent">
 				<div class="product">
+					<div class="productright">
+						<strong>MARKETER</strong> <br />
+						<!-- <small>Belum ada deskripsi.</small> -->
+					</div>
 					<div class="productleft">
-						<div class="yearbefore">
-							<small>JANUARY</small><br>2013
-						</div>
-						<div class="dash">-</div>
-						<div class="yearafter">
-							<small>DECEMBER</small><br>2013
+						<div class="upper">
+							<div class="yearbefore">
+								<small>JANUARY</small><br>2013
+							</div>
+							<div class="dash">-</div>
+							<div class="yearafter">
+								<small>DECEMBER</small><br>2013
+							</div>
 						</div>
 						<div class="company">Talk Fusion</div>
 					</div>
-					<div class="productright">
-						<strong>MARKETER</strong> <br /> <small>Belum ada deskripsi.</small>
-					</div>
+
 				</div>
 				<div class="product">
+					<div class="productright">
+						<strong>FOUNDER</strong> <br />
+					</div>
 					<div class="productleft">
-						<div class="yearbefore">
-							<small>JANUARY</small><br>2014
-						</div>
-						<div class="dash">-</div>
-						<div class="yearafter">
-							<small>DECEMBER</small><br>2015
+						<div class="upper">
+							<div class="yearbefore">
+								<small>JANUARY</small><br>2014
+							</div>
+							<div class="dash">-</div>
+							<div class="yearafter">
+								<small>DECEMBER</small><br>2015
+							</div>
 						</div>
 						<div class="company">Crever Production</div>
 					</div>
-					<div class="productright">
-						<strong>FOUNDER</strong> <br /> <small>Belum ada deskripsi.</small>
-					</div>
+
 				</div>
 				<div class="product">
+					<div class="productright">
+						<strong>CHIEF FINANCIAL OFFICER (CFO)</strong> <br />
+					</div>
 					<div class="productleft">
-						<div class="yearbefore">
-							<small>JANUARY</small><br>2014
-						</div>
-						<div class="dash">-</div>
-						<div class="yearafter">
-							<small>JANUARY</small><br>2016
+						<div class="upper">
+							<div class="yearbefore">
+								<small>JANUARY</small><br>2014
+							</div>
+							<div class="dash">-</div>
+							<div class="yearafter">
+								<small>JANUARY</small><br>2016
+							</div>
 						</div>
 						<div class="company">Medatesia</div>
 					</div>
-					<div class="productright">
-						<strong>CHIEF FINANCIAL OFFICER (CFO)</strong> <br /> <small>Belum
-							ada deskripsi.</small>
-					</div>
+
 				</div>
 				<div class="product">
+
+					<div class="productright">
+						<strong>FOUNDER ASSOCIATE</strong> <br />
+					</div>
 					<div class="productleft">
-						<div class="yearbefore">
-							<small>JANUARY</small><br>2015
-						</div>
-						<div class="dash">-</div>
-						<div class="yearafter">
-							<small>CURRENT</small><br>
+						<div class="upper">
+							<div class="yearbefore">
+								<small>JANUARY</small><br>2015
+							</div>
+							<div class="dash">-</div>
+							<div class="yearafter">
+								<small>CURRENT</small><br>
+							</div>
 						</div>
 						<div class="company">EGO Networks.co</div>
 					</div>
-					<div class="productright">
-						<strong>FOUNDER ASSOCIATE</strong> <br /> <small>Belum ada
-							deskripsi.</small>
-					</div>
+
 				</div>
 			</div>
 			<div class="content2">
 				<div class="product">
+					<div class="productright">
+						<strong>MARKETER</strong> <br />
+					</div>
 					<div class="productleft">
-						<div class="yearbefore">
-							<small>JANUARY</small><br>2013
-						</div>
-						<div class="dash">-</div>
-						<div class="yearafter">
-							<small>DECEMBER</small><br>2013
+						<div class="upper">
+							<div class="yearbefore">
+								<small>JANUARY</small><br>2013
+							</div>
+							<div class="dash">-</div>
+							<div class="yearafter">
+								<small>DECEMBER</small><br>2013
+							</div>
 						</div>
 						<div class="company">Talk Fusion</div>
 					</div>
-					<div class="productright">
-						<strong>MARKETER</strong> <br /> <small>Belum ada deskripsi.</small>
-					</div>
+
 				</div>
 				<div class="product">
+					<div class="productright">
+						<strong>FOUNDER</strong> <br />
+					</div>
 					<div class="productleft">
-						<div class="yearbefore">
-							<small>JANUARY</small><br>2014
-						</div>
-						<div class="dash">-</div>
-						<div class="yearafter">
-							<small>DECEMBER</small><br>2015
+						<div class="upper">
+							<div class="yearbefore">
+								<small>JANUARY</small><br>2014
+							</div>
+							<div class="dash">-</div>
+							<div class="yearafter">
+								<small>DECEMBER</small><br>2015
+							</div>
 						</div>
 						<div class="company">Crever Production</div>
 					</div>
-					<div class="productright">
-						<strong>FOUNDER</strong> <br /> <small>Belum ada deskripsi.</small>
-					</div>
+
 				</div>
 				<div class="product">
+					<div class="productright">
+						<strong>CHIEF FINANCIAL OFFICER (CFO)</strong> <br />
+					</div>
 					<div class="productleft">
-						<div class="yearbefore">
-							<small>JANUARY</small><br>2014
-						</div>
-						<div class="dash">-</div>
-						<div class="yearafter">
-							<small>JANUARY</small><br>2016
+						<div class="upper">
+							<div class="yearbefore">
+								<small>JANUARY</small><br>2014
+							</div>
+							<div class="dash">-</div>
+							<div class="yearafter">
+								<small>JANUARY</small><br>2016
+							</div>
 						</div>
 						<div class="company">Medatesia</div>
 					</div>
-					<div class="productright">
-						<strong>CHIEF FINANCIAL OFFICER (CFO)</strong> <br /> <small>Belum
-							ada deskripsi.</small>
-					</div>
+
 				</div>
 				<div class="product">
+					<div class="productright">
+						<strong>FOUNDER ASSOCIATE</strong> <br />
+					</div>
 					<div class="productleft">
-						<div class="yearbefore">
-							<small>JANUARY</small><br>2015
-						</div>
-						<div class="dash">-</div>
-						<div class="yearafter">
-							<small>CURRENT</small><br>
+						<div class="upper">
+							<div class="yearbefore">
+								<small>JANUARY</small><br>2015
+							</div>
+							<div class="dash">-</div>
+							<div class="yearafter">
+								<small>CURRENT</small><br>
+							</div>
 						</div>
 						<div class="company">EGO Networks.co</div>
 					</div>
-					<div class="productright">
-						<strong>FOUNDER ASSOCIATE</strong> <br /> <small>Belum ada
-							deskripsi.</small>
-					</div>
+
 				</div>
 			</div>
 			<!-- <div class="toggle">
