@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Language" content="id">
 <meta name="description"
@@ -33,7 +33,7 @@
 <script src="/js/index.js" type="text/javascript"></script>
 </head>
 <body>
-	<div class="row">
+	<div id="home" class="row">
 		<div class="sidebar">
 			<div class="logo"></div>
 			<div class="menu">
@@ -80,8 +80,8 @@
 				<div class="pic"></div>
 				<div class="desc">
 					<h3>Try our best: Brownies in Jar!</h3>
-					<p>Because our brownies is made of gold and it's worth the
-						price! HAHAHAHAHA</p>
+					<p>Because our brownies is made of gold and it's worth the price!
+						HAHAHAHAHA</p>
 				</div>
 				<div class="next">
 					<h3>
@@ -93,7 +93,7 @@
 		</div>
 		<div class="homeside home2"></div>
 	</div>
-	<div id="about" class="row">
+	<div id="products" class="row">
 		<div class="abouttitle">
 			<h3>Our Products</h3>
 		</div>
@@ -102,14 +102,20 @@
 				<div class="productpic product1"></div>
 				<div class="overlay">
 					<h3>Brownies in a jar</h3>
-					<p>IDR 30.000/pax</p>
+					<p>Choco lovers will ben in heaven with this brownies in jar They
+						tempt you with 4 variants of taste: Mixed fruit, Greentea Almond,
+						Coffee Fluffy, Oreo Blast</p>
+					<strong><p>IDR 30.000/pax</p></strong>
 				</div>
 			</div>
 			<div class="product">
 				<div class="productpic product2"></div>
 				<div class="overlay">
 					<h3>Brownies in a jar</h3>
-					<p>IDR 30.000/pax</p>
+					<p>Choco lovers will ben in heaven with this brownies in jar They
+						tempt you with 4 variants of taste: Mixed fruit, Greentea Almond,
+						Coffee Fluffy, Oreo Blast</p>
+					<strong><p>IDR 30.000/pax</p></strong>
 				</div>
 			</div>
 
@@ -117,15 +123,137 @@
 				<div class="productpic product1"></div>
 				<div class="overlay">
 					<h3>Brownies in a jar</h3>
-					<p>IDR 30.000/pax</p>
+					<p>Choco lovers will ben in heaven with this brownies in jar They
+						tempt you with 4 variants of taste: Mixed fruit, Greentea Almond,
+						Coffee Fluffy, Oreo Blast</p>
+					<strong><p>IDR 30.000/pax</p></strong>
 				</div>
 			</div>
 			<div class="product">
 				<div class="productpic product2"></div>
 				<div class="overlay">
 					<h3>Brownies in a jar</h3>
-					<p>IDR 30.000/pax</p>
+					<p>Choco lovers will ben in heaven with this brownies in jar They
+						tempt you with 4 variants of taste: Mixed fruit, Greentea Almond,
+						Coffee Fluffy, Oreo Blast</p>
+					<strong><p>IDR 30.000/pax</p></strong>
 				</div>
+			</div>
+		</div>
+	</div>
+	<div id="about" class="row">
+		<div class="abouttitle">
+			<h3>About Us</h3>
+		</div>
+		<div class="aboutbox">
+			<div class="aboutsub">
+				<div class="circle"></div>
+				<div class="content">
+					<span class="fa fa-cutlery"></span>
+					<h3>Serving up homemade cakes.</h3>
+					<h3>Quality ingredients with delicious taste.</h3>
+				</div>
+			</div>
+			<div class="aboutpic">
+				<div class="circle"></div>
+				<div class="content">
+					<span class="fa fa-bookmark-o"></span>
+					<div class="logo"></div>
+
+				</div>
+			</div>
+			<div class="aboutsub2">
+				<div class="circle"></div>
+				<div class="content">
+					<span class="fa fa-envira"></span>
+
+					<h2>It's always be best loved recipes from home!</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="contact" class="row">
+		<div class="contactcontent">
+			<div class="content" style="display: block;">
+				<div class="wallp"></div>
+				<h3>ORDER NOW!</h3>
+				<table class="contactdetails">
+					<colgroup>
+						<col style="width: 10%">
+						<col style="width: 90%">
+					</colgroup>
+
+					<tbody>
+						<tr>
+							<td colspan="2">CS1</td>
+
+						</tr>
+						<tr>
+							<td><div class="line"></div></td>
+							<td>dapuramira</td>
+						</tr>
+						<tr>
+							<td><div class="whatsapp">
+									<span class="fa fa-whatsapp"></span>
+								</div></td>
+							<td>+62-821-3737-1494 (Text/WhatsApp)</td>
+						</tr>
+						<tr></tr>
+						<tr>
+							<td colspan="2">CS2 (Special Inquiry)</td>
+
+						</tr>
+						<tr>
+							<td><div class="whatsapp">
+									<span class="fa fa-envelope"></span>
+
+								</div></td>
+							<td>dapuramirarecipes@gmail.com</td>
+						</tr>
+						<tr>
+							<td><div class="whatsapp">
+									<span class="fa fa-envelope-o"></span>
+								</div></td>
+							<td>+6281-230-893-719 (Text Only)</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="pic" style="display: block;">
+				<div class="wallp"></div>
+				<table class="ordertable">
+					<colgroup>
+						<col style="width: 7%">
+						<col style="width: 93%">
+					</colgroup>
+					<tbody>
+						<tr>
+							<td><div class="boxicon">
+									<span class="fa fa-user"></span>
+								</div></td>
+							<td><input id="name" placeholder="Your name here"></td>
+						</tr>
+						<tr>
+							<td><div class="boxicon">
+									<span class="fa fa-phone"></span>
+								</div></td>
+							<td><input id="email" placeholder="Your phone no./email here"></td>
+						</tr>
+						<tr>
+							<td><div class="boxicon">
+									<span class="fa fa-envelope"></span>
+								</div></td>
+							<td><textarea id="name" rows="4"
+									placeholder="Type a message here..."></textarea></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td><button class="submit">
+									<span class="fa fa-paper-plane"></span>&nbsp;&nbsp;Kirim
+								</button></td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</div>
