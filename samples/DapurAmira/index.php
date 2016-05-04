@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Language" content="id">
 <meta name="description"
@@ -26,6 +26,8 @@
 	rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" type="image/png" href="images/icon.png" />
 <link href="/css/main.css" rel="stylesheet" type="text/css">
+<link href="/css/main_320.css" rel="stylesheet" type="text/css">
+<link href="/css/main_640.css" rel="stylesheet" type="text/css">
 <link href="/css/jquery-ui.css" rel="stylesheet" type="text/css">
 <link href="/css/font-awesome.css" rel="stylesheet" type="text/css">
 <script src="/js/jquery-2.2.3.min.js" type="text/javascript"></script>
@@ -36,15 +38,18 @@
 	<div id="home" class="row">
 		<div class="sidebar">
 			<div class="logo"></div>
+			<div class="burger">
+				<span class="fa fa-bars"></span>
+			</div>
 			<div class="menu">
 				<div id="homemenu" class="option">
 					<h3>HOME</h3>
 				</div>
 				<div id="homepoint" class="point"></div>
-				<div id="productmenu" class="option">
+				<div id="productsmenu" class="option">
 					<h3>OUR PRODUCTS</h3>
 				</div>
-				<div id="productpoint" class="point"></div>
+				<div id="productspoint" class="point"></div>
 				<div id="aboutmenu" class="option">
 					<h3>ABOUT US</h3>
 				</div>
@@ -77,7 +82,9 @@
 						<span class="fa fa-chevron-left fa-2x"></span>
 					</h3>
 				</div>
-				<div class="pic"></div>
+				<div id="pic1" class="pic"></div>
+				<div id="pic2" class="pic"></div>
+				<div id="pic3" class="pic"></div>
 				<div class="desc">
 					<h3>Try our best: Brownies in Jar!</h3>
 					<p>Because our brownies is made of gold and it's worth the price!
@@ -256,6 +263,12 @@
 				</table>
 			</div>
 		</div>
+	</div>
+	<div class="copyright">
+		<h3>
+			Copyright &copy; 2016 <a href="http://tampilin.id">Tampilin.id</a>:
+			One Stop Online Services.
+		</h3>
 	</div>
 </body>
 </html>

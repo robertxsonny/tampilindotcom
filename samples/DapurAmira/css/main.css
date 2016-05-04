@@ -123,8 +123,23 @@ body {
 .homecontent .pic {
 	width: 100%;
 	height: 330px;
-	background-image: url("/images/brownies in jar.jpg");
 	background-repeat: no-repeat;
+}
+
+.homecontent .pic#pic1 {
+	background-image: url("/images/brownies in jar.jpg");
+	background-size: 126% auto;
+	background-position: center -4px;
+}
+
+.homecontent .pic#pic2 {
+	background-image: url("/images/brownies.jpg");
+	background-size: 126% auto;
+	background-position: center -4px;
+}
+
+.homecontent .pic#pic3 {
+	background-image: url("/images/lasagna.jpg");
 	background-size: 126% auto;
 	background-position: center -4px;
 }
@@ -626,4 +641,34 @@ table.ordertable {
 
 div#contact.row {
 	height: 470px;
+}
+
+.sidebar .burger {
+	display: none;
+}
+
+.copyright {
+    width: 100%;
+    position: relative;
+    height: 30px;
+    background-color: rgba(44, 70, 79, 1);
+    text-align: center;
+    top: 0px;
+    padding-top: 5px;
+}
+
+.copyright h3 {
+    margin: 0;
+    margin-top: 5px;
+    font-family: 'Alegreya Sans', Serif;
+    font-weight: lighter;
+    font-size: 15px;
+    color: white;
+}
+
+.copyright h3 a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: 1px solid #fb6d7f;
 }

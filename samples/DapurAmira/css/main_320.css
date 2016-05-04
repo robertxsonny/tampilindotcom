@@ -1,0 +1,231 @@
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	#home {
+		height: 740px;
+	}
+	.sidebar {
+		width: 100%;
+		position: fixed;
+		height: 75px;
+		left: 0px;
+		z-index: 9;
+	}
+	.sidebar .logo {
+		position: relative;
+		width: 70px;
+		height: 70px;
+		margin: 0;
+		left: 20px;
+		position: relative;
+		top: 0px;
+		display: inline-block;
+	}
+	.sidebar .menu {
+		top: 0px;
+		width: 100%;
+		height: 210px;
+		background-color: rgba(44, 70, 79, 0.8);
+	}
+	.sidebar .menu .option {
+		height: 49px;
+		width: 100%;
+	}
+	.sidebar .menu .option h3 {
+		font-size: 14px;
+	}
+	.menu .point {
+		display: none;
+	}
+	.sidebar .socmed {
+		display: none;
+	}
+	.sidebar .burger {
+		width: 50px;
+		color: white;
+		display: inline-block;
+		float: right;
+		font-size: 2em;
+		position: relative;
+		top: 20px;
+		cursor: pointer;
+	}
+	.homeside {
+		display: block;
+		width: 100%;
+		height: 800px;
+		position: relative;
+	}
+	.homeside .title {
+		width: 100%;
+		top: 13%;
+		left: 0px;
+	}
+	.homeside .homecontent {
+		width: 100%;
+		top: 40%;
+		left: 0px;
+		height: 420px;
+	}
+	.homecontent .desc h3 {
+		margin-top: 20px;
+		font-size: 1.5em;
+	}
+	.homecontent .desc p {
+		padding-bottom: 30px;
+	}
+	.homeside.home2 {
+		display: none;
+	}
+	.homeside .title p {
+		text-align: center;
+		font-size: 1em;
+	}
+	.homeside .title h3 {
+		text-align: center;
+		font-size: 3.5em;
+	}
+	.homeside .title h3.titlehead {
+		font-size: 2em;
+	}
+	.homeside .title h3.titlefoot {
+		font-size: 1.25em;
+	}
+	.homecontent .prev {
+		height: 283px;
+		width: 35px;
+	}
+	.homecontent .next {
+		height: 283px;
+		width: 35px;
+	}
+	.homecontent .pic {
+		height: 283px;
+	}
+	.homecontent #pic2.pic {
+		background-size: auto 126%;
+	}
+	.abouttitle h3 {
+		left: 0;
+		width: 100%;
+		margin-bottom: 13px;
+		font-size: 2.5em;
+		padding-top: 0px;
+		top: -30px;
+	}
+	.aboutcontent {
+		left: 0px;
+		width: 100%;
+		padding-left: 0px;
+		height: 1570px;
+		overflow: hidden;
+	}
+	.aboutcontent .product {
+		display: block;
+		width: 100%;
+		height: 365px;
+	}
+	.product .overlay {
+		height: 145px;
+	}
+	.product .overlay h3 {
+		font-size: 1.25em;
+	}
+	.product .overlay p {
+		font-size: 0.9em;
+		width: 275px;
+	}
+	#products.row {
+		height: auto;
+	}
+	#about .aboutbox {
+		left: 0px;
+		width: 100%;
+		padding-left: 0px;
+		top: -40px;
+		height: 1070px;
+	}
+	.aboutbox .aboutsub {
+		width: 100%;
+		display: block;
+	}
+	.aboutbox .aboutpic {
+		width: 100%;
+		display: block;
+		left: 0px;
+		top: -20px;
+	}
+	.aboutbox .aboutsub2 {
+		width: 100%;
+		display: block;
+		top: -50px;
+		z-index: 3;
+		bottom: 0px;
+	}
+	.aboutsub2 .circle {
+		left: 0px;
+	}
+	.aboutsub2 .content {
+		left: 0px;
+	}
+	div#about.row {
+		height: auto;
+	}
+	div#contact.row {
+		height: 850px;
+		top: 0px;
+		position: relative;
+	}
+	.contactcontent {
+		width: 100%;
+		left: 0px;
+	}
+	.contactcontent .content {
+		width: 100%;
+	}
+	table.contactdetails {
+		width: 100%;
+		padding-left: 21px;
+	}
+	.contactdetails .line {
+		height: 32px;
+	}
+	.contactdetails tr {
+		font-size: 1.2em;
+	}
+	.contactcontent .content h3 {
+		font-size: 2.5em;
+		left: 0px;
+		text-align: center;
+	}
+	.contactcontent .content .wallp {
+		width: 100%;
+	}
+	.contactcontent .pic {
+		width: 100%;
+		z-index: 6;
+		top: -88px;
+	}
+	.contactcontent .pic .wallp {
+		height: 89%;
+		transform: rotate(4deg);
+		z-index: 6;
+		left: -62px;
+		top: 69px;
+	}
+	table.ordertable {
+		left: 6px;
+		top: 88px;
+		width: 91%;
+	}
+	.ordertable input {
+		font-size: 1em;
+	}
+	.ordertable textarea {
+		font-size: 1em;
+	}
+	.ordertable button {
+		font-size: 1em;
+	}
+	.aboutpic .logo {
+		top: -30px;
+	}
+}

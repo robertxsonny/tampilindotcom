@@ -1,0 +1,60 @@
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+	.product .overlay p {
+		font-size: 0.9em;
+		width: 94%;
+	}
+	.aboutpic .logo {
+		background-size: auto 100%;
+		top: -35px;
+		left: 200px;
+	}
+	.contactcontent {
+		height: 430px;
+	}
+	.contactcontent .content {
+		width: 100%;
+		top: -90px;
+	}
+	.contactcontent .pic {
+		width: 100%;
+		z-index: 6;
+		top: -162px;
+	}
+	.contactcontent .pic .wallp {
+		height: 104%;
+	}
+	.sidebar .menu {
+		width: 100%;
+	}
+	.sidebar {
+		width: 100%;
+	}
+	.aboutsub h3 {
+		font-size: 2.5em;
+	}
+	.aboutsub2 h2 {
+		font-size: 4.3em;
+	}
+	.contactdetails tr {
+		font-size: 1.75em;
+	}
+	table.contactdetails {
+		width: 75%;
+		padding-left: 40px;
+		margin: 0 auto;
+	}
+	.contactdetails .line {
+		height: 42px;
+		left: 0px;
+		position: relative;
+	}
+	div#about.row {
+		overflow: hidden;
+	}
+	table.ordertable {
+		left: 20px;
+	}
+	.ordertable button.submit {
+		width: 102%;
+	}
+}
