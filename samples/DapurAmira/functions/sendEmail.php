@@ -13,8 +13,8 @@ function generateHtml($name, $email, $content) {
 	<a href="http://tampilin.id" target="_blank"><img src="http://tampilin.id/images/tampilin_white_red.png" height="40"></a>
 </div>
 <div style="padding-left: 3%; display: inline-block;">
-	<h2 style="font-size: 18px; font-family: \'Lato\', Arial, sans-serif; color: black; font-weight: bold">Halo LC Cake House,</h2>
-	<p style="font-size: 16px; font-family: \'Lato\', Arial, sans-serif; color: black; font-weight: lighter;">Kamu mendapat pesan baru dari website kamu di <a href="http://rendyrians.com">www.lccakehouse.com</a> dengan isi sebagai berikut:</p>
+	<h2 style="font-size: 18px; font-family: \'Lato\', Arial, sans-serif; color: black; font-weight: bold">Halo Dapur Amira,</h2>
+	<p style="font-size: 16px; font-family: \'Lato\', Arial, sans-serif; color: black; font-weight: lighter;">Kamu mendapat pesan baru dari website kamu di <a href="http://dapuramira.com">www.dapuramira.com</a> dengan isi sebagai berikut:</p>
 	<p style="font-size: 14px; font-family: &quot;Lato&quot;,Arial,sans-serif; color: black; font-weight: lighter; padding-left: 20px;">
 <table>
 	<tbody><tr>

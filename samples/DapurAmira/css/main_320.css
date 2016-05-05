@@ -109,7 +109,7 @@
 		margin-bottom: 13px;
 		font-size: 2.5em;
 		padding-top: 0px;
-		top: -30px;
+		top: -8px;
 	}
 	.aboutcontent {
 		left: 0px;
@@ -168,10 +168,12 @@
 	}
 	div#about.row {
 		height: auto;
+		top: -1px;
+		position: relative;
 	}
 	div#contact.row {
 		height: 850px;
-		top: 0px;
+		top: -3px;
 		position: relative;
 	}
 	.contactcontent {
@@ -213,7 +215,7 @@
 	}
 	table.ordertable {
 		left: 6px;
-		top: 88px;
+		top: 70px;
 		width: 91%;
 	}
 	.ordertable input {
@@ -227,5 +229,36 @@
 	}
 	.aboutpic .logo {
 		top: -30px;
+	}
+	.aboutcontent .product .productpic.product1 {
+		background-size: auto 100%;
+	}
+	.aboutcontent .product .productpic.product2 {
+		background-size: auto 100%;
+	}
+	.aboutcontent .product .productpic.product3 {
+		background-size: auto 100%;
+	}
+	.aboutcontent .product .productpic.product4 {
+		background-size: auto 100%;
+	}
+	.copyright {
+		height: 52px;
+		top: -4px;
+	}
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+	.aboutcontent .product .productpic.product1 {
+		background-size: 100% auto;
+	}
+	.aboutcontent .product .productpic.product2 {
+		background-size: 100% auto;
+	}
+	.aboutcontent .product .productpic.product3 {
+		background-size: 100% auto;
+	}
+	.aboutcontent .product .productpic.product4 {
+		background-size: 100% auto;
 	}
 }

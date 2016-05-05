@@ -1,5 +1,5 @@
 var index = 1;
-
+var url = 'http://amira.com';
 $.fn.exists = function() {
 	return this.length !== 0;
 }
@@ -10,11 +10,17 @@ $(document)
 					if ($(window).width() > 768) {
 						$('.homecontent').hide();
 						$('.aboutcontent').hide();
+					
 						$('.aboutsub, .aboutsub2, .aboutpic').hide();
 						$('.contactcontent .content, .contactcontent .pic')
 								.hide();
 					}
+					
+					$('.ordertable .submit').click(function(){
+						sendEmail();
+					});
 
+					$('.ordertable .success').hide();
 					$('.homecontent .pic').hide();
 					$('.homecontent #pic1').show('slide', {
 						direction : 'left'
@@ -59,6 +65,20 @@ $(document)
 							$('.homecontent ' + id).show('slide', {
 								direction : 'right'
 							}, 500);
+							
+							// set desc
+							if (index == 1) { // brownies in jar
+								$('.homecontent .desc h3').html("Try our best: Brownies in a jar!");
+								$('.homecontent .desc p').html("You will be tempted of our taste variants!")
+							}
+							else if(index == 2){ //brownies
+								$('.homecontent .desc h3').html("Can't get enough of our brownies!");
+								$('.homecontent .desc p').html("Looks simple but yummy!")
+							}
+							else if(index == 3){ //lasagna
+								$('.homecontent .desc h3').html("Fulfill yourself by our lasagna!");
+								$('.homecontent .desc p').html("Who wouldn't enjoy this creamy & tasty bites?")
+							}
 						}, 300);
 
 					});
@@ -75,6 +95,20 @@ $(document)
 							$('.homecontent ' + id).show('slide', {
 								direction : 'right'
 							}, 500);
+							
+							// set desc
+							if (index == 1) { // brownies in jar
+								$('.homecontent .desc h3').html("Try our best: Brownies in a jar!");
+								$('.homecontent .desc p').html("You will be tempted of our taste variants!")
+							}
+							else if(index == 2){ //brownies
+								$('.homecontent .desc h3').html("Can't get enough of our brownies!");
+								$('.homecontent .desc p').html("Looks simple but yummy!")
+							}
+							else if(index == 3){ //lasagna
+								$('.homecontent .desc h3').html("Fulfill yourself by our lasagna!");
+								$('.homecontent .desc p').html("Who wouldn't enjoy this creamy & tasty bites?")
+							}
 						}, 300);
 
 					});
@@ -92,6 +126,20 @@ $(document)
 								direction : 'right'
 							}, 500);
 							$('.homecontent .next').removeClass('hover');
+
+							// set desc
+							if (index == 1) { // brownies in jar
+								$('.homecontent .desc h3').html("Try our best: Brownies in a jar!");
+								$('.homecontent .desc p').html("You will be tempted of our taste variants!")
+							}
+							else if(index == 2){ //brownies
+								$('.homecontent .desc h3').html("Can't get enough of our brownies!");
+								$('.homecontent .desc p').html("Looks simple but yummy!")
+							}
+							else if(index == 3){ //lasagna
+								$('.homecontent .desc h3').html("Fulfill yourself by our lasagna!");
+								$('.homecontent .desc p').html("Who wouldn't enjoy this creamy & tasty bites?")
+							}
 						}, 300);
 						$('.homecontent .next').removeClass('hover');
 						$('.homecontent .next').addClass('hover');
@@ -279,3 +327,28 @@ $(window).on('load', function() {
 		direction : 'left'
 	}, 500);
 });
+
+//functions
+function sendEmail() {
+	var xmlhr = new XMLHttpRequest();
+	xmlhr.open('POST', url + '/functions/sendEmail.php', true);
+	xmlhr.onload = function(e) {
+		if (xmlhr.readyState == 4) {
+			if (xmlhr.status == 200) {
+				if (xmlhr.responseText == '1') {
+					$('#name').val('');
+					$('#email').val('');
+					$('#message').val('');
+					$('.success').show('slide', {
+						direction : 'up'
+					}, 500);
+				}
+			}
+		}
+	};
+	var data = new FormData();
+	data.append('jsondata', '{ "name" : "' + $('#name').val() + '", "email": "'
+			+ $('#email').val() + '", "content": "' + $('#message').val()
+			+ '"}');
+	xmlhr.send(data);
+}

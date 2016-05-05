@@ -24,7 +24,7 @@
 	rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Great+Vibes'
 	rel='stylesheet' type='text/css'>
-<link rel="shortcut icon" type="image/png" href="images/icon.png" />
+<link rel="shortcut icon" type="image/png" href="assets/logoblack.png" />
 <link href="/css/main.css" rel="stylesheet" type="text/css">
 <link href="/css/main_320.css" rel="stylesheet" type="text/css">
 <link href="/css/main_640.css" rel="stylesheet" type="text/css">
@@ -108,11 +108,11 @@
 			<div class="product">
 				<div class="productpic product1"></div>
 				<div class="overlay">
-					<h3>Brownies in a jar</h3>
-					<p>Choco lovers will ben in heaven with this brownies in jar They
-						tempt you with 4 variants of taste: Mixed fruit, Greentea Almond,
-						Coffee Fluffy, Oreo Blast</p>
-					<strong><p>IDR 30.000/pax</p></strong>
+					<h3>Original Brownies</h3>
+					<p>Moist brownies, available in 2 variants, Choco original and
+						Green Tea.</p>
+					<p>Looks simple but so yummy!</p>
+					<strong><p>IDR 25.000/pax</p></strong>
 				</div>
 			</div>
 			<div class="product">
@@ -127,19 +127,19 @@
 			</div>
 
 			<div class="product">
-				<div class="productpic product1"></div>
+				<div class="productpic product3"></div>
 				<div class="overlay">
-					<h3>Brownies in a jar</h3>
-					<p>Choco lovers will ben in heaven with this brownies in jar They
-						tempt you with 4 variants of taste: Mixed fruit, Greentea Almond,
-						Coffee Fluffy, Oreo Blast</p>
-					<strong><p>IDR 30.000/pax</p></strong>
+					<h3>Lasagna</h3>
+					<p>An incredibely rich layer of pasta with special meat flavoring
+						on it.</p>
+					<p>Who wouldn't enjoy this creamy & tasty bites?</p>
+					<strong><p>IDR 75.000/jar</p></strong>
 				</div>
 			</div>
 			<div class="product">
-				<div class="productpic product2"></div>
+				<div class="productpic product4"></div>
 				<div class="overlay">
-					<h3>Brownies in a jar</h3>
+					<h3>Frownies</h3>
 					<p>Choco lovers will ben in heaven with this brownies in jar They
 						tempt you with 4 variants of taste: Mixed fruit, Greentea Almond,
 						Coffee Fluffy, Oreo Blast</p>
@@ -250,7 +250,7 @@
 							<td><div class="boxicon">
 									<span class="fa fa-envelope"></span>
 								</div></td>
-							<td><textarea id="name" rows="4"
+							<td><textarea id="message" rows="4"
 									placeholder="Type a message here..."></textarea></td>
 						</tr>
 						<tr>
@@ -258,6 +258,13 @@
 							<td><button class="submit">
 									<span class="fa fa-paper-plane"></span>&nbsp;&nbsp;Kirim
 								</button></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td><div class="success">
+									<span class="fa fa-check"></span>&nbsp;Pesanmu berhasil
+									dikirim!
+								</div></td>
 						</tr>
 					</tbody>
 				</table>

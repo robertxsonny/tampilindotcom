@@ -322,7 +322,19 @@ body {
 }
 
 .aboutcontent .product .productpic.product1 {
-	background-image: url("/images/brownies in jar1.jpg");
+	background-image: url("/images/brownies.jpg");
+	background-size: 100% auto;
+	background-position: center center;
+}
+
+.aboutcontent .product .productpic.product3 {
+	background-image: url("/images/lasagna.jpg");
+	background-size: 100% auto;
+	background-position: 0px 0px;
+}
+
+.aboutcontent .product .productpic.product4 {
+	background-image: url("/images/frownies.jpg");
 	background-size: 100% auto;
 	background-position: center center;
 }
@@ -621,7 +633,7 @@ table.ordertable {
 	border: 1px solid grey;
 	background-color: rgba(255, 255, 255, 0.7);
 	font-family: 'Alegreya Sans', Serif;
-	color: white;
+	color: black;
 	font-size: 1.25em;
 	padding-left: 10px;
 	top: 7px;
@@ -671,4 +683,17 @@ div#contact.row {
 	font-weight: bold;
 	text-decoration: none;
 	border-bottom: 1px solid #fb6d7f;
+}
+
+.ordertable .success {
+    width: 105%;
+    height: 35px;
+    position: relative;
+    top: 10px;
+    background-color: #059a36;
+    color: white;
+    font-family: 'Alegreya Sans', Serif;
+    font-size: 1.25em;
+    text-align: center;
+    padding-top: 10px;
 }
