@@ -37,7 +37,7 @@ body {
 
 .sidebar .menu {
 	position: relative;
-	top: 5px;
+	top: 60px;
 	width: 130%;
 	height: 240px;
 }
@@ -103,7 +103,7 @@ body {
 	float: left;
 	position: absolute;
 	margin: 0 auto;
-	z-index: 99999999;
+	z-index: 1;
 	top: 27%;
 }
 

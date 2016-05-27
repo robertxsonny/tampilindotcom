@@ -61,11 +61,11 @@
 			</div>
 			<div class="socmed">
 
-				<div class="row">
+				<!-- <div class="row">
 					<span class="fa fa-phone fa-2x"></span>
-				</div>
-				<div class="row phone">0821-3737-1494 (CS1)</div>
-				<div class="row phone">081-230-893-719 (Special Inquiries)</div>
+				</div> -->
+				<!-- <div class="row phone">0821-3737-1494 (CS1)</div>
+				<div class="row phone">081-230-893-719 (Special Inquiries)</div> -->
 
 			</div>
 		</div>
@@ -77,20 +77,20 @@
 				<h3 class="titlehead">Where you can buy happiness</h3>
 			</div>
 			<div class="homecontent">
-				<div class="prev">
+				<!-- <div class="prev">
 					<h3>
 						<span class="fa fa-chevron-left fa-2x"></span>
 					</h3>
-				</div>
+				</div> -->
 				<div id="pic1" class="pic"></div>
 				<div id="pic2" class="pic"></div>
 				<div id="pic3" class="pic"></div>
 
-				<div class="next">
+				<!-- <div class="next">
 					<h3>
 						<span class="fa fa-chevron-right fa-2x"></span>
 					</h3>
-				</div>
+				</div> -->
 			</div>
 
 		</div>
