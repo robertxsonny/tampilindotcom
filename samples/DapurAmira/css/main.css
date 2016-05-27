@@ -1,3 +1,14 @@
+/* fonts */
+@font-face {
+	font-family: 'Barkentina';
+	src: url('/css/fonts/Barkentina.otf');
+}
+
+@font-face {
+	font-family: 'Windsong';
+	src: url('/css/fonts/Windsong.ttf');
+}
+
 body {
 	margin: 0;
 }
@@ -8,9 +19,10 @@ body {
 	float: left;
 	height: 595px;
 	position: relative;
-	background: rgba(44, 70, 79, 0.8);
+	background: #E8526F;
 	height: 600px;
 	transition: 0.3s;
+	z-index: 9;
 }
 
 .sidebar .logo {
@@ -41,7 +53,7 @@ body {
 }
 
 .sidebar .menu .option:HOVER {
-	background-color: #3BAFDA;
+	background-color: #FF92A8;
 	padding-left: 0px;
 }
 
@@ -49,7 +61,7 @@ body {
 	color: white;
 	position: absolute;
 	height: 100%;
-	font-family: 'Pontano Sans', Serif;
+	font-family: 'Barkentina', Serif;
 	width: 100%;
 	display: inline-block;
 	left: 0px;
@@ -64,7 +76,7 @@ body {
 	opacity: 0;
 	display: inline-block;
 	left: -10px;
-	border: 30px solid #3BAFDA;
+	border: 30px solid #FF92A8;
 	border-right: 30px solid transparent;
 	border-top: 30px solid transparent;
 	border-bottom: 30px solid transparent;
@@ -78,25 +90,26 @@ body {
 
 .homeside {
 	display: inline-block;
-	width: 41%;
-	background-color: #404148;
-	height: 600px;
+	width: 82%;
+	background: #E8526F;
+	height: 595px;
 	float: left;
 }
 
 .homeside .title {
-	width: 26%;
+	width: 82%;
 	height: 72%;
 	display: inline-block;
 	float: left;
 	position: absolute;
-	top: 22%;
-	left: 20%;
+	margin: 0 auto;
+	z-index: 99999999;
+	top: 27%;
 }
 
 .homeside .title h3 {
 	font-family: 'Great Vibes', Cursive;
-	text-align: right;
+	text-align: center;
 	font-size: 4em;
 	margin: 0;
 	margin-bottom: 10px;
@@ -107,11 +120,11 @@ body {
 .homeside .homecontent {
 	position: relative;
 	display: inline-block;
-	width: 620px;
-	height: 464px;
+	width: 100%;
+	height: 100%;
 	background: #ff6f6f;
-	top: 12%;
-	left: 74%;
+	top: 0px;
+	left: 0px;
 	box-shadow: grey 0px 0px 22px;
 	float: left;
 }
@@ -122,49 +135,57 @@ body {
 
 .homecontent .pic {
 	width: 100%;
-	height: 330px;
+	height: 100%;
 	background-repeat: no-repeat;
 }
 
 .homecontent .pic#pic1 {
 	background-image: url("/images/brownies in jar.jpg");
-	background-size: 126% auto;
+	background-size: 100% auto;
 	background-position: center -4px;
 }
 
 .homecontent .pic#pic2 {
 	background-image: url("/images/brownies.jpg");
-	background-size: 126% auto;
+	background-size: 100% auto;
 	background-position: center -4px;
 }
 
 .homecontent .pic#pic3 {
 	background-image: url("/images/lasagna.jpg");
-	background-size: 126% auto;
+	background-size: 100% auto;
 	background-position: center -4px;
 }
 
 .homeside .title p {
-	font-family: 'Alegreya Sans', Serif;
+	font-family: 'Barkentina', Serif;
 	font-weight: lighter;
 	color: white;
-	text-align: right;
-	font-size: 1.5em;
+	text-align: center;
+	font-size: 4em;
 	margin: 0;
 	margin-bottom: 10px;
 	font-weight: 800;
 }
 
 .homeside .title h3.titlehead {
-	font-family: 'Great Vibes', Cursive;
+	font-family: 'Windsong', Cursive;
 	font-style: italic;
 	margin-bottom: 0px;
-	font-size: 2.5em;
+	font-size: 4.5em;
 }
 
 .homeside .title h3.titlefoot {
 	font-size: 1.7em;
 	font-family: 'Alegreya Sans', Serif;
+}
+
+.overlay {
+	position: absolute;
+	width: 82%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 1;
 }
 
 .sidebar .socmed {
@@ -180,7 +201,7 @@ body {
 	position: relative;
 	float: left;
 	margin: 0 auto;
-	color: #3BAFDA;
+	color: #FF92A8;
 	background: transparent;
 	text-align: center;
 	margin-bottom: 10px;
@@ -220,8 +241,8 @@ body {
 
 .homecontent .prev {
 	position: absolute;
-	height: 330px;
-	width: 50px;
+	height: 100%;
+	width: 100px;
 	background: rgba(255, 255, 255, 0);
 	float: left;
 	text-align: center;
@@ -244,8 +265,8 @@ body {
 
 .homecontent .next {
 	position: absolute;
-	height: 330px;
-	width: 50px;
+	height: 100%;
+	width: 100px;
 	background: rgba(255, 255, 255, 0);
 	right: 0px;
 	float: right;
@@ -267,11 +288,11 @@ body {
 .row {
 	height: 600px;
 	width: 100%;
-	background: #404148;
+	background: #E8526F;
 }
 
 #products.row {
-	background: #404148;
+	background: #E8526F;
 	height: 840px;
 }
 
@@ -343,7 +364,7 @@ body {
 	position: relative;
 	width: 100%;
 	height: 130px;
-	background-color: #4EC1E9;
+	background-color: white;
 	z-index: 2;
 	opacity: 1;
 }
@@ -355,8 +376,7 @@ body {
 	left: 19px;
 	font-family: 'Alegreya Sans', Serif;
 	font-size: 1.5em;
-	color: white;
-	text-shadow: 0px 0px 5px grey;
+	color: #E8526F;
 	font-weight: bold;
 }
 
@@ -367,8 +387,7 @@ body {
 	left: 20px;
 	font-family: 'Alegreya Sans', Serif;
 	font-size: 1em;
-	color: white;
-	text-shadow: 0px 0px 5px grey;
+	color: #E8526F;
 	width: 445px;
 	text-align: justify;
 }
@@ -396,14 +415,14 @@ body {
 	width: 80px;
 	height: 80px;
 	border-radius: 50px;
-	background-color: #34c663;
+	background-color: #FA7D96;
 	margin: 0 auto;
 }
 
 .aboutsub .content {
 	width: 100%;
 	height: 330px;
-	background-color: #34c663;
+	background-color: #FA7D96;
 	position: relative;
 	top: -50px;
 }
@@ -422,14 +441,14 @@ body {
 	width: 80px;
 	height: 80px;
 	border-radius: 50px;
-	background-color: #1ea74b;
+	background-color: #BD2E4A;
 	margin: 0 auto;
 }
 
 .aboutpic .content {
 	width: 100%;
 	height: 370px;
-	background-color: #1ea74b;
+	background-color: #BD2E4A;
 	position: relative;
 	top: -50px;
 }
@@ -449,7 +468,7 @@ body {
 	width: 80px;
 	height: 80px;
 	border-radius: 50px;
-	background-color: #059a36;
+	background-color: #FA7D96;
 	margin: 0 auto;
 	left: -40px;
 	position: relative;
@@ -458,7 +477,7 @@ body {
 .aboutsub2 .content {
 	width: 100%;
 	height: 330px;
-	background-color: #059a36;
+	background-color: #FA7D96;
 	position: relative;
 	top: -50px;
 	left: -40px;
@@ -530,7 +549,7 @@ div#about.row {
 }
 
 .contactcontent .content .wallp {
-	background-color: #34c663;
+	background-color: #FA7D96;
 	width: 143%;
 	height: 100%;
 	position: absolute;
@@ -548,14 +567,14 @@ div#about.row {
 }
 
 .contactcontent .pic .wallp {
-	background-color: #1ea74b;
+	background-color: #BD2E4A;
 	position: absolute;
 	width: 225%;
 	height: 225%;
 	transform: rotate(20deg);
 	z-index: 4;
 	left: 26px;
-	box-shadow: 0px 0px 22px lightgreen;
+	box-shadow: 0px 0px 22px maroon;
 }
 
 .contactcontent .content h3 {
@@ -660,22 +679,22 @@ div#contact.row {
 }
 
 .copyright {
-    width: 100%;
-    position: relative;
-    height: 30px;
-    background-color: rgba(44, 70, 79, 1);
-    text-align: center;
-    top: 0px;
-    padding-top: 5px;
+	width: 100%;
+	position: relative;
+	height: 30px;
+	background: #E8526F;
+	text-align: center;
+	top: 0px;
+	padding-top: 5px;
 }
 
 .copyright h3 {
-    margin: 0;
-    margin-top: 5px;
-    font-family: 'Alegreya Sans', Serif;
-    font-weight: lighter;
-    font-size: 15px;
-    color: white;
+	margin: 0;
+	margin-top: 5px;
+	font-family: 'Alegreya Sans', Serif;
+	font-weight: lighter;
+	font-size: 15px;
+	color: white;
 }
 
 .copyright h3 a {
@@ -686,14 +705,14 @@ div#contact.row {
 }
 
 .ordertable .success {
-    width: 105%;
-    height: 35px;
-    position: relative;
-    top: 10px;
-    background-color: #059a36;
-    color: white;
-    font-family: 'Alegreya Sans', Serif;
-    font-size: 1.25em;
-    text-align: center;
-    padding-top: 10px;
+	width: 105%;
+	height: 35px;
+	position: relative;
+	top: 10px;
+	background-color: #059a36;
+	color: white;
+	font-family: 'Alegreya Sans', Serif;
+	font-size: 1.25em;
+	text-align: center;
+	padding-top: 10px;
 }

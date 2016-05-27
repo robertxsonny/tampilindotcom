@@ -193,7 +193,7 @@ $(document)
 												$('.sidebar .menu #homemenu')
 														.css(
 																'background-color',
-																'#3BAFDA');
+																'#FF92A8');
 												$('.sidebar .menu #homemenu')
 														.css('padding-left',
 																'0px');
@@ -220,7 +220,7 @@ $(document)
 														'.sidebar .menu #productsmenu')
 														.css(
 																'background-color',
-																'#3BAFDA');
+																'#FF92A8');
 												$(
 														'.sidebar .menu #productsmenu')
 														.css('padding-left',
@@ -253,7 +253,7 @@ $(document)
 												$('.sidebar .menu #aboutmenu')
 														.css(
 																'background-color',
-																'#3BAFDA');
+																'#FF92A8');
 												$('.sidebar .menu #aboutmenu')
 														.css('padding-left',
 																'0px');
@@ -288,7 +288,7 @@ $(document)
 												$('.sidebar .menu #contactmenu')
 														.css(
 																'background-color',
-																'#3BAFDA');
+																'#FF92A8');
 												$('.sidebar .menu #contactmenu')
 														.css('padding-left',
 																'0px');

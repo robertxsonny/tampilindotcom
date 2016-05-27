@@ -43,19 +43,19 @@
 			</div>
 			<div class="menu">
 				<div id="homemenu" class="option">
-					<h3>HOME</h3>
+					<h3>home</h3>
 				</div>
 				<div id="homepoint" class="point"></div>
 				<div id="productsmenu" class="option">
-					<h3>OUR PRODUCTS</h3>
+					<h3>products</h3>
 				</div>
 				<div id="productspoint" class="point"></div>
 				<div id="aboutmenu" class="option">
-					<h3>ABOUT US</h3>
+					<h3>about</h3>
 				</div>
 				<div id="aboutpoint" class="point"></div>
 				<div id="contactmenu" class="option">
-					<h3>CONTACT US</h3>
+					<h3>contact</h3>
 				</div>
 				<div id="contactpoint" class="point"></div>
 			</div>
@@ -70,11 +70,11 @@
 			</div>
 		</div>
 		<div class="homeside">
+		<div class="overlay"></div>
 			<div class="title">
 				<p>Welcome to</p>
-				<h3 class="titlehead">The Classic:</h3>
-				<h3>Dapur Amira</h3>
-				<h3 class="titlefoot">Best Loved Recipes from Home</h3>
+				<p>THE SWEETEST SITE</p>
+				<h3 class="titlehead">Where you can buy happiness</h3>
 			</div>
 			<div class="homecontent">
 				<div class="prev">
@@ -85,11 +85,7 @@
 				<div id="pic1" class="pic"></div>
 				<div id="pic2" class="pic"></div>
 				<div id="pic3" class="pic"></div>
-				<div class="desc">
-					<h3>Try our best: Brownies in Jar!</h3>
-					<p>Because our brownies is made of gold and it's worth the price!
-						HAHAHAHAHA</p>
-				</div>
+
 				<div class="next">
 					<h3>
 						<span class="fa fa-chevron-right fa-2x"></span>
@@ -98,7 +94,7 @@
 			</div>
 
 		</div>
-		<div class="homeside home2"></div>
+
 	</div>
 	<div id="products" class="row">
 		<div class="abouttitle">
