@@ -530,11 +530,11 @@ function processOrder()
 			</div>
 		</div>
 		
-		<div id="feature" class="page content-page" style="background-color: #ECECEC; color: #2F2F3B;">
+		<div id="feature" class="page content-page" style="background-image: url('/images/pattern.png'); color: white;">
 			<div class="page-content">
 				<h1 class="content-title">PILIH PAKET YANG SESUAI</h1>
 				<div class="box-container">
-					<div id="personal" class="box-2 box-border-transparent pricing-box left" style="background-color: #008DC7; color: #ECECEC;">
+					<div id="personal" class="box-2 box-border-transparent pricing-box left" style="background-color: white; color: black;">
 					<div class="icon-big" style="background: url('images/image1.png') no-repeat center; background-size: cover;">
 					</div>
 					<h3 class="package-title">Personal</h3>
@@ -551,7 +551,7 @@ function processOrder()
 					<!-- <p class="old-price"><small>promo opening s/d 26 feb 2016</small><br/><s>Rp 300.000,00</s></p> -->
 					<h1 class="price">Rp 400.000,00</h1>
 				</div>
-				<div id="business" class="box-2 box-border-transparent pricing-box right" style="background-color: #59A80F; color: #ECECEC;">
+				<div id="business" class="box-2 box-border-transparent pricing-box right" style="background-color: white; color: black;">
 					<div class="icon-big" style="background: url('images/image2.png') no-repeat center; background-size: cover;">
 					</div>
 					<h3 class="package-title">Business</h3>
