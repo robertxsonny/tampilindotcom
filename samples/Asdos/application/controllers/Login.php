@@ -18,6 +18,14 @@ class Login extends CI_Controller {
 		echo json_encode($this->login_model->get_all_users());
 		return;
 	}
+    public function get_asdos(){
+		echo json_encode($this->login_model->get_all_asdos());
+		return;
+	}
+    public function get_student(){
+		echo json_encode($this->login_model->get_all_asdos());
+		return;
+	}
 	public function login() {
 		$this->trylogin($this->input->post ( 'username' ), md5($this->input->post ( 'password' )));
 	}

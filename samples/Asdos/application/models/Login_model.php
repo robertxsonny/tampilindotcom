@@ -14,6 +14,30 @@ class Login_model extends CI_Model {
 		}
 		return $result;
 	}
+    public function get_all_asdos() {
+        $this->db->where('typeid', 1);
+		$this->db->order_by ( 'userid', 'asc' );
+		$query = $this->db->get ( 'users_with_types' );
+		$result = $query->result_array ();
+		if(count($result) > 0){
+			for ($i = 0; $i < count($result); $i++) {
+				unset($result[$i]['password']);
+			}
+		}
+		return $result;
+	}
+    public function get_all_student() {
+        $this->db->where('typeid', 2);
+		$this->db->order_by ( 'userid', 'asc' );
+		$query = $this->db->get ( 'users_with_types' );
+		$result = $query->result_array ();
+		if(count($result) > 0){
+			for ($i = 0; $i < count($result); $i++) {
+				unset($result[$i]['password']);
+			}
+		}
+		return $result;
+	}
 	public function register_user() {
 		$this->load->helper ( 'url' );
 		

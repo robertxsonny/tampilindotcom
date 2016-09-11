@@ -56,6 +56,7 @@ $route['(:any)/create'] = '$1/create';
 $route['(:any)/delete'] = '$1/delete';
 $route['(:any)/search'] = '$1/search';
 $route['(:any)/get'] = '$1/get';
+$route['(:any)/(:any)/get'] = '$1/get_$2';
 
 $route['default_controller'] = 'login';
 $route['404_override'] = '';
