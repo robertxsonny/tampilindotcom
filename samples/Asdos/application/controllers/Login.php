@@ -23,7 +23,7 @@ class Login extends CI_Controller {
 		return;
 	}
     public function get_student(){
-		echo json_encode($this->login_model->get_all_asdos());
+		echo json_encode($this->login_model->get_all_student());
 		return;
 	}
 	public function login() {

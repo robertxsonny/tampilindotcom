@@ -37,6 +37,7 @@
 <![endif]-->
 <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
 <script src="/js/jquery-2.2.0.min.js"></script>
+<script src="/js/api.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -185,6 +186,44 @@ $(document).ready(function() {
 		}
 		return false;	
 	});
+	/* var xmlhr = new XMLHttpRequest();
+	xmlhr.open('GET', 'https://api.instagram.com/v1/users/thekucing/media/recent/?access_token=' + clientId, true);
+	xmlhr.onload = function(e) {
+		if (xmlhr.readyState == 4) {
+			if (xmlhr.status == 200) {
+				var contents = [];
+				var data = JSON.parse(xmlhr.responseText);
+				for (var content in data.data)
+				{
+					if (content.tags.indexOf('thekucing') > -1)
+						contents.add(content);
+				}
+				var anchor = "";
+				var images = "";
+				for (var i = 0; i <= content.length / 3; i++)
+				{
+					var nav = '<li><span id="slide-1" class="slide-item"><small><i class="fa fa-circle"></i></small></a></li>';
+					var group = '<div id="group-' + (i + 1).toString() + '" class="product-group box-container">';
+					group += '<div class="box-3 animation-wrapper">';
+					group += '<div class="sample-product" style="background: url(' + content[i*3].images.low_resolution.url + ') no-repeat center; background-size: cover;">';
+					group += '</div>';
+					group += '</div>';
+					group += '<div class="box-3 animation-wrapper">';
+					group += '<div class="sample-product" style="background: url(' + content[i*3 + 1].images.low_resolution.url + ') no-repeat center; background-size: cover;">
+					group += '</div>';
+					group += '</div>';
+					group += '<div class="box-3 animation-wrapper">';
+					group += '<div class="sample-product" style="background: url('+ content[i*3 + 2].images.low_resolution.utl +') no-repeat center; background-size: cover;">
+					group += '</div>';
+					group += '</div>';
+					group += '</div>';
+					anchor += nav;
+					images += group;
+				}
+			}
+		}
+	};
+	xmlhr.send();	 */
 	/* $( window ).scroll(function() {
 		$('.sample-product').each(function() {
 			animationHandler($(this), -300, -450);
@@ -245,9 +284,9 @@ function animationHandler(object, fromTop, fromBottom)
 				<a class="slide-button slide-left"><i class="fa fa-chevron-left fa-2x"></i></a>
 				<a class="slide-button slide-right"><i class="fa fa-chevron-right fa-2x"></i></a>
 				<ul class="slide-nav">
-					<li><span id="slide-1" class="slide-item selected"><small><i class="fa fa-circle"></i></small></a></li>
+					<!-- <li><span id="slide-1" class="slide-item selected"><small><i class="fa fa-circle"></i></small></a></li>
 					<li><span id="slide-2" class="slide-item"><small><i class="fa fa-circle"></i></small></a></li>
-					<li><span id="slide-3" class="slide-item"><small><i class="fa fa-circle"></i></small></a></li>
+					<li><span id="slide-3" class="slide-item"><small><i class="fa fa-circle"></i></small></a></li> -->
 				</ul>
 				<div id="group-1" class="product-group box-container">
 					<div class="box-3 animation-wrapper">

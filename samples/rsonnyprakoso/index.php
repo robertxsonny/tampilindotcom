@@ -501,52 +501,36 @@ function processOrder()
 				<div class="portfolio-box">
 					<div id="web-pf" class="portfolio-group selected">
 					<div class="box-container">
-					<div class="box-6">
-						<a class="sample-product" href="#" style="background: url('images/sample web 1.jpg') no-repeat center; background-size: cover;">
+					<div class="box-4">
+						<a class="sample-product" href="http://guesthouse.cupumanik.id" target="_blank" style="background: url('images/cupumanik_kotak.png') no-repeat center; background-size: cover;">
 						</a>	
 					</div>
-					<div class="box-6">
-						<a class="sample-product" href="#" style="background: url('images/sample web 2.jpg') no-repeat center; background-size: cover;">
+					<div class="box-4">
+						<a class="sample-product" href="http://tampilin.id" target="_blank" style="background: url('images/tampilin_kotak.png') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-6">
-						<a class="sample-product" href="#" style="background: url('images/sample web 3.jpg') no-repeat center; background-size: cover;">
+					<div class="box-4">
+						<a class="sample-product" href="http://sample2.tampilin.id" target="_blank" style="background: url('images/thekucing_kotak.png') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-6">
-						<a class="sample-product" href="#" style="background: url('images/sample web 4.jpg') no-repeat center; background-size: cover;">
+					<div class="box-4">
+						<a class="sample-product" href="http://sample33.tampilin.id" target="_blank" style="background: url('images/bannematutu_kotak.png') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-6">
-						<a class="sample-product" href="#" style="background: url('images/sample web 5.jpg') no-repeat center; background-size: cover;">
+					<div class="box-4">
+						<a class="sample-product" href="http://sample37.tampilin.id" target="_blank" style="background: url('images/monsterchilli_kotak.png') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-6">
-						<a class="sample-product" href="#" style="background: url('images/sample web 6.jpg') no-repeat center; background-size: cover;">
+					<div class="box-4">
+						<a class="sample-product" href="#" style="background: url('images/comingsoon.png') no-repeat center; background-size: cover;">
 						</a>
 					</div>
-					<div class="box-6">
-						<a class="sample-product" href="#" style="background: url('images/sample web 1.jpg') no-repeat center; background-size: cover;">
+					<div class="box-4">
+						<a class="sample-product" href="#" style="background: url('images/comingsoon.png') no-repeat center; background-size: cover;">
 						</a>	
 					</div>
-					<div class="box-6">
-						<a class="sample-product" href="#" style="background: url('images/sample web 2.jpg') no-repeat center; background-size: cover;">
-						</a>
-					</div>
-					<div class="box-6">
-						<a class="sample-product" href="#" style="background: url('images/sample web 3.jpg') no-repeat center; background-size: cover;">
-						</a>
-					</div>
-					<div class="box-6">
-						<a class="sample-product" href="#" style="background: url('images/sample web 4.jpg') no-repeat center; background-size: cover;">
-						</a>
-					</div>
-					<div class="box-6">
-						<a class="sample-product" href="#" style="background: url('images/sample web 5.jpg') no-repeat center; background-size: cover;">
-						</a>
-					</div>
-					<div class="box-6">
-						<a class="sample-product" href="#" style="background: url('images/sample web 6.jpg') no-repeat center; background-size: cover;">
+					<div class="box-4">
+						<a class="sample-product" href="#" style="background: url('images/comingsoon.png') no-repeat center; background-size: cover;">
 						</a>
 					</div>
 					</div>
