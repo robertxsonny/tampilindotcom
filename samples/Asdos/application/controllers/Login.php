@@ -49,6 +49,10 @@ class Login extends CI_Controller {
 		echo $this->login_model->update_profile_picture ( $this->input->post('id'), $this->input->post ( 'image' ));
 		return;
 	}
+	public function checkprofilepicture(){
+		echo $this->login_model->get_md5_picture ( $this->input->post('id'));
+		return;
+	}
 	private function trylogin($username, $password) {
 		$result = $this->login_model->sign_in ( $username, $password );
 		if ($result != false) {

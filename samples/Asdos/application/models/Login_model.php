@@ -23,9 +23,16 @@ class Login_model extends CI_Model {
 					'lastupdate' => date ( 'Y-m-d H:i:s' )
 			);
 			if ($base64 != '') { // if there is profpict
+				$data['md5'] = md5($base64);
 				$fp = fopen ( $_SERVER ['DOCUMENT_ROOT'] . '/img/' . $id . '.txt', 'wb' );
 				fwrite ( $fp, $base64 );
 				fclose ( $fp );
+			}
+			else {
+				if(file_exists($_SERVER ['DOCUMENT_ROOT'] . '/img/' . $id . '.txt')){
+					unlink($_SERVER ['DOCUMENT_ROOT'] . '/img/' . $id . '.txt');
+				}
+				$data['md5'] = '';
 			}
 			$this->db->where ( 'id', $id );
 			$this->db->update ( 'users', $data );
@@ -41,6 +48,23 @@ class Login_model extends CI_Model {
 		}
 		
 	}
+	public function get_md5_picture($id){
+		$this->db->where ( 'userid', $id );
+		$query = $this->db->get ( 'users_with_types' );
+		$result = $query->row_array ();
+		if ($result != null) {
+			$ret = array (
+					'id' => $id,
+					'profpictid' => $result['md5']
+			);
+			return json_encode ( $ret );
+		}
+		else{
+			return json_encode ( array (
+					'status' => '1'
+			) );
+		}
+	}
 	public function get_profile_picture($id) {
 		$this->db->where ( 'userid', $id );
 		$query = $this->db->get ( 'users_with_types' );
@@ -51,11 +75,12 @@ class Login_model extends CI_Model {
 					throw new Exception('File: ' . '/img/' . $id . '.txt' . ' does not exist');
 				}
 				$fp = fopen ( $_SERVER ['DOCUMENT_ROOT'] . '/img/' . $id . '.txt', 'r' );
-				$result = array (
+				$ret = array (
 						'id' => $id,
-						'base64' => fread ( $fp, filesize ( $_SERVER ['DOCUMENT_ROOT'] . '/img/' . $id . '.txt' ) ) 
+						'base64' => fread ( $fp, filesize ( $_SERVER ['DOCUMENT_ROOT'] . '/img/' . $id . '.txt' ) ),
+						'profpictid' => $result['md5']
 				);
-				return json_encode ( $result );
+				return json_encode ( $ret );
 			} catch ( Exception $e ) {
 				return json_encode ( array (
 						'status' => '1' 
@@ -63,6 +88,7 @@ class Login_model extends CI_Model {
 			}
 		}
 	}
+	
     public function get_all_asdos() {
         $this->db->where('typeid', 1);
 		$this->db->order_by ( 'userid', 'asc' );
@@ -127,7 +153,8 @@ class Login_model extends CI_Model {
 					'type' => $result ['type'],
 					'institution' => $result ['institution'],
 					'field' => $result ['field'] ,
-					'lastupdate' => $result['lastupdate']
+					'lastupdate' => $result['lastupdate'],
+					'profpictid' => $result['md5']
 			);
 			return $userdata;
 		} else
