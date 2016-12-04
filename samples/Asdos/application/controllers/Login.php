@@ -1,6 +1,6 @@
 <?php
 defined ( 'BASEPATH' ) or exit ( 'No direct script access allowed' );
-date_default_timezone_set('Asia/Jakarta');
+date_default_timezone_set ( 'Asia/Jakarta' );
 class Login extends CI_Controller {
 	public function __construct() {
 		parent::__construct ();
@@ -19,12 +19,12 @@ class Login extends CI_Controller {
 		echo json_encode ( $this->login_model->get_all_users () );
 		return;
 	}
-    public function get_asdos(){
-		echo json_encode($this->login_model->get_all_asdos());
+	public function get_asdos() {
+		echo json_encode ( $this->login_model->get_all_asdos () );
 		return;
 	}
-    public function get_student(){
-		echo json_encode($this->login_model->get_all_student());
+	public function get_student() {
+		echo json_encode ( $this->login_model->get_all_student () );
 		return;
 	}
 	public function login() {
@@ -32,6 +32,14 @@ class Login extends CI_Controller {
 	}
 	public function autologin() {
 		$this->trylogin ( $this->input->post ( 'username' ), $this->input->post ( 'password' ) );
+	}
+	public function update_token(){
+		echo $this->login_model->update_firebase_token($this->input->post('id'), $this->input->post('token'));
+		return;
+	}
+	public function get_user(){
+		echo json_encode($this->login_model->get_user($this->input->post('id')));
+		return;
 	}
 	public function register() {
 		$result = $this->login_model->register_user ();
@@ -42,17 +50,18 @@ class Login extends CI_Controller {
 		return;
 	}
 	public function profilepicture() {
-		echo $this->login_model->get_profile_picture ( $this->input->post('id'));
+		echo $this->login_model->get_profile_picture ( $this->input->post ( 'id' ) );
 		return;
 	}
 	public function updateprofilepicture() {
-		echo $this->login_model->update_profile_picture ( $this->input->post('id'), $this->input->post ( 'image' ));
+		echo $this->login_model->update_profile_picture ( $this->input->post ( 'id' ), $this->input->post ( 'image' ) );
 		return;
 	}
-	public function checkprofilepicture(){
-		echo $this->login_model->get_md5_picture ( $this->input->post('id'));
+	public function checkprofilepicture() {
+		echo $this->login_model->get_md5_picture ( $this->input->post ( 'id' ) );
 		return;
 	}
+	
 	private function trylogin($username, $password) {
 		$result = $this->login_model->sign_in ( $username, $password );
 		if ($result != false) {
@@ -65,5 +74,6 @@ class Login extends CI_Controller {
 			return;
 		}
 	}
+	
 }
 ?>

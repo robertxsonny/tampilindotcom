@@ -14,6 +14,27 @@ class Login_model extends CI_Model {
 		}
 		return $result;
 	}
+	public function get_user($id){
+		$this->db->where('userid', $id);
+		$query = $this->db->get('users_with_types');
+		return $query->row_array();
+	}
+	public function update_firebase_token($id, $token){
+		$this->db->where('userid', $id);
+		$query = $this->db->get('users_with_types');
+		$result = $query->row_array();
+		if($result != null){
+			$data = array(
+				'firebase_token' => $token
+			);
+			$this->db->where('id', $id);
+			$this->db->update('users', $data);
+
+			return json_encode(array(
+				'status' => '0'
+			));
+		}
+	}
 	public function update_profile_picture($id, $base64){
 		$this->db->where ( 'userid', $id );
 		$query = $this->db->get ( 'users_with_types' );
