@@ -157,7 +157,8 @@ class Login_model extends CI_Model {
 					'type' => $result ['type'],
 					'institution' => $result ['institution'],
 					'field' => $result ['field'] ,
-					'lastupdate' => $result['lastupdate']
+					'lastupdate' => $result['lastupdate'],
+					'profpict' => $result['profpict']
 			);
 			return $userdata;
 		} else
