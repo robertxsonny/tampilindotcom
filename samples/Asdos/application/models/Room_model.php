@@ -48,7 +48,7 @@ class Room_model extends CI_Model {
 		
 		$query = $this->db->get ( 'rooms_with_users' );
 		$res = $query->row_array ();
-		$this->db->where ( 'rxoomid', $res ['roomid'] );
+		$this->db->where ( 'roomid', $res ['roomid'] );
 		
 		if ($res != null) {
 			$query2 = $this->db->get ( 'messages' );
